@@ -870,7 +870,7 @@ msgwnd_nan
 *e21_89
 d [lv 0*"19"*"nan_00130"]`{qt}Excellent..!`[@][lv 0*"19"*"nan_00140"]` We're glad we were able to help.{qt}`[\]
 lss s0_16,"gen","a11_defo1"
-spt_mem "a2","xpos",s0_16,550
+spt_mem "a2","xpos",s0_16,-550
 flush 80
 lss s0_16,"gen","a11_majime1"
 spt_mem "a2","xpos",s0_16,-550
@@ -1442,7 +1442,7 @@ flush 80
 
 msgwnd_rud
 *e21_141
-d [lv 0*"08"*"rud_00040"]`{qt}Please don't call me that..!`[@][lv 0*"08"*"rud_00050"]` I'll buy you whatever you want!`[@][lv 0*"08"*"rud_00060"]` I'll have a change of heart and become a really good daddy after this!`[@][lv 0*"08"*"rud_00070"]` Alright?`[@][lv 0*"08"*"rud_00080"]` Alright?!`[@][lv 0*"08"*"rud_00090"]` C'mon, Kyrie can steal scenes with her great detective work.`[@][lv 0*"08"*"rud_00100"]` And I could be the aloof action hero, c'mooon~!{qt}`[\]
+d [lv 0*"08"*"rud_00040"]`{qt}Please don't say that..!`[@][lv 0*"08"*"rud_00050"]` I'll buy you whatever you want!`[@][lv 0*"08"*"rud_00060"]` I'll have a change of heart and become a really good daddy after this!`[@][lv 0*"08"*"rud_00070"]` Alright?`[@][lv 0*"08"*"rud_00080"]` Alright?!`[@][lv 0*"08"*"rud_00090"]` C'mon, Kyrie can steal scenes with her great detective work.`[@][lv 0*"08"*"rud_00100"]` And I could be the aloof action hero, c'mooon~!{qt}`[\]
 
 lss s0_9,"but","d11_futeki1"
 spt_mem "a2","xpos",s0_9,500
@@ -1785,7 +1785,7 @@ flush 22
 
 msgwnd_hid
 *e21_162
-d2 [lv 0*"06"*"hid_00070"]`{qt}N-never..![#][*]`[@][lv 0*"06"*"hid_00080"]` Leave Eva outta this!`[@][lv 0*"06"*"hid_00090"]` Ah'll do anythin' ya want myself..!{qt}`[\]
+d2 [lv 0*"06"*"hid_00070"]`{qt}N-never..![#][*] `[@][lv 0*"06"*"hid_00080"]`Leave Eva outta this!`[@][lv 0*"06"*"hid_00090"]` Ah'll do anythin' ya want myself..!{qt}`[\]
 wait_on_d 0
 seplay 11,12,100
 d_continue
@@ -2685,6 +2685,7 @@ wait_on_d -1
 
 lss s0_8,"rg2","a21_akuwarai4"
 spt_mem "a2","xpos",s0_8,-300
+flush 80
 
 msgwnd_rg2
 *e21_227
@@ -2699,6 +2700,7 @@ d [lv 0*"38"*"rg1_00090"]`{qt}L-Levia?!`[@][lv 0*"38"*"rg1_00100"]` H-how do you
 
 lss s0_8,"rg2","a21_akuwarai3"
 spt_mem "a2","xpos",s0_8,-300
+flush 80
 
 msgwnd_rg2
 *e21_229
@@ -2707,6 +2709,7 @@ d [lv 0*"39"*"rg2_00100"]`{qt}Everyone knows your weak spot!`[@][lv 0*"39"*"rg2_
 csp_slot s0_8
 lss s0_7,"but","d11_futeki1"
 spt_mem "a2","xpos",s0_7,300
+flush 80
 
 msgwnd_but
 *e21_230
@@ -3272,7 +3275,7 @@ lss s0_9,"ev2","a11_akuwarai7"
 spt_mem "a2","xpos",s0_9,-500
 lss s0_6,"but","b11_futeki3"
 spt_mem "a2","xpos",s0_6,500
-flush 80
+flush 22
 
 *e21_267
 d `Finally, I want to be involved in an intense battle with Battler!`[@]` The length of that scene should be at least 100,000 characters.`[\]
@@ -3416,7 +3419,7 @@ csp_slot s0_3
 flush 80
 wait 400
 lbg "c:backgrounds",s0_3,"moon_1a"
-vol_mix_fade 100
+vol_mix_fade 300
 flush 22
 bgmplay 19,70,0
 
@@ -3528,7 +3531,7 @@ aspt2 breakup,s0_7,1000
 aspt2 alpha,s0_7,0
 aspt2 breakupdir,s0_7,3
 flush 1
-seplay 11,52,90
+seplay 12,52,90
 aspt2 breakup,s0_7,0,1000
 aspt2 alpha,s0_7,255
 sptwait2 breakup,s0_7
@@ -3548,7 +3551,7 @@ lss s0_9,"jes","a11_odoroki1"
 spt_mem "a2","xpos",s0_9,-500
 flush 80
 
-seplay 11,57,100
+seplay 12,57,100
 csp_slot s0_6
 csp_slot s0_7
 csp_slot s0_8
@@ -3819,6 +3822,8 @@ csp_slot s0_10
 csp_slot s0_3
 seplay 11,1010,100
 flush 22
+vol_bgm -1,500
+wait 500
 
 bgmplay 8,70,0
 
@@ -4156,7 +4161,7 @@ flush 80
 wait 4000
 lbg "c:local_saku",s0_3,"boshuu"
 flush 2
-wait 11000
+wait 13000
 lbg "c:colour",s0_3,"black"
 flush 2
 break_glass3

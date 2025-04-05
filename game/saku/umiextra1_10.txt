@@ -255,6 +255,7 @@ lss s0_10,"goh","a11_defo1"
 spt_mem "a2","xpos",s0_10,550
 flush 24
 
+csp_slot s0_10
 lss s0_6,"goh","a11_omakase2"
 spt_mem "a2","xpos",s0_6,550
 flush 80
@@ -270,7 +271,7 @@ flush 80
 
 msgwnd_rud
 *e110_23
-d [lv 0*"08"*"rud_00590"]`{qt}Eh...?`[@][lv 0*"08"*"rud_00600"]` What's the problem, Battler?`[@][lv 0*"08"*"rud_00610"]` Did you see something?{qt}`[\]
+d [lv 0*"08"*"rud_00590"]`{qt}Eh...?`[@][lv 0*"08"*"rud_00600"]` What's the problem, Battler?`[@][lv 0*"08"*"rud_00610"]` Come over here.{qt}`[\]
 textoff2
 
 csp_slot s0_3
@@ -304,7 +305,7 @@ flush 80
 
 msgwnd_but
 *e110_26
-d [lv 0*"10"*"bat_05070"]`{qt}Ah, sorry.`[@][lv 0*"10"*"bat_05080"]` Just go ahead without me.{qt}`[\]
+d [lv 0*"10"*"bat_05070"]`{qt}Ah, sorry.`[@][lv 0*"10"*"bat_05080"]` Could you go ahead without me?{qt}`[\]
 
 lss s0_9,"mar","a22_defo1"
 spt_mem "a2","xpos",s0_9,0
@@ -616,7 +617,6 @@ d [lv 0*"31"*"ron_01450"]`{qt}Well,... how shall we proceed?{qt}`[\]
 textoff2
 
 csp_slot s0_9
-flush 80
 lss s0_8,"bbt","a11_nayamua2"
 spt_mem "a2","xpos",s0_8,-549
 flush 24
