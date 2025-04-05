@@ -23786,7 +23786,7 @@ mov $?slot_cache[%lss_slot-750][0],$lss_sec + "|" + $lss_key
 loadfromreg $lss_lips_x,$lss_sec,$lss_key + "_left" ;Variable,Category,Key - Reads the given key from the given category and stores it in the given variable
 loadfromreg $lss_lips_y,$lss_sec,$lss_key + "_top"
 if $sprite_folder_name == "ps3" set_hotspot %lss_slot,$lss_lips_x,$lss_lips_y
-if $sprite_folder_name != "ps3" #locale_import "tmp_test.txt"		
+#locale_import "tmp_test.txt"		
 
 ;Original Edited - ;Dynamic Sprites - Variable Sprites Folder - W_CUSTOM
 fileexist %lss_lips,"sprites\" + $sprite_folder_name + "\" + $lss_sec + "\2\" + $lss_sec + "_" + $lss_key + ".png"
