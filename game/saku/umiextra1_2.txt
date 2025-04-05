@@ -523,7 +523,7 @@ lbg "c:colour",s0_3,"black"
 flush 2
 lbg "c:backgrounds",s0_3,"ros_m1a"
 flush 99,2000,"whirl.dll/r"
-E_B 1000
+E_B ;1000
 msgwnd_mar
 *e12_83
 d [lv 0*"13"*"mar_00230"]`{qt}........................{qt}`[\]

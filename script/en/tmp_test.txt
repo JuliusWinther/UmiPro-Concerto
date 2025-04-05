@@ -1,0 +1,3 @@
+if $lss_sec != "ber" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"100"
+~

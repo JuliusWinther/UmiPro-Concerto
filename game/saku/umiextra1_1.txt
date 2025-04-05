@@ -11,161 +11,261 @@ flush 8
 bgmplay 90,71,0
 msgwnd_non
 ;START
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_defo1"
 flush 2
 *e11_1
 d `enj_a11_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_defo2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_defo2"
 flush 2
 *e11_2
 d `enj_a11_defo2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_fuman1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_fuman1"
 flush 2
 *e11_3
 d `enj_a11_fuman1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_fuman2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_fuman2"
 flush 2
 *e11_4
 d `enj_a11_fuman2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_hanbeso1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_hanbeso1"
 flush 2
 *e11_5
 d `enj_a11_hanbeso1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_hanbeso2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_hanbeso2"
 flush 2
 *e11_6
 d `enj_a11_hanbeso2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_hanbeso3"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_hanbeso3"
 flush 2
 *e11_7
 d `enj_a11_hanbeso3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_ikari1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_ikari1"
 flush 2
 *e11_8
 d `enj_a11_ikari1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_ikari2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_ikari2"
 flush 2
 *e11_9
 d `enj_a11_ikari2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_komaru1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_komaru1"
 flush 2
 *e11_10
 d `enj_a11_komaru1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_komaru2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_komaru2"
 flush 2
 *e11_11
 d `enj_a11_komaru2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_majime1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_majime1"
 flush 2
 *e11_12
 d `enj_a11_majime1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_naku1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_naku1"
 flush 2
 *e11_13
 d `enj_a11_naku1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_nayamu1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_nayamu1"
 flush 2
 *e11_14
 d `enj_a11_nayamu1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_nayamu2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_nayamu2"
 flush 2
 *e11_15
 d `enj_a11_nayamu2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_warai1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_warai1"
 flush 2
 *e11_16
 d `enj_a11_warai1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_warai2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_warai2"
 flush 2
 *e11_17
 d `enj_a11_warai2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a11_warai3"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a11_warai3"
 flush 2
 *e11_18
 d `enj_a11_warai3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a12_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a12_defo1"
 flush 2
 *e11_19
 d `enj_a12_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a13_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a13_defo1"
 flush 2
 *e11_20
 d `enj_a13_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a21_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a21_defo1"
 flush 2
 *e11_21
-<<<<<<< Updated upstream
-d [lv 0*"28"*"ber_00350"]`I see,`[|][lv 0*"28"*"ber_00360"]` if we consider it that way, this witch named {f:5:Beatrice} certainly is interesting.`[\]
-=======
 d `enj_a21_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a21_komaru4"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a21_komaru4"
 flush 2
->>>>>>> Stashed changes
 *e11_22
 d `enj_a21_komaru4.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a21_komaru5"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a21_komaru5"
 flush 2
 *e11_23
 d `enj_a21_komaru5.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a21_naku2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a21_naku2"
 flush 2
 *e11_24
 d `enj_a21_naku2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a22_komaru4"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a22_komaru4"
 flush 2
 *e11_25
 d `enj_a22_komaru4.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a23_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a23_defo1"
 flush 2
 *e11_26
 d `enj_a23_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a31_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a31_defo1"
 flush 2
 *e11_27
 d `enj_a31_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a31_komaru3"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a31_komaru3"
 flush 2
 *e11_28
 d `enj_a31_komaru3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","a33_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","a33_defo1"
 flush 2
 *e11_29
-<<<<<<< Updated upstream
-d [lv 0*"28"*"ber_00490"]`However, even so, this is really interesting.`[@][lv 0*"28"*"ber_00500"]` I see this rule Y as the very existence of the witch {f:5:Beatrice}.`[\]
-textoff2
-seplay 10,1010,100
-lbg "c:backgrounds",s0_3,"different_space_2d"
-=======
 d `enj_a33_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","b11_hanbeso2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","b11_hanbeso2"
->>>>>>> Stashed changes
 flush 2
 *e11_30
 d `enj_b11_hanbeso2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","b12_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","b12_defo1"
 flush 2
 *e11_31
 d `enj_b12_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","b21_fuman2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","b21_fuman2"
 flush 2
 *e11_32
 d `enj_b21_fuman2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","c11_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","c11_defo1"
 flush 2
 *e11_33
 d `enj_c11_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","c12_komaru1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","c12_komaru1"
 flush 2
 *e11_34
 d `enj_c12_komaru1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","d11_defo1"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","d11_defo1"
 flush 2
 *e11_35
 d `enj_d11_defo1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","d21_komaru4"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","d21_komaru4"
 flush 2
 *e11_36
 d `enj_d21_komaru4.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"enj","d31_ikari2"
+mov $sprite_folder_name,"original"
 lss s0_9,"enj","d31_ikari2"
 flush 2
 *e11_37

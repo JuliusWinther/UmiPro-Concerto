@@ -19693,6 +19693,14 @@ return
 	gosub *jump_sysdata_set1
 	mov %extra_scenario_Number,211
 return
+*umiextra3_1_flags
+	gosub *jump_sysdata_set1
+	mov %extra_scenario_Number,31
+return
+*umiextra3_2_flags
+	gosub *jump_sysdata_set1
+	mov %extra_scenario_Number,32
+return
 ;End Custom
 
 *scenario_jump_data1
@@ -23777,7 +23785,8 @@ mov $?slot_cache[%lss_slot-750][0],$lss_sec + "|" + $lss_key
 ;Containing main sprite hotspot, lips unrelated
 loadfromreg $lss_lips_x,$lss_sec,$lss_key + "_left" ;Variable,Category,Key - Reads the given key from the given category and stores it in the given variable
 loadfromreg $lss_lips_y,$lss_sec,$lss_key + "_top"
-set_hotspot %lss_slot,$lss_lips_x,$lss_lips_y		
+if $sprite_folder_name == "ps3" set_hotspot %lss_slot,$lss_lips_x,$lss_lips_y
+if $sprite_folder_name != "ps3" #locale_import "tmp_test.txt"		
 
 ;Original Edited - ;Dynamic Sprites - Variable Sprites Folder - W_CUSTOM
 fileexist %lss_lips,"sprites\" + $sprite_folder_name + "\" + $lss_sec + "\2\" + $lss_sec + "_" + $lss_key + ".png"
@@ -28092,7 +28101,7 @@ return
 	ignore_cmd "click","break_glass3","break_glass4","show_coin_counter_real","show_coin_counter2_real","show_coin_counter3_real","cake","quiz","quiz2","all_presents_discarded","murder_story"
 	ignore_inl_cmd "wait","delay","text_fade_t","gstg","text_speed_t"
 	;Saku logs - ignore custom commands - W_CUSTOM
-	ignore_cmd "spt_mem", "lsl", "bg_d", "textoff2", "texton_bgonly", "texton2", "w_anim"
+	ignore_cmd "spt_mem", "lsl", "bg_d", "textoff2"
 	;End Custom
 return 
 
@@ -28974,7 +28983,7 @@ return
 	ignore_cmd "click","pam","rumble","skip_on","skip_off","waits","wait","wait2","waitvoice","ak","lv","waittimer","saveoff","trophy_open","texec3","seplay","textoff","async_cache_img","async_cache_snd","show_characters"
 	ignore_inl_cmd "wait","delay","text_fade_t","ak","text_speed_t","lv","vv"
 	;Saku - W_CUSTOM
-	ignore_cmd "textoff2", "texton2", "texton_bgonly"
+	ignore_cmd "textoff2"
 	;End Custom
 
 	E_A
