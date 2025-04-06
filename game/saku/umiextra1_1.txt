@@ -12,145 +12,495 @@ bgmplay 90,71,0
 msgwnd_non
 ;START
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a11_defo1"
+lss s0_8,"but","a11_aseru1"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a11_defo1"
+lss s0_9,"but","a11_aseru1"
 flush 2
 *e11_1
-d `ber_a11_defo1.png`[\]
+d `but_a11_aseru1.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a11_defo2"
+lss s0_8,"but","a11_aseru5"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a11_defo2"
+lss s0_9,"but","a11_aseru5"
 flush 2
 *e11_2
-d `ber_a11_defo2.png`[\]
+d `but_a11_aseru5.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_akuwarai1"
+lss s0_8,"but","a11_defo1"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_akuwarai1"
+lss s0_9,"but","a11_defo1"
 flush 2
 *e11_3
-d `ber_a21_akuwarai1.png`[\]
+d `but_a11_defo1.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_akuwarai2"
+lss s0_8,"but","a11_defo2"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_akuwarai2"
+lss s0_9,"but","a11_defo2"
 flush 2
 *e11_4
-d `ber_a21_akuwarai2.png`[\]
+d `but_a11_defo2.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_akuwarai3"
+lss s0_8,"but","a11_futeki1"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_akuwarai3"
+lss s0_9,"but","a11_futeki1"
 flush 2
 *e11_5
-d `ber_a21_akuwarai3.png`[\]
+d `but_a11_futeki1.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_akuwarai4"
+lss s0_8,"but","a11_futeki3"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_akuwarai4"
+lss s0_9,"but","a11_futeki3"
 flush 2
 *e11_6
-d `ber_a21_akuwarai4.png`[\]
+d `but_a11_futeki3.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_ikari1"
+lss s0_8,"but","a11_futeki4"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_ikari1"
+lss s0_9,"but","a11_futeki4"
 flush 2
 *e11_7
-d `ber_a21_ikari1.png`[\]
+d `but_a11_futeki4.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_ikari2star"
+lss s0_8,"but","a11_komaru1"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_ikari2star"
+lss s0_9,"but","a11_komaru1"
 flush 2
 *e11_8
-d `ber_a21_ikari2star.png`[\]
+d `but_a11_komaru1.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_niramu1"
+lss s0_8,"but","a11_komaru2"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_niramu1"
+lss s0_9,"but","a11_komaru2"
 flush 2
 *e11_9
-d `ber_a21_niramu1.png`[\]
+d `but_a11_komaru2.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_odoroki1"
+lss s0_8,"but","a11_kuyasigaru1"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_odoroki1"
+lss s0_9,"but","a11_kuyasigaru1"
 flush 2
 *e11_10
-d `ber_a21_odoroki1.png`[\]
+d `but_a11_kuyasigaru1.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_odoroki1ase"
+lss s0_8,"but","a11_majime2"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_odoroki1ase"
+lss s0_9,"but","a11_majime2"
 flush 2
 *e11_11
-d `ber_a21_odoroki1ase.png`[\]
+d `but_a11_majime2.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_odoroki2"
+lss s0_8,"but","a11_majime4"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_odoroki2"
+lss s0_9,"but","a11_majime4"
 flush 2
 *e11_12
-d `ber_a21_odoroki2.png`[\]
+d `but_a11_majime4.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_shian1"
+lss s0_8,"but","a11_majime7"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_shian1"
+lss s0_9,"but","a11_majime7"
 flush 2
 *e11_13
-d `ber_a21_shian1.png`[\]
+d `but_a11_majime7.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_warai1"
+lss s0_8,"but","a11_nayamu1"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_warai1"
+lss s0_9,"but","a11_nayamu1"
 flush 2
 *e11_14
-d `ber_a21_warai1.png`[\]
+d `but_a11_nayamu1.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_warai2"
+lss s0_8,"but","a11_nayamu2"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_warai2"
+lss s0_9,"but","a11_nayamu2"
 flush 2
 *e11_15
-d `ber_a21_warai2.png`[\]
+d `but_a11_nayamu2.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_warai3"
+lss s0_8,"but","a11_nayamu5"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_warai3"
+lss s0_9,"but","a11_nayamu5"
 flush 2
 *e11_16
-d `ber_a21_warai3.png`[\]
+d `but_a11_nayamu5.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_warai3ase"
+lss s0_8,"but","a11_niramu2"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_warai3ase"
+lss s0_9,"but","a11_niramu2"
 flush 2
 *e11_17
-d `ber_a21_warai3ase.png`[\]
+d `but_a11_niramu2.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a21_warai4"
+lss s0_8,"but","a11_niramu3"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a21_warai4"
+lss s0_9,"but","a11_niramu3"
 flush 2
 *e11_18
-d `ber_a21_warai4.png`[\]
+d `but_a11_niramu3.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a23_defo1"
+lss s0_8,"but","a11_niramu4"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a23_defo1"
+lss s0_9,"but","a11_niramu4"
 flush 2
 *e11_19
-d `ber_a23_defo1.png`[\]
+d `but_a11_niramu4.png`[\]
 mov $sprite_folder_name,"ps3"
-lss s0_8,"ber","a24_akuwarai1"
+lss s0_8,"but","a11_odoroki3"
 mov $sprite_folder_name,"original"
-lss s0_9,"ber","a24_akuwarai1"
+lss s0_9,"but","a11_odoroki3"
 flush 2
 *e11_20
-d `ber_a24_akuwarai1.png`[\]
+d `but_a11_odoroki3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a11_sakebu1a"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a11_sakebu1a"
+flush 2
+*e11_21
+d `but_a11_sakebu1a.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a11_warai1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a11_warai1"
+flush 2
+*e11_22
+d `but_a11_warai1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a11_warai2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a11_warai2"
+flush 2
+*e11_23
+d `but_a11_warai2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a12_ero1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a12_ero1"
+flush 2
+*e11_24
+d `but_a12_ero1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_futeki1"
+flush 2
+*e11_25
+d `but_a21_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_majime1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_majime1"
+flush 2
+*e11_26
+d `but_a21_majime1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_naku1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_naku1"
+flush 2
+*e11_27
+d `but_a21_naku1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_nayamu4"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_nayamu4"
+flush 2
+*e11_28
+d `but_a21_nayamu4.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_niramu1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_niramu1"
+flush 2
+*e11_29
+d `but_a21_niramu1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_odoroki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_odoroki1"
+flush 2
+*e11_30
+d `but_a21_odoroki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_oyaa1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_oyaa1"
+flush 2
+*e11_31
+d `but_a21_oyaa1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_sakebu1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_sakebu1"
+flush 2
+*e11_32
+d `but_a21_sakebu1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a21_sakebu2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a21_sakebu2"
+flush 2
+*e11_33
+d `but_a21_sakebu2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","a33_kuyasigaru1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","a33_kuyasigaru1"
+flush 2
+*e11_34
+d `but_a33_kuyasigaru1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_aseru1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_aseru1"
+flush 2
+*e11_35
+d `but_b11_aseru1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_aseru2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_aseru2"
+flush 2
+*e11_36
+d `but_b11_aseru2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_aseru3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_aseru3"
+flush 2
+*e11_37
+d `but_b11_aseru3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_aseru4"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_aseru4"
+flush 2
+*e11_38
+d `but_b11_aseru4.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_defo3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_defo3"
+flush 2
+*e11_39
+d `but_b11_defo3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_futeki2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_futeki2"
+flush 2
+*e11_40
+d `but_b11_futeki2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_futeki2a"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_futeki2a"
+flush 2
+*e11_41
+d `but_b11_futeki2a.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_futeki5"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_futeki5"
+flush 2
+*e11_42
+d `but_b11_futeki5.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_hohoemi1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_hohoemi1"
+flush 2
+*e11_43
+d `but_b11_hohoemi1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_komaru3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_komaru3"
+flush 2
+*e11_44
+d `but_b11_komaru3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_majime3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_majime3"
+flush 2
+*e11_45
+d `but_b11_majime3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_majime5"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_majime5"
+flush 2
+*e11_46
+d `but_b11_majime5.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_majime6"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_majime6"
+flush 2
+*e11_47
+d `but_b11_majime6.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_naku2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_naku2"
+flush 2
+*e11_48
+d `but_b11_naku2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_naku3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_naku3"
+flush 2
+*e11_49
+d `but_b11_naku3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_nayamu3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_nayamu3"
+flush 2
+*e11_50
+d `but_b11_nayamu3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_odoroki2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_odoroki2"
+flush 2
+*e11_51
+d `but_b11_odoroki2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_oya1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_oya1"
+flush 2
+*e11_52
+d `but_b11_oya1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_oya2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_oya2"
+flush 2
+*e11_53
+d `but_b11_oya2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_sakebu2a"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_sakebu2a"
+flush 2
+*e11_54
+d `but_b11_sakebu2a.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b11_warai3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b11_warai3"
+flush 2
+*e11_55
+d `but_b11_warai3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b22_futeki3"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b22_futeki3"
+flush 2
+*e11_56
+d `but_b22_futeki3.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b23_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b23_futeki1"
+flush 2
+*e11_57
+d `but_b23_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b24_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b24_futeki1"
+flush 2
+*e11_58
+d `but_b24_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b25_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b25_futeki1"
+flush 2
+*e11_59
+d `but_b25_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b26_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b26_futeki1"
+flush 2
+*e11_60
+d `but_b26_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","b34_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","b34_futeki1"
+flush 2
+*e11_61
+d `but_b34_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d11_aseru1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d11_aseru1"
+flush 2
+*e11_62
+d `but_d11_aseru1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d11_aseru5r"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d11_aseru5r"
+flush 2
+*e11_63
+d `but_d11_aseru5r.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d11_majime6r"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d11_majime6r"
+flush 2
+*e11_64
+d `but_d11_majime6r.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d11_nayamu1r"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d11_nayamu1r"
+flush 2
+*e11_65
+d `but_d11_nayamu1r.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d11_nayamu4r"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d11_nayamu4r"
+flush 2
+*e11_66
+d `but_d11_nayamu4r.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d22_komaru2"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d22_komaru2"
+flush 2
+*e11_67
+d `but_d22_komaru2.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d23_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d23_futeki1"
+flush 2
+*e11_68
+d `but_d23_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d24_futeki1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d24_futeki1"
+flush 2
+*e11_69
+d `but_d24_futeki1.png`[\]
+mov $sprite_folder_name,"ps3"
+lss s0_8,"but","d26_kuyasigaru1"
+mov $sprite_folder_name,"original"
+lss s0_9,"but","d26_kuyasigaru1"
+flush 2
+*e11_70
+d `but_d26_kuyasigaru1.png`[\]
 ;END
 *umiextra1_1_end
 goto *end_game

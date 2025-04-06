@@ -1,5 +1,35 @@
 if $sprite_folder_name == "ps3" goto *skip_new_hotspots
-if $lss_sec != "ber" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"100"
+if $lss_sec != "ama" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1080"
 ~
+if $lss_sec != "be2" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1020"
+~
+if $lss_sec != "be3" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1020"
+~
+if $lss_sec != "ber" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"900"
+~
+if $lss_sec != "bu3" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1080"
+~
+if $lss_sec != "but" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1080"
+~
+if $lss_sec != "cla" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1080"
+~
+if $lss_sec != "cor" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1080"
+~
+if $lss_sec != "cur" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"1020"
+~
+if $lss_sec != "dla" jumpf
+set_hotspot %lss_slot,$lss_lips_x,"900"
+~
+
+
+
 *skip_new_hotspots
