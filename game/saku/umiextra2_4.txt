@@ -595,6 +595,7 @@ flush 80
 msgwnd_rg7
 *e24_61
 d [lv 0*"44"*"rg7_00280"]`{qt}You must be kidding me, sisters!`[@][lv 0*"44"*"rg7_00290"]` Of course I checked out all the new men~!`[@][lv 0*"44"*"rg7_00300"]` But isn't Juuza just wonderful{p:0:♪}?`[@][lv 0*"44"*"rg7_00310"]` He's stoic and a little wild, but not coarse, and he's got a great bod too...`[@][lv 0*"44"*"rg7_00320"]` Aah, he's definitely my type~!{qt}`[\]
+textoff2
 
 aspt2 breakup,s0_10,0
 aspt2 alpha,s0_10,255
@@ -1551,7 +1552,7 @@ flush 80
 
 msgwnd_rg4
 *e24_149
-d2 [lv 0*"41"*"rg4_00230"]`{qt}Wh-what are you saying I wasn't honest about...`[@][#][*][lv 0*"41"*"rg4_00240"]` H-hey, you're getting too close!{qt}`[\]
+d2 [lv 0*"41"*"rg4_00230"]`{qt}Wh-what are you saying I wasn't honest about...`[@][#][*][lv 0*"41"*"rg4_00240"]` H-hey, you're getting too close! And you stink of tobacco.{qt}`[\]
 wait_on_d 0
 lss s0_8,"rg4","a12_odoroki3"
 spt_mem "a2","xpos",s0_8,-450
@@ -2379,7 +2380,6 @@ aspt2 alpha,s0_10,255
 seplay 12,52,90
 aspt2 breakup,s0_9,0,2000
 aspt2 alpha,s0_9,255
-seplay 13,52,90
 aspt2 breakup,s0_8,0,2000
 aspt2 alpha,s0_8,255
 sptwait2 breakup,s0_10

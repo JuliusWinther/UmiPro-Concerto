@@ -796,7 +796,7 @@ wait 500
 seplay 11,22,100
 lbg "c:backgrounds",s0_3,"different_spiral_1a"
 flush 22
-seplay 11,56,100
+seplay 12,56,100
 lbg "c:backgrounds",s0_3,"rose_3ap"
 flush 99,1500,"whirl.dll/r"
 bgmplay 70,70,0
@@ -1132,7 +1132,7 @@ flush 99,1500,"whirl.dll/r"
 waits 500
 bgmplay 64,70,0
 lss s0_9,"geo","a11_defo1"
-flush 80
+flush 22
 waits 500
 
 msgwnd_geo
