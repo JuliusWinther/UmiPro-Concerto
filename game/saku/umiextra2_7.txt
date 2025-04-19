@@ -1479,7 +1479,7 @@ sptwait2 ypos,s0_3
 
 msgwnd_s41
 *e27_37
-d [lv 0*"36"*"s41_00010"]`To His Majesty, the Territory Lord of Fragment #1118460.`[@][lv 0*"36"*"s41_00020"]From the 4096th Infantry of the Chiester Sisters Imperial Guards.`[\]
+d [lv 0*"36"*"s41_00010"]`To His Majesty, the Territory Lord of Fragment #1118460.`[@][lv 0*"36"*"s41_00020"]` From the 4096th Infantry of the Chiester Sisters Imperial Guards.`[\]
 textoff2
 
 spt_mem "a2","ypos",s0_3,600,1000,0

@@ -1212,7 +1212,7 @@ flush 80
 
 msgwnd_bea
 *e25_116
-d [lv 0*"27"*"bea_01770"]`{qt}Now, show yourselves, Calvary of Pendragon, the Chiester Sisters!{qt}`[\]
+d [lv 0*"27"*"bea_01770"]`{qt}Now, show yourselves, Cavalry of Pendragon, the Chiester Sisters!{qt}`[\]
 
 msgwnd_non
 *e25_117
