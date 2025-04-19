@@ -870,12 +870,12 @@ if %cfg_current_page != 5 goto *skip_config_page_5 ;Graphics
 	if %BtnRes != 203 jumpf ;left
 		isdown %cfg_mouse_click
 		if %cfg_mouse_click = 0 if %cfg_sprite_type_index <= 1 mov %cfg_sprite_type_index,4
-		if %cfg_mouse_click = 0 dec %cfg_sprite_type_index : gosub *settings_sprite_type
+		if %cfg_mouse_click = 0 dec %cfg_sprite_type_index : mov %spriteset_changed,1 : gosub *settings_sprite_type
 	~
 	if %BtnRes != 204 jumpf ;right
 		isdown %cfg_mouse_click
 		if %cfg_mouse_click = 0 if %cfg_sprite_type_index >= 3 mov %cfg_sprite_type_index,0
-		if %cfg_mouse_click = 0 inc %cfg_sprite_type_index : gosub *settings_sprite_type
+		if %cfg_mouse_click = 0 inc %cfg_sprite_type_index : mov %spriteset_changed,1 : gosub *settings_sprite_type
 	~
 	;END
 
@@ -898,12 +898,12 @@ if %cfg_current_page != 5 goto *skip_config_page_5 ;Graphics
 	if %BtnRes != 207 jumpf ;left
 		isdown %cfg_mouse_click
 		if %cfg_mouse_click = 0 if %cfg_bg_type_index <= 1 mov %cfg_bg_type_index,3
-		if %cfg_mouse_click = 0 dec %cfg_bg_type_index : gosub *settings_bg_type
+		if %cfg_mouse_click = 0 dec %cfg_bg_type_index : mov %spriteset_changed,1 : gosub *settings_bg_type
 	~
 	if %BtnRes != 208 jumpf ;right
 		isdown %cfg_mouse_click
 		if %cfg_mouse_click = 0 if %cfg_bg_type_index >= 2 mov %cfg_bg_type_index,0
-		if %cfg_mouse_click = 0 inc %cfg_bg_type_index : gosub *settings_bg_type
+		if %cfg_mouse_click = 0 inc %cfg_bg_type_index : mov %spriteset_changed,1 : gosub *settings_bg_type
 	~
 	;END
 
@@ -1207,7 +1207,6 @@ return
 	lsp 203,left_arrow,1317,187+60+%cfg_height
 	lsp 204,right_arrow,1624,187+60+%cfg_height
 	;config_write_str "sprite_folder_name",$sprite_folder_name
-	mov %spriteset_changed,1
 	;gosub *reload_slots
 return
 
@@ -1230,7 +1229,6 @@ return
 	lsp 207,left_arrow,1317,187+60+(%cfg_temp2*2)+%cfg_height
 	lsp 208,right_arrow,1624,187+60+(%cfg_temp2*2)+%cfg_height
 	;config_write_str "bg_folder_name",$bg_folder_name
-	mov %spriteset_changed,1
 	;gosub *reload_slots
 return
 

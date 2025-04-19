@@ -20672,6 +20672,13 @@ return
 	enable_transitions TextCC4SpNum,0
 	if %skip_icon = on vsp TextCC3SpNum,1
 	if %autom_icon = on vsp TextCC4SpNum,1
+	if %reloading_status == 1 jumpf
+		for %for_index1=0 to 247
+			for %for_index2=0 to 27
+				mov $?slot_cache[%for_index1][%for_index2],""
+			next
+		next
+	~
 return
 
 ;************************************************************************************
@@ -20723,7 +20730,7 @@ return
 	;Original Edited - ;Sprite Cache - Clear sprites cache - W_CUSTOM
 	;Using for_index3 instead of 1 or 2 beacause of conflicts when the functon is called by *reload_slots (infinite loop caused by editing the for_index)
 	if %reloading_status == 1 jumpf
-		for %for_index3 = 0 to 26
+		for %for_index3 = 0 to 27
 			if $?slot_cache[%cspParam-750][%for_index3] != "" mov $?slot_cache[%cspParam-750][%for_index3],""
 		next
 	~
@@ -23811,7 +23818,7 @@ lookahead exsp,2,$lss_sec,$lss_key,$lss_temp,$lss_slot
 ;Original Edited - ;Dynamic Sprites - Variable Sprites Folder - W_CUSTOM
 if $lss_sec != "" async_cache_img 2,"sprites\" + $sprite_folder_name + "\" + $lss_sec + "\1\" + $lss_sec + "_" + $lss_key + ".png"
 if $lss_temp != "" async_cache_img 2,"sprites\" + $sprite_folder_name + "\" + $lss_temp + "\1\" + $lss_temp + "_" + $lss_slot + ".png"
-
+;drop_cache_img remvoe on reload
 return
 ;End Custom
 
@@ -23959,6 +23966,38 @@ if $aspt_prop == "flip" aspt2 flip,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 :
 return
 
 ;End Custom
+
+;****************************************************************************************************
+; ;Sprite Cache - color_mod - W_CUSTOM
+;****************************************************************************************************
+
+*color_mod_mem
+getparam %aspt_slot,$aspt_prop
+itoa $string_temp6,%aspt_slot
+
+if $aspt_prop == "off"		color_mod off,%aspt_slot	: mov $?slot_cache[%aspt_slot-750][27],"" : jumpf 
+if $aspt_prop == "sepia"	color_mod sepia,%aspt_slot	: mov $?slot_cache[%aspt_slot-750][27],"color_mod|"+$string_temp6+"\"+$aspt_prop : jumpf 
+if $aspt_prop == "nega1"	color_mod nega1,%aspt_slot	: mov $?slot_cache[%aspt_slot-750][27],"color_mod|"+$string_temp6+"\"+$aspt_prop : jumpf 
+if $aspt_prop == "nega2"	color_mod nega2,%aspt_slot	: mov $?slot_cache[%aspt_slot-750][27],"color_mod|"+$string_temp6+"\"+$aspt_prop : jumpf 
+color_mod %aspt_slot,$aspt_prop							: mov $?slot_cache[%aspt_slot-750][27],"color_mod|"+$string_temp6+"\"+$aspt_prop : jumpf 
+
+~
+return
+
+
+
+*color_mod2_mem
+getparam %aspt_slot,$aspt_prop
+itoa $string_temp6,%aspt_slot
+
+if $aspt_prop == "off"		color_mod2 off,%aspt_slot 	: mov $?slot_cache[%aspt_slot-750][27],"" : jumpf 
+if $aspt_prop == "sepia"	color_mod2 sepia,%aspt_slot : mov $?slot_cache[%aspt_slot-750][27],"color_mod2|"+$string_temp6+"\"+$aspt_prop : jumpf 
+if $aspt_prop == "nega1"	color_mod2 nega1,%aspt_slot : mov $?slot_cache[%aspt_slot-750][27],"color_mod2|"+$string_temp6+"\"+$aspt_prop : jumpf 
+if $aspt_prop == "nega2"	color_mod2 nega2,%aspt_slot : mov $?slot_cache[%aspt_slot-750][27],"color_mod2|"+$string_temp6+"\"+$aspt_prop : jumpf 
+color_mod2 %aspt_slot,$aspt_prop 						: mov $?slot_cache[%aspt_slot-750][27],"color_mod2|"+$string_temp6+"\"+$aspt_prop : jumpf 
+
+~
+return
 
 ;**************************************************
 ; lbg loads a new background
@@ -32018,7 +32057,7 @@ return
 
 		goto *skip_apply_edits_to_bgs
 		*apply_edits_to_bgs
-		for %for_index2=1 to 26
+		for %for_index2=1 to 26 ;27 is for colormod
 			if $?slot_cache[%for_index1][%for_index2] != "" split $?slot_cache[%for_index1][%for_index2],"|",$string_temp1,$string_temp2,$string_temp3 : split $string_temp3,"\",%aspt_val1,%aspt_val2,%aspt_val3
 				;1-Pos Command / 2-Pos Property / 3-Property Value
 				;debug_str $?slot_cache[%for_index1][%for_index2]
@@ -32026,6 +32065,10 @@ return
 			if $string_temp1 == "aspt" spt_mem "a",$string_temp2,%for_index1+750,%aspt_val1,%aspt_val2,%aspt_val3
 			if $string_temp1 == "spt2" spt_mem "r2",$string_temp2,%for_index1+750,%aspt_val1,%aspt_val2,%aspt_val3
 			if $string_temp1 == "spt" spt_mem "r",$string_temp2,%for_index1+750,%aspt_val1,%aspt_val2,%aspt_val3
+			debug_str "bg: " + $?slot_cache[%for_index1][27]
+			if %for_index2 == 26 if $?slot_cache[%for_index1][27] != "" split $?slot_cache[%for_index1][27],"|",$string_temp1,$string_temp2 : split $string_temp2,"\",%aspt_val1,$aspt_val2
+			if %for_index2 == 26 if $?slot_cache[%for_index1][27] != "" if $string_temp1 == "color_mod2" color_mod2_mem %aspt_val1,$aspt_val2
+			if %for_index2 == 26 if $?slot_cache[%for_index1][27] != "" if $string_temp1 == "color_mod" color_mod_mem %aspt_val1,$aspt_val2
 		next
 		mov %reloading_status,0
 		jumpf
@@ -32039,7 +32082,7 @@ return
 		;Sprites reload
 		mov %reloading_status,1
 		lss %for_index1+750,$string_temp3,$string_temp2
-		for %for_index2=1 to 26
+		for %for_index2=1 to 26 ;27 is for colormod
 			if $?slot_cache[%for_index1][%for_index2] != "" split $?slot_cache[%for_index1][%for_index2],"|",$string_temp1,$string_temp2,$string_temp3 : split $string_temp3,"\",%aspt_val1,%aspt_val2,%aspt_val3
 				;1-Pos Command / 2-Pos Property / 3-Property Value
 				;debug_str $?slot_cache[%for_index1][%for_index2]
@@ -32047,6 +32090,10 @@ return
 			if $string_temp1 == "aspt" spt_mem "a",$string_temp2,%for_index1+750,%aspt_val1,%aspt_val2,%aspt_val3
 			if $string_temp1 == "spt2" spt_mem "r2",$string_temp2,%for_index1+750,%aspt_val1,%aspt_val2,%aspt_val3
 			if $string_temp1 == "spt" spt_mem "r",$string_temp2,%for_index1+750,%aspt_val1,%aspt_val2,%aspt_val3
+			debug_str $?slot_cache[%for_index1][27]
+			if %for_index2 == 26 if $?slot_cache[%for_index1][27] != "" split $?slot_cache[%for_index1][27],"|",$string_temp1,$string_temp2 : split $string_temp2,"\",%aspt_val1,$aspt_val2
+			if %for_index2 == 26 if $?slot_cache[%for_index1][27] != "" if $string_temp1 == "color_mod2" color_mod2_mem %aspt_val1,$aspt_val2
+			if %for_index2 == 26 if $?slot_cache[%for_index1][27] != "" if $string_temp1 == "color_mod" color_mod_mem %aspt_val1,$aspt_val2
 		next
 		mov %reloading_status,0
 
@@ -32062,7 +32109,7 @@ return
 		;DEBUG
 		;itoa $string_temp1,%0
 		;debug_str $string_temp1
-		for %for_index5=0 to 26
+		for %for_index5=0 to 27
 			mov $?slot_cache[%for_index4][%for_index5],""
 		next
 	next

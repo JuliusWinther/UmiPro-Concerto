@@ -1462,6 +1462,8 @@ defsub outfit_change
 defsub outfit_change_register
 defsub switch_game_to_extra
 defsub switch_game_to_normal
+defsub color_mod_mem
+defsub color_mod2_mem
 ;End Custom
 
 ;====================================================   Custom Vars - W_CUSTOM
@@ -1637,7 +1639,7 @@ numalias current_movie,10644
 numalias outfits,11500 : dim ?outfits[70][6][6] ;a lot of slots
 
 ;Sprite cache - Array that stores sprites data for reload - W_CUSTOM
-numalias slot_cache,15000 : dim ?slot_cache[248][27]
+numalias slot_cache,15000 : dim ?slot_cache[248][28]
 
 ;Discord - W_CUSTOM
 
@@ -1903,7 +1905,7 @@ for %for_index1=0 to 247
 	;DEBUG
 	;itoa $string_temp1,%0
 	;debug_str $string_temp1
-	for %for_index2=0 to 26
+	for %for_index2=0 to 27
 		mov ?slot_cache[%for_index1][%for_index2],%0 : inc %0
 		mov $?slot_cache[%for_index1][%for_index2],""
 	next
