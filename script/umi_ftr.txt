@@ -23818,7 +23818,7 @@ lookahead exsp,2,$lss_sec,$lss_key,$lss_temp,$lss_slot
 ;Original Edited - ;Dynamic Sprites - Variable Sprites Folder - W_CUSTOM
 if $lss_sec != "" async_cache_img 2,"sprites\" + $sprite_folder_name + "\" + $lss_sec + "\1\" + $lss_sec + "_" + $lss_key + ".png"
 if $lss_temp != "" async_cache_img 2,"sprites\" + $sprite_folder_name + "\" + $lss_temp + "\1\" + $lss_temp + "_" + $lss_slot + ".png"
-;drop_cache_img remvoe on reload
+;drop_cache_img remove on reload
 return
 ;End Custom
 

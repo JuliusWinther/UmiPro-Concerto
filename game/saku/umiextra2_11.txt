@@ -603,6 +603,7 @@ textoff2
 csp_slot s0_8
 csp_slot s0_10
 flush 80
+wait 100
 lss s0_9,"sha","a11_fuman1"
 spt_mem "a2","xpos",s0_9,0
 flush 80
@@ -1132,7 +1133,7 @@ d `Even if there weren't a whole herd of them, a single one of those huge bodies
 
 *e211_122
 d `...I've never heard of a scriptwriter being killed by their own script before.`[\]
-
+textoff2
 
 seplay 11,34,100
 
@@ -2187,7 +2188,7 @@ seplay 11,1103,100
 csp_slot s0_3
 flush 24
 
-seplay 11,21,100
+seplay 12,21,100
 lbg "c:backgrounds",s0_3,"forest_p3bn"
 flush 22
 

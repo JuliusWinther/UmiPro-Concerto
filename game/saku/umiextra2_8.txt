@@ -1039,6 +1039,7 @@ spt_mem "a2","xpos",s0_29,370
 flush 80
 d_continue
 wait_on_d -1
+textoff2
 
 lss s0_28,"enj","a13_ikari1"
 spt_mem "a2","xpos",s0_28,-369
@@ -2174,9 +2175,9 @@ spt_mem "a2","xpos",s0_8,-549
 
 lss s0_9,"hid","a11_defo1"
 spt_mem "a2","xpos",s0_9,0
-seplay 11,15,100
+seplay 12,15,100
 flush 1
-vol_mix_fade 1
+vol_mix_fade 200
 bgmplay 86,70,0
 
 msgwnd_non
@@ -2269,7 +2270,7 @@ flush 80
 
 msgwnd_wal
 *e28_165
-d2 [lv 0*"30"*"wal_02120"]`{qt}Hohohoho.`[@][lv 0*"30"*"wal_02130"]` But we, Witches of Roses, like to see such unlucky scenarios.`[@][#][*][lv 0*"30"*"wal_02140"]`    Now be obedient and provide us with a situation that will become a good offering for the Winter Comiket.{qt}`[\]
+d2 [lv 0*"30"*"wal_02120"]`{qt}Hohohoho.`[@][lv 0*"30"*"wal_02130"]` But we, Witches of Roses, like to see such unlucky scenarios.`[@][#][*][lv 0*"30"*"wal_02140"]` Now be obedient and provide us with a situation that will become a good offering for the Winter Comiket.{qt}`[\]
 wait_on_d 0
 lss s0_29,"wal","a13_akuwarai2"
 spt_mem "a2","xpos",s0_29,370
