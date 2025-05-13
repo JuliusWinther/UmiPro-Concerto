@@ -20,9 +20,9 @@ lsp 314,":a;graphics\menu\logview\bar.png",1832,242
 lsp 313,":a;graphics\menu\logview\sel.png",1832,255
 lsp 312,":a/2,0,3;graphics\system\wnd\uoncur.png",1827,210
 lsp 311,":a/2,0,3;graphics\system\wnd\uoffcur.png",1827,839
-lsph2 317,":a/2,0,3;graphics\menu\bgmmode\bgmmode_plate_grey.png",0,0,0,0,0
-lsph2 318,":a/2,0,3;graphics\menu\bgmmode\bgmmode_plate_normal.png",0,0,0,0,0
-lsph2 319,":a/2,0,3;graphics\menu\bgmmode\bgmmode_plate_hovered.png",0,0,0,0,0
+lsph2 317,":a/2,0,3;graphics\menu\bgm\bgmmode_plate_grey.png",0,0,0,0,0
+lsph2 318,":a/2,0,3;graphics\menu\bgm\bgmmode_plate_normal.png",0,0,0,0,0
+lsph2 319,":a/2,0,3;graphics\menu\bgm\bgmmode_plate_hovered.png",0,0,0,0,0
 
 align_buttons_r 315
 

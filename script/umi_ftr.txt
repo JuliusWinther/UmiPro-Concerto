@@ -20966,10 +20966,14 @@ return
     mov %end_min_hand,-%end_min*6
     mov %end_hour_hand,-%end_min/2
 
-    lsp2 s0_17,clock,%clock_xpos,%clock_ypos,%clock_scale,%clock_scale,0
+	lsp s0_16,":c;graphics\system\clock\bg.png",0,0
+
+    lsp s0_17,":a;graphics\system\clock\test.png",0,0;clock,%clock_xpos,%clock_ypos,%clock_scale,%clock_scale,0
     lsp2 s0_18,clock_m,%clock_xpos,%clock_ypos,%clock_scale,%clock_scale,%start_min_hand
     lsp2 s0_19,clock_h,%clock_xpos,%clock_ypos,%clock_scale,%clock_scale,%start_hour_hand
     lsp2 s0_20,clock_c,%clock_xpos,%clock_ypos,%clock_scale,%clock_scale,0
+
+	lsp s0_21,":a;graphics\system\clock\top.png",0,0
     
     flush 2
     

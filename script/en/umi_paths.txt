@@ -127,9 +127,9 @@ stralias muder_game_char_tree,":a;graphics\menu\murder\muder_game_char_tree.png"
 stralias mbox_wnd,":a;graphics\menu\bgm\mbox_window.png"
 stralias mbox_bounds,":a;graphics\menu\bgm\mbox_bounds.png"
 stralias mbox_obscure,":a;graphics\menu\bgm\mbox_obscure.png"
-stralias mbox_yt_btn, ":a/2,0,3;graphics\menu\bgmmode\bgm_yt.png"
-stralias mbox_spotify_btn, ":a/2,0,3;graphics\menu\bgmmode\bgm_spotify.png"
-stralias mbox_cd_btn, ":a/2,0,3;graphics\menu\bgmmode\bgm_cd.png"
+stralias mbox_yt_btn, ":a/2,0,3;graphics\menu\bgm\bgm_yt.png"
+stralias mbox_spotify_btn, ":a/2,0,3;graphics\menu\bgm\bgm_spotify.png"
+stralias mbox_cd_btn, ":a/2,0,3;graphics\menu\bgm\bgm_cd.png"
 stralias mbox_anim_still,":a;graphics\efe\mbox_anim_still.png"
 
 ;========================== Main Menu Elements ==========================

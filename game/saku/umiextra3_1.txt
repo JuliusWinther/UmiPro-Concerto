@@ -1,9 +1,10 @@
 *OCchoice
 
+mov %choice_extra,0
 mov %chosen_ending,0
 
 jnskip_s
-;accept_choice %chosen_ending
+accept_choice %chosen_ending
 return
 ~
 
@@ -28,9 +29,9 @@ btnwait %choice_extra
 
 if %choice_extra = 0 goto *OCloop
 
-if %choice_extra = s0_29 mov %chosen_ending,1: set_choice %chosen_ending: csp_rst: return
+if %choice_extra = s0_29 mov %chosen_ending,1 : set_choice %chosen_ending : csp_rst: return
 
-if %choice_extra = s0_28 mov %chosen_ending,2: set_choice %chosen_ending: csp_rst: return
+if %choice_extra = s0_28 mov %chosen_ending,2 : set_choice %chosen_ending : csp_rst: return
 
 
 goto *OCloop
@@ -413,6 +414,8 @@ textoff2
 OCchoice
 if %chosen_ending = 1 goto *OCkill
 if %chosen_ending = 2 goto *OCsave
+;if %choice_extra = s0_29 goto *OCkill
+;if %choice_extra = s0_28 goto *OCsave
 
 *OCsave
 csp_slot s0_29
