@@ -56,7 +56,7 @@ flush 2
 lbg "c:backgrounds",s0_3,"sea_3a"
 flush 2
 lss s0_9,"ki2","a11_defo2"
-color_mod2 s0_9,#000000
+color_mod2_mem s0_9,#000000
 spt_mem "a2","xpos",s0_9,0
 flush 80
 

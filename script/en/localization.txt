@@ -158,7 +158,7 @@ stralias set_restore,":s;#FFFFFF#FF0000`{p:11:Restore Settings}"
 stralias set_cfg_exit,":s;#FFFFFF#FF0000`{p:11:Close and Apply}"
 
 ;========================== CG/Picture Box Menu ==========================
-stralias title_cg_txt, "Picture Box"
+stralias title_cg_txt, "Movie Box"
 
 ;========================== Chapter Skip Menu ==========================
 stralias use_magic1,":s;#FFFFFF`{p:15:You may perform witchcraft to jump forward in time.}"
@@ -2512,7 +2512,7 @@ stralias tips_btn_desc_s,"You may look back upon your sojourn here.{n}{n}I hope 
 stralias cfg_btn_desc_t,"Configuration"
 stralias cfg_btn_desc_s,"Changes the gameplay environment.{n}"
 
-stralias cg_btn_desc_t,"Picture Box"
+stralias cg_btn_desc_t,"Movie Box"
 stralias cg_btn_desc_s,"The Golden Witch has gifted you with a picture box.{n}{n}I hope that you will stop by to view it, as a memento of{n}your sojourn on Rokkenjima.{n}"
 
 stralias bgm_btn_desc_t,"Music Box"

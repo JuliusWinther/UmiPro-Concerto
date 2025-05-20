@@ -1635,6 +1635,7 @@ numalias spriteset_changed,10642
 numalias log_chapter_name,10643
 
 numalias current_movie,10644
+numalias in_movie_mode,10645
 
 numalias outfits,11500 : dim ?outfits[70][6][6] ;a lot of slots
 
@@ -1962,6 +1963,7 @@ mov %spriteset_changed,0
 mov %char_moving_side,1
 mov $r_cha_back,blank ;Pre-initialize family tree to transparent
 mov %char_save_scenario_Num,1
+mov %in_movie_mode,0
 ;End Custom
 
 ;debug_var last_save
