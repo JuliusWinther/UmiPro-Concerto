@@ -1731,7 +1731,7 @@ textoff2
 lss s0_9,"gen","a21_kashikomari1"
 spt_mem "a2","xpos",s0_9,0
 flush 80
-wait 100
+wait 300
 lss s0_9,"gen","a11_defo1"
 spt_mem "a2","xpos",s0_9,0
 flush 80
@@ -1774,6 +1774,7 @@ lss s0_8,"eva","b25_odoroki1"
 spt_mem "a2","xpos",s0_8,-549
 flush 22
 
+wait 300
 csp_slot s0_8
 flush 80
 lss s0_9,"eva","b25_futeki1"
@@ -1858,6 +1859,7 @@ textoff2
 csp_slot s0_8
 csp_slot s0_9
 flush 80
+wait 200
 lss s0_8,"cla","a11_majime1"
 spt_mem "a2","xpos",s0_8,-549
 flush 80
@@ -3346,7 +3348,7 @@ flush 1
 seplay 11,38,100
 wait 500
 lbg "c:colour",s0_3,"red_b"
-flush 1
+flush 80
 
 msgwnd_non
 *e31_385
@@ -3621,6 +3623,8 @@ d `It seems she just couldn't help herself after being separated from the physic
 textoff2
 
 csp_slot s0_9
+flush 80
+wait 100
 lss s0_8,"bea","a11_1_warai1"
 spt_mem "a2","xpos",s0_8,-549
 flush 80
@@ -4196,7 +4200,7 @@ lbg "c:backgrounds",s0_3,"toilette"
 lss s0_10,"geo","a11_majime3"
 spt_mem "a2","xpos",s0_10,550
 flush 22
-
+wait 300
 csp_slot s0_10
 flush 80
 
@@ -6601,7 +6605,7 @@ flush 22
 lss s0_10,"bea","a11_iiwake1"
 spt_mem "a2","xpos",s0_10,550
 flush 22
-
+wait 300
 csp_slot s0_10
 flush 80
 lss s0_9,"bea","a11_akuwarai2"
@@ -6771,6 +6775,7 @@ msgwnd_ron
 d [lv 0*"31"*"ron_01870"]`{qt}......Yes, Milady.{qt}`[\]
 textoff2
 
+wait 100
 csp_slot s0_8
 flush 80
 
@@ -6877,22 +6882,27 @@ csp_slot s0_9
 flush 22
 lbg "c:locale_lan",s0_3,"ep4last02"
 flush 80
+wait 100
 csp_slot s0_3
 flush 1
 lbg "c:locale_lan",s0_3,"ep4last01"
 flush 80
+wait 100
 csp_slot s0_3
 flush 1
 lbg "c:locale_lan",s0_3,"ep4last03"
 flush 80
+wait 100
 csp_slot s0_3
 flush 1
 lbg "c:locale_lan",s0_3,"ep4last04"
 flush 80
+wait 100
 csp_slot s0_3
 flush 1
 lbg "c:locale_lan",s0_3,"ep4last05"
 flush 80
+wait 100
 csp_slot s0_3
 flush 1
 lbg "c:locale_lan",s0_3,"ep4last06"
