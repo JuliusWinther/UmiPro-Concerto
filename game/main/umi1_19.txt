@@ -15,6 +15,42 @@ waits 167
 lbg "c:colour",s0_3,"black"
 flush 2
 wait 1000
+
+
+
+
+
+
+; Load a background image onto layer 0
+print 0,"bg.png",0,0 ; Make sure you have a bg.png or use any other image
+
+; Test Butterfly Effect (now defaults to the new, enhanced version)
+effect 10,2000,"butterfly.dll/L0/JUMBLE/LEFT" ; Apply to layer 0, duration 2000ms
+waitt 3000 ; Observe disintegration (give it time)
+effect 10,2000,"butterfly.dll/L0/JUMBLE/LEFT" ; Recomposition (factor goes 1000->0)
+waitt 3000 ; Observe recomposition
+
+; Test changing mode
+setbutterflymode L0, "REVERSE/UPPER" ; Change mode for layer 0
+effect 10,2000,"butterfly.dll/L0" ; Apply with new mode
+waitt 3000
+effect 10,2000,"butterfly.dll/L0"
+waitt 3000
+
+; Test deinitialization
+deinitbutterfly L0
+; (Visually confirm effect is gone if it was active)
+
+; Optional: Test on global scope
+; print 0,"bg.png",0,0 ; Reset background
+; effect 10,2000,"butterfly.dll/G/JUMBLE" ; Global effect
+; waitt 3000
+; effect 10,2000,"butterfly.dll/G/JUMBLE"
+; waitt 3000
+; deinitbutterfly G
+
+
+
 textoff2
 waits 167
 lbg "c:backgrounds",s0_3,"different_spiral_1a"

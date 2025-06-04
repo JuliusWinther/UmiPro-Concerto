@@ -1637,6 +1637,8 @@ numalias log_chapter_name,10643
 numalias current_movie,10644
 numalias in_movie_mode,10645
 
+numalias cfg_bg_mover_alternator,10646
+
 numalias outfits,11500 : dim ?outfits[70][6][6] ;a lot of slots
 
 ;Sprite cache - Array that stores sprites data for reload - W_CUSTOM
@@ -1728,7 +1730,7 @@ preset_define 16,8,30,#FFFFFF,0,0,0,1,8,#000000,0,0,0,#000000,0,40,1920 ;Menu ju
 ;Trophies
 preset_define 18,1,34,#FFFFFF,0,0,0,1,8,#000000,0,0,0,#000000,2,20,1700 ;Trophy description
 ;Credits
-preset_define 20,8,40,#FFFFFF,0,0,0,1,10,#000000,0,0,0,#000000,3,0,1920 ;Credits normal
+preset_define 20,6,40,#FFFFFF,0,0,0,1,10,#000000,0,0,0,#000000,3,0,1920 ;Credits normal ;font was 8
 preset_define 21,9,90,#000000,0,0,0,1,10,#fae8e8,0,0,0,#000000,6,140,1920 ;Credits h1
 preset_define 22,8,60,#a90303,0,0,0,1,10,#000000,0,0,0,#000000,3,120,1920 ;Credits h2
 preset_define 23,8,50,#a90303,0,0,0,1,10,#000000,0,0,0,#000000,3,50,1920 ;Credits h3
@@ -1964,9 +1966,13 @@ mov %char_moving_side,1
 mov $r_cha_back,blank ;Pre-initialize family tree to transparent
 mov %char_save_scenario_Num,1
 mov %in_movie_mode,0
+mov %cfg_bg_mover_alternator,0
 ;End Custom
 
 ;debug_var last_save
+
+operate_file "test",$temp_var
+debug_str $temp_var
 
 ;Outfits
 ;Family

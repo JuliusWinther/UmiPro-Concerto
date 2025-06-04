@@ -308,7 +308,7 @@ return
 
 	skip_off
 
-#locale_import "credits.txt"
+#locale_import "end_3a_1.txt"; ;W_TEMP "credits.txt"
 
 	;stopwatch "credits_render_start"
 	lbsp2 s0_5,$Free1,0,0
@@ -317,7 +317,6 @@ return
 	aspt2 xpos,s0_5,%Free1/2
 	aspt2 ypos,s0_5,%Free2/2 + 1200
 	print 1
-
 return
 
 *credits_end
@@ -20766,6 +20765,17 @@ return
 
 	mov %print_delay,0
 	mov $print_dll,""
+
+	;W_TEST
+	;if (%cfg_bg_mover_alternator mod 2) == 0 : spt_mem "a2","xpos",s0_1,58,28700,3 : spt_mem "a2","xpos",s0_3,58,28700,3
+	;if (%cfg_bg_mover_alternator mod 2) != 0 : spt_mem "a2","xpos",s0_1,-58,28700,3 : spt_mem "a2","xpos",s0_3,-58,28700,3
+	;spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
+	if (%cfg_bg_mover_alternator mod 2) == 0 : spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
+	if (%cfg_bg_mover_alternator mod 2) != 0 : spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
+	;3 smooth
+	;5 = "cosine wave": takes on the target value in the middle and returns to the original value at the end. Also sets the animation to be endless.
+	add %cfg_bg_mover_alternator,1
+
 return
 
 *flush2
@@ -24072,6 +24082,11 @@ return
 	goto *lbg_do
 
 *lbg_do
+
+    spt_mem "a2","scalex",%lbg_slot,103
+    spt_mem "a2","scaley",%lbg_slot,102
+    spt_mem "a2","ypos",%lbg_slot,-22
+	;W_TEST
 
 	;Containing main sprite hotspot, lips unrelated
 	loadfromreg $lbg_left,"picture",$lbg_name + "_left"

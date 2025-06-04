@@ -9,14 +9,16 @@ csp_slot s0_1
 csp_slot s0_3
 lbg "a:backgrounds",s0_1,"mlib_1a_bg"
 lbg "a:backgrounds",s0_3,"mlib_1a"
-;spt_mem "a2","scalex",s0_1,80
-;spt_mem "a2","scaley",s0_1,80
-;spt_mem "a2","scalex",s0_3,80
-;spt_mem "a2","scaley",s0_3,80
-;spt_mem "a2","ypos",s0_1,-114
-;spt_mem "a2","ypos",s0_3,-114
-;spt_mem "a2","ypos",s0_1,-114
-;spt_mem "a2","ypos",s0_3,-114
+   ; spt_mem "a2","scalex",s0_1,103
+   ; spt_mem "a2","scaley",s0_1,102
+   ; spt_mem "a2","scalex",s0_3,103
+   ; spt_mem "a2","scaley",s0_3,102
+   ; spt_mem "a2","ypos",s0_1,-22
+   ; spt_mem "a2","ypos",s0_3,-22
+   ; spt_mem "a2","ypos",s0_1,-22
+   ; spt_mem "a2","ypos",s0_3,-22
+    ;spt_mem "a2","xpos",s0_1,58,22200
+    ;spt_mem "a2","xpos",s0_3,58,22200
 flush 8
 lss s0_8,"nan","a1_defo1" ;1
 spt_mem "a2","xpos",s0_8,-370
