@@ -253,8 +253,11 @@ stralias mark_story,":a;graphics\menu\cg\mark_story.png"
 stralias mark_murder,":a;graphics\menu\cg\mark_murder.png"
 stralias mark_char,":a;graphics\menu\cg\mark_char.png"
 stralias mark_special,":a;graphics\menu\cg\mark_special.png"
+stralias mark_story_c,":a;graphics\menu\cg\mark_story_c.png"
+stralias mark_murder_c,":a;graphics\menu\cg\mark_murder_c.png"
+stralias mark_char_c,":a;graphics\menu\cg\mark_char_c.png"
+stralias mark_special_c,":a;graphics\menu\cg\mark_special_c.png"
 stralias backpage,":a;graphics\menu\cg\backpage.png"
-stralias mark_current,":c;graphics\menu\cg\mark_current.png"
 stralias cgmode_logox,":c;graphics\menu_en\cgmode\cgmode_logox.png"
 
 ;========================== Trophies Menu Elements ==========================
