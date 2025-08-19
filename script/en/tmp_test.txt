@@ -15,7 +15,7 @@ if $lss_sec != "bu3" jumpf
 set_hotspot %lss_slot,$lss_lips_x,"1080"
 ~
 if $lss_sec != "but" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1080"
+set_hotspot %lss_slot,"380","1080"
 ~
 if $lss_sec != "cla" jumpf
 set_hotspot %lss_slot,$lss_lips_x,"1080"
