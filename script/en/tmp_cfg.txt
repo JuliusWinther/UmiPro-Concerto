@@ -920,7 +920,7 @@ if %cfg_current_page != 5 goto *skip_config_page_5 ;Graphics
 	if %BtnRes != 212 jumpf
 		isdown %cfg_mouse_click 
 		if %cfg_mouse_click = 0 if %cfg_bg_movement = 0 mov %cfg_bg_movement,1 : gosub *settings_bg_movement : jumpf
-		if %cfg_mouse_click = 0 if %cfg_bg_movement = 1 mov %cfg_bg_movement,0 : gosub *settings_bg_movement : jumpf
+		if %cfg_mouse_click = 0 if %cfg_bg_movement = 1 mov %cfg_bg_movement,0 : mov %cfg_bg_mover_alternator,0 : gosub *settings_bg_movement : jumpf
 	~
 	;END
 

@@ -245,13 +245,17 @@ stralias moviebox_next,":a;graphics\menu\movie\next.png"
 stralias moviebox_play,":a;graphics\menu\movie\play.png"
 
 ;========================== CG Menu Elements ==========================
-stralias cgmode_caption,":a;graphics\menu\cgmode\cgmode_caption.png" ;TODO automate text generation
-
-if %CHIRU_MODE = 0 stralias cgmode_logo,":c;graphics\menu\cgmode\cgmode_logo.png" ;TODO delocalize
-if %CHIRU_MODE = 1 stralias cgmode_logo,":c;graphics\menu\cgmode\cgmode_logo_chiru.png" ;TODO delocalize
-if %CHIRU_MODE = 2 stralias cgmode_logo,":c;graphics\menu\cgmode\cgmode_logo.png" ;TODO delocalize
-
-stralias cgmode_logox,":c;graphics\menu_en\cgmode\cgmode_logox.png" ;TODO delocalize
+stralias cgmode_bg,":c;graphics\menu\cg\cgmode_bg.png"
+stralias cgmode_blood,":a;graphics\menu\cg\cgmode_blood.png"
+stralias cgmode_next,":a;graphics\menu\cg\cgmode_next.png"
+stralias cgmode_prev,":a;graphics\menu\cg\cgmode_prev.png"
+stralias mark_story,":a;graphics\menu\cg\mark_story.png"
+stralias mark_murder,":a;graphics\menu\cg\mark_murder.png"
+stralias mark_char,":a;graphics\menu\cg\mark_char.png"
+stralias mark_special,":a;graphics\menu\cg\mark_special.png"
+stralias backpage,":a;graphics\menu\cg\backpage.png"
+stralias mark_current,":c;graphics\menu\cg\mark_current.png"
+stralias cgmode_logox,":c;graphics\menu_en\cgmode\cgmode_logox.png"
 
 ;========================== Trophies Menu Elements ==========================
 stralias trophy_caption,":a;graphics\menu\trophy\trophy_caption.png" ;TODO automate text generation

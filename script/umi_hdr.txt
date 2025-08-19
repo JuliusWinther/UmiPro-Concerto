@@ -1730,7 +1730,7 @@ preset_define 16,8,30,#FFFFFF,0,0,0,1,8,#000000,0,0,0,#000000,0,40,1920 ;Menu ju
 ;Trophies
 preset_define 18,1,34,#FFFFFF,0,0,0,1,8,#000000,0,0,0,#000000,2,20,1700 ;Trophy description
 ;Credits
-preset_define 20,6,40,#FFFFFF,0,0,0,1,10,#000000,0,0,0,#000000,3,0,1920 ;Credits normal ;font was 8
+preset_define 20,8,40,#FFFFFF,0,0,0,1,10,#000000,0,0,0,#000000,3,0,1920 ;Credits normal
 preset_define 21,9,90,#000000,0,0,0,1,10,#fae8e8,0,0,0,#000000,6,140,1920 ;Credits h1
 preset_define 22,8,60,#a90303,0,0,0,1,10,#000000,0,0,0,#000000,3,120,1920 ;Credits h2
 preset_define 23,8,50,#a90303,0,0,0,1,10,#000000,0,0,0,#000000,3,50,1920 ;Credits h3
@@ -1771,7 +1771,7 @@ preset_define 86,11,70,#000000,0,0,0,1,13,#000000,0,0,0,#000000,1	; Chapter name
 preset_define 89,10,40,#000000,0,0,0,1,2,#000000,1,1,0,#000000,1,0	; Ep btn description sub
 preset_define 91,10,40,#FFFFFF,0,0,0,1,2,#FFFFFF,0,0,0,#FFFFFF,1,0	; R-Menu selectd btn glow
 ;End Custom
-preset_define 100,6,36,#FFFFFF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1
+preset_define 100,6,36,#FFFFFF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1  ;Test new credits
 
 gosub *redefine_text_presets
 

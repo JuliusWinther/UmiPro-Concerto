@@ -20770,11 +20770,11 @@ return
 	;if (%cfg_bg_mover_alternator mod 2) == 0 : spt_mem "a2","xpos",s0_1,58,28700,3 : spt_mem "a2","xpos",s0_3,58,28700,3
 	;if (%cfg_bg_mover_alternator mod 2) != 0 : spt_mem "a2","xpos",s0_1,-58,28700,3 : spt_mem "a2","xpos",s0_3,-58,28700,3
 	;spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
-	if (%cfg_bg_mover_alternator mod 2) == 0 : spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
-	if (%cfg_bg_mover_alternator mod 2) != 0 : spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
+	if %cfg_bg_movement = 1 if (%cfg_bg_mover_alternator mod 2) == 0 : spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
+	if %cfg_bg_movement = 1 if (%cfg_bg_mover_alternator mod 2) != 0 : spt_mem "a2","xpos",s0_1,-58*2,57400,5 : spt_mem "a2","xpos",s0_3,-58*2,57400,5
 	;3 smooth
 	;5 = "cosine wave": takes on the target value in the middle and returns to the original value at the end. Also sets the animation to be endless.
-	add %cfg_bg_mover_alternator,1
+	if %cfg_bg_movement = 1 add %cfg_bg_mover_alternator,1
 
 return
 
@@ -24083,9 +24083,9 @@ return
 
 *lbg_do
 
-    spt_mem "a2","scalex",%lbg_slot,103
-    spt_mem "a2","scaley",%lbg_slot,102
-    spt_mem "a2","ypos",%lbg_slot,-22
+    if %cfg_bg_movement = 1 spt_mem "a2","scalex",%lbg_slot,103
+    if %cfg_bg_movement = 1 spt_mem "a2","scaley",%lbg_slot,102
+    if %cfg_bg_movement = 1 spt_mem "a2","ypos",%lbg_slot,-22
 	;W_TEST
 
 	;Containing main sprite hotspot, lips unrelated
@@ -33271,7 +33271,8 @@ goto *quick_reload
 ;	if %r_side != 2 && %r_display_side != 2 jumpf
 ;		mov %r_side,0 : mov %r_display_side,0 : mov %r_display,0 : mov %char_moving_side,-1 : mov %r_side_change,3 : mov %cha_text_page,1
 ;~ 
-if %r_for_title == 1 mov %r_side,0 : mov %r_display_side,0 : mov %r_display,0 : mov %char_moving_side,-1 : mov %r_side_change,3 : mov %cha_text_page,1
+;I created the line, i changed when the tips menu wasn't working it from mov r_display to if r_display
+if %r_for_title == 1 if %r_display == 0 mov %r_side,0 : mov %r_display_side,0 : mov %char_moving_side,-1 : mov %r_side_change,3 : mov %cha_text_page,1
 
 if %r_display_side == 0 mov %char_moving_side,-1
 if %r_display_side == 1 mov %char_moving_side,-2
@@ -37800,9 +37801,9 @@ return
 	if %r_display = 1 lsp 100,tips_caption,20,0
 	if %r_display = 2 lsp 100,grim_caption,20,0
 	lsp r_exit_lsp,set_exit,0,0
-	lsp r_cha_back_lsp,blank,100,150
+	lsp r_cha_back_lsp,":a;graphics\menu\chars\chars_left.png",100,150
 	lsp r_txt_lsp,":a;graphics\menu\tips\tips_right.png",900,150
-	lsp 97,set_ctrl,100,990
+	;lsp 97,set_ctrl,100,990
 
 	lsph 99,move_up,1740,155
 	lsph 98,move_down,1740,900
