@@ -1,30 +1,53 @@
 if $sprite_folder_name == "ps3" goto *skip_new_hotspots
 if $lss_sec != "ama" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1080"
+set_hotspot %lss_slot,"430","1080"
 ~
+if $lss_sec != "bbt" jumpf
+set_hotspot %lss_slot,"380","1080"
+~
+
 if $lss_sec != "be2" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1020"
+set_hotspot %lss_slot,"400","1020"
 ~
 if $lss_sec != "be3" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1020"
+set_hotspot %lss_slot,"400","1020"
+~
+if $lss_sec != "bea" jumpf
+set_hotspot %lss_slot,"600","1080"
+splitstring $lss_key,"_",$tmp14,$tmp15
+debug_str $tmp14
+if $tmp14 == "a15" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b11" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b12" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b14" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b15" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b21" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b22" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b23" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b25" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b33" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "b34" set_hotspot %lss_slot,"400","1080"
+if $tmp14 == "c11" set_hotspot %lss_slot,"280","1080"
 ~
 if $lss_sec != "ber" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"900"
+set_hotspot %lss_slot,"380","900"
 ~
 if $lss_sec != "bu3" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1080"
+set_hotspot %lss_slot,"400","1080"
 ~
 if $lss_sec != "but" jumpf
 set_hotspot %lss_slot,"380","1080"
 ~
 if $lss_sec != "cla" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1080"
+set_hotspot %lss_slot,"460","1080"
+splitstring $lss_key,"_",$tmp14,$tmp15
+if $tmp14 == "a15" set_hotspot %lss_slot,"565","1080"
 ~
 if $lss_sec != "cor" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1080"
+set_hotspot %lss_slot,"520","1080"
 ~
 if $lss_sec != "cur" jumpf
-set_hotspot %lss_slot,$lss_lips_x,"1020"
+set_hotspot %lss_slot,"375","1020"
 ~
 if $lss_sec != "dla" jumpf
 set_hotspot %lss_slot,$lss_lips_x,"900"
