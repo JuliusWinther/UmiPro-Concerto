@@ -2063,25 +2063,25 @@ waits 167
 seplay 1,1010,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 24
 wait 1000
 seplay 1,1010,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 24
 wait 1000
 seplay 1,1010,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars3"
+lbg "c:efe",s0_3,"magicsquare_mars3"
 flush 24
 wait 1000
 seplay 1,1010,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars5"
+lbg "c:efe",s0_3,"magicsquare_mars5"
 flush 24
 msgwnd_non
 *d9762

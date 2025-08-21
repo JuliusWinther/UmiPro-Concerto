@@ -11386,7 +11386,7 @@ flush 2
 meplay 1,16,50
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep505"
+lbg "c:cg/cgbox",s0_3,"ep505"
 flush 42
 *d41880
 d `天空より、ドラノールの持つ太刀よりさらに巨大な赤き太刀が、稲妻のように飛来し、`[@]`戦人の心臓を貫き、立ったままの姿で、磔にしてしまう……。`[\]
@@ -11444,7 +11444,7 @@ spt_mem "a2","ypos",s0_3,0,13333,1
 sptwait2 ypos,s0_3
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep505"
+lbg "c:cg/cgbox",s0_3,"ep505"
 color_mod2 s0_3,#ffffff
 flush 18,5000,msk_right
 wait 1000

@@ -1085,7 +1085,7 @@ csp_slot s0_11
 csp_slot s0_7
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep806"
+lbg "c:cg/cgbox",s0_3,"ep806"
 flush 2
 msgwnd_nat
 *d64447
@@ -1165,7 +1165,7 @@ csp_slot s0_17
 flush 1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep807_a"
+lbg "c:cg/cgbox",s0_3,"ep807_a"
 flush 1
 seplay 1,72,100
 seplay 2,74,100
@@ -1464,7 +1464,7 @@ seplay 2,12,100
 csp_slot s0_5
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep808"
+lbg "c:cg/cgbox",s0_3,"ep808"
 set_scale_center s0_3,-1000,0
 spt_mem "a2","scalex",s0_3,180
 spt_mem "a2","scaley",s0_3,180
@@ -1521,7 +1521,7 @@ d `譲治の手が、……ぽんと、その拳を叩く。`[\]
 meplay 5,28,100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep808"
+lbg "c:cg/cgbox",s0_3,"ep808"
 set_scale_center s0_3,-1000,0
 spt_mem "a2","scalex",s0_3,180
 spt_mem "a2","scaley",s0_3,180
@@ -1838,7 +1838,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep809_b"
+lbg "c:cg/cgbox",s0_3,"ep809_b"
 set_scale_center s0_3,500,-700
 spt_mem "a2","scalex",s0_3,180
 spt_mem "a2","scaley",s0_3,180
@@ -1879,7 +1879,7 @@ seplay 3,20,100
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep809_a"
+lbg "c:cg/cgbox",s0_3,"ep809_a"
 flush 1
 seplay 1,13,70
 seplay 2,2,100
@@ -4977,7 +4977,7 @@ d `……彼女を本当の意味で驚かせるのは、容易なことでは�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:cg_box",s0_3,"ep811"
+lbg "c:cg/cgbox",s0_3,"ep811"
 flush 1
 seplay 1,39,70
 seplay 2,12,70
@@ -6465,7 +6465,7 @@ waits 167
 textoff2
 waits 167
 lbg "c:colour",s0_3,"black"
-lbg "a:cg_box",s0_17,"ep812"
+lbg "a:cg/cgbox",s0_17,"ep812"
 anim2 s0_18,"no0018a",1
 flush 1
 seplay 1,75,71
@@ -6503,7 +6503,7 @@ waits 167
 textoff2
 waits 167
 lbg "c:colour",s0_3,"black"
-lbg "a:cg_box",s0_17,"ep812"
+lbg "a:cg/cgbox",s0_17,"ep812"
 lbg "a:efe",s0_18,"anm_no0018a"
 anim2 s0_19,"no0018b",1
 flush 1
@@ -6695,7 +6695,7 @@ d `砂浜にて、砂粒を一粒ずつ拾うかのような、儚い抵抗と�
 textoff2
 waits 167
 lbg "c:colour",s0_3,"black"
-lbg "a:cg_box",s0_17,"ep812"
+lbg "a:cg/cgbox",s0_17,"ep812"
 flush 22
 msgwnd_ber
 *d65008
@@ -6709,7 +6709,7 @@ waits 167
 textoff2
 waits 167
 lbg "c:colour",s0_3,"black"
-lbg "a:cg_box",s0_17,"ep812"
+lbg "a:cg/cgbox",s0_17,"ep812"
 anim2 s0_18,"no0018a",1
 flush 1
 seplay 1,66,100
@@ -6725,7 +6725,7 @@ waits 167
 textoff2
 waits 167
 lbg "c:colour",s0_3,"black"
-lbg "a:cg_box",s0_17,"ep812"
+lbg "a:cg/cgbox",s0_17,"ep812"
 lbg "a:efe",s0_18,"anm_no0018a"
 anim2 s0_19,"no0018c",1
 flush 1
@@ -6806,7 +6806,7 @@ waits 167
 csp_slot s0_10
 csp_slot s0_24
 lbg "c:colour",s0_3,"black"
-lbg "a:cg_box",s0_19,"ep812"
+lbg "a:cg/cgbox",s0_19,"ep812"
 lbg "a:efe",s0_17,"anm_no0018a"
 lbg "a:efe",s0_18,"anm_no0018c"
 flush 25
@@ -7130,7 +7130,7 @@ d `うねる大蛇たちは、その首をもたげて、……縁寿を取り�
 d `縁寿に、戦う刃はない。`[\]
 *d65071
 d `ただ兄の死に顔にしがみ付き、兄の名を何度も呼び掛けるだけだった。`[\]
-lbg "a:cg_box",s0_18,"ep812"
+lbg "a:cg/cgbox",s0_18,"ep812"
 flush 2
 msgwnd_ber
 *d65072
@@ -10813,7 +10813,7 @@ d `ベアトも、それを見送っている。`[@]`……いや、島を見送
 d `六軒島を、……そして千年を過ごした黄金郷を。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep814_d2"
+lbg "c:cg/cgbox",s0_3,"ep814_d2"
 flush 2
 msgwnd_bea
 *d65452
@@ -10863,7 +10863,7 @@ gptwait quakexamp
 gptwait quakeyamp
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep814_a"
+lbg "c:cg/cgbox",s0_3,"ep814_a"
 flush 22
 msgwnd_bea
 *d65462
@@ -10885,7 +10885,7 @@ msgwnd_but
 d [lv 0*"10"*"80101564"]`「そうだ。`[@][lv 0*"10"*"80101565"]`そして絶対に償い切れる。`[@][lv 0*"10"*"80101566"]`俺を信じろ」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep814_d2"
+lbg "c:cg/cgbox",s0_3,"ep814_d2"
 flush 22
 msgwnd_bea
 *d65468
@@ -10895,7 +10895,7 @@ msgwnd_but
 d [lv 0*"10"*"80101567"]`「潤んだ目で見るなよ。`[@][lv 0*"10"*"80101568"]`照れるだろ…」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep814_c3"
+lbg "c:cg/cgbox",s0_3,"ep814_c3"
 flush 22
 msgwnd_bea
 *d65470
@@ -10907,13 +10907,13 @@ msgwnd_bea
 *d65472
 d2 [lv 0*"27"*"80701043"]`「馬鹿な男め……。`[@][lv 0*"27"*"80701044"]`黄金郷より魔女を連れ出した呪いを受けるがいい。`[@][lv 0*"27"*"80701045"]`………だから、目を閉じろというのに。`[@][#][*][lv 0*"27"*"80701046"]`……わ、……妾もその、………恥ずかしい」`[\]
 wait_on_d 0
-lbg "c:cg_box",s0_3,"ep814_a2"
+lbg "c:cg/cgbox",s0_3,"ep814_a2"
 flush 22
 d_continue
 wait_on_d -1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep814_b2"
+lbg "c:cg/cgbox",s0_3,"ep814_b2"
 flush 22
 textoff2
 waits 167
@@ -11025,8 +11025,8 @@ flush 42
 vol_mix_fade 500
 wait 500
 wait 1000
-lbg2 "c:locale_shared",s0_1,end_8a_current
-drop_cache "c:locale_shared",end_8a_current
+lbg2 "c:locale",s0_1,end_8a_current
+drop_cache "c:locale",end_8a_current
 spt_mem "a2","scaley",s0_1,end_8a_lbg2 "a:locale_lan",s0_28,"end_8a_t1"
 drop_cache "a:locale_lan","end_8a_t1"
 lbg2 "a:locale_lan",s0_29,"end_8a_t2"
@@ -11036,8 +11036,8 @@ spt_mem "a2","ypos",s0_29,16200
 spt_mem "a2","alpha",s0_28,0
 spt_mem "a2","alpha",s0_29,0
 spt_mem "a2","ypos",s0_1,27720
-lbg "c:cg_box",s0_3,"ep815_1_"
-lbg "c:cg_box",s0_27,"ep815_2_"
+lbg "c:cg/cgbox",s0_3,"ep815_1_"
+lbg "c:cg/cgbox",s0_27,"ep815_2_"
 spt_mem "a2","alpha",s0_3,0
 spt_mem "a2","ypos",s0_3,-1080
 spt_mem "a2","alpha",s0_27,0
@@ -11311,7 +11311,7 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:locale_shared",s0_3,"years_1998"
+lbg "c:locale",s0_3,"years_1998"
 flush 2
 wait 5000
 meplay 1,29,50
@@ -12617,7 +12617,7 @@ gptwait quakeyamp
 seplay 1,30,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep816"
+lbg "c:cg/cgbox",s0_3,"ep816"
 flush 2
 msgwnd_non
 *d65652

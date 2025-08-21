@@ -1006,7 +1006,7 @@ lbg "c:colour",s0_3,"black"
 flush 1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep603"
+lbg "c:cg/cgbox",s0_3,"ep603"
 flush 2
 msgwnd_rud
 *d46673

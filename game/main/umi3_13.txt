@@ -273,7 +273,7 @@ flush 1
 meplay 1,13,50
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0301"
+lbg "c:cg/cgbox",s0_3,"g0301"
 flush 42
 seplay 1,56,71
 textoff2

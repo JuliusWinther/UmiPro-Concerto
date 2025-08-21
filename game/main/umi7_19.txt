@@ -1241,7 +1241,7 @@ d `彼女こそは異なる運命の世界の、自分の分身であり、ベ�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:cg_box",s0_3,"ep702"
+lbg "c:cg/cgbox",s0_3,"ep702"
 color_mod2 s0_3,#ffffff
 flush 2
 *d66131
@@ -1705,7 +1705,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 23
 lss s0_8,"geo","a11_majime5" ;1
@@ -1903,12 +1903,12 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 22
 wait 667
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 23
 seplay 1,47,71
 agpt quakeycycle,50
@@ -2459,7 +2459,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"geo","a11_hohoemi1" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -2516,7 +2516,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1dn_bg"
+lbg "a:backgrounds",s0_1,"garden_r1dn_bg"
 lbg "a:backgrounds",s0_3,"garden_r1dn"
 flush 22
 msgwnd_geo
@@ -2563,7 +2563,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"geo","a21_majime4" ;1
 flush 22
@@ -2603,7 +2603,7 @@ lbg "c:colour",s0_3,"black"
 flush 80
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 22
 msgwnd_geo
 *d66293
@@ -2620,7 +2620,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1dn_bg"
+lbg "a:backgrounds",s0_1,"garden_r1dn_bg"
 lbg "a:backgrounds",s0_3,"garden_r1dn"
 flush 22
 msgwnd_geo
@@ -2631,7 +2631,7 @@ msgwnd_sha
 d [lv 0*"15"*"70500566"]`「そんなことはありませんでしたよ。`[@][lv 0*"15"*"70500567"]`譲治さまの考え過ぎです…」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11k_majime5k" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2662,7 +2662,7 @@ lss s0_9,"sha","a11_tokui1" ;1
 flush 23
 textoff2
 waits 167
-lbg "c:cg_box",s0_22,"e0104_d"
+lbg "c:cg/cgbox",s0_22,"e0104_d"
 flush 2
 msgwnd_sha
 *d66300
@@ -2723,7 +2723,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0104_d"
+lbg "c:cg/cgbox",s0_3,"e0104_d"
 flush 2
 msgwnd_sha
 *d66307
@@ -2733,7 +2733,7 @@ msgwnd_geo
 d [lv 0*"07"*"70300167"]`「うん」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"sha","a11_tokui1" ;1
 flush 24
@@ -2750,7 +2750,7 @@ d `紗音はきっぱりと、そう言い切る…。`[\]
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a21k_komaru5k" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -8781,7 +8781,7 @@ msgwnd_non
 d `留弗夫は素早くリロードすると、悪びれた様子もなく再び引き金を引く。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep703_a"
+lbg "c:cg/cgbox",s0_3,"ep703_a"
 flush 1
 seplay 1,13,71
 agpt quakeycycle,50
@@ -8888,7 +8888,7 @@ flush 26
 seplay 1,35,100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep703_b"
+lbg "c:cg/cgbox",s0_3,"ep703_b"
 flush 1
 msgwnd_geo
 *d67036
@@ -8953,7 +8953,7 @@ csp_slot s0_7
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:cg_box",s0_3,"ep703_b"
+lbg "c:cg/cgbox",s0_3,"ep703_b"
 flush 22
 *d67043
 d `……譲治の中の、ジョークが大好きで、格好いい大人の理想だった留弗夫の姿が、`[@]`……目の前の銃を構えている留弗夫の姿と、重ならない。`[\]
@@ -12639,7 +12639,7 @@ wait 1000
 seplay 1,22,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep704_a"
+lbg "c:cg/cgbox",s0_3,"ep704_a"
 flush 42
 bgmplay 126,71,0
 msgwnd_non
@@ -12647,7 +12647,7 @@ msgwnd_non
 d `何もないはずの白い壁に、`[!w500]`……じわり、`[!w250]`じわりと、`[!w500]`……血の飛沫が浮き出していく。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep704_b"
+lbg "c:cg/cgbox",s0_3,"ep704_b"
 flush 18,5000,msk_up
 *d67464
 d `そして、そこには、………死体が現れる。`[@]`{n}でも、……そんなはずは………、`[\]
@@ -14726,7 +14726,7 @@ wait 1000
 seplay 1,13,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_1n"
+lbg "c:cg/cgbox",s0_3,"ep705_1n"
 flush 1
 agpt quakeycycle,50
 agpt quakeyamp,30
@@ -14774,7 +14774,7 @@ lbg "c:efe",s0_3,"blood_2c"
 flush 1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_1n"
+lbg "c:cg/cgbox",s0_3,"ep705_1n"
 flush 2
 msgwnd_rio
 *d67640
@@ -14812,7 +14812,7 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705"
+lbg "c:cg/cgbox",s0_3,"ep705"
 flush 2
 *d67647
 d `片腕で理御を抱え上げている。`[@]`刀は抜けない。`[@]`{n}しかしウィルは理御を下ろさない。`[\]
@@ -14850,7 +14850,7 @@ msgwnd_ber
 d [lv 0*"28"*"72100526"]`「………ウィラード。`[@][lv 0*"28"*"72100527"]`理御を下ろしなさい。`[@][lv 0*"28"*"72100528"]`そしたら、あなただけは見逃してあげるわ」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705"
+lbg "c:cg/cgbox",s0_3,"ep705"
 flush 2
 msgwnd_wil
 *d67651
@@ -14870,7 +14870,7 @@ msgwnd_ber
 d [lv 0*"28"*"72100529"]`「……そう言えば、私も知らないわ、それ。`[@][lv 0*"28"*"72100530"]`……どうして？」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_1"
+lbg "c:cg/cgbox",s0_3,"ep705_1"
 flush 2
 msgwnd_wil
 *d67655
@@ -14899,7 +14899,7 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_1"
+lbg "c:cg/cgbox",s0_3,"ep705_1"
 flush 23
 msgwnd_rio
 *d67660
@@ -14915,7 +14915,7 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_2"
+lbg "c:cg/cgbox",s0_3,"ep705_2"
 flush 2
 seplay 1,2,100
 msgwnd_rio
@@ -14923,7 +14923,7 @@ msgwnd_rio
 d [lv 0*"53"*"75300830"]`「……私を、…………放さないで下さい……ッ。`[@][lv 0*"53"*"75300831"]`……逃げ延びます、絶対に！`[@][lv 0*"53"*"75300832"]`　そして、あなたも…！！」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_3"
+lbg "c:cg/cgbox",s0_3,"ep705_3"
 flush 2
 msgwnd_wil
 *d67663
@@ -14937,7 +14937,7 @@ msgwnd_non
 d `その言葉に、ウィルは理御を力強く抱きかかえる。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep705_4"
+lbg "c:cg/cgbox",s0_3,"ep705_4"
 flush 2
 seplay 1,13,71
 agpt quakeycycle,33

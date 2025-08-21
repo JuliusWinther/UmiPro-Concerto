@@ -1892,7 +1892,7 @@ d `まるで、お茶を運ぶカラクリ人形のように。`[@]`{n}私はプ
 d `金蔵は表情一つ変えずに、`[@]`ゆっくりとプレゼントボックスに触れる……。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep802"
+lbg "c:cg/cgbox",s0_3,"ep802"
 flush 22
 seplay 1,48,71
 agpt quakeycycle,83

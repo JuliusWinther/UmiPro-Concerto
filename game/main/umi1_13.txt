@@ -1159,7 +1159,7 @@ flush 22
 seplay 1,33,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 1
 wait 4000
 bgmplay 15,71,0
@@ -1213,7 +1213,7 @@ msgwnd_kum
 d [lv 0*"18"*"11800126"]`「ひぃいいぃいぃ…！`[@][lv 0*"18"*"11800127"]`　ベアトリーチェさまの仕業ですよ、恐ろしや恐ろしや…！！」`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 22
 msgwnd_kan
 *d5729
@@ -1404,7 +1404,7 @@ d `バスルームは、ホテル等で馴染み深いバストイレの一体�
 d `シャワーを浴びる時は防水のカーテンで水が飛ばないように仕切って使用する。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0102"
+lbg "c:cg/cgbox",s0_3,"g0102"
 flush 2
 *d5763
 d `その防水カーテンが半分開かれていて、`[@]`……そこには全裸の秀吉が両目を見開いたまま、バスタブの中に崩れ落ちていて…、`[@]`その目は嘉音と真正面から向かい合っていた。`[\]
@@ -1496,7 +1496,7 @@ lbg "c:colour",s0_3,"black"
 flush 24
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0102"
+lbg "c:cg/cgbox",s0_3,"g0102"
 flush 24
 msgwnd_nan
 *d5775
@@ -1550,7 +1550,7 @@ d `…嘉音はその事務的な対応を見て、思った。`[@]`{n}……そ
 d `南條は刺さっている凶器を抜こうかと考えたが、`[@]`なるべく現状を保持して警察に引き渡した方がいいと判断し、手をつけないことにした。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0102"
+lbg "c:cg/cgbox",s0_3,"g0102"
 flush 22
 meplay 2,16,71
 *d5787

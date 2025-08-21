@@ -2921,7 +2921,7 @@ d `魔女は書斎のドアノブを握る。`[\]
 seplay 1,55,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars5"
+lbg "c:efe",s0_3,"magicsquare_mars5"
 flush 22
 *d9456
 d `……すると、ジュウとまるで肉が焼かれて爆ぜるような音がした。`[\]

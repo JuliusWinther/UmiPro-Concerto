@@ -803,7 +803,7 @@ lbg "c:colour",s0_3,"black"
 flush 23
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0203_a"
+lbg "c:cg/cgbox",s0_3,"g0203_a"
 flush 22
 *d13504
 d `紗音ちゃんの遺体は、化粧台の前にうつ伏せに、血の海に倒れていた。`[\]
@@ -869,7 +869,7 @@ d `それを見て、俺はようやくしてはいけないことをしたこ�
 d `慌てて目を背けたところで、今さら何の意味もなかっただろうが。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0203_b"
+lbg "c:cg/cgbox",s0_3,"g0203_b"
 flush 22
 msgwnd_ros
 *d13516
@@ -1319,7 +1319,7 @@ d `封筒を開ける。`[@]`{n}中からは便箋が２枚出てきた。`[\]
 seplay 1,1010,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars3"
+lbg "c:efe",s0_3,"magicsquare_mars3"
 flush 23
 *d13590
 d `１枚目には、……血のような赤いもので、魔法陣が書いてある。`[\]

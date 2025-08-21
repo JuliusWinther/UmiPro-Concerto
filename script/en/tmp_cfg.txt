@@ -6,7 +6,7 @@
 	;stopwatch "config start"
  	
  	;9th for chiru		
-	trophy_open 10-%CHIRU_MODE
+	;trophy_open 10-%CHIRU_MODE
 	
 	gosub *update_textspeed
 

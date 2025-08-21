@@ -556,7 +556,7 @@ csp_slot s0_10
 csp_slot s0_5
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0201"
+lbg "c:cg/cgbox",s0_3,"e0201"
 flush 22
 msgwnd_ber
 *d13856

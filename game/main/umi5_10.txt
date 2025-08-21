@@ -195,7 +195,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep503_a"
+lbg "c:cg/cgbox",s0_3,"ep503_a"
 flush 24
 msgwnd_eva
 *d38571
@@ -265,7 +265,7 @@ msgwnd_non
 d `親父と秀吉伯父さんが、`[@]`なおも亡骸にすがり付こうとする、絵羽伯母さんを引き剥がし、壁際で押し問答をしている…。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep503_a"
+lbg "c:cg/cgbox",s0_3,"ep503_a"
 flush 22
 msgwnd_eva
 *d38579
@@ -407,7 +407,7 @@ wait 1000
 d `そして、この無残な殺人を、さらに悪趣味に彩るものが、…もう一つあった。`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 5
 *d38616
 d `それは、……この壁にでかでかと書かれた、`[@]`………不気味な魔法陣のようなもの。`[\]
@@ -728,7 +728,7 @@ d [lv 0*"28"*"52100353"]`「………さて、ラムダの第一の晩、楽し�
 textoff2
 waits 167
 csp_slot s0_8
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 25
 msgwnd_non
 *d38651
@@ -1150,7 +1150,7 @@ d `扉を開こうとする時、`[@]`……嘉音は扉の上部に、おかし
 seplay 1,26,71
 textoff2
 waits 167
-lbg "c:locale_shared",s0_3,"m_door5"
+lbg "c:locale",s0_3,"m_door5"
 flush 26
 *d38703
 d `……何だ？　……ガムテープ？？`[\]
@@ -3164,7 +3164,7 @@ waits 167
 csp_slot s0_8
 csp_slot s0_9
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep503_b"
+lbg "c:cg/cgbox",s0_3,"ep503_b"
 flush 23
 msgwnd_rud
 *d38937

@@ -1728,7 +1728,7 @@ lbg "c:colour",s0_3,"black"
 flush 25
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 45
 *d4659
 d `遺体をこれ見よがしにアピールして、`[@]`殺人事件がさぁ起こりましたよなんて宣伝するのは、まったく犯人にとって得るものがない。`[\]
@@ -2019,7 +2019,7 @@ msgwnd_non
 d `その図形をみんなが覗き込むので、俺も覗き込んでみた。`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 22
 *d4713
 d `…聞く話では、こいつがあの倉庫のシャッターに、血みたいな塗料か何かでべったり描かれていたらしい。`[\]
@@ -2044,7 +2044,7 @@ d `祖父さまが犯人だとまでは言わないが、`[@]`祖父さまが犯
 textoff2
 waits 167
 csp_slot s0_10
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 22
 *d4718
 d `……確かに、右代宮家とオカルトの２つを結びつけたら、十人が十人、うちの祖父さまを名指しするだろう。`[\]
@@ -2124,7 +2124,7 @@ vol_me 2,-1,1000
 meplay 2,5,40
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0101_a"
+lbg "c:cg/cgbox",s0_3,"c0101_a"
 flush 2
 *d4733
 d `真里亞が、…何とも形容できない不気味な表情で笑っていたからだ。`[\]
@@ -2132,7 +2132,7 @@ d `真里亞が、…何とも形容できない不気味な表情で笑って�
 d `…それはまるで、議論し合うみんなの無知さ加減を馬鹿にするような、そんな笑い。`[@]`……真里亞が浮かべられるなんて、夢にも思わなかった表情だった…。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0101_b"
+lbg "c:cg/cgbox",s0_3,"c0101_b"
 flush 2
 *d4735
 d `そして、`[!w500]`……笑う。`[\]
@@ -2145,7 +2145,7 @@ vol_bgm -1,2000
 wait 2000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0101_c"
+lbg "c:cg/cgbox",s0_3,"c0101_c"
 flush 1
 bgmplay 19,71,0
 msgwnd_mar
@@ -2230,7 +2230,7 @@ d `真里亞は、図形の隙間に見慣れない文字をさらさらと書�
 d `…それを見る秀吉伯父さんと南條先生の目がみるみる見開かれていく…。`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 22
 msgwnd_mar
 *d4753
@@ -2387,7 +2387,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 26
 msgwnd_non
 *d4776
@@ -2643,7 +2643,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 22
 meplay 2,5,40
 *d4835

@@ -197,8 +197,8 @@ stralias r_menu_btn_7,":a/2,0,3;graphics\menu\r_click_menu\r_menu_btn_7.png"
 stralias r_menu_btn_8,":a/2,0,3;graphics\menu\r_click_menu\r_menu_btn_8.png"
 
 ;========================== Tips Menu Elements ==========================
-stralias r_tips,":a/2,0,3;graphics\system\btns\tips.png" ;TODO automate text generation
-stralias tips_caption,":a;graphics\menu\tips\tips_caption.png" ;TODO automate text generation
+stralias tips_bg,":c;graphics\menu\tips\tips_bg.png"
+stralias tips_tab,":a;graphics\menu\tips\tips_tab.png"
 
 ;========================== Grimoire Menu Elements ==========================
 stralias r_grim,":a/2,0,3;graphics\system\btns\grimoire_btn.png" ;TODO automate text generation
@@ -258,7 +258,10 @@ stralias mark_murder_c,":a;graphics\menu\cg\mark_murder_c.png"
 stralias mark_char_c,":a;graphics\menu\cg\mark_char_c.png"
 stralias mark_special_c,":a;graphics\menu\cg\mark_special_c.png"
 stralias backpage,":a;graphics\menu\cg\backpage.png"
-stralias cgmode_logox,":c;graphics\menu_en\cgmode\cgmode_logox.png"
+
+stralias cgmode_logo,":c;graphics\menu_en\cgmode\cgmode_logo.png" ;TODO Sta roba è da cambiare e unificare
+stralias cgmode_logo_chiru,":c;graphics\menu_en\cgmode\cgmode_logo_chiru.png" ;TODO Sta roba è da cambiare e unificare
+stralias cgmode_logox,":c;graphics\menu_en\cgmode\cgmode_logox.png" ;TODO Sta roba è da cambiare e unificare
 
 ;========================== Trophies Menu Elements ==========================
 stralias trophy_caption,":a;graphics\menu\trophy\trophy_caption.png" ;TODO automate text generation

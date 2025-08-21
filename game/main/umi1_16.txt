@@ -649,7 +649,7 @@ d `俺はずっと捲り続けていた本から、ついに、２枚目の手�
 d `譲治の兄貴も覗き込んでくる。`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars3"
+lbg "c:efe",s0_3,"magicsquare_mars3"
 flush 22
 *d6849
 d `その魔法陣の名は、……火星の３の魔法陣。`[\]
@@ -1338,7 +1338,7 @@ d `しかし、俺たちの目に飛び込んできたのは、`[@]`…………
 textoff2
 waits 167
 meplay 1,19,90
-lbg "c:cg_box",s0_17,"g0103"
+lbg "c:cg/cgbox",s0_17,"g0103"
 spt_mem "a2","xpos",s0_17,400
 flush 22
 *d6970
@@ -1394,7 +1394,7 @@ set_name_window_non
 d `あああぁ、……これで第八の晩までが終わってしまった。`[@]`そして迎える第九の晩は、……何だったっけ…？`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_17,"g0103"
+lbg "c:cg/cgbox",s0_17,"g0103"
 spt_mem "a2","xpos",s0_17,400
 flush 22
 meplay 1,5,40

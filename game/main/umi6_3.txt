@@ -1644,7 +1644,7 @@ msgwnd_kan
 d [lv 0*"16"*"60600140"]`「じぇ、………朱志香さん……」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1ac_bg"
+lbg "a:backgrounds",s0_1,"garden_r1ac_bg"
 lbg "a:backgrounds",s0_3,"garden_r1ac"
 lss s0_8,"jes","a11_nakiwarai1" ;1
 spt_mem "a2","xpos",s0_8,-370

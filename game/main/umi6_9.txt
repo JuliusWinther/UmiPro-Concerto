@@ -2428,7 +2428,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lbg "a:efe",s0_17,"chain2r_sp"
 z_order_override2 s0_17,s0_10
@@ -2654,7 +2654,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 1
 agpt quakexcycle,83
@@ -4442,7 +4442,7 @@ gptwait quakeyamp
 seplay 3,12,100
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 1
 agpt quakexcycle,50

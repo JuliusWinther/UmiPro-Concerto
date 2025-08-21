@@ -539,7 +539,7 @@ seplay 1,18,71
 csp_slot s0_11
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 11
 wait 2000
 lss s0_10,"geo","a11_majime3" ;1
@@ -623,7 +623,7 @@ waits 167
 csp_slot s0_8
 csp_slot s0_9
 csp_slot s0_10
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 22
 meplay 3,16,71
 msgwnd_mar
@@ -657,7 +657,7 @@ textoff2
 waits 167
 csp_slot s0_9
 csp_slot s0_10
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 25
 msgwnd_but
 *d11350

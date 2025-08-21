@@ -1196,7 +1196,7 @@ d [lv 0*"11"*"92000064"]`「迎えにはリムジンをよこして頂戴。`[@]
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:cg_box",s0_3,"c0406"
+lbg "c:cg/cgbox",s0_3,"c0406"
 flush 66
 lv 0,"99","mafmb9004"
 agpt quakeycycle,100

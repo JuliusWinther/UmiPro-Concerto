@@ -1555,7 +1555,7 @@ csp_slot s0_5
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:cg_box",s0_3,"c0302_a"
+lbg "c:cg/cgbox",s0_3,"c0302_a"
 flush 2
 msgwnd_bea
 *d18113
@@ -1598,7 +1598,7 @@ lbg "c:colour",s0_3,"white"
 flush 1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0302_b"
+lbg "c:cg/cgbox",s0_3,"c0302_b"
 flush 2
 wait 3000
 seplay 3,21,100

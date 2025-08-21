@@ -1321,7 +1321,7 @@ lbg "c:efe",s0_3,"no66_00239"
 pam 749,"no66",0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0202_a"
+lbg "c:cg/cgbox",s0_3,"c0202_a"
 flush 28
 vol_bgm 50
 *d8416
@@ -1351,7 +1351,7 @@ seplay 1,54,70
 vol_bgm -1,333
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0202_b"
+lbg "c:cg/cgbox",s0_3,"c0202_b"
 flush 2
 msgwnd_jes
 *d8421

@@ -41,7 +41,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:backgrounds",s0_1,"garden_r1ac_bg"
+lbg "a:backgrounds",s0_1,"garden_r1ac_bg"
 lbg "a:backgrounds",s0_3,"garden_r1ac"
 lss s0_10,"geo","a11_warai1" ;1
 spt_mem "a2","xpos",s0_10,550

@@ -1094,7 +1094,7 @@ d `ベアトリーチェの出現を装った、酔狂な来賓の悪戯を間�
 d `違う。００はただ冷静冷酷に職務を執行するだけだ。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep605_a1"
+lbg "c:cg/cgbox",s0_3,"ep605_a1"
 flush 2
 msgwnd_eri
 *d49692
@@ -1113,7 +1113,7 @@ d_continue
 wait_on_d -1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep605_c1"
+lbg "c:cg/cgbox",s0_3,"ep605_c1"
 flush 2
 msgwnd_eri
 *d49696
@@ -1124,7 +1124,7 @@ wait 1500
 meplay 2,17,50
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep605_c2"
+lbg "c:cg/cgbox",s0_3,"ep605_c2"
 flush 2
 msgwnd_bea
 *d49697
@@ -8352,7 +8352,7 @@ csp -12
 csp msk1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep606"
+lbg "c:cg/cgbox",s0_3,"ep606"
 flush 2
 *d50469
 d `そして戦人は、その手に自分の手を重ねる……。`[\]
@@ -8435,14 +8435,14 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep606"
+lbg "c:cg/cgbox",s0_3,"ep606"
 flush 2
 msgwnd_but
 *d50480
 d [lv 0*"10"*"60101038"]`「…………ベアト。`[@][lv 0*"10"*"60101039"]`……いいのか」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep606_1"
+lbg "c:cg/cgbox",s0_3,"ep606_1"
 flush 2
 msgwnd_bea
 *d50481
@@ -8663,7 +8663,7 @@ wait 500
 seplay 1,43,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep606_2"
+lbg "c:cg/cgbox",s0_3,"ep606_2"
 flush 2
 msgwnd_but
 *d50499
@@ -8683,7 +8683,7 @@ d_continue
 wait_on_d -1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep606_3"
+lbg "c:cg/cgbox",s0_3,"ep606_3"
 flush 2
 msgwnd_non
 *d50501

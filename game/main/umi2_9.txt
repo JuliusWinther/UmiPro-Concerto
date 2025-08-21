@@ -483,7 +483,7 @@ wait 2000
 seplay 1,24,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 2
 *d10616
 d `礼拝堂の入り口の扉に、`[@]`……大きく大きく、……血を思わせるネバついた不気味な塗料のようなもので、…不気味な魔法陣のようなものが描かれていたからだ。`[\]
@@ -564,7 +564,7 @@ vol_bgm -1,2000
 wait 2000
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 22
 msgwnd_ros
 *d10626
@@ -1174,7 +1174,7 @@ flush 1
 wait 3000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0201"
+lbg "c:cg/cgbox",s0_3,"g0201"
 flush 1
 bgmplay 50,71,0
 msgwnd_goh

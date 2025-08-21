@@ -1785,7 +1785,7 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep602_a"
+lbg "c:cg/cgbox",s0_3,"ep602_a"
 flush 2
 waits 167
 seplay 1,20,100
@@ -2042,7 +2042,7 @@ seplay 1,2,100
 d `しかし、朱志香の拳は、何と壁に、`[@]`直径１ｍはありそうなクレーター状のへこみを作ってみせたのだ。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep602_b"
+lbg "c:cg/cgbox",s0_3,"ep602_b"
 flush 2
 *d45945
 d `朱志香の表情には、拳を壁にぶつけた苦悶どころか、`[@]`仕留め損ねたと舌打ちする苦笑いが浮かんでいた…。`[\]
@@ -2477,7 +2477,7 @@ seplay 2,55,50
 textoff2
 waits 167
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep602_b"
+lbg "c:cg/cgbox",s0_3,"ep602_b"
 flush 2
 msgwnd_non
 *d45976

@@ -2041,7 +2041,7 @@ flush 22
 wait 2000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 msgwnd_but
 *d54723
@@ -2133,7 +2133,7 @@ lbg "c:colour",s0_3,"black"
 flush 24
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 msgwnd_but
 *d54745
@@ -2159,7 +2159,7 @@ msgwnd_non
 d `フーダニット。`[@]`誰が犯人か。`[@]`{n}ハウダニット。`[@]`どうやって犯行を。`[@]`{n}ホワイダニット。`[@]`どうして犯行を。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 22
 msgwnd_but
 *d54751
@@ -2185,7 +2185,7 @@ msgwnd_sha
 d [lv 0*"15"*"70500338"]`「………心………」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 22
 meplay 1,5,50
 msgwnd_but
@@ -2217,7 +2217,7 @@ vol_me 1,70,1000
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 msgwnd_but
 *d54764
@@ -2245,7 +2245,7 @@ lbg "c:colour",s0_3,"white"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 22
 msgwnd_but
 *d54770
@@ -2312,7 +2312,7 @@ flush 2
 wait 2000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 meplay 1,5,50
 msgwnd_but
@@ -2393,7 +2393,7 @@ wait 1000
 bgmplay 170,71,0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 2
 msgwnd_but
 *d54799
@@ -2421,7 +2421,7 @@ d `電話でも手紙でも駄目。`[\]
 d `二人きりでこうして、肩を並べてでしか、……私たちのミステリーは、語り合えないのだ。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 22
 msgwnd_but
 *d54806
@@ -2437,7 +2437,7 @@ msgwnd_non
 d `絶対？`[@]`　どうして、絶対なんて…？`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 22
 msgwnd_but
 *d54810
@@ -2497,7 +2497,7 @@ msgwnd_non
 d `心臓が、きゅぅと絞り上げられる…。`[@]`{n}甘いのに、苦しい……。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 msgwnd_but
 *d54823
@@ -2531,14 +2531,14 @@ d `でも、私は言えない。`[@]`{n}お互いのためにも、後の人生
 d `どうでもいい、わけのわからない考えで、頭がいっぱいになる……。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 msgwnd_sha
 *d54831
 d [lv 0*"15"*"70500360"]`「う、`[|][lv 0*"15"*"70500361"]`……嬉しいです……。`[@][lv 0*"15"*"70500362"]`………ありがとう……」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 2
 msgwnd_but
 *d54832
@@ -2600,7 +2600,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 msgwnd_sha
 *d54846

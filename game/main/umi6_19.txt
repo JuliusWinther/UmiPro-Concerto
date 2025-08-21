@@ -146,7 +146,7 @@ msgwnd_non
 d `ベアトの手より、領主の指輪が譲られる……。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep607"
+lbg "c:cg/cgbox",s0_3,"ep607"
 flush 2
 *d65817
 d `戦人からは、銀で作った、領主夫人のみに許される紋章の指輪が。`[\]

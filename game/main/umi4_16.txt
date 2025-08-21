@@ -452,7 +452,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"geo","a11_majime2" ;1
 flush 26
@@ -466,7 +466,7 @@ d `…しかし、今、譲治の前にいる女は、紗音ではない。`[\]
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"gap","a11_defo2" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -541,7 +541,7 @@ lbg "c:colour",s0_3,"black"
 flush 2
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"gap","a11_warai3" ;1
 flush 26
@@ -559,7 +559,7 @@ d [lv 0*"32"*"43700110"]`「私、君みたいな子と遊ぶのはずいぶん�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"geo","a11_majime3" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -597,7 +597,7 @@ d `{a:c:{e:070:以下に掲げる三つの内。`[@]`{n}二つを得るために
 set_name_window_non
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11_majime5" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -671,7 +671,7 @@ wait_on_d -1
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11_ikari2" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1867,7 +1867,7 @@ wait 1000
 meplay 1,13,50
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11k_majime2k" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1946,7 +1946,7 @@ msgwnd_geo
 d [lv 0*"07"*"40300136"]`「………違うね」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"gap","a11_defo2" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2115,7 +2115,7 @@ vol_me 2,50,3000
 wait 3000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"gap","a11_akuwarai1" ;1
 flush 6
@@ -2134,7 +2134,7 @@ wait_on_d -1
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11k_majime5k" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2156,7 +2156,7 @@ d `…その中に、一瞬だけ金蔵と同じ凄みを感じ、ガァプは�
 textoff2
 waits 167
 csp_slot s0_10
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"gap","a11_defo1a" ;1
 flush 23
@@ -2181,7 +2181,7 @@ d `……この男には、外見からは想像もつかない決意と覚悟�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11k_majime2k" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2350,7 +2350,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"geo","a23_majime4" ;1
 flush 26
@@ -2362,7 +2362,7 @@ d [lv 0*"07"*"40300174"]`「でさ。`[@][lv 0*"07"*"40300175"]`…………そ�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"gap","a11_warai3" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2417,7 +2417,7 @@ d `……その時、……ガァプは確かに嵐が掻き消え、真っ白�
 d `満月を背負う、`[!w333]`新しき当主を名乗る男が、`[!w500]`悪魔を嘲笑う。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"gap","a11_warai2a" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2818,7 +2818,7 @@ waits 167
 seplay 2,52,100
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"gap","a11_warai3" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2954,7 +2954,7 @@ seplay 2,1006,100
 seplay 3,57,100
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 10,17
 agpt quakeycycle,200
@@ -3070,7 +3070,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1dn_bg"
+lbg "a:backgrounds",s0_1,"garden_r1dn_bg"
 lbg "a:backgrounds",s0_3,"garden_r1dn"
 flush 2
 msgwnd_geo
@@ -11036,7 +11036,7 @@ wait 1000
 seplay 2,20,100
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 65
 lss s0_10,"gap","a11_akuwarai3" ;1
@@ -11478,7 +11478,7 @@ lbg "c:colour",s0_21,"red_b"
 spt_mem "a2","alpha",s0_21,180
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"geo","a11_ikari2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -11600,7 +11600,7 @@ textoff2
 waits 167
 csp_slot s0_9
 csp_slot s0_23
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"gap","a11_akuwarai1" ;1
 seplay 1,56,71
@@ -11695,7 +11695,7 @@ flush 24
 meplay 1,13,50
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"gap","a11_warai3" ;1
 flush 24
@@ -11778,7 +11778,7 @@ flush 1
 wait 1000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 26
 *d28753

@@ -892,7 +892,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 4
 lss s0_10,"sha","a11_fuman1" ;1
@@ -904,7 +904,7 @@ d [lv 0*"15"*"20500564"]`「…その後のことはわかりません。`[@][lv
 textoff2
 waits 167
 csp_slot s0_10
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"geo","a11_majime2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -967,7 +967,7 @@ msgwnd_sha
 d [lv 0*"15"*"20500578"]`「……………………………。`[@][lv 0*"15"*"20500579"]`……いいえ、何も」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11_defo1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1025,7 +1025,7 @@ vol_bgm -1,3000
 wait 3000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 24
 lss s0_10,"geo","a11_komaru2" ;1
@@ -1130,7 +1130,7 @@ vol_bgm -1,2000
 wait 2000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 26
 lss s0_9,"geo","a11k_majime2k" ;1
@@ -1169,7 +1169,7 @@ d `……譲治は言った。`[@]`彼にとっての婚約指輪は、結婚指
 d `だから、譲治の指輪を受け取ることは、結婚の約束よりもはるかに神聖な意味を持つ。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11k_majime2k" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1252,7 +1252,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"e0104_c"
+lbg "c:cg/cgbox",s0_3,"e0104_c"
 flush 22
 *d10471
 d `しかし、紗音はそれを見ていない。`[\]
@@ -1268,7 +1268,7 @@ msgwnd_geo
 d [lv 0*"07"*"20300388"]`「あ、……………、あぁ。`[@][lv 0*"07"*"20300389"]`……見せるよ。`[@][lv 0*"07"*"20300390"]`必ず。`[@][lv 0*"07"*"20300391"]`……約束する。`[@][lv 0*"07"*"20300392"]`………老後までじゃない。`[@][lv 0*"07"*"20300393"]`…死んだ後も。`[@][lv 0*"07"*"20300394"]`…僕らは魂になっても、ずっとずっと一緒にいる」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 26
 msgwnd_non
@@ -1278,7 +1278,7 @@ d `紗音は涙を擦り、指輪の箱を手に取る。`[@]`中には、二人
 d `譲治は頭の中で何度も反復練習した台詞を口にする。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"sha","a11_hajirai1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1312,7 +1312,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0104_d"
+lbg "c:cg/cgbox",s0_3,"e0104_d"
 flush 22
 msgwnd_non
 *d10480
@@ -1325,7 +1325,7 @@ vol_bgm 100,2000
 wait 2000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"sha","a12_hajirai3" ;1
 flush 22

@@ -1068,7 +1068,7 @@ wait 1000
 wait 1000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 color_mod2 s0_3,#ffffff
 lss s0_8,"mar","a11_fukigen2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1078,7 +1078,7 @@ wait 500
 textoff2
 waits 167
 csp_slot s0_8
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 lss s0_8,"mar","a11_fukigen2" ;1
 spt_mem "a2","xpos",s0_8,-370
 flush 2
@@ -1115,7 +1115,7 @@ d `すぐに、彼女は、私の知らない誰かだと直感する……。`[
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 lss s0_8,"mar","a22_komaru1" ;1
 spt_mem "a2","xpos",s0_8,-370
 flush 23
@@ -1937,7 +1937,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 color_mod2 s0_3,#ffffff
 lss s0_10,"bea","a11_defo2" ;1
 spt_mem "a2","xpos",s0_10,370

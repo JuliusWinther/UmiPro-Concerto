@@ -2188,7 +2188,7 @@ lbg "c:colour",s0_3,"black"
 flush 1
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0407"
+lbg "c:cg/cgbox",s0_3,"e0407"
 flush 2
 vol_bgm 90,1000
 wait 1000

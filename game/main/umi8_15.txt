@@ -2001,7 +2001,7 @@ d [lv 0*"29"*"82200367"]`「あんたたちが、最高のハッピーエンド�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:cg_box",s0_3,"ep810_a1"
+lbg "c:cg/cgbox",s0_3,"ep810_a1"
 flush 2
 msgwnd_non
 *d63920
@@ -4280,7 +4280,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep810_a1"
+lbg "c:cg/cgbox",s0_3,"ep810_a1"
 flush 22
 msgwnd_enj
 *d64153
@@ -6095,7 +6095,7 @@ textoff2
 waits 167
 csp_slot s0_9
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep805"
+lbg "c:cg/cgbox",s0_3,"ep805"
 flush 22
 seplay 1,20,71
 msgwnd_non
@@ -6163,7 +6163,7 @@ rain_params s0_11,400,800,0
 rain_params s0_7,400,500,0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep805"
+lbg "c:cg/cgbox",s0_3,"ep805"
 flush 2
 msgwnd_eri
 *d64324

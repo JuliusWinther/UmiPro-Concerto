@@ -481,7 +481,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 22
 msgwnd_mar
 *d5888

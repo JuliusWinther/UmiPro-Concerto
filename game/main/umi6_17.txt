@@ -1060,7 +1060,7 @@ flush 22
 meplay 2,17,50
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep604_3"
+lbg "c:cg/cgbox",s0_3,"ep604_3"
 flush 2
 *d49366
 d `硝煙の臭いと、白煙の後には、`[!w583]`………銃を構え、`[!w333]`……銃口から煙を棚引かせている嘉音の姿と、`[@]`……………地面に、`[!w500]`……うつ伏せに倒れている紗音の姿があった……。`[\]
@@ -1106,11 +1106,11 @@ lbg "c:colour",s0_3,"black"
 flush 24
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep604_3"
+lbg "c:cg/cgbox",s0_3,"ep604_3"
 flush 18,3333,msk_right
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep604_2"
+lbg "c:cg/cgbox",s0_3,"ep604_2"
 flush 18,3333,msk_up
 *d49371
 d `……紗音が、`[!w333]`……ゆっくりと、`[!w333]`……立ち上がる。`[\]
@@ -1155,7 +1155,7 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep604_2"
+lbg "c:cg/cgbox",s0_3,"ep604_2"
 flush 4
 msgwnd_sha
 *d49386
@@ -2185,7 +2185,7 @@ lbg "c:colour",s0_3,"white"
 flush 48
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex01"
+lbg "c:cg/cgbox",s0_3,"ex01"
 flush 2
 *d49490
 d [lv 0*"10"*"60100972"]`「あー、俺ってさ。`[@][lv 0*"10"*"60100973"]`家庭的な子とか案外苦手なんだよな。`[@][lv 0*"10"*"60100974"]`この通り、ガサツな性格だろ？`[@][lv 0*"10"*"60100975"]`　……レディーファーストとか、女の子の前では礼儀正しくとか、そういうのはさっぱり苦手なんだよな。`[@][lv 0*"10"*"60100976"]`……だから強いて好みはって言われると……」`[\]
@@ -2195,7 +2195,7 @@ d [lv 0*"10"*"60100977"]`「……そうだな、朱志香みたいなタイプ�
 d [lv 0*"10"*"60100980"]`「だからもしも俺に彼女が出来るとしたら、`[@][lv 0*"10"*"60100981"]`……いつも俺が朱志香とバカやってるみたいに、ハチャメチャな関係がいいよな…！」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 2
 *d49493
 d [lv 0*"10"*"60100982"]`「え？`[@][lv 0*"10"*"60100983"]`　容姿の好み？`[@][lv 0*"10"*"60100984"]`　別にそんなのは気にしねーけどよ。`[@][lv 0*"10"*"60100985"]`まぁ、洋画とかに出てくる、金髪ボイン、蒼眼のグラマラスな彼女だったら、`[@][lv 0*"10"*"60100986"]`いっひひひひひひ、最高だぜぇ。`[@][lv 0*"10"*"60100987"]`乳揉ませろぉいってなぁ。`[@][lv 0*"10"*"60100988"]`わっはっはっはっは…！」`[\]
@@ -2749,7 +2749,7 @@ wait 150
 seplay 2,2,100
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 1
 wait 100
 seplay 1,2,100
@@ -2809,7 +2809,7 @@ wait 50
 seplay 2,2,100
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 1
 wait 50
 wait 500
@@ -3016,7 +3016,7 @@ wait 50
 seplay 2,2,100
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 1
 wait 50
 seplay 3,2,100

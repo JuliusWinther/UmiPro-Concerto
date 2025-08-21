@@ -602,7 +602,7 @@ flush 22
 spriteset_enable 1
 textoff2
 waits 167
-lbg "c:cg_box",s1_3,"g0101"
+lbg "c:cg/cgbox",s1_3,"g0101"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -676,7 +676,7 @@ flush 80
 spriteset_enable 1
 textoff2
 waits 167
-lbg "c:cg_box",s1_3,"g0102"
+lbg "c:cg/cgbox",s1_3,"g0102"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -878,7 +878,7 @@ msgwnd_wil
 d [lv 0*"54"*"75401131"]`「幻は幻に。`[@][lv 0*"54"*"75401132"]`……幻想の魔女と杭は、幻想しか貫けない」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_17,"g0103"
+lbg "c:cg/cgbox",s0_17,"g0103"
 flush 22
 msgwnd_cur
 *d56579
@@ -961,7 +961,7 @@ msgwnd_cur
 d2 [lv 0*"55"*"75500974"]`「続けましょう。`[@][#][*][lv 0*"55"*"75500975"]`第２のゲーム、第一の晩。`[@][lv 0*"55"*"75500976"]`腹を割かれし６人は密室礼拝堂に」`[\]
 wait_on_d 0
 spriteset_enable 1
-lbg "c:cg_box",s1_3,"g0201"
+lbg "c:cg/cgbox",s1_3,"g0201"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -1007,7 +1007,7 @@ lss s0_8,"cur","a11_hoshin1star" ;1
 spt_mem "a2","xpos",s0_8,-370
 flush 23
 spriteset_enable 1
-lbg "c:cg_box",s1_3,"g0202"
+lbg "c:cg/cgbox",s1_3,"g0202"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -1055,7 +1055,7 @@ lss s0_10,"cur","a11_hoshin3star" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 23
 spriteset_enable 1
-lbg "c:cg_box",s1_3,"g0203_a"
+lbg "c:cg/cgbox",s1_3,"g0203_a"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -1241,7 +1241,7 @@ lbg "c:colour",s0_3,"black"
 flush 23
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0301"
+lbg "c:cg/cgbox",s0_3,"g0301"
 flush 23
 msgwnd_cur
 *d56598
@@ -1273,7 +1273,7 @@ lss s0_10,"cur","a11_hoshin2star" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 23
 spriteset_enable 1
-lbg "c:cg_box",s1_3,"g0302"
+lbg "c:cg/cgbox",s1_3,"g0302"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -1326,7 +1326,7 @@ rain_params s1_11,500,300,0
 rain_pause s1_11
 textoff2
 waits 167
-lbg "c:backgrounds",s1_1,"garden_r1ar_bg"
+lbg "a:backgrounds",s1_1,"garden_r1ar_bg"
 lbg "a:backgrounds",s1_3,"garden_r1ar"
 mask_set msk1,msk_1920x1080,1
 flush 2
@@ -1414,7 +1414,7 @@ flush 80
 spriteset_enable 2
 textoff2
 waits 167
-lbg "c:cg_box",s2_3,"g0401"
+lbg "c:cg/cgbox",s2_3,"g0401"
 mask_set msk2,msk_1920x1080,2
 flush 2
 aspritesetpt centrex,2,0
@@ -1428,7 +1428,7 @@ wait 1000
 spriteset_enable 3
 textoff2
 waits 167
-lbg "c:cg_box",s3_3,"g0402"
+lbg "c:cg/cgbox",s3_3,"g0402"
 mask_set msk3,msk_1920x1080,3
 flush 2
 aspritesetpt centrex,3,0
@@ -1481,7 +1481,7 @@ flush 80
 spriteset_enable 1
 textoff2
 waits 167
-lbg "c:cg_box",s1_3,"g0404"
+lbg "c:cg/cgbox",s1_3,"g0404"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -1530,7 +1530,7 @@ flush 24
 spriteset_enable 1
 textoff2
 waits 167
-lbg "c:cg_box",s1_3,"g0403"
+lbg "c:cg/cgbox",s1_3,"g0403"
 mask_set msk1,msk_1920x1080,1
 flush 2
 aspritesetpt centrex,1,0
@@ -1706,7 +1706,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep702"
+lbg "c:cg/cgbox",s0_3,"ep702"
 flush 2
 msgwnd_non
 *d56619

@@ -44,8 +44,7 @@ waits 167
 seplay 2,52,71
 lss s0_8,"ber","a11_defo1" ;1
 spt_mem "a2","xpos",s0_8,-370
-;spt_mem "a2","breakup",s0_8,1000
-spt butterfly, s0_8, 1000, 2000, 0
+spt_mem "a2","breakup",s0_8,1000
 spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,3000

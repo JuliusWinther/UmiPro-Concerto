@@ -2281,7 +2281,7 @@ d `そして本当に幸運だった。`[@]`{n}彼女は私をカエルにはし
 d `ぎこちなく立ち尽くしている私に、空いている椅子を示し、着席を勧めてくれたの。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_e"
+lbg "c:cg/cgbox",s0_3,"c0201_e"
 flush 24
 msgwnd_bea
 *d15919
@@ -2591,7 +2591,7 @@ bgmplay 64,71,0
 wait 3000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_c"
+lbg "c:cg/cgbox",s0_3,"c0201_c"
 flush 24
 msgwnd_bea
 *d15960
@@ -2601,7 +2601,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400128"]`「…え？`[@][lv 0*"12"*"31400129"]`　は、はい。`[@][lv 0*"12"*"31400130"]`狼なんて、動物園でも見たことないです」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_b"
+lbg "c:cg/cgbox",s0_3,"c0201_b"
 flush 80
 msgwnd_bea
 *d15962
@@ -2611,7 +2611,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400131"]`「あ、…色んな動物が飼われているところです。`[@][lv 0*"12"*"31400132"]`ゾウとかキリンとかパンダとか、珍しい動物がいっぱいいますよ」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_a"
+lbg "c:cg/cgbox",s0_3,"c0201_a"
 flush 80
 msgwnd_bea
 *d15964
@@ -2647,7 +2647,7 @@ d `…彼女には区別が付かなかったのだ。`[\]
 d `高い柵に囲まれたこのお屋敷で、一見不自由なく優雅に過ごしながらも、`[@]`檻に閉じ込められた動物たちとどう違うのか、区別がつかないようだった…。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_f"
+lbg "c:cg/cgbox",s0_3,"c0201_f"
 flush 80
 msgwnd_bea
 *d15975
@@ -2703,7 +2703,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400137"]`「柵の外へ、`[|][lv 0*"12"*"31400138"]`……出てみますか？」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_d"
+lbg "c:cg/cgbox",s0_3,"c0201_d"
 flush 26
 msgwnd_bea
 *d15991
@@ -2713,7 +2713,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400139"]`「いないですよ。`[@][lv 0*"12"*"31400140"]`絶対平気ですから」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_f"
+lbg "c:cg/cgbox",s0_3,"c0201_f"
 flush 26
 msgwnd_bea
 *d15993
@@ -2723,7 +2723,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400141"]`「私が入ってきたところがあります。`[@][lv 0*"12"*"31400142"]`潜り抜けられる隙間があるんです」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_e"
+lbg "c:cg/cgbox",s0_3,"c0201_e"
 flush 26
 msgwnd_bea
 *d15995
@@ -2733,7 +2733,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400143"]`「はい」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_d"
+lbg "c:cg/cgbox",s0_3,"c0201_d"
 flush 26
 msgwnd_bea
 *d15997
@@ -2743,7 +2743,7 @@ msgwnd_ros
 d [lv 0*"12"*"31400144"]`「くす。`[@][lv 0*"12"*"31400145"]`はい、いませんよ」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_f"
+lbg "c:cg/cgbox",s0_3,"c0201_f"
 flush 26
 msgwnd_bea
 *d15999
@@ -4157,7 +4157,7 @@ vol_me 2,70,3000
 wait 3000
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"sha","a11_hajirai1" ;1
 spt_mem "a2","xpos",s0_8,-370

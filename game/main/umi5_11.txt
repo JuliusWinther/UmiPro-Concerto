@@ -9390,7 +9390,7 @@ csp_slot s0_11
 csp_slot s0_7
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep504"
+lbg "c:cg/cgbox",s0_3,"ep504"
 flush 2
 *d39901
 d `そして、雨粒の宝石箱の世界を、戦人の胸に飛び込むように舞い降りた。`[\]

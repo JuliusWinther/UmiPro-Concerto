@@ -451,7 +451,7 @@ vol_me 1,-1,1000
 d `約束の時間ちょうどに、来客を知らせるチャイムの音と共に、`[@]`………彼らは姿を現した。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep817"
+lbg "c:cg/cgbox",s0_3,"ep817"
 flush 2
 *d68819
 d `それは、車椅子に乗った男性と、それを押す女性。`[\]
@@ -657,7 +657,7 @@ flush 22
 seplay 1,1010,50
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep818"
+lbg "c:cg/cgbox",s0_3,"ep818"
 flush 22
 *d68867
 d `私が戦人お兄ちゃんと遊園地に行った時の一枚だ。`[\]
@@ -1189,7 +1189,7 @@ msgwnd_bu3
 d [lv 0*"57"*"86000079"]`「……はい。`[@][lv 0*"57"*"86000080"]`……確かに私は、島を脱出した前後のことは、今でも記憶があやふやです。`[@][lv 0*"57"*"86000081"]`しかし、それ以外のことはほとんどを思い出しました」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0401_b"
+lbg "c:cg/cgbox",s0_3,"e0401_b"
 flush 22
 *d68987
 d [lv 0*"57"*"86000082"]`「………たとえば、あなたが大事にしていたピンクの髪飾りは、私が遊園地のゲームコーナーで取ってあげたものだとか」`[\]
@@ -2052,9 +2052,9 @@ lbg "c:colour",s0_3,"white"
 flush 2
 vol_bgm 100,1000
 wait 1000
-lbg2 "c:cg_box",s0_3,"eve_last1"
-drop_cache "c:cg_box","eve_last1"
-lbg "a:cg_box",s0_27,"eve_last2"
+lbg2 "c:cg/cgbox",s0_3,"eve_last1"
+drop_cache "c:cg/cgbox","eve_last1"
+lbg "a:cg/cgbox",s0_27,"eve_last2"
 spt_mem "a2","alpha",s0_27,0
 flush 10,17
 spt_mem "a2","xpos",s0_3,-13730,66667

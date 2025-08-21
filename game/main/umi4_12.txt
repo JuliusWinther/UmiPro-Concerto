@@ -1467,7 +1467,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"e0904_a"
+lbg "c:cg/cgbox",s0_3,"e0904_a"
 flush 2
 msgwnd_mar
 *d26503
@@ -1513,7 +1513,7 @@ msgwnd_non
 d `咆哮する楼座の上半身が、ぐしゃりという表現でしか説明できないほどに、ひしゃげ、`[@]`あっという間に絞られた血塗れ雑巾のようにしてしまう。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0904_a"
+lbg "c:cg/cgbox",s0_3,"e0904_a"
 flush 22
 msgwnd_mar
 *d26508
@@ -1941,7 +1941,7 @@ d `笑い声は消し去った。`[@]`{n}次はその笑い顔を消してやる
 d `消してやる、潰してやる、引き千切ってやる…ッ！！`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0904_b"
+lbg "c:cg/cgbox",s0_3,"e0904_b"
 flush 22
 msgwnd_mar
 *d26579

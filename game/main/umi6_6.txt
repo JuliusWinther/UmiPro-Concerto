@@ -23,7 +23,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 4
 wait 2000
@@ -74,7 +74,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1dn_bg"
+lbg "a:backgrounds",s0_1,"garden_r1dn_bg"
 lbg "a:backgrounds",s0_3,"garden_r1dn"
 flush 4
 msgwnd_non
@@ -97,7 +97,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 4
 lss s0_8,"sha","a11_tokui1" ;1
@@ -177,7 +177,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 22
 lss s0_10,"sha","a11_warai1" ;1
@@ -300,7 +300,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"geo","a11_defo1" ;1
 spt_mem "a2","darken_r",s0_9,186
@@ -365,7 +365,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11_majime5" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -465,7 +465,7 @@ lbg "c:colour",s0_3,"white"
 flush 2
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ex02"
+lbg "c:cg/cgbox",s0_3,"ex02"
 flush 22
 msgwnd_geo
 *d44128
@@ -492,7 +492,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"geo","a11k_majime5k" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -735,7 +735,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 24
 bgmplay 43,71,0
@@ -758,7 +758,7 @@ wait_on_d -1
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"sha","a11_odoroki1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -843,7 +843,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 23
 lss s0_9,"geo","a11k_majime5k" ;1
@@ -961,7 +961,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"sha","a11_warai2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1043,7 +1043,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"geo","a21_komaru5" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1179,7 +1179,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"sha","a11_hajirai3" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1222,7 +1222,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1dn_bg"
+lbg "a:backgrounds",s0_1,"garden_r1dn_bg"
 lbg "a:backgrounds",s0_3,"garden_r1dn"
 flush 22
 msgwnd_geo
@@ -1230,7 +1230,7 @@ msgwnd_geo
 d [lv 0*"07"*"60300189"]`「紗代」`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_8,"sha","a11_warai1" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1273,7 +1273,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"e0104_b"
+lbg "c:cg/cgbox",s0_3,"e0104_b"
 flush 2
 msgwnd_sha
 *d44215
@@ -1290,7 +1290,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"geo","a11_majime5" ;1
 spt_mem "a2","darken_r",s0_9,186

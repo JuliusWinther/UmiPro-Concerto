@@ -1399,7 +1399,7 @@ flush 22
 seplay 1,33,90
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 1
 meplay 1,16,40
 wait 2000
@@ -1472,7 +1472,7 @@ lbg "c:colour",s0_3,"white"
 flush 1
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_moon1"
+lbg "c:efe",s0_3,"magicsquare_moon1"
 flush 2
 meplay 2,13,40
 msgwnd_non
@@ -1606,7 +1606,7 @@ meplay 1,13,40
 d `みんなが一度に朱志香の部屋に雪崩れ込む。`[@]`{n}…その光景は、皆がそれぞれにしていた最悪の想像が的中していたことを教えてくれた…。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0202"
+lbg "c:cg/cgbox",s0_3,"g0202"
 flush 22
 msgwnd_but
 *d11808
@@ -2268,7 +2268,7 @@ lbg "c:colour",s0_3,"black"
 flush 26
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0202"
+lbg "c:cg/cgbox",s0_3,"g0202"
 flush 22
 msgwnd_ros
 *d11884

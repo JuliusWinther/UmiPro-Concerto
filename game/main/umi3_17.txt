@@ -44,7 +44,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"jes","a11_naki1" ;1
 flush 26
@@ -80,7 +80,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 22
 *d20346
@@ -100,7 +100,7 @@ d `……その東屋に、蔵臼伯父さんと夏妃伯母さんの遺体が�
 d `楼座叔母さんたちの時と違い、せめて雨曝しになっていないのだけが幸いだろうが、`[@]`そんなこと、今の朱志香に口にできるわけもない…。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"but","b11_nayamu1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -139,7 +139,7 @@ d `…そこに転がる２本のオカルト意匠の施された杭状の凶�
 d `親父たちの額やら胸やらに突き刺さっていた時は、`[@]`警察が来るまでの現場保全のためにと、抜くことさえ許されなかったが、`[@]`……もはや朱志香はそんなことは構わず、痛々しい姿の二人のために、すぐに抜き取った。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"eva","b24_komaru4" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -235,7 +235,7 @@ d `黙って行かせれば、それは見殺しを意味するのだ。`[@]`{n}
 d `……それに、残酷ではあるが、`[@]`蔵臼伯父さんたちはすでに死んでいて、`[@]`これ以上できることは何もない…。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 26
 *d20372
@@ -259,7 +259,7 @@ wait_on_d -1
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"but","b22_niramu1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -476,7 +476,7 @@ msgwnd_non
 d `大人たちから、客間の扉などに、不気味な魔法陣が書かれている、という話は聞いていた。`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 26
 *d20407
 d `……血を想起させる真っ赤な塗料で書きなぐられ、`[@]`だらりと滴り落ちるように描かれたそれは、不気味という言葉で言い表す他がない。`[\]
@@ -3391,7 +3391,7 @@ d [lv 0*"34"*"33300760"]`「……なのにあなたは邪魔ばかり。`[@][lv
 textoff2
 waits 167
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"e0903_a"
+lbg "c:cg/cgbox",s0_3,"e0903_a"
 flush 25
 msgwnd_bea
 *d20793
@@ -3437,7 +3437,7 @@ meplay 1,5,80
 seplay 1,36,100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_b"
+lbg "c:cg/cgbox",s0_3,"e0903_b"
 flush 22
 agpt quakexcycle,83
 agpt quakexamp,30
@@ -3476,7 +3476,7 @@ d [lv 0*"34"*"33300768"]`「でも、私の質問に正直に答えられたら�
 textoff2
 waits 167
 csp_slot s0_8
-lbg "c:cg_box",s0_3,"e0903_a"
+lbg "c:cg/cgbox",s0_3,"e0903_a"
 flush 2
 msgwnd_bea
 *d20801
@@ -3549,12 +3549,12 @@ flush 1
 meplay 2,17,80
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_a"
+lbg "c:cg/cgbox",s0_3,"e0903_a"
 flush 22
 seplay 1,36,100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_b"
+lbg "c:cg/cgbox",s0_3,"e0903_b"
 flush 22
 agpt quakeycycle,83
 agpt quakeyamp,30
@@ -3603,7 +3603,7 @@ wait 1000
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_a"
+lbg "c:cg/cgbox",s0_3,"e0903_a"
 flush 6
 bgmplay 79,71,0
 msgwnd_bea
@@ -3710,7 +3710,7 @@ meplay 1,5,70
 seplay 1,36,100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_b"
+lbg "c:cg/cgbox",s0_3,"e0903_b"
 flush 1
 agpt quakeycycle,83
 agpt quakeyamp,30
@@ -3804,7 +3804,7 @@ lbg "c:colour",s0_3,"black"
 flush 25
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_a"
+lbg "c:cg/cgbox",s0_3,"e0903_a"
 flush 2
 msgwnd_bea
 *d20819
@@ -3963,7 +3963,7 @@ d `無慈悲なる黄金の縫い針が、何度も何度もベアトの心臓�
 d `……しかし、いくら縛り上げようとも、その心臓は止まろうとしない…。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_b"
+lbg "c:cg/cgbox",s0_3,"e0903_b"
 flush 6
 msgwnd_bea
 *d20826
@@ -4029,7 +4029,7 @@ flush 1
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_a"
+lbg "c:cg/cgbox",s0_3,"e0903_a"
 flush 6
 msgwnd_bea
 *d20830
@@ -4203,7 +4203,7 @@ flush 10,167
 seplay 1,36,100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_b"
+lbg "c:cg/cgbox",s0_3,"e0903_b"
 flush 1
 agpt quakeycycle,83
 agpt quakeyamp,30
@@ -4411,7 +4411,7 @@ flush 1
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_b"
+lbg "c:cg/cgbox",s0_3,"e0903_b"
 flush 26
 msgwnd_bea
 *d20840
@@ -4885,7 +4885,7 @@ lbg "c:colour",s0_3,"black"
 flush 2
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0903_c"
+lbg "c:cg/cgbox",s0_3,"e0903_c"
 flush 2
 *d20898
 d `口を緩やかに曲げて、……笑っていたからだ。`[\]
@@ -5603,7 +5603,7 @@ seplay 2,56,71
 textoff2
 waits 167
 csp_slot s0_24
-lbg "c:cg_box",s0_3,"g0301"
+lbg "c:cg/cgbox",s0_3,"g0301"
 lss s0_24,"wal","a11_defo1" ;1
 flush 22
 *d20963
@@ -5907,7 +5907,7 @@ textoff2
 waits 167
 csp_slot s0_25
 csp_slot s0_23
-lbg "c:cg_box",s0_3,"g0302"
+lbg "c:cg/cgbox",s0_3,"g0302"
 lss s0_25,"but","b11_majime4" ;1
 spt_mem "a2","xpos",s0_25,-370
 lss s0_23,"wal","a11_defo1" ;1
@@ -6960,7 +6960,7 @@ flush 25
 meplay 1,5,80
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0302"
+lbg "c:cg/cgbox",s0_3,"g0302"
 flush 22
 msgwnd_non
 *d21100
@@ -7085,7 +7085,7 @@ wait_on_d -1
 textoff2
 waits 167
 csp_slot s0_8
-lbg "c:cg_box",s0_3,"g0302"
+lbg "c:cg/cgbox",s0_3,"g0302"
 flush 26
 msgwnd_non
 *d21114
@@ -7170,7 +7170,7 @@ lbg "c:colour",s0_3,"black"
 flush 26
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0302"
+lbg "c:cg/cgbox",s0_3,"g0302"
 flush 22
 msgwnd_non
 *d21124

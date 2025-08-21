@@ -697,7 +697,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0201_b"
+lbg "c:cg/cgbox",s0_3,"c0201_b"
 color_mod2 s0_3,#ffffff
 flush 8
 msgwnd_wil

@@ -4380,7 +4380,7 @@ vol_bgm 90,1000
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0406"
+lbg "c:cg/cgbox",s0_3,"c0406"
 set_scale_center s0_3,0,-540
 spt_mem "a2","scalex",s0_3,110
 spt_mem "a2","scaley",s0_3,110

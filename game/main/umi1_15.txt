@@ -1170,7 +1170,7 @@ wait 1000
 seplay 1,22,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars5"
+lbg "c:efe",s0_3,"magicsquare_mars5"
 flush 2
 *d6321
 d `…このデザインは、……そうだ。`[@]`{n}俺と朱志香が昨日、真里亞にもらったあのキーホルダーのお守りにそっくりじゃないか…。`[\]
@@ -3854,7 +3854,7 @@ d `そして、呼吸をようやく許された時。`[@]`{n}…俺はずっと
 d `…紙がぴったりくっ付いていたので、１枚と勘違いしてしまっていたようだった。`[\]
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_mars3"
+lbg "c:efe",s0_3,"magicsquare_mars3"
 flush 22
 *d6716
 d `その２枚目に文字はなかった。`[@]`{n}……描かれていたのは、血のような赤いインクで書かれた魔法陣。`[\]

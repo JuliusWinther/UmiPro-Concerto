@@ -2641,7 +2641,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 2
 wait 3000
@@ -2681,7 +2681,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 22
 lss s0_9,"geo","a11_warai1" ;1
@@ -2696,7 +2696,7 @@ d [lv 0*"07"*"10300392"]`「うちの父さんは秀吉って名前だけあっ�
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"sha","a11_defo1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2837,7 +2837,7 @@ rain_params s0_11,500,300,0
 meplay 1,12,40
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a21_defo1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -3017,7 +3017,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 flush 22
 lss s0_10,"geo","a21k_defo1k" ;1
@@ -3053,7 +3053,7 @@ d `それは、小さな小箱。`[@]`濃い青色のベルベット生地の小
 d `…その特徴的な形だけで、中に何が納められているかを想像させた。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"geo","a11_majime2" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -3116,7 +3116,7 @@ msgwnd_geo
 d [lv 0*"07"*"10300433"]`「うん、そうだね。`[@][lv 0*"07"*"10300434"]`…いい子だよ」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_17,"e0104_a"
+lbg "c:cg/cgbox",s0_17,"e0104_a"
 flush 2
 msgwnd_non
 *d3739
@@ -3136,7 +3136,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_9,"geo","a11k_defo1k" ;1
 flush 26
@@ -3151,7 +3151,7 @@ wait_on_d -1
 textoff2
 waits 167
 csp_slot s0_9
-lbg "c:backgrounds",s0_1,"garden_r1an_bg"
+lbg "a:backgrounds",s0_1,"garden_r1an_bg"
 lbg "a:backgrounds",s0_3,"garden_r1an"
 lss s0_10,"sha","a11_hajirai1" ;1
 spt_mem "a2","xpos",s0_10,370

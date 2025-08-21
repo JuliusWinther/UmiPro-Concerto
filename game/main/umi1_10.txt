@@ -1915,7 +1915,7 @@ wait 1000
 seplay 1,24,71
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 5
 *d4137
 d `……不気味な赤黒い…、液体？`[@]`　粘液？`[@]`　あるいはネバつく塗料のようなものなのか…。`[@]`…そんな不気味な何かで、口で形容できない不気味な図形が描かれていた。`[\]
@@ -2919,7 +2919,7 @@ msgwnd_geo
 d [lv 0*"07"*"10300494"]`「……………………………、`[@][lv 0*"07"*"10300495"]`素敵な笑顔だったよ」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0104_b"
+lbg "c:cg/cgbox",s0_3,"e0104_b"
 flush 8
 msgwnd_non
 *d4280
@@ -3032,7 +3032,7 @@ lbg "c:colour",s0_3,"black"
 flush 23
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0101"
+lbg "c:cg/cgbox",s0_3,"g0101"
 flush 23
 msgwnd_non
 *d4300
@@ -3493,7 +3493,7 @@ csp_slot s0_11
 csp_slot s0_7
 textoff2
 waits 167
-lbg "a:efe",s0_3,"magicsquare_sun7"
+lbg "c:efe",s0_3,"magicsquare_sun7"
 flush 2
 *d4381
 d `…シャッターに描かれた不気味な魔法陣は、`[@]`６人の遺体を飲み込んだまま、時折の雷鳴に照らされながら、不気味に浮かび上がるのだった……。`[\]

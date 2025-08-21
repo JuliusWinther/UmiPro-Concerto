@@ -3916,7 +3916,7 @@ lbg "c:efe",s0_3,"blood_1ar"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0301"
+lbg "c:cg/cgbox",s0_3,"g0301"
 flush 2
 *d18643
 d `その柵の槍が、楼座の延髄を貫いた。`[\]

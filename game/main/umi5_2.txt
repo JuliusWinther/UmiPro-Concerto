@@ -155,7 +155,7 @@ flush 1
 wait 500
 textoff2
 waits 167
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 flush 25
 lss s0_10,"bea","a11_1_warai1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1563,7 +1563,7 @@ wait 1000
 bgmplay 64,71,0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep501"
+lbg "c:cg/cgbox",s0_3,"ep501"
 flush 8
 meplay 1,24,71
 meplay 2,29,90
@@ -1613,7 +1613,7 @@ d `蔵臼の口元を拭ったお気に入りのハンカチにも、真っ赤�
 d `食べても飲んでも毒で、しかも口の中がこんなにも真っ赤になって、`[@]`その上、一度口にしたものを吐き出さなければならないなんて、みっともない！`[@]`　……夏妃はそう思い、勧める蔵臼に固辞し続けた。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep501"
+lbg "c:cg/cgbox",s0_3,"ep501"
 flush 26
 msgwnd_nat
 *d36120
@@ -1672,7 +1672,7 @@ d `夏妃がそうであるように、最近は若者に嫌われていて廃�
 d `……そして、この辺りでは縁起物とされ、`[@]`夫婦の象徴と呼ばれていること。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep502"
+lbg "c:cg/cgbox",s0_3,"ep502"
 flush 2
 *d36136
 d `夫の顔を見る。`[@]`……ぷいと明後日の方を向くが、ちょっと頬を赤くしているように見えた…。`[\]

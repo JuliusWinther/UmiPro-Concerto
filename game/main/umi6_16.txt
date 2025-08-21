@@ -6460,7 +6460,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep601_nd2"
+lbg "c:cg/cgbox",s0_3,"ep601_nd2"
 flush 2
 msgwnd_non
 *d49196
@@ -6861,7 +6861,7 @@ vol_me 5,60,100
 wait 100
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep601_d2"
+lbg "c:cg/cgbox",s0_3,"ep601_d2"
 flush 2
 msgwnd_eri
 *d49249
@@ -6895,7 +6895,7 @@ d `ヱリカは指輪の、ダイヤの仕掛けに触れる。`[\]
 d `……それを捻れば、`[!w500]`……棘が食い込み、二度と、抜けない…。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep601_d2"
+lbg "c:cg/cgbox",s0_3,"ep601_d2"
 flush 22
 msgwnd_but
 *d49256
@@ -6964,7 +6964,7 @@ d [lv 0*"46"*"64501422"]`「……ハぁイ…？`[@][lv 0*"46"*"64501423"]`　�
 textoff2
 waits 167
 csp_slot s0_8
-lbg "c:cg_box",s0_3,"ep601_a2"
+lbg "c:cg/cgbox",s0_3,"ep601_a2"
 flush 2
 set_window_simple 80
 msgwnd_but
@@ -6988,7 +6988,7 @@ d `しかし、それは本当に一瞬だけのこと。`[\]
 seplay 1,54,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep601_d2"
+lbg "c:cg/cgbox",s0_3,"ep601_d2"
 flush 2
 *d49268
 d `戦人はそれを口にするためだけに、……彼に残された、わずかな抵抗の力を、使い切る。`[\]

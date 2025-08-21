@@ -445,7 +445,7 @@ flush 2
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep701"
+lbg "c:cg/cgbox",s0_3,"ep701"
 flush 2
 *d51563
 d [lv 0*"59"*"70700007"]`『私、英語わかるわ』`[\]

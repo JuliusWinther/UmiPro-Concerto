@@ -327,7 +327,7 @@ lbg "c:colour",s0_3,"black"
 flush 26
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep503_a"
+lbg "c:cg/cgbox",s0_3,"ep503_a"
 flush 22
 meplay 1,16,50
 msgwnd_non
@@ -418,12 +418,12 @@ vol_bgm -1,2000
 wait 2000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep503_a"
+lbg "c:cg/cgbox",s0_3,"ep503_a"
 flush 22
 wait 1000
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep503_b"
+lbg "c:cg/cgbox",s0_3,"ep503_b"
 flush 10,1667
 textoff2
 waits 167
@@ -503,7 +503,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"ep503_b"
+lbg "c:cg/cgbox",s0_3,"ep503_b"
 flush 10,1667
 textoff2
 waits 167

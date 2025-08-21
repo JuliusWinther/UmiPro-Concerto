@@ -1,0 +1,49 @@
+*umi1_17
+;ワインボトルのノート片
+log_reset
+mov $name_chapter_r_click,r_click_chapters_1_17+"|"+r_click_chapters_1_17_l2+"|"+r_click_chapters_1_17_l3
+mov $name_chapter_save, "1_17"
+new_chapter date_scenario_1_17,scenario_1_17
+skip_off
+lbg2 "c:locale_lan",s0_3,"end_1a_1"
+drop_cache "c:locale_lan","end_1a_1"
+lbg2 "c:locale_lan",s0_4,"end_1a_2"
+drop_cache "c:locale_lan","end_1a_2"
+lbg2 "c:locale_lan",s0_5,"end_1a_3"
+drop_cache "c:locale_lan","end_1a_3"
+spt_mem "a2","ypos",s0_3,17280
+spt_mem "a2","ypos",s0_4,17280
+spt_mem "a2","ypos",s0_5,17280
+
+;    #locale_import "end_1a_1.txt"
+;
+;	lbsp2 s0_6,$Free1,0,0
+
+;	getspsize2 s0_6,%Free1,%Free2
+;	spt_mem "a2","xpos",s0_6,%Free1/2
+;	;;aspt2 ypos,s0_6,17280;%Free2/2 + 1200
+;   spt_mem "a2","ypos",s0_6,(%Free2/2)-540++ 6120/2;1865; + 17280 ;testa  dovrebbe allineare i centri
+
+flush 1
+bgmplay 1010,100,1
+textoff2
+spt_mem "a2","ypos",s0_3,540,50169;209170 ;-10260
+;spt_mem "a2","ypos",s0_6,540,((%Free2/2)*(50169/3))/(6120/2);((50169/3)*%Free2)/(6120);(50169/3);-200;(%Free2*(50170))/((6120*3));209170
+spt_mem "a2","ypos",s0_4,540,50169;209170
+spt_mem "a2","ypos",s0_5,540,50169;209170
+sptwait2 ypos,s0_5
+spt_mem "a2","ypos",s0_5,0,10830,1
+sptwait2 ypos,s0_5
+wait 8000
+textoff2
+waits 167
+lbg "c:colour",s0_5,"black"
+flush 18,5000,msk_1
+vol_mix_fade 4000
+vol_bgm -1,4000
+wait 4000
+wait 2000
+skip_on
+ch_done flag_scenario_1_17
+*umi1_end
+goto *end_game

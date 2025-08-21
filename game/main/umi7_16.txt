@@ -2066,7 +2066,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 lss s0_8,"mar","a22_warai2" ;1
 spt_mem "a2","xpos",s0_8,-370
 lss s0_10,"be2","b11_fuman3" ;1
@@ -2119,7 +2119,7 @@ flush 22
 d `小さな失言で楽しい時間に水を差してしまったことを悔やむが、`[@]`取り繕うには、少し長く沈黙してしまった…。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1df_bg"
+lbg "a:backgrounds",s0_1,"garden_r1df_bg"
 lbg "a:backgrounds",s0_3,"garden_r1df"
 flush 22
 *d55845
@@ -2128,7 +2128,7 @@ d `妾は笑ったが、多分、寂しげなものだったと思う。`[\]
 d `真里亞は、どうして妾が唐突にそんな表情を浮かべるのかわからなくて、きょとんとしていた。`[\]
 textoff2
 waits 167
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 flush 22
 lss s0_8,"be2","b11_fuman3" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -2190,13 +2190,13 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:backgrounds",s0_1,"garden_r1df_bg"
+lbg "a:backgrounds",s0_1,"garden_r1df_bg"
 lbg "a:backgrounds",s0_3,"garden_r1df"
 flush 2
 wait 667
 textoff2
 waits 167
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 lss s0_9,"be2","b11_majime1" ;1
 flush 26
 lss s0_9,"be2","b11_nayamu1" ;1
@@ -2266,7 +2266,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:backgrounds",s0_3,"garden_r1af"
+lbg s0_3,"garden_r1af"
 lss s0_9,"be2","b11_majime1" ;1
 flush 2
 msgwnd_bea
@@ -2327,7 +2327,7 @@ textoff2
 waits 167
 csp_slot s0_8
 csp_slot s0_10
-lbg "c:backgrounds",s0_1,"garden_r1df_bg"
+lbg "a:backgrounds",s0_1,"garden_r1df_bg"
 lbg "a:backgrounds",s0_3,"garden_r1df"
 flush 22
 msgwnd_non

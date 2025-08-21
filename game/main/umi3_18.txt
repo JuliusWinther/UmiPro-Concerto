@@ -1136,7 +1136,7 @@ anim s0_17,"no29a",1
 blend_mode add,s0_17
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0303"
+lbg "c:cg/cgbox",s0_3,"c0303"
 flush 2
 waitvideo
 csp_slot s0_17

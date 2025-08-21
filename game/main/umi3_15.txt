@@ -357,7 +357,7 @@ z_order_override s0_11,s0_1
 rain_params s0_11,500,300,0
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0302"
+lbg "c:cg/cgbox",s0_3,"g0302"
 flush 26
 wait 2000
 seplay 1,56,71
@@ -445,7 +445,7 @@ flush 22
 d `あの新しき残忍な魔女は、杭で抉るというのさえ合っていればいいのだろうと、`[@]`……ニンゲンの形さえ留めない肉塊に杭を立てることさえやったかもしれない。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"g0301"
+lbg "c:cg/cgbox",s0_3,"g0301"
 flush 22
 *d19600
 d `特に楼座と真里亞の死体が顕著だろう。`[@]`…黄金の魔女が望んだ通りに殺したならば、どれほどに死体は凄惨な姿を曝したことか。`[\]
@@ -727,7 +727,7 @@ d [lv 0*"10"*"30101272"]`「……親父、`[|][lv 0*"10"*"30101273"]`……霧�
 textoff2
 waits 167
 csp_slot s0_10
-lbg "c:cg_box",s0_3,"g0302"
+lbg "c:cg/cgbox",s0_3,"g0302"
 flush 25
 msgwnd_eva
 *d19639

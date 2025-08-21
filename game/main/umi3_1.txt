@@ -412,7 +412,7 @@ msgwnd_cla
 d [lv 0*"02"*"30800001"]`「女の学力は、紅茶の砂糖にも似ていると思わないかね？`[@][lv 0*"02"*"30800002"]`　ないのも味気ないが、過ぎれば紅茶の味わいを大いに損なう」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0301_a"
+lbg "c:cg/cgbox",s0_3,"e0301_a"
 flush 23
 msgwnd_eva
 *d14238
@@ -534,7 +534,7 @@ wait 1000
 seplay 1,16,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0301_b"
+lbg "c:cg/cgbox",s0_3,"e0301_b"
 flush 24
 msgwnd_kin
 *d14262
@@ -602,7 +602,7 @@ d [lv 0*"05"*"31000029"]`「お父様…！！`[@][lv 0*"05"*"31000030"]`　教�
 d [lv 0*"05"*"31000032"]`「どうか私にも、何が劣っているのかお教えください…！`[@][lv 0*"05"*"31000033"]`　私はこれ以上、何を身に付けたならお父様に認めていただけるのですか…！！」`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0301_b"
+lbg "c:cg/cgbox",s0_3,"e0301_b"
 flush 24
 msgwnd_kin
 *d14278
@@ -665,7 +665,7 @@ lbg "c:colour",s0_3,"black"
 flush 22
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0301_c"
+lbg "c:cg/cgbox",s0_3,"e0301_c"
 flush 26
 msgwnd_cla
 *d14285

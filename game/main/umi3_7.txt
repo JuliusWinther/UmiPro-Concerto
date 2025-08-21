@@ -1479,7 +1479,7 @@ msgwnd_non
 d `二人のベアトリーチェを中心に、空中を火花が爆ぜたように見えた。`[\]
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"c0301"
+lbg "c:cg/cgbox",s0_3,"c0301"
 flush 2
 meplay 1,18,40
 *d16798

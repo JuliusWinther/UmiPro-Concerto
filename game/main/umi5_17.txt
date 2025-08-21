@@ -25,7 +25,7 @@ wait 500
 seplay 1,17,71
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"ep505"
+lbg "c:cg/cgbox",s0_3,"ep505"
 flush 50
 *d67779
 d `誰もいない大聖堂に、`[!w500]`………天を見上げた姿のまま、`[@]`赤き太刀に胸を貫かれ、地面に縫い止められた戦人が、`[@]`……立ち尽くしている。`[\]
@@ -2305,13 +2305,13 @@ textoff2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0901_a"
+lbg "c:cg/cgbox",s0_3,"e0901_a"
 color_mod2 s0_3,#ffffff
 flush 2
 waits 167
 textoff2
 waits 167
-lbg "c:cg_box",s0_3,"e0901_b"
+lbg "c:cg/cgbox",s0_3,"e0901_b"
 color_mod2 s0_3,#ffffff
 flush 2
 *d68130
@@ -2681,7 +2681,7 @@ waits 333
 lbg s0_3,"kakera_memory3"
 flush 18,150,msk_1
 waits 333
-lbg "a:efe",s0_3,"magicsquare_gap"
+lbg "c:efe",s0_3,"magicsquare_gap"
 flush 18,150,msk_1
 waits 333
 lbg "c:backgrounds",s0_3,"rose_g1a"
