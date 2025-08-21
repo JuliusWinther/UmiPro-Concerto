@@ -196,13 +196,10 @@ stralias r_menu_btn_6,":a/2,0,3;graphics\menu\r_click_menu\r_menu_btn_6.png"
 stralias r_menu_btn_7,":a/2,0,3;graphics\menu\r_click_menu\r_menu_btn_7.png"
 stralias r_menu_btn_8,":a/2,0,3;graphics\menu\r_click_menu\r_menu_btn_8.png"
 
-;========================== Tips Menu Elements ==========================
+;========================== Tips and Grimoire Menu Elements ==========================
 stralias tips_bg,":c;graphics\menu\tips\tips_bg.png"
 stralias tips_tab,":a;graphics\menu\tips\tips_tab.png"
-
-;========================== Grimoire Menu Elements ==========================
-stralias r_grim,":a/2,0,3;graphics\system\btns\grimoire_btn.png" ;TODO automate text generation
-stralias grim_caption,":a;graphics\menu\notes\notes_caption.png" ;TODO automate text generation
+stralias tips_main,":a;graphics\menu\tips\tips_main.png"
 
 ;========================== Chapter Selection/Jump Menu Elements ==========================
 stralias chapter_screen_all_ep1,":c/18,0,3,1;graphics\menu\jump\EP1A.png" ;TODO delocalize

@@ -24930,7 +24930,7 @@ gosub *pam_audio
 
 ;video
 mov $anim_sprite,"video"
-if %legacy_op = 1 && $anim_file = "op" mov $anim_sprite,"legacy"
+if %legacy_op = on && $anim_file = "op" mov $anim_sprite,"legacy"
 if $anim_file = "op_new" mov $anim_file,"op"
 if %video_res = 1 mov $anim_file,$anim_sprite+"\1080p\"+$anim_file+".mp4" ;Original Edited - no more 720p videos - W_CUSTOM
 if %video_res = 0 mov $anim_file,$anim_sprite+"\1080p\"+$anim_file+".mp4"
@@ -27452,6 +27452,15 @@ return
 		if %%music_box_tmp == 1 mov ?bgm_list[%music_box_tmp-music_box_count],1
 	next
 
+	operate_config u_read,$music_box_tmp,"bgm_unlock"
+	if $music_box_tmp == "8" goto *load_bgms_8
+	if $music_box_tmp == "7" goto *load_bgms_7
+	if $music_box_tmp == "6" goto *load_bgms_6
+	if $music_box_tmp == "5" goto *load_bgms_5
+	if $music_box_tmp == "4" goto *load_bgms_4
+	if $music_box_tmp == "3" goto *load_bgms_3
+	if $music_box_tmp == "2" goto *load_bgms_2
+	if $music_box_tmp == "1" goto *load_bgms_1
 return
 
 *load_bgms_8
@@ -31187,18 +31196,6 @@ reset
 		if $UMINEKOEND == "8" mov %UMINEKOEND,90 : mov %UMINEKOEND_FLG,90 : gosub *do_unlock
 	~
 
-	operate_config u_read,$music_box_tmp,"bgm_unlock"
-	if $music_box_tmp == "undef" jumpf
-		if $music_box_tmp == "8" gosub *load_bgms_8
-		if $music_box_tmp == "7" gosub *load_bgms_7
-		if $music_box_tmp == "6" gosub *load_bgms_6
-		if $music_box_tmp == "5" gosub *load_bgms_5
-		if $music_box_tmp == "4" gosub *load_bgms_4
-		if $music_box_tmp == "3" gosub *load_bgms_3
-		if $music_box_tmp == "2" gosub *load_bgms_2
-		if $music_box_tmp == "1" gosub *load_bgms_1
-	~
-
 	operate_config u_read,$CHIRU_MODE,"force_game"
 	if $CHIRU_MODE == "undef" jumpf
 		if $CHIRU_MODE == "rondo" && %CHIRU_MODE != 0 mov %CHIRU_MODE,0 : csp_rst : definereset
@@ -31408,11 +31405,8 @@ reset
 
 	mov %legacy_op,off ;TODO Convert in an option for displaying only old opening
 	operate_config u_read,$legacy_op,"legacy_op"
-	if $cfg_steam_conventions == "undef" jumpf
+	if $legacy_op == "undef" jumpf
 		if $legacy_op == "true" mov %legacy_op,on
-		if %legacy_op == on fileexist %legacy_op,"legacy\1080p\op.mp4" ;Original Edited - no more 720p videos - W_CUSTOM
-		if %legacy_op == on fileexist %legacy_op,"legacy\1080p\op.mp4"
-		if %legacy_op == on fileexist %legacy_op,"legacy\bgm\op.ogg"
 	~
 
 	mov %sskip_turbo,1

@@ -166,7 +166,7 @@ goto *bgm_end
 	if %bgm_box_type = 3 tree_set 2,%Free1,"bg","315"
 
 	;if ?bgm_list[%BGM_Id] == 1 tree_set 2,%Free1,"bg","318"
-	;if ?bgm_list[%BGM_Id] == 0 tree_set 2,%Free1,"text","{p:6:{a:c:????}}" : tree_set 2,%Free1,"bgm",""
+	if ?bgm_list[%BGM_Id] == 0  tree_set 2,%Free1,"bg","317" : tree_set 2,%Free1,"text","{p:6:{a:c:????}}" : tree_set 2,%Free1,"bgm",""
 return
 
 *mbox_change_page

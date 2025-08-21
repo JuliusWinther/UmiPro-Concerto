@@ -9,6 +9,7 @@
 
 	;lsp r_black_lsp,tips_tab,1524,38
 	lsp r_bg_lsp,tips_bg,0,0
+    lsp 209,tips_main,0,0
 	if %r_display = 2 lsp 210,tips_tab,136,38
 	if %r_display = 1 lsp 210,tips_tab,1524,38
 	lsp r_exit_lsp,set_exit,0,0
