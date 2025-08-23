@@ -256,9 +256,8 @@ stralias mark_char_c,":a;graphics\menu\cg\mark_char_c.png"
 stralias mark_special_c,":a;graphics\menu\cg\mark_special_c.png"
 stralias backpage,":a;graphics\menu\cg\backpage.png"
 
-stralias cgmode_logo,":c;graphics\menu_en\cgmode\cgmode_logo.png" ;TODO Sta roba è da cambiare e unificare
-stralias cgmode_logo_chiru,":c;graphics\menu_en\cgmode\cgmode_logo_chiru.png" ;TODO Sta roba è da cambiare e unificare
-stralias cgmode_logox,":c;graphics\menu_en\cgmode\cgmode_logox.png" ;TODO Sta roba è da cambiare e unificare
+stralias cgmode_logo,":c;graphics\menu\cg\cgmode_logo.png" ;TODO Sta roba è da cambiare e unificare
+stralias cgmode_logox,":c;graphics\menu\cg\cgmode_logox.png" ;TODO Sta roba è da cambiare e unificare
 
 ;========================== Trophies Menu Elements ==========================
 stralias trophy_caption,":a;graphics\menu\trophy\trophy_caption.png" ;TODO automate text generation

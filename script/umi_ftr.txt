@@ -18264,14 +18264,14 @@ return
 return
 
 *do_unlock
-	if %UMINEKOEND >= 90 mark_range_read "*umi1_op","*ura_8_end" : gosub *do_unlock_chars8 : return ;unlock ep8
-	if %UMINEKOEND >= 80 mark_range_read "*umi1_op","*ura_7_end" : gosub *do_unlock_chars7 : return ;unlock ep8
-	if %UMINEKOEND >= 70 mark_range_read "*umi1_op","*ura_6_end" : gosub *do_unlock_chars6 : return ;unlock ep7
-	if %UMINEKOEND >= 60 mark_range_read "*umi1_op","*ura_5_end" : gosub *do_unlock_chars5 : return ;unlock ep6
-	if %UMINEKOEND >= 50 mark_range_read "*umi1_op","*ura_4_end" : gosub *do_unlock_chars4 : return ;unlock ep5
-	if %UMINEKOEND >= 40 mark_range_read "*umi1_op","*ura_3_end" : gosub *do_unlock_chars3 : return ;unlock ep4
-	if %UMINEKOEND >= 30 mark_range_read "*umi1_op","*ura_2_end" : gosub *do_unlock_chars2 : return ;unlock ep3
-	if %UMINEKOEND >= 20 mark_range_read "*umi1_op","*ura_1_end" : gosub *do_unlock_chars1 : return ;unlock ep2
+	if %UMINEKOEND >= 90 mark_range_read "*umi1_op","*ura_8_end" : gosub *do_unlock_chars8 : : return ;unlock ep8
+	if %UMINEKOEND >= 80 mark_range_read "*umi1_op","*ura_7_end" : gosub *do_unlock_chars7 : : return ;unlock ep8
+	if %UMINEKOEND >= 70 mark_range_read "*umi1_op","*ura_6_end" : gosub *do_unlock_chars6 : : return ;unlock ep7
+	if %UMINEKOEND >= 60 mark_range_read "*umi1_op","*ura_5_end" : gosub *do_unlock_chars5 : : return ;unlock ep6
+	if %UMINEKOEND >= 50 mark_range_read "*umi1_op","*ura_4_end" : gosub *do_unlock_chars4 : : return ;unlock ep5
+	if %UMINEKOEND >= 40 mark_range_read "*umi1_op","*ura_3_end" : gosub *do_unlock_chars3 : : return ;unlock ep4
+	if %UMINEKOEND >= 30 mark_range_read "*umi1_op","*ura_2_end" : gosub *do_unlock_chars2 : : return ;unlock ep3
+	if %UMINEKOEND >= 20 mark_range_read "*umi1_op","*ura_1_end" : gosub *do_unlock_chars1 : : return ;unlock ep2
 	if %UMINEKOEND >= 12 mark_range_read "*umi1_op","*teatime_1_end" : gosub *do_unlock_chars1 : return ;done tea
 	if %UMINEKOEND >= 11 mark_range_read "*umi1_op","*umi1_end" : gosub *do_unlock_chars1 : return ;done ep
 return
@@ -24127,9 +24127,11 @@ return
 return
 
 *open_cg
-
+;I believe this keeps track of unlcoked cgs for trophies, makes sense theya re skipped if seen via ctrl
+;wrong, this is what the %% means in *load_saved_cgs
 ;Original Edited - Unified basic and chiru - W_CUSTOM
-;if %CHIRU_MODE = 1 jumpf
+if %CHIRU_MODE = 1 jumpf
+;Story
 if $lbg_name == "c0101_c" mov %8600,1 : return
 if $lbg_name == "c0201_f" mov %8601,1 : return
 if $lbg_name == "c0202_b" mov %8602,1 : return
@@ -24154,7 +24156,46 @@ if $lbg_name == "e0901_a" mov %8620,1 : return
 if $lbg_name == "e0901_c" mov %8621,1 : return
 if $lbg_name == "e0902"   mov %8622,1 : return
 if $lbg_name == "no55_00059" mov %8623,1 : return
-if $lbg_name == "g0101"   mov %8624,1 : return
+if $lbg_name == "no01_00119" mov %8624,1 : return
+if $lbg_name == "no60_00179" mov %8625,1 : return
+if $lbg_name == "c_e0406_f" mov %8626,1 : return
+
+if $lbg_name == "ep501" mov %8627,1 : return
+if $lbg_name == "ep502" mov %8628,1 : return
+if $lbg_name == "ep504" mov %8629,1 : return
+if $lbg_name == "ep505" mov %8630,1 : return
+if $lbg_name == "ep601_nd2" mov %8631,1 : return
+if $lbg_name == "ep602_b" mov %8632,1 : return
+if $lbg_name == "ep604_2" mov %8633,1 : return
+if $lbg_name == "ep605_c2" mov %8634,1 : return
+if $lbg_name == "ep606" mov %8635,1 : return
+if $lbg_name == "ex02" mov %8636,1 : return
+if $lbg_name == "ep607" mov %8637,1 : return
+if $lbg_name == "c0201_b" mov %8638,1 : return
+if $lbg_name == "ep701" mov %8639,1 : return
+if $lbg_name == "ep702" mov %8640,1 : return
+if $lbg_name == "ep705_4" mov %8641,1 : return
+if $lbg_name == "ep801" mov %8642,1 : return
+if $lbg_name == "ep802" mov %8643,1 : return
+if $lbg_name == "ep803" mov %8644,1 : return
+if $lbg_name == "ep805" mov %8645,1 : return
+if $lbg_name == "ep806" mov %8646,1 : return
+if $lbg_name == "ep807_a" mov %8647,1 : return
+if $lbg_name == "ep808" mov %8648,1 : return
+if $lbg_name == "ep809_b" mov %8649,1 : return
+if $lbg_name == "ep810_a1" mov %8650,1 : return
+if $lbg_name == "ep811" mov %8651,1 : return
+if $lbg_name == "ep812" mov %8652,1 : return
+if $lbg_name == "ep814_d2" mov %8653,1 : return
+if $lbg_name == "ep815_1_" mov %8654,1 : return
+if $lbg_name == "ep815_2_" mov %8655,1 : return
+if $lbg_name == "ep816" mov %8656,1 : return
+if $lbg_name == "ep817" mov %8657,1 : return
+if $lbg_name == "ep818" mov %8658,1 : return
+if $lbg_name == "eve_last2" mov %8659,1 : return
+;60
+;Murder
+if $lbg_name == "g0101"   mov %8824,1 : return
 if $lbg_name == "g0102"   mov %8625,1 : return
 if $lbg_name == "g0103"   mov %8626,1 : return
 if $lbg_name == "g0201"   mov %8627,1 : return
@@ -24163,8 +24204,16 @@ if $lbg_name == "g0203_b" mov %8629,1 : return
 if $lbg_name == "g0301"   mov %8630,1 : return
 if $lbg_name == "g0302"   mov %8631,1 : return
 if $lbg_name == "g0401"   mov %8632,1 : return
-if $lbg_name == "no01_00119" mov %8633,1 : return
-if $lbg_name == "no60_00179" mov %8634,1 : return
+if $lbg_name == "g0402"   mov %8645,1 : return
+if $lbg_name == "g0403"   mov %8646,1 : return
+if $lbg_name == "g0404"   mov %8647,1 : return
+;mov ?cg_list[1][9],1 ;no64 video
+if $lbg_name == "ep503_b" mov %8802,1 : return
+if $lbg_name == "ep603" mov %8808,1 : return
+if $lbg_name == "ep703_b" mov %8831,1 : return
+if $lbg_name == "ep704_b" mov %8832,1 : return
+;17
+;Char
 if $lbg_name == "c_c0203_lb" mov %8636,1 : return
 if $lbg_name == "c_c0204_b" mov %8637,1 : return
 if $lbg_name == "c_c0205_b" mov %8638,1 : return
@@ -24174,77 +24223,12 @@ if $lbg_name == "c_c0403_f" mov %8641,1 : return
 if $lbg_name == "c_c0404_lf" mov %8642,1 : return
 if $lbg_name == "c_c0901_b" mov %8643,1 : return
 if $lbg_name == "c_c0902_a" mov %8644,1 : return
-if $lbg_name == "g0402"   mov %8645,1 : return
-if $lbg_name == "g0403"   mov %8646,1 : return
-if $lbg_name == "g0404"   mov %8647,1 : return
 if $lbg_name == "c_e0101_a" mov %8648,1 : return
 if $lbg_name == "c_e0102_b" mov %8649,1 : return
 if $lbg_name == "c_e0103_c" mov %8650,1 : return
 if $lbg_name == "c_e0305_d" mov %8651,1 : return
-if $lbg_name == "c_e0406_f" mov %8652,1 : return
 if $lbg_name == "c_e0903_b" mov %8653,1 : return
-if $lbg_name == "portrait1" mov %8654,1 : return
-if $lbg_name == "portrait3" mov %8655,1 : return
-if $lbg_name == "portrait4" mov %8656,1 : return
-if $lbg_name == "portrait_ep4" mov %8657,1 : return ;omake
-;~
 
-;Chiru
-;if %CHIRU_MODE = 0 return
-if $lbg_name == "ep501" mov %8800,1 : return
-if $lbg_name == "ep502" mov %8801,1 : return
-if $lbg_name == "ep503_b" mov %8802,1 : return
-if $lbg_name == "ep504" mov %8803,1 : return
-if $lbg_name == "ep505" mov %8804,1 : return
-if $lbg_name == "e0901_b" mov %8805,1 : return
-if $lbg_name == "ep601_nd2" mov %8806,1 : return
-if $lbg_name == "ep602_b" mov %8807,1 : return
-if $lbg_name == "ep603" mov %8808,1 : return
-if $lbg_name == "ep604_2" mov %8809,1 : return
-if $lbg_name == "ep605_c2" mov %8810,1 : return
-if $lbg_name == "ep606" mov %8811,1 : return
-if $lbg_name == "e0104_d" mov %8812,1 : return
-if $lbg_name == "ex02" mov %8813,1 : return
-if $lbg_name == "ep607" mov %8814,1 : return
-if $lbg_name == "c0201_b" mov %8815,1 : return
-if $lbg_name == "ep701" mov %8816,1 : return
-if $lbg_name == "g0101" mov %8817,1 : return
-if $lbg_name == "g0102" mov %8818,1 : return
-if $lbg_name == "no64_00000" mov %8819,1 : return
-if $lbg_name == "g0103" mov %8820,1 : return
-if $lbg_name == "g0201" mov %8821,1 : return
-if $lbg_name == "g0202" mov %8822,1 : return
-if $lbg_name == "g0203_a" mov %8823,1 : return
-if $lbg_name == "g0301" mov %8824,1 : return
-if $lbg_name == "g0302" mov %8825,1 : return
-if $lbg_name == "g0401" mov %8826,1 : return
-if $lbg_name == "g0402" mov %8827,1 : return
-if $lbg_name == "g0404" mov %8828,1 : return
-if $lbg_name == "g0403" mov %8829,1 : return
-if $lbg_name == "ep702" mov %8830,1 : return
-if $lbg_name == "ep703_b" mov %8831,1 : return
-if $lbg_name == "ep704_b" mov %8832,1 : return
-if $lbg_name == "ep705_4" mov %8833,1 : return
-if $lbg_name == "ep801" mov %8834,1 : return
-if $lbg_name == "ep802" mov %8835,1 : return
-if $lbg_name == "ep803" mov %8836,1 : return
-if $lbg_name == "ep805" mov %8837,1 : return
-if $lbg_name == "ep806" mov %8838,1 : return
-if $lbg_name == "ep807_a" mov %8839,1 : return
-if $lbg_name == "ep808" mov %8840,1 : return
-if $lbg_name == "ep809_b" mov %8841,1 : return
-if $lbg_name == "ep810_a1" mov %8842,1 : return
-if $lbg_name == "ep811" mov %8843,1 : return
-if $lbg_name == "ep812" mov %8844,1 : return
-if $lbg_name == "c0406" mov %8845,1 : return
-if $lbg_name == "ep814_d2" mov %8846,1 : return
-if $lbg_name == "ep815_1_" mov %8847,1 : return
-if $lbg_name == "ep815_2_" mov %8848,1 : return
-if $lbg_name == "ep816" mov %8849,1 : return
-if $lbg_name == "ep817" mov %8850,1 : return
-if $lbg_name == "e0401_b" mov %8851,1 : return
-if $lbg_name == "ep818" mov %8852,1 : return
-if $lbg_name == "eve_last2" mov %8853,1 : return
 if $lbg_name == "wic_c" mov %8854,1 : return
 if $lbg_name == "evc_c" mov %8855,1 : return
 if $lbg_name == "dlc_d1" mov %8856,1 : return
@@ -24256,21 +24240,23 @@ if $lbg_name == "wrc_a" mov %8861,1 : return
 if $lbg_name == "erc_ra" mov %8862,1 : return
 if $lbg_name == "enc_a1" mov %8863,1 : return
 if $lbg_name == "bac_ga2n" mov %8864,1 : return
-if $lbg_name == "c_c0205_a" mov %8865,1 : return
-if $lbg_name == "c_c0401_la" mov %8866,1 : return
-if $lbg_name == "c_c0404_b" mov %8867,1 : return
-if $lbg_name == "c_c0902_a" mov %8868,1 : return
-if $lbg_name == "c_e0102_a" mov %8869,1 : return
-if $lbg_name == "c_e0103_la" mov %8870,1 : return
-if $lbg_name == "c_e0305_c" mov %8871,1 : return
+;25
+;Special
+if $lbg_name == "portrait1" mov %8654,1 : return
+if $lbg_name == "portrait3" mov %8655,1 : return
+if $lbg_name == "portrait4" mov %8656,1 : return
+if $lbg_name == "portrait_ep4" mov %8657,1 : return ;omake
+
 if $lbg_name == "portrait5" mov %8872,1 : return
 if $lbg_name == "portrait6" mov %8873,1 : return
 ;These two are obtained after completing ura7 and ura8
 if $lbg_name == "portrait_ep7" mov %8874,1 : return
 if $lbg_name == "portrait_ep8" mov %8875,1 : return
-;These two are obtained when all the rest are obtained
+if $lbg_name == "congra_t" mov
+if $lbg_name == "PACKAGE01" mov
 if $lbg_name == "package03" mov %8876,1 : return
 if $lbg_name == "package04" mov %8877,1 : return
+;12
 
 return
 ;End Custom
@@ -24350,10 +24336,12 @@ if $lbg_name == "c_e0102_b" mov ?cg_list[2][10],1 : return ;X ;Char
 if $lbg_name == "c_e0103_c" mov ?cg_list[2][11],1 : return ;X ;Char
 if $lbg_name == "c_e0305_d" mov ?cg_list[2][12],1 : return ;X ;Char
 if $lbg_name == "c_e0406_f" mov ?cg_list[0][26],1 : return ;Story
+
 if $lbg_name == "c_e0903_b" mov ?cg_list[2][13],1 : return ;Char
 if $lbg_name == "portrait1" mov ?cg_list[3][0],1 : return ;Extra
 if $lbg_name == "portrait2" mov ?cg_list[3][1],1 : return ;Extra
 if $lbg_name == "portrait3" mov ?cg_list[3][2],1 : return ;Extra
+
 if $lbg_name == "portrait4" mov ?cg_list[3][3],1 : return ;Extra
 ;57
 ;58
@@ -24372,7 +24360,6 @@ if $lbg_name == "ep503_b" mov ?cg_list[1][13],1 : return ;Murder
 if $lbg_name == "ep504" mov ?cg_list[0][29],1 : return ;Story
 
 if $lbg_name == "ep505" mov ?cg_list[0][30],1 : return ;Story
-;if $lbg_name == "e0901_b" mov ?cg_list[0][5],1 : return ;X ;Story
 if $lbg_name == "ep601_nd2" mov ?cg_list[0][31],1 : return ;Story
 if $lbg_name == "ep602_b" mov ?cg_list[0][32],1 : return ;Story
 
@@ -24382,29 +24369,13 @@ if $lbg_name == "ep605_c2" mov ?cg_list[0][34],1 : return ;Story
 if $lbg_name == "ep606" mov ?cg_list[0][35],1 : return ;Story
 
 ;Pg2
-;if $lbg_name == "e0104_d" mov ?cg_list[0][12],1 : return ;X ;Story
 if $lbg_name == "ex02" mov ?cg_list[0][36],1 : return ;Story
 if $lbg_name == "ep607" mov ?cg_list[0][37],1 : return ;Story
 if $lbg_name == "c0201_b" mov ?cg_list[0][38],1 : return ;X ;Story
 
 if $lbg_name == "ep701" mov ?cg_list[0][39],1 : return ;Story
-;if $lbg_name == "g0101" mov ?cg_list[1][17],1 : return ;X ;Murder
-;if $lbg_name == "g0102" mov ?cg_list[1][18],1 : return ;X ;Murder
-;if $lbg_name == "no64_00000" mov ?cg_list[1][19],1 : return ;X ;Murder
-
-;if $lbg_name == "g0103" mov ?cg_list[1][20],1 : return ;X ;Murder
-;if $lbg_name == "g0201" mov ?cg_list[1][21],1 : return ;X ;Murder
-;if $lbg_name == "g0202" mov ?cg_list[1][22],1 : return ;X ;Murder
-;if $lbg_name == "g0203_a" mov ?cg_list[1][23],1 : return ;X ;Murder
 
 ;Pg3
-;if $lbg_name == "g0301" mov ?cg_list[1][24],1 : return ;X ;Murder
-;if $lbg_name == "g0302" mov ?cg_list[1][25],1 : return ;X ;Murder
-;if $lbg_name == "g0401" mov ?cg_list[1][26],1 : return ;X ;Murder
-;if $lbg_name == "g0402" mov ?cg_list[1][27],1 : return ;X ;Murder
-
-;if $lbg_name == "g0404" mov ?cg_list[1][28],1 : return ;X ;Murder
-;if $lbg_name == "g0403" mov ?cg_list[1][29],1 : return ;X ;Murder
 if $lbg_name == "ep702" mov ?cg_list[0][40],1 : return ;Story
 if $lbg_name == "ep703_b" mov ?cg_list[1][15],1 : return ;Murder
 
@@ -24425,7 +24396,6 @@ if $lbg_name == "ep810_a1" mov ?cg_list[0][50],1 : return ;Story
 if $lbg_name == "ep811" mov ?cg_list[0][51],1 : return ;Story
 
 if $lbg_name == "ep812" mov ?cg_list[0][52],1 : return ;Story
-;if $lbg_name == "c0406" mov ?cg_list[0][45],1 : return ;X ;Story
 if $lbg_name == "ep814_d2" mov ?cg_list[0][53],1 : return ;Story
 if $lbg_name == "ep815_1_" mov ?cg_list[0][54],1 : return ;Story
 
@@ -24433,7 +24403,6 @@ if $lbg_name == "ep815_1_" mov ?cg_list[0][54],1 : return ;Story
 if $lbg_name == "ep815_2_" mov ?cg_list[0][55],1 : return ;Story
 if $lbg_name == "ep816" mov ?cg_list[0][56],1 : return ;Story
 if $lbg_name == "ep817" mov ?cg_list[0][57],1 : return ;Story
-;if $lbg_name == "e0401_b" mov ?cg_list[0][51],1 : return ;X ;Story
 
 if $lbg_name == "ep818" mov ?cg_list[0][58],1 : return ;Story
 if $lbg_name == "eve_last2" mov ?cg_list[0][59],1 : return ;Story
@@ -24452,14 +24421,6 @@ if $lbg_name == "erc_ra" mov ?cg_list[2][22],1 : return ;Char
 if $lbg_name == "enc_a1" mov ?cg_list[2][23],1 : return ;Char
 
 if $lbg_name == "bac_ga2n" mov ?cg_list[2][24],1 : return ;Char
-;if $lbg_name == "c_c0205_a" mov ?cg_list[2][65],1 : return ;X ;Char
-;if $lbg_name == "c_c0401_la" mov ?cg_list[2][66],1 : return ;X ;Char
-;if $lbg_name == "c_c0404_b" mov ?cg_list[2][67],1 : return ;X ;Char
-
-;if $lbg_name == "c_c0902_a" mov ?cg_list[2][68],1 : return ;X ;Char
-;if $lbg_name == "c_e0102_a" mov ?cg_list[2][69],1 : return ;X ;Char
-;if $lbg_name == "c_e0103_la" mov ?cg_list[2][70],1 : return ;X ;Char
-;if $lbg_name == "c_e0305_c" mov ?cg_list[2][71],1 : return ;X ;Char
 
 if $lbg_name == "portrait5" mov ?cg_list[3][4],1 : return ;Extra
 if $lbg_name == "portrait6" mov ?cg_list[3][5],1 : return ;Extra
@@ -24467,12 +24428,14 @@ if $lbg_name == "portrait6" mov ?cg_list[3][5],1 : return ;Extra
 if $lbg_name == "portrait_ep7" mov ?cg_list[3][6],1 : return ;Extra
 if $lbg_name == "portrait_ep8" mov ?cg_list[3][7],1 : return ;Extra
 ;These two are obtained when all the rest are obtained
+if $lbg_name == "congra_t" mov ?cg_list[3][8],1 : return
+if $lbg_name == "PACKAGE01" mov ?cg_list[3][9],1 : return
 if $lbg_name == "package03" mov ?cg_list[3][10],1 : return ;Extra
 if $lbg_name == "package04" mov ?cg_list[3][11],1 : return ;Extra
 
 ;Custom New Images
-;Last of Basic: Story: 59 - Murder: 16 - Char: 24 - Extra: 11
-
+;Last of Basic: Story: 60 - Murder: 17 - Char: 25 - Extra: 12
+;111
 return
 ;End Custom
 
@@ -27432,17 +27395,18 @@ return
 	for %music_box_tmp = 8800 to 8877
 		if %%music_box_tmp == 1 mov ?cg_list[1][%music_box_tmp-8800],1
 	next
-	
 
 	operate_config u_read,$music_box_tmp,"cg_unlock"
-	if $music_box_tmp == "8" goto *load_cgs_8
-	if $music_box_tmp == "7" goto *load_cgs_7
-	if $music_box_tmp == "6" goto *load_cgs_6
-	if $music_box_tmp == "5" goto *load_cgs_5
-	if $music_box_tmp == "4" goto *load_cgs_4
-	if $music_box_tmp == "3" goto *load_cgs_3
-	if $music_box_tmp == "2" goto *load_cgs_2
-	if $music_box_tmp == "1" goto *load_cgs_1
+	if $music_box_tmp == "undef" jumpf
+		if $music_box_tmp == "8" goto *load_cgs_8
+		if $music_box_tmp == "7" goto *load_cgs_7
+		if $music_box_tmp == "6" goto *load_cgs_6
+		if $music_box_tmp == "5" goto *load_cgs_5
+		if $music_box_tmp == "4" goto *load_cgs_4
+		if $music_box_tmp == "3" goto *load_cgs_3
+		if $music_box_tmp == "2" goto *load_cgs_2
+		if $music_box_tmp == "1" goto *load_cgs_1
+	~
 return
 
 *load_saved_bgms
@@ -27453,14 +27417,16 @@ return
 	next
 
 	operate_config u_read,$music_box_tmp,"bgm_unlock"
-	if $music_box_tmp == "8" goto *load_bgms_8
-	if $music_box_tmp == "7" goto *load_bgms_7
-	if $music_box_tmp == "6" goto *load_bgms_6
-	if $music_box_tmp == "5" goto *load_bgms_5
-	if $music_box_tmp == "4" goto *load_bgms_4
-	if $music_box_tmp == "3" goto *load_bgms_3
-	if $music_box_tmp == "2" goto *load_bgms_2
-	if $music_box_tmp == "1" goto *load_bgms_1
+	if $music_box_tmp == "undef" jumpf
+		if $music_box_tmp == "8" goto *load_bgms_8
+		if $music_box_tmp == "7" goto *load_bgms_7
+		if $music_box_tmp == "6" goto *load_bgms_6
+		if $music_box_tmp == "5" goto *load_bgms_5
+		if $music_box_tmp == "4" goto *load_bgms_4
+		if $music_box_tmp == "3" goto *load_bgms_3
+		if $music_box_tmp == "2" goto *load_bgms_2
+		if $music_box_tmp == "1" goto *load_bgms_1
+	~
 return
 
 *load_bgms_8
