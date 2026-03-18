@@ -975,7 +975,7 @@ numalias saveload_caption,70
 numalias TextCC1SpNum,0
 numalias TextCC2SpNum,1
 numalias TextCC3SpNum,745 ;skip
-numalias TextCC3SpNumDenied,746 ;skip blocked
+;numalias TextCC3SpNumDenied,746 ;skip blocked
 numalias TextCC4SpNum,747 ;automode
 ;Masks
 numalias msk1,699
@@ -1639,6 +1639,17 @@ numalias in_movie_mode,10645
 
 numalias cfg_bg_mover_alternator,10646
 
+numalias bgm_title_w,10647
+numalias chapter_title_w,10648
+
+numalias tips_switching_ep,10649
+numalias tips_save_scenario_Num,10650
+numalias tips_selector_ep_change,10651
+
+numalias skip_status,10652
+
+numalias title_rewrite_request,10653
+
 numalias outfits,11500 : dim ?outfits[70][6][6] ;a lot of slots
 
 ;Sprite cache - Array that stores sprites data for reload - W_CUSTOM
@@ -1702,7 +1713,8 @@ bold_italic_font 1,4
 preset_define 0,6,36,#FFFFFF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1 ;Japanse text
 preset_define 1,1,-1,#FF0000,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1 ;Red text
 preset_define 2,1,-1,#39C6FF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1 ;Blue text
-preset_define 7,6,48,#C0FFFF,0,0,0,1,6,#000000,0,0,0,#000000,0,70,1880 ;Chapter/BGM/Hint
+;preset_define 7,6,48,#C0FFFF,0,0,0,1,6,#000000,0,0,0,#000000,0,70,1880 ;Chapter/BGM/Hint
+preset_define 7,10,30,#D8A378,0,0,0,1,4,#020202,0,0,0,#000000,0,-1;,240 ;Chapter/BGM/Hint  #684E3D
 preset_define 41,1,-1,#FFAA00,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1 ;Gold text
 preset_define 42,1,-1,#AA71FF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1 ;Purple text
 ;MENU PRESETS
@@ -1773,7 +1785,7 @@ preset_define 86,11,70,#000000,0,0,0,1,13,#000000,0,0,0,#000000,1	; Chapter name
 preset_define 89,10,40,#000000,0,0,0,1,2,#000000,1,1,0,#000000,1,0	; Ep btn description sub
 preset_define 91,10,40,#FFFFFF,0,0,0,1,2,#FFFFFF,0,0,0,#FFFFFF,1,0	; R-Menu selectd btn glow
 ;End Custom
-preset_define 100,6,36,#FFFFFF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1  ;Test new credits
+;preset_define 100,6,36,#FFFFFF,0,0,0,1,-1,#000000,0,-1,-1,#000000,1,-1  ;Test new credits
 
 gosub *redefine_text_presets
 
@@ -1785,7 +1797,6 @@ textgosub *text_cw
 skipgosub *skip_cw
 loadgosub *load_system
 event_callback *script_state
-;ctrl_callback *ctrl_state
 
 usewheel
 useescspc
@@ -1973,8 +1984,9 @@ mov %cfg_bg_mover_alternator,0
 
 ;debug_var last_save
 
-operate_file "test",$temp_var
-debug_str $temp_var
+; file read test - W_CUSTOM
+;operate_file "test",$temp_var
+;debug_str $temp_var
 
 ;Outfits
 ;Family

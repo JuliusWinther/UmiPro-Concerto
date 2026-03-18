@@ -2084,66 +2084,58 @@ waittimer 39850
 d_continue
 wait_on_d -1
 waittimer 40350
+vol_bgm 90
 textoff2
 waits 167
 csp_slot s0_10
 lbg "c:colour",s0_3,"black"
+flush 22
+lbg2 "c:locale_lan",s0_3,"end_1c"
+drop_cache "c:locale_lan","end_1c"
+spt_mem "a2","scaley",s0_3,200
+spt_mem "a2","ypos",s0_3,21814
+flush 1
+waittimer 40850
+textoff2
+spt_mem "a2","ypos",s0_3,540,202916
+sptwait2 ypos,s0_3
+spt_mem "a2","ypos",s0_3,0,8234,1
+sptwait2 ypos,s0_3
+wait 1000
+lbg "a:clock",s0_28,"ware"
+vol_mix_fade 1000
+vol_bgm -1,1000
+wait 1000
+seplay 1,27,71
+seplay 2,46,71
+seplay 9,1006,71
+flush 1
+wait 3000
+lbg "c:colour",s0_28,"black"
+textoff2
+waits 167
+lbg "c:colour",s0_3,"black"
+flush 18,8000,msk_1
+csp_slot s0_28
+wait 5000
+skip_on
+wait 1667
+meplay 2,16,40
+textoff2
+waits 167
 lss s0_9,"bea","a11_warai2" ;1
 flush 23
-waittimer 40683
 msgwnd_bea
 *d30950
-d2 [lv 0*"27"*"90700068"][ak][text_speed_t 5]`「よくぞ言ったぞ、戦人とやら…！`[*][|][lv 0*"27"*"90700069"]`　それでこそ我が千年の退屈も紛れるというもの！」`[*][\]
-waittimer 43600
-d_continue
-waittimer 48970
-d_continue
-wait_on_d -1
-waittimer 49220
+d [lv 0*"27"*"90700068"]`「よくぞ言ったぞ、戦人とやら…！`[@][lv 0*"27"*"90700069"]`　それでこそ我が千年の退屈も紛れるというもの！」`[\]
 lss s0_9,"bea","a31_akuwarai1" ;1
 flush 10,167
-waittimer 49255
 *d30951
-d2 [lv 0*"27"*"90700070"][ak][text_speed_t 5]`「さぁ、説明するがいい。`[*][|][lv 0*"27"*"90700071"]`“人間とトリック”とやらで説明してみせるがいい！`[*][|][lv 0*"27"*"90700072"]`　そして人間の身の程を知るがいい！！`[*][|][lv 0*"27"*"90700073"]`　我が千年を、人間共が築いたとかいう百年で太刀打ちできるか試してみるがいいッ！！`[*][|][lv 0*"27"*"90700074"]`　それでこそお前を屈服させる楽しみが増すというものよ…！！」`[*][\]
-waittimer 52545
-d_continue
-waittimer 56829
-d_continue
-waittimer 59959
-d_continue
-waittimer 68166
-d_continue
-waittimer 74276
-d_continue
-wait_on_d -1
+d [lv 0*"27"*"90700070"]`「さぁ、説明するがいい。`[@][lv 0*"27"*"90700071"]`“人間とトリック”とやらで説明してみせるがいい！`[@][lv 0*"27"*"90700072"]`　そして人間の身の程を知るがいい！！`[@][lv 0*"27"*"90700073"]`　我が千年を、人間共が築いたとかいう百年で太刀打ちできるか試してみるがいいッ！！`[@][lv 0*"27"*"90700074"]`　それでこそお前を屈服させる楽しみが増すというものよ…！！」`[\]
 lss s0_9,"bea","a11_defo2" ;1
 flush 10,167
-waittimer 74401
 *d30952
-d2 [lv 0*"27"*"90700075"][ak][text_speed_t 5]`「さぁ聞こう、戦人とやら！`[*][|][lv 0*"27"*"90700076"]`　真里亞の手紙は？`[*][|][lv 0*"27"*"90700077"]`　６人の殺し方は？`[*][|][lv 0*"27"*"90700078"]`　シャッターは？`[*][|][lv 0*"27"*"90700079"]`　レシートの封印は？`[*][|][lv 0*"27"*"90700080"]`　チェーンの密室は？`[*][|][lv 0*"27"*"90700081"]`　嘉音のボイラー室は？`[*][|][lv 0*"27"*"90700082"]`　源次たちの客間は？！`[*][|][lv 0*"27"*"90700083"]`　夏妃の自殺は？！`[*][|][lv 0*"27"*"90700084"]`　碑文の謎は？！`[*][|][lv 0*"27"*"90700085"]`　隠された黄金の在り処は？！」`[*][\]
-waittimer 78297
-d_continue
-waittimer 79859
-d_continue
-waittimer 81762
-d_continue
-waittimer 83242
-d_continue
-waittimer 85188
-d_continue
-waittimer 87059
-d_continue
-waittimer 89154
-d_continue
-waittimer 90940
-d_continue
-waittimer 92384
-d_continue
-waittimer 93735
-d_continue
-waittimer 95819
-d_continue
-wait_on_d -1
+d [lv 0*"27"*"90700075"]`「さぁ聞こう、戦人とやら！`[@][lv 0*"27"*"90700076"]`　真里亞の手紙は？`[@][lv 0*"27"*"90700077"]`　６人の殺し方は？`[@][lv 0*"27"*"90700078"]`　シャッターは？`[@][lv 0*"27"*"90700079"]`　レシートの封印は？`[@][lv 0*"27"*"90700080"]`　チェーンの密室は？`[@][lv 0*"27"*"90700081"]`　嘉音のボイラー室は？`[@][lv 0*"27"*"90700082"]`　源次たちの客間は？！`[@][lv 0*"27"*"90700083"]`　夏妃の自殺は？！`[@][lv 0*"27"*"90700084"]`　碑文の謎は？！`[@][lv 0*"27"*"90700085"]`　隠された黄金の在り処は？！」`[\]
 textoff2
 waits 167
 csp_slot s0_9
@@ -2164,12 +2156,7 @@ reset_set 1
 csp -11
 flush 1
 *d30953
-d2 [lv 0*"27"*"90700086"][ak][text_speed_t 5]`「さぁ、戦人とやら、“人間”の力を見せてもらおうではないかッ！`[*][|][lv 0*"27"*"90700087"]`　ふっはははははははははははははははは！！！」`[*][\]
-waittimer 107295
-d_continue
-waittimer 113508
-d_continue
-wait_on_d -1
+d [lv 0*"27"*"90700086"]`「さぁ、戦人とやら、“人間”の力を見せてもらおうではないかッ！`[@][lv 0*"27"*"90700087"]`　ふっはははははははははははははははは！！！」`[\]
 csp_slot s0_9
 lss s0_10,"bea","a14_warai2" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -2178,10 +2165,7 @@ spt_mem "a2","xpos",s0_8,-370
 flush 10,167
 msgwnd_but
 *d30954
-d2 [lv 0*"10"*"90100222"][ak][text_speed_t 5]`「うをおぉおおおぉおおおおおおおおおおおおおおおおおぉッッ！！！」`[*][\]
-waittimer 119060
-d_continue
-wait_on_d -1
+d [lv 0*"10"*"90100222"]`「うをおぉおおおぉおおおおおおおおおおおおおおおおおぉッッ！！！」`[\]
 textoff2
 waits 167
 vol_mix_fade 1000
@@ -2229,42 +2213,6 @@ textoff2
 waits 167
 lbg "c:colour",s0_3,"black"
 flush 22
-wait 1000
-vol_bgm 90
-textoff2
-waits 167
-csp_slot s0_10
-lbg "c:colour",s0_3,"black"
-flush 22
-lbg2 "c:locale_lan",s0_3,"end_1c"
-drop_cache "c:locale_lan","end_1c"
-spt_mem "a2","scaley",s0_3,200
-spt_mem "a2","ypos",s0_3,21814
-flush 1
-waittimer 122806
-textoff2
-spt_mem "a2","ypos",s0_3,540,123456
-sptwait2 ypos,s0_3
-spt_mem "a2","ypos",s0_3,0,4234,1
-sptwait2 ypos,s0_3
-wait 1000
-lbg "a:clock",s0_28,"ware"
-vol_mix_fade 1000
-vol_bgm -1,1000
-wait 1000
-seplay 1,27,71
-seplay 2,46,71
-seplay 9,1006,71
-flush 1
-wait 3000
-lbg "c:colour",s0_28,"black"
-skip_on
-textoff2
-waits 167
-lbg "c:colour",s0_3,"black"
-flush 18,8000,msk_1
-csp_slot s0_28
-textoff2
 wait 3000
 ch_done flag_scenario_1_tea
 *teatime_1_end

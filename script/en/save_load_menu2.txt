@@ -211,18 +211,18 @@ return
 	inc %saveTextsp			;comment sprite
 
 	mov %tmp1,82 : mov %tmp2,100
-	lsp2 Page1,char_change_ep_btn,90-20,240,120,120 : write_special_text gen_txt_2,"save_ep_btn",90-5-20+3,240+17,"1"
-	lsp2 Page2,char_change_ep_btn,90-20,240+80,120,120 : write_special_text gen_txt_3,"save_ep_btn",90-5-20+3,240+17+80,"2"
-	lsp2 Page3,char_change_ep_btn,90-20,240+80*2,120,120 : write_special_text gen_txt_4,"save_ep_btn",90-5-20+3,240+17+80*2,"3"
-	lsp2 Page4,char_change_ep_btn,90-20,240+80*3,120,120 : write_special_text gen_txt_5,"save_ep_btn",90-5-20+3,240+17+80*3,"4"
-	lsp2 Page5,char_change_ep_btn,90-20,240+80*4,120,120 : write_special_text gen_txt_6,"save_ep_btn",90-5-20+3,240+17+80*4,"5"
-	lsp2 Page6,char_change_ep_btn,90-20,240+80*5,120,120 : write_special_text gen_txt_7,"save_ep_btn",90-5-20+3,240+17+80*5,"6"
-	lsp2 Page7,char_change_ep_btn,90-20,240+80*6,120,120 : write_special_text gen_txt_8,"save_ep_btn",90-5-20+3,240+17+80*6,"7"
-	lsp2 Page8,char_change_ep_btn,90-20,240+80*7,120,120 : write_special_text gen_txt_9,"save_ep_btn",90-5-20+3,240+17+80*7,"8"
-	lsp2 Page10,char_change_ep_btn,90-20,240+80*8,120,120 : write_special_text gen_txt_10,"save_ep_btn",90-5-20+3,240+17+80*8,"E"
+	lsp2 Page1,change_ep_btn,90-20,240,120,120 : write_special_text gen_txt_2,"save_ep_btn",90-5-20+3,240+17,"1"
+	lsp2 Page2,change_ep_btn,90-20,240+80,120,120 : write_special_text gen_txt_3,"save_ep_btn",90-5-20+3,240+17+80,"2"
+	lsp2 Page3,change_ep_btn,90-20,240+80*2,120,120 : write_special_text gen_txt_4,"save_ep_btn",90-5-20+3,240+17+80*2,"3"
+	lsp2 Page4,change_ep_btn,90-20,240+80*3,120,120 : write_special_text gen_txt_5,"save_ep_btn",90-5-20+3,240+17+80*3,"4"
+	lsp2 Page5,change_ep_btn,90-20,240+80*4,120,120 : write_special_text gen_txt_6,"save_ep_btn",90-5-20+3,240+17+80*4,"5"
+	lsp2 Page6,change_ep_btn,90-20,240+80*5,120,120 : write_special_text gen_txt_7,"save_ep_btn",90-5-20+3,240+17+80*5,"6"
+	lsp2 Page7,change_ep_btn,90-20,240+80*6,120,120 : write_special_text gen_txt_8,"save_ep_btn",90-5-20+3,240+17+80*6,"7"
+	lsp2 Page8,change_ep_btn,90-20,240+80*7,120,120 : write_special_text gen_txt_9,"save_ep_btn",90-5-20+3,240+17+80*7,"8"
+	lsp2 Page10,change_ep_btn,90-20,240+80*8,120,120 : write_special_text gen_txt_10,"save_ep_btn",90-5-20+3,240+17+80*8,"E"
 	
-	;if %savemodePageNow = 1 lsp2 Page1,char_change_ep_btn_clicked,82+120,980+45,120,120 : write_special_text gen_txt_2,"save_ep_btn",82+120-5,984+45+13,"1","disabled"
-	if %savemodePageNow = 1 lsp2 Page1,char_change_ep_btn_clicked,90-20,240,120,120 : write_special_text gen_txt_2,"save_ep_btn",90-5-20+3,240+17,"1","disabled"
+	;if %savemodePageNow = 1 lsp2 Page1,change_ep_btn_clicked,82+120,980+45,120,120 : write_special_text gen_txt_2,"save_ep_btn",82+120-5,984+45+13,"1","disabled"
+	if %savemodePageNow = 1 lsp2 Page1,change_ep_btn_clicked,90-20,240,120,120 : write_special_text gen_txt_2,"save_ep_btn",90-5-20+3,240+17,"1","disabled"
 
 	spbtn Page1,Page1
 	spbtn Page2,Page2

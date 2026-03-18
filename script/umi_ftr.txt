@@ -1655,10 +1655,10 @@ numalias t_txt_ep3_tea_lsp,%0 : dec %0	;43
 numalias t_txt_ep4_tea_lsp,%0 : dec %0	;42
 
 mov %0,100
-numalias t_btn_ep1_tips_lsp,%0 : dec %0	;40
-numalias t_btn_ep2_tips_lsp,%0 : dec %0	;49
-numalias t_btn_ep3_tips_lsp,%0 : dec %0	;48
-numalias t_btn_ep4_tips_lsp,%0 : dec %0	;48
+numalias t_btn_ep1_tips_lsp,%0 : dec %0	;40 ;100
+numalias t_btn_ep2_tips_lsp,%0 : dec %0	;49 ;99
+numalias t_btn_ep3_tips_lsp,%0 : dec %0	;48 ;98
+numalias t_btn_ep4_tips_lsp,%0 : dec %0	;48 ;97
 
 mov %0,95
 numalias t_txt_ep1_tips_lsp,%0 : dec %0	;35
@@ -4148,6 +4148,7 @@ return
 	btndef ""
 
 	;Original Edited ;Text Generator - Remade r-menu - W_CUSTOM
+	;TODO STrings to Variables
 	lsp 451,":c;graphics\colour\black.png",0,0,black_toukaritu ;0
 	lsp r_load_lsp,r_menu_btn_1,50,50	
 	write_special_text gen_txt_1,"r_menu_btn",50,50+9,"Load"
@@ -4156,12 +4157,12 @@ return
 
 	lsp r_chars_lsp,r_menu_btn_3,50,210	
 	if %scenario_Number = 8 && $name_chapter_save = "8_op" lsp r_chars_lsp,r_menu_btn_3,50,210,100
-	write_special_text gen_txt_3,"r_menu_btn",50,210+9,"Characters"
+	write_special_text gen_txt_3,"r_menu_btn",50,210+9,title_char_txt
 	if %scenario_Number = 8 && $name_chapter_save = "8_op" aspt alpha,gen_txt_3,100 : aspt alpha,gen_txt_3-20,100 : aspt alpha,gen_txt_3-19,100
 
 	lsp r_tips_lsp2,r_menu_btn_4,50,290	
 	if %scenario_Number = 4 && %grim_scene = 500 lsp r_tips_lsp2,r_menu_btn_4,50,290,100
-	write_special_text gen_txt_4,"r_menu_btn",50,290+9,"Tips"
+	write_special_text gen_txt_4,"r_menu_btn",50,290+9,title_tips_txt
 	if %scenario_Number = 4 && %grim_scene = 500 aspt alpha,gen_txt_4,100 : aspt alpha,gen_txt_4-20,100 : aspt alpha,gen_txt_4-19,100
 	
 	lsp r_volume_lsp,r_menu_btn_5,50,370	
@@ -14821,8 +14822,8 @@ if %CHIRU_MODE != 0 jumpf
 	;After First Ura - Before Second Episode - After Second Episode
 	;btn 3 in the before section
 	if %UMINEKOEND > 12 lsph t_btn_ura_tea_lsp,title_btn_4,1325,616 : write_special_text gen_txt_14,"title_btn_txt",1325,616,title_ura_txt 
-	if %UMINEKOEND >= 20 lsph t_chars_lsp,title_btn_5,1325,680 : write_special_text gen_txt_15,"title_btn_txt",1325,680,title_char_txt 
-	if %UMINEKOEND >= 20 lsph t_btn_tips_lsp,title_btn_6,1325,744 : write_special_text gen_txt_16,"title_btn_txt",1325,744,title_tips_txt 
+	if %UMINEKOEND >= 20 lsph t_chars_lsp,title_btn_5,1325,680 : write_special_text gen_txt_15,"title_btn_txt",1325,680,title_memoirs_txt 
+	if %UMINEKOEND >= 20 lsph t_btn_tips_lsp,title_btn_6,1325,744 : write_special_text gen_txt_16,"title_btn_txt",1325,744,title_movie_txt 
 	if %UMINEKOEND >= 20 lsph t_config_lsp,title_btn_7,1325,808 : write_special_text gen_txt_17,"title_btn_txt",1325,808,title_config_txt 
 	if %UMINEKOEND >= 20 lsph t_cg_lsp,title_btn_8,1325,872 : write_special_text gen_txt_18,"title_btn_txt",1325,872,title_cg_txt
 	if %UMINEKOEND >= 20 lsph t_btn_music_lsp,title_btn_9,1325,936 : write_special_text gen_txt_19,"title_btn_txt",1325,936,title_bgm_txt 
@@ -14917,8 +14918,8 @@ if %CHIRU_MODE != 1 jumpf
 	;After First Ura - Before Sixth Episode - After Fifth Episode
 	;btn 3 in the before section
 	if %UMINEKOEND > 52 lsph t_btn_ura_tea_lsp,title_btn_4,1325,616 : write_special_text gen_txt_14,"title_btn_txt",1325,616,title_ura_txt 
-	if %UMINEKOEND >= 60 lsph t_chars_lsp,title_btn_5,1325,680 : write_special_text gen_txt_15,"title_btn_txt",1325,680,title_char_txt 
-	if %UMINEKOEND >= 60 lsph t_btn_tips_lsp,title_btn_6,1325,744 : write_special_text gen_txt_16,"title_btn_txt",1325,744,title_tips_txt 
+	if %UMINEKOEND >= 60 lsph t_chars_lsp,title_btn_5,1325,680 : write_special_text gen_txt_15,"title_btn_txt",1325,680,title_memoirs_txt 
+	if %UMINEKOEND >= 60 lsph t_btn_tips_lsp,title_btn_6,1325,744 : write_special_text gen_txt_16,"title_btn_txt",1325,744,title_movie_txt 
 	if %UMINEKOEND >= 60 lsph t_config_lsp,title_btn_7,1325,808 : write_special_text gen_txt_17,"title_btn_txt",1325,808,title_config_txt 
 	if %UMINEKOEND >= 60 lsph t_cg_lsp,title_btn_8,1325,872 : write_special_text gen_txt_18,"title_btn_txt",1325,872,title_cg_txt
 	if %UMINEKOEND >= 60 lsph t_btn_music_lsp,title_btn_9,1325,936 : write_special_text gen_txt_19,"title_btn_txt",1325,936,title_bgm_txt 
@@ -15128,20 +15129,22 @@ if %title_skip = 1 goto *b_title_skip_100
 
 	;Erase the submenus
 	_csp t_btn_ep1_lsp : _csp t_btn_ep2_lsp : _csp t_btn_ep3_lsp : _csp t_btn_ep4_lsp : _csp t_btn_ep5_8_lsp
-	_csp t_btn_ep2_unlock_lsp : _csp t_btn_ep3_unlock_lsp : _csp t_btn_ep4_unlock_lsp : _csp t_btn_ep5_8_unlock_lsp 
+	_csp t_btn_ep5_8_unlock_lsp 
 	_csp t_btn_load_lsp
+	;For memoirs submenu
+	_csp t_txt_ep1_tea_lsp : _csp t_txt_ep2_tea_lsp
+	_csp t_txt_ep3_tea_lsp : _csp t_txt_ep4_tea_lsp
+	;
 	_csp t_btn_ep1_tea_lsp : _csp t_btn_ep2_tea_lsp : _csp t_btn_ep3_tea_lsp : _csp t_btn_ep4_tea_lsp
 	_csp t_btn_ep1_tips_lsp : _csp t_btn_ep2_tips_lsp : _csp t_btn_ep3_tips_lsp : _csp t_btn_ep4_tips_lsp
 	_csp t_btn_ep1_ura_tea_lsp : _csp t_btn_ep2_ura_tea_lsp : _csp t_btn_ep3_ura_tea_lsp : _csp t_btn_ep4_ura_tea_lsp
 	;Text Generator - ereasing base + shadow - W_CUSTOM
 	csp_text gen_txt_1 : csp_text gen_txt_2 : csp_text gen_txt_3 : csp_text gen_txt_4 : csp_text gen_txt_5
 	csp_text gen_txt_6 : csp_text gen_txt_7 : csp_text gen_txt_8 : csp_text gen_txt_9 : csp_text gen_txt_10
+		_csp t_btn_ep1_lock_lsp : _csp t_btn_ep2_lock_lsp : _csp t_btn_ep3_lock_lsp : _csp t_btn_ep4_lock_lsp 
+		_csp t_btn_ep1_unlock_lsp : _csp t_btn_ep2_unlock_lsp : _csp t_btn_ep3_unlock_lsp : _csp t_btn_ep4_unlock_lsp
 	if %CHIRU_MODE != 2 jumpf
-		csp_text gen_txt_1 : csp_text gen_txt_2 : csp_text gen_txt_3 : csp_text gen_txt_4 : csp_text gen_txt_5 : csp_text gen_txt_6
-		csp_text gen_txt_7 : csp_text gen_txt_8 : csp_text gen_txt_9 : csp_text gen_txt_10 : csp_text gen_txt_23 : csp_text gen_txt_24
-
-		_csp t_btn_ep1_lock_lsp : _csp t_btn_ep2_lock_lsp : _csp t_btn_ep3_lock_lsp
-		_csp t_btn_ep4_lock_lsp : _csp t_btn_ep1_unlock_lsp : _csp t_btn_ep2_unlock_lsp
+		csp_text gen_txt_23 : csp_text gen_txt_24
 	~
 	;End Custom
 
@@ -15182,7 +15185,7 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 	; if %BtnRes = t_btn_web_lsp if %CHIRU_MODE == 2 seplay 9,1001,100 : goto *switch_game_to_normal
 	if %BtnRes = t_btn_tea_lsp cell t_btn_tea_lsp,1 : print 1 : btndef "" : goto *tea_sub_menu
 	if %BtnRes = t_btn_ura_tea_lsp cell t_btn_ura_tea_lsp,1 : print 1 : btndef "" : goto *ura_tea_sub_menu
-	if %BtnRes = t_btn_tips_lsp cell t_btn_tips_lsp,1 : print 1 : btndef "" : goto *tips_sub_menu
+	if %BtnRes = t_btn_tips_lsp csp_rst : seplay 9,1001,100 : gosub *movie_mode_ps3 : mov %title_skip,1 : goto *b_title
 	if %BtnRes = t_btn_exit_lsp seplay 9,18,100 : csp_rst : vol_me 1,-1,2500 : bg black,18,3000,msk_kanon_r : wait 3000 : end
 	if %BtnRes = t_btn_music_lsp seplay 9,1001,100 : gosub *bgm_mode_ps3 : mov %title_skip,1 : goto *b_title
 	if %BtnRes = t_chars_lsp cell t_chars_lsp,1 : print 1 : btndef "" : goto *char_sub_menu
@@ -15331,7 +15334,7 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 
 		write_special_text t_txt_chars_lsp,"title_btn_desc",100+42,470+22,char_btn_desc_t,char_btn_desc_s,""
 
-		write_special_text t_txt_tips_lsp,"title_btn_desc",100+42,470+22,tips_btn_desc_t,tips_btn_desc_s,"" 
+		write_special_text t_txt_tips_lsp,"title_btn_desc",100+42,470+22,movie_btn_desc_t,movie_btn_desc_s,"" 
 
 		write_special_text t_txt_config_lsp,"title_btn_desc",100+42,470+22,cfg_btn_desc_t,cfg_btn_desc_s,"" 
 
@@ -15570,7 +15573,7 @@ return
 				goto *b_title
 			*ep2_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep2_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep2_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -15639,7 +15642,7 @@ return
 				goto *b_title
 			*ep3_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep3_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep3_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -15710,7 +15713,7 @@ return
 
 			*ep4_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep4_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep4_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -15780,7 +15783,7 @@ return
 				goto *b_title
 			*ep5_8_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep5_8_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep5_8_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -15946,7 +15949,7 @@ return
 				goto *b_title
 			*ep3_unlock_2_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep3_unlock_2_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep3_unlock_2_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16016,7 +16019,7 @@ return
 
 			*ep4_unlock_2_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep4_unlock_2_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep4_unlock_2_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16085,7 +16088,7 @@ return
 				goto *b_title
 			*ep5_8_unlock_2_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep5_8_unlock_2_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep5_8_unlock_2_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16247,7 +16250,7 @@ return
 
 			*ep4_unlock_3_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep4_unlock_3_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep4_unlock_3_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16315,7 +16318,7 @@ return
 				goto *b_title
 			*ep5_8_unlock_3_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep5_8_unlock_3_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep5_8_unlock_3_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16473,7 +16476,7 @@ return
 				goto *b_title
 			*ep5_8_unlock_4_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep5_8_unlock_4_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep5_8_unlock_4_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16691,7 +16694,7 @@ return
 				goto *b_title
 			*ep6_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep6_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep6_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16761,7 +16764,7 @@ return
 				goto *b_title
 			*ep7_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep7_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep7_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16831,7 +16834,7 @@ return
 				goto *b_title
 			*ep8_unlock_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep8_unlock_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep8_unlock_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -16993,7 +16996,7 @@ return
 				goto *b_title
 			*ep7_unlock_2_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep7_unlock_2_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep7_unlock_2_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -17062,7 +17065,7 @@ return
 				goto *b_title
 			*ep8_unlock_2_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep8_unlock_2_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep8_unlock_2_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -17222,7 +17225,7 @@ return
 				goto *b_title
 			*ep8_unlock_3_100
 				
-			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep8_unlock_3_200
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 notif %BtnRes = -10 goto *ep8_unlock_3_200
 				_csp unlock_bg_lsp
 				_csp unlock_yes_lsp
 				_csp unlock_no_lsp
@@ -17909,217 +17912,13 @@ if %CHIRU_MODE != 2 jumpf
 
 ;------------------------------
 ;Sub-menu after pressing the Tips
-*tips_sub_menu
-	btndef ""
-
-	vsp t_btn_start_lsp,0 : vsp_special gen_txt_11,0
-	vsp t_btn_web_lsp,0 : vsp_special gen_txt_12,0
-	vsp t_btn_tea_lsp,0 : vsp_special gen_txt_13,0
-	;vsp t_btn_tips_lsp,0
-	vsp t_btn_exit_lsp,0 : vsp_special gen_txt_14,0
-	vsp t_btn_music_lsp,0 : vsp_special gen_txt_15,0
-	vsp t_btn_ura_tea_lsp,0 : vsp_special gen_txt_17,0
-	vsp t_chars_lsp,0 : vsp_special gen_txt_18,0
-	vsp t_cg_lsp,0 : vsp_special gen_txt_19,0
-	vsp t_config_lsp,0 : vsp_special gen_txt_20,0
-	vsp t_trophy_lsp,0
-
-	seplay 8,1001,100
-	print 1
-
-	wait 100
-
-	;Shift on the Tips button.
-	resettimer
-	msp t_btn_tips_lsp,0,-32,-100: msp gen_txt_16,0,-32,-100 : msp gen_txt_16+1,0,-32,-100 : print 1 : waittimer 50
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 100
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 150
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 200
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 250
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 300
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 300
-	msp t_btn_tips_lsp,0,-32,0	 : msp gen_txt_16,0,-32,0 : msp gen_txt_16+1,0,-32,0 : print 1 : waittimer 300
-	msp t_btn_tips_lsp,0,-32,50	 : msp gen_txt_16,0,-32,50 : msp gen_txt_16+1,0,-32,50 : print 1 : waittimer 350
-	msp t_btn_tips_lsp,0,-32,50	 : msp gen_txt_16,0,-32,50 : msp gen_txt_16+1,0,-32,50 :print 1		
-	seplay 9,1001,100
-	
-	if %CHIRU_MODE = 1 goto *tips_sub_menu_100_chiru
-
-	*tips_sub_menu_100
-
-	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 20 lsp t_btn_ep1_tips_lsp,ep_btn_bg,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND >= 30 lsp t_btn_ep2_tips_lsp,ep_btn_bg,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND >= 40 lsp t_btn_ep3_tips_lsp,ep_btn_bg,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND >= 50 lsp t_btn_ep4_tips_lsp,ep_btn_bg,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep4_n_txt,""
-	;new
-	if %UMINEKOEND_TIPS_FLG = 1 lsp t_btn_ep1_tips_lsp,ep_btn_bg_new,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 2 lsp t_btn_ep2_tips_lsp,ep_btn_bg_new,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 3 lsp t_btn_ep3_tips_lsp,ep_btn_bg_new,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 4 lsp t_btn_ep4_tips_lsp,ep_btn_bg_new,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep4_n_txt,""
-	
-	print 85 ;15,10
-
-	*tips_sub_menu_btn_100_loop
-		btndef ""
-
-		exbtn_d "P153,1C141-147C149C161C163C165C92-95P165P145,1" ;o: -60
-
-		exbtn t_btn_ep1_tips_lsp,t_btn_ep1_tips_lsp,""
-		exbtn t_btn_ep2_tips_lsp,t_btn_ep2_tips_lsp,""
-		exbtn t_btn_ep3_tips_lsp,t_btn_ep3_tips_lsp,""
-		exbtn t_btn_ep4_tips_lsp,t_btn_ep4_tips_lsp,""
-
-		btnwait2 %BtnRes
-		if %BtnRes = t_btn_ep1_tips_lsp csp_rst : mov %scenario_Number,1 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep2_tips_lsp csp_rst : mov %scenario_Number,2 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep3_tips_lsp csp_rst : mov %scenario_Number,3 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep4_tips_lsp csp_rst : mov %scenario_Number,4 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = 0 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -1 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -10 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-goto *tips_sub_menu_btn_100_loop
-
-
-*tips_sub_menu_100_chiru
-
-	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 60 lsp t_btn_ep1_tips_lsp,ep_btn_bg,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND >= 70 lsp t_btn_ep2_tips_lsp,ep_btn_bg,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND >= 80 lsp t_btn_ep3_tips_lsp,ep_btn_bg,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep7_n_txt,""
-	if %UMINEKOEND >= 90 lsp t_btn_ep4_tips_lsp,ep_btn_bg,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep8_n_txt	,""
-	;new
-	if %UMINEKOEND_TIPS_FLG = 5 lsp t_btn_ep1_tips_lsp,ep_btn_bg_new,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 6 lsp t_btn_ep2_tips_lsp,ep_btn_bg_new,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 7 lsp t_btn_ep3_tips_lsp,ep_btn_bg_new,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep7_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 8 lsp t_btn_ep4_tips_lsp,ep_btn_bg_new,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep8_n_txt,""
-
-	print 85 ;15,10
-
-	*tips_sub_menu_btn_100_loop_chiru
-		btndef ""
-
-		exbtn_d "P153,1C141-147C149C161C163C165C82-85P165P145,1" ;o: -60
-
-		exbtn t_btn_ep1_tips_lsp,t_btn_ep1_tips_lsp,""
-		exbtn t_btn_ep2_tips_lsp,t_btn_ep2_tips_lsp,""
-		exbtn t_btn_ep3_tips_lsp,t_btn_ep3_tips_lsp,""
-		exbtn t_btn_ep4_tips_lsp,t_btn_ep4_tips_lsp,""
-		btnwait2 %BtnRes
-		if %BtnRes = t_btn_ep1_tips_lsp csp_rst : mov %scenario_Number,5 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep2_tips_lsp csp_rst : mov %scenario_Number,6 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep3_tips_lsp csp_rst : mov %scenario_Number,7 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep4_tips_lsp csp_rst : mov %,8 : seplay 9,1001,100 : mov %r_display,2 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = 0 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -1 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -10 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-goto *tips_sub_menu_btn_100_loop_chiru
+;See import below
 
 ;------------------------------
 
 ;------------------------------
 ;Sub-menu after pressing the Tips
-*char_sub_menu
-	btndef ""
-
-	vsp t_btn_start_lsp,0 : vsp_special gen_txt_11,0
-	vsp t_btn_web_lsp,0 : vsp_special gen_txt_12,0
-	vsp t_btn_tea_lsp,0 : vsp_special gen_txt_13,0
-	vsp t_btn_tips_lsp,0 : vsp_special gen_txt_14,0
-	vsp t_btn_exit_lsp,0 : vsp_special gen_txt_16,0
-	vsp t_btn_music_lsp,0 : vsp_special gen_txt_17,0
-	vsp t_btn_ura_tea_lsp,0 : vsp_special gen_txt_18,0
-	;vsp t_chars_lsp,0
-	vsp t_cg_lsp,0 : vsp_special gen_txt_19,0
-	vsp t_config_lsp,0 : vsp_special gen_txt_20,0
-	vsp t_trophy_lsp,0
-
-	seplay 8,1001,100
-	print 1
-
-	wait 100
-
-	;Shift on the Tips button.
-	resettimer
-	msp t_chars_lsp,0,-32,-100	 : msp gen_txt_15,0,-32,-100 : msp gen_txt_15+1,0,-32,-100  : print 1 : waittimer 50
-	msp t_chars_lsp,0,-32,0		 : msp gen_txt_15,0,-32,0 : msp gen_txt_15+1,0,-32,0  : print 1 : waittimer 100
-	msp t_chars_lsp,0,-32,0		 : msp gen_txt_15,0,-32,0 : msp gen_txt_15+1,0,-32,0  : print 1 : waittimer 150
-	msp t_chars_lsp,0,-32,0		 : msp gen_txt_15,0,-32,0 : msp gen_txt_15+1,0,-32,0  : print 1 : waittimer 200
-	msp t_chars_lsp,0,-32,0		 : msp gen_txt_15,0,-32,0 : msp gen_txt_15+1,0,-32,0  : print 1 : waittimer 250
-	msp t_chars_lsp,0,-32,0		 : msp gen_txt_15,0,-32,0 : msp gen_txt_15+1,0,-32,0  : print 1 : waittimer 300
-	msp t_chars_lsp,0,-32,50	 : msp gen_txt_15,0,-32,50 : msp gen_txt_15+1,0,-32,50  : print 1 : waittimer 350
-	msp t_chars_lsp,0,-32,50	 : msp gen_txt_15,0,-32,50 : msp gen_txt_15+1,0,-32,50  :print 1		
-	seplay 9,1001,100
-	
-	if %CHIRU_MODE = 1 goto *char_sub_menu_100_chiru
-
-	*char_sub_menu_100
-
-	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 20 lsp t_btn_ep1_tips_lsp,ep_btn_bg,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND >= 30 lsp t_btn_ep2_tips_lsp,ep_btn_bg,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND >= 40 lsp t_btn_ep3_tips_lsp,ep_btn_bg,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND >= 50 lsp t_btn_ep4_tips_lsp,ep_btn_bg,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep4_n_txt,""
-	;new
-	if %UMINEKOEND_TIPS_CHA_FLG = 1 lsp t_btn_ep1_tips_lsp,ep_btn_bg_new,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 2 lsp t_btn_ep2_tips_lsp,ep_btn_bg_new,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 3 lsp t_btn_ep3_tips_lsp,ep_btn_bg_new,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 4 lsp t_btn_ep4_tips_lsp,ep_btn_bg_new,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep4_n_txt,""
-
-	print 85 ;15,10
-
-	*char_sub_menu_btn_100_loop
-		btndef ""
-
-		exbtn_d "P164,1C141-147C149C161C165C92-95P165P163,1" ;o: -60
-
-		exbtn t_btn_ep1_tips_lsp,t_btn_ep1_tips_lsp,""
-		exbtn t_btn_ep2_tips_lsp,t_btn_ep2_tips_lsp,""
-		exbtn t_btn_ep3_tips_lsp,t_btn_ep3_tips_lsp,""
-		exbtn t_btn_ep4_tips_lsp,t_btn_ep4_tips_lsp,""
-		btnwait2 %BtnRes
-		if %BtnRes = t_btn_ep1_tips_lsp csp_rst : mov %scenario_Number,1 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep2_tips_lsp csp_rst : mov %scenario_Number,2 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep3_tips_lsp csp_rst : mov %scenario_Number,3 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep4_tips_lsp csp_rst : mov %scenario_Number,4 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = 0 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -1 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -10 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-goto *char_sub_menu_btn_100_loop
-
-*char_sub_menu_100_chiru
-
-	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 60 lsp t_btn_ep1_tips_lsp,ep_btn_bg,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND >= 70 lsp t_btn_ep2_tips_lsp,ep_btn_bg,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND >= 80 lsp t_btn_ep3_tips_lsp,ep_btn_bg,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep7_n_txt,""	
-	if %UMINEKOEND >= 90 lsp t_btn_ep4_tips_lsp,ep_btn_bg,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep8_n_txt,""	
-	;new
-	if %UMINEKOEND_TIPS_CHA_FLG = 5 lsp t_btn_ep1_tips_lsp,ep_btn_bg_new,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 6 lsp t_btn_ep2_tips_lsp,ep_btn_bg_new,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 7 lsp t_btn_ep3_tips_lsp,ep_btn_bg_new,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep7_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 8 lsp t_btn_ep4_tips_lsp,ep_btn_bg_new,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep8_n_txt,""
-
-	print 85 ;15,10
-
-	*char_sub_menu_btn_100_loop_chiru
-		btndef ""
-
-		exbtn_d "P164,1C141-147C149C161C165C92-95P165P163,1" ;o: -60
-
-		exbtn t_btn_ep1_tips_lsp,t_btn_ep1_tips_lsp,""
-		exbtn t_btn_ep2_tips_lsp,t_btn_ep2_tips_lsp,""
-		exbtn t_btn_ep3_tips_lsp,t_btn_ep3_tips_lsp,""
-		exbtn t_btn_ep4_tips_lsp,t_btn_ep4_tips_lsp,""
-		btnwait2 %BtnRes
-		if %BtnRes = t_btn_ep1_tips_lsp csp_rst : mov %scenario_Number,5 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep2_tips_lsp csp_rst : mov %scenario_Number,6 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep3_tips_lsp csp_rst : mov %scenario_Number,7 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = t_btn_ep4_tips_lsp csp_rst : mov %scenario_Number,8 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-		if %BtnRes = 0 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -1 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-		if %BtnRes = -10 btndef "" : seplay 9,1001,100 : mov %r_for_title,1 : goto *b_title_moment
-goto *char_sub_menu_btn_100_loop_chiru
+#locale_import "tmp_char_submenu.txt"; 
 
 ;------------------------------
 
@@ -20662,10 +20461,10 @@ return
 	lsph TextCC1SpNum,":a/10,80,2;graphics\system\wnd\cursor0.png",0,0
 	lsph TextCC2SpNum,":a/10,80,2;graphics\system\wnd\cursor1.png",0,0
 	lsph TextCC3SpNum,":a;graphics\system\skip.png",1800,50
-	lsph TextCC3SpNumDenied,":a;graphics\system\skip2.png",1800,50 : aspt alpha,TextCC3SpNumDenied,0
+	;lsph TextCC3SpNumDenied,":a;graphics\system\skip2.png",1800,50 : aspt alpha,TextCC3SpNumDenied,0
 	lsph TextCC4SpNum,":a;graphics\system\automode.png",30,80
 	enable_transitions TextCC3SpNum,0
-	enable_transitions TextCC3SpNumDenied,0
+	;enable_transitions TextCC3SpNumDenied,0
 	enable_transitions TextCC4SpNum,0
 	if %skip_icon = on vsp TextCC3SpNum,1
 	if %autom_icon = on vsp TextCC4SpNum,1
@@ -23464,6 +23263,35 @@ return
 	if %ep_id == 8 mov $ep_id,scenario_episode_8 : jumpf
 	
 	~
+
+    ;NEW
+	if %cfg_chapter_display == 0 jumpf
+		enable_transitions 719,0
+		enable_transitions 722,0
+		enable_transitions2 721,0
+		enable_transitions 720,0
+		aspt alpha,719,0,1 : aspt2 alpha,721,0,1 : aspt alpha,722,0,1 : aspt alpha,720,0,1 ;remove if still here
+		sptwait alpha,719 : sptwait2 alpha,721 : sptwait alpha,722 : sptwait alpha,720
+		_csp 719 : _csp 721 : _csp 722 : _csp 720
+		border_pad_push 3
+
+		split $name_chapter_r_click,"|",$chapter_title_w,$temp_var3,$Free3
+		lsp 719,":s;#FFFFFF`{p:7:"+$temp_var3+"}",-1000,74
+		getspsize 719,%chapter_title_w,%temp_var3
+		amsp 719,-121-%chapter_title_w+70,74
+
+		lsp 722,drawer_edge,-39,74
+		lsp2 721,drawer_bg,-80-(%chapter_title_w/2),99,100+(%chapter_title_w*100/82),100,0
+		lsp 720,drawer_chapter_icon,-121-%chapter_title_w,74
+		border_pad_pop
+		aspt alpha,719,230 : aspt2 alpha,721,230 : aspt alpha,722,230 : aspt alpha,720,230
+		aspt xpos,719,70,200 : aspt2 xpos,721,41+(%chapter_title_w/2),200 : aspt xpos,722,41+(%chapter_title_w/2)+(82+%chapter_title_w)/2,200 : aspt xpos,720,0,200
+		spt xpos,719,0,6000 : spt2 xpos,721,0,6000 : spt xpos,722,0,6000 : spt xpos,720,0,6000
+		aspt xpos,719,-121-%chapter_title_w+70,200 : aspt2 xpos,721,-80-(%chapter_title_w/2),200 : aspt xpos,722,-39,200 : aspt xpos,720,-121-%chapter_title_w,200
+		spt alpha,719,0,7100 : spt2 alpha,721,0,7100 : spt alpha,722,0,7100 : spt alpha,720,0,7100
+		aspt alpha,719,0,1 : aspt2 alpha,721,0,1 : aspt alpha,722,0,1 : aspt alpha,720,0,1
+	~
+
 	if %no_log_gen == 1 setlog 1,"{color:bf8a34:{a:c:"+$ep_id+"}}"
 	if %no_log_gen != 0 jumpf
 		mark_read
@@ -23483,11 +23311,39 @@ return
 *new_chapter
 	getparam $chapter_time,$chapter_title
 	jskip_s
+	;OLD
+	;if %cfg_chapter_display == 0 jumpf
+	;	border_pad_push 3
+	;	enable_transitions 746,0 : lsp 746,":s;#FFFFFF`{p:7:"+$chapter_time+"{n}"+$chapter_title+"}",35,940
+	;	spt alpha,746,0,7000 : aspt alpha,746,0,100
+	;	border_pad_pop
+	;~
+	;NEW
 	if %cfg_chapter_display == 0 jumpf
+		enable_transitions 719,0
+		enable_transitions 722,0
+		enable_transitions2 721,0
+		enable_transitions 720,0
+		aspt alpha,719,0,1 : aspt2 alpha,721,0,1 : aspt alpha,722,0,1 : aspt alpha,720,0,1 ;remove if still here
+		sptwait alpha,719 : sptwait2 alpha,721 : sptwait alpha,722 : sptwait alpha,720
+		_csp 719 : _csp 721 : _csp 722 : _csp 720
 		border_pad_push 3
-		enable_transitions 746,0 : lsp 746,":s;#FFFFFF`{p:7:"+$chapter_time+"{n}"+$chapter_title+"}",35,940
-		spt alpha,746,0,7000 : aspt alpha,746,0,100
+
+		split $name_chapter_r_click,"|",$chapter_title_w,$temp_var3,$Free3
+		lsp 719,":s;#FFFFFF`{p:7:"+$temp_var3+"}",-1000,74
+		getspsize 719,%chapter_title_w,%temp_var3
+		amsp 719,-121-%chapter_title_w+70,74
+
+		lsp 722,drawer_edge,-39,74
+		lsp2 721,drawer_bg,-80-(%chapter_title_w/2),99,100+(%chapter_title_w*100/82),100,0
+		lsp 720,drawer_chapter_icon,-121-%chapter_title_w,74
 		border_pad_pop
+		aspt alpha,719,230 : aspt2 alpha,721,230 : aspt alpha,722,230 : aspt alpha,720,230
+		aspt xpos,719,70,200 : aspt2 xpos,721,41+(%chapter_title_w/2),200 : aspt xpos,722,41+(%chapter_title_w/2)+(82+%chapter_title_w)/2,200 : aspt xpos,720,0,200
+		spt xpos,719,0,6000 : spt2 xpos,721,0,6000 : spt xpos,722,0,6000 : spt xpos,720,0,6000
+		aspt xpos,719,-121-%chapter_title_w+70,200 : aspt2 xpos,721,-80-(%chapter_title_w/2),200 : aspt xpos,722,-39,200 : aspt xpos,720,-121-%chapter_title_w,200
+		spt alpha,719,0,7100 : spt2 alpha,721,0,7100 : spt alpha,722,0,7100 : spt alpha,720,0,7100
+		aspt alpha,719,0,1 : aspt2 alpha,721,0,1 : aspt alpha,722,0,1 : aspt alpha,720,0,1
 	~
 	if %no_log_gen == 1 && $chapter_time != "" setlog 1,"{color:bf8a34:{a:c:"+$chapter_time+"{n}"+$chapter_title+"}}"
 	if %no_log_gen == 1 && $chapter_time == "" setlog 1,"{color:bf8a34:{a:c:"+$chapter_title+"}}"
@@ -24193,69 +24049,69 @@ if $lbg_name == "ep816" mov %8656,1 : return
 if $lbg_name == "ep817" mov %8657,1 : return
 if $lbg_name == "ep818" mov %8658,1 : return
 if $lbg_name == "eve_last2" mov %8659,1 : return
-;60
+;59
 ;Murder
-if $lbg_name == "g0101"   mov %8824,1 : return
-if $lbg_name == "g0102"   mov %8625,1 : return
-if $lbg_name == "g0103"   mov %8626,1 : return
-if $lbg_name == "g0201"   mov %8627,1 : return
-if $lbg_name == "g0202"   mov %8628,1 : return
-if $lbg_name == "g0203_b" mov %8629,1 : return
-if $lbg_name == "g0301"   mov %8630,1 : return
-if $lbg_name == "g0302"   mov %8631,1 : return
-if $lbg_name == "g0401"   mov %8632,1 : return
-if $lbg_name == "g0402"   mov %8645,1 : return
-if $lbg_name == "g0403"   mov %8646,1 : return
-if $lbg_name == "g0404"   mov %8647,1 : return
+if $lbg_name == "g0101"   mov %8800,1 : return
+if $lbg_name == "g0102"   mov %8801,1 : return
+if $lbg_name == "g0103"   mov %8802,1 : return
+if $lbg_name == "g0201"   mov %8803,1 : return
+if $lbg_name == "g0202"   mov %8804,1 : return
+if $lbg_name == "g0203_b" mov %8805,1 : return
+if $lbg_name == "g0301"   mov %8806,1 : return
+if $lbg_name == "g0302"   mov %8807,1 : return
+if $lbg_name == "g0401"   mov %8808,1 : return
+if $lbg_name == "g0402"   mov %8809,1 : return
+if $lbg_name == "g0403"   mov %8810,1 : return
+if $lbg_name == "g0404"   mov %8811,1 : return
 ;mov ?cg_list[1][9],1 ;no64 video
-if $lbg_name == "ep503_b" mov %8802,1 : return
-if $lbg_name == "ep603" mov %8808,1 : return
-if $lbg_name == "ep703_b" mov %8831,1 : return
-if $lbg_name == "ep704_b" mov %8832,1 : return
+if $lbg_name == "ep503_b" mov %8812,1 : return
+if $lbg_name == "ep603" mov %8813,1 : return
+if $lbg_name == "ep703_b" mov %8814,1 : return
+if $lbg_name == "ep704_b" mov %8815,1 : return
 ;17
 ;Char
-if $lbg_name == "c_c0203_lb" mov %8636,1 : return
-if $lbg_name == "c_c0204_b" mov %8637,1 : return
-if $lbg_name == "c_c0205_b" mov %8638,1 : return
-if $lbg_name == "c_c0401_lb" mov %8639,1 : return
-if $lbg_name == "c_c0402_ld" mov %8640,1 : return
-if $lbg_name == "c_c0403_f" mov %8641,1 : return
-if $lbg_name == "c_c0404_lf" mov %8642,1 : return
-if $lbg_name == "c_c0901_b" mov %8643,1 : return
-if $lbg_name == "c_c0902_a" mov %8644,1 : return
-if $lbg_name == "c_e0101_a" mov %8648,1 : return
-if $lbg_name == "c_e0102_b" mov %8649,1 : return
-if $lbg_name == "c_e0103_c" mov %8650,1 : return
-if $lbg_name == "c_e0305_d" mov %8651,1 : return
-if $lbg_name == "c_e0903_b" mov %8653,1 : return
+if $lbg_name == "c_c0203_lb" mov %8816,1 : return
+if $lbg_name == "c_c0204_b" mov %8817,1 : return
+if $lbg_name == "c_c0205_b" mov %8818,1 : return
+if $lbg_name == "c_c0401_lb" mov %8819,1 : return
+if $lbg_name == "c_c0402_ld" mov %8820,1 : return
+if $lbg_name == "c_c0403_f" mov %8821,1 : return
+if $lbg_name == "c_c0404_lf" mov %8822,1 : return
+if $lbg_name == "c_c0901_b" mov %8823,1 : return
+if $lbg_name == "c_c0902_a" mov %8824,1 : return
+if $lbg_name == "c_e0101_a" mov %8825,1 : return
+if $lbg_name == "c_e0102_b" mov %8826,1 : return
+if $lbg_name == "c_e0103_c" mov %8827,1 : return
+if $lbg_name == "c_e0305_d" mov %8828,1 : return
+if $lbg_name == "c_e0903_b" mov %8829,1 : return
 
-if $lbg_name == "wic_c" mov %8854,1 : return
-if $lbg_name == "evc_c" mov %8855,1 : return
-if $lbg_name == "dlc_d1" mov %8856,1 : return
-if $lbg_name == "fec_a" mov %8857,1 : return
-if $lbg_name == "bec_a" mov %8858,1 : return
-if $lbg_name == "brc_er" mov %8859,1 : return
-if $lbg_name == "lac_a3" mov %8860,1 : return
-if $lbg_name == "wrc_a" mov %8861,1 : return
-if $lbg_name == "erc_ra" mov %8862,1 : return
-if $lbg_name == "enc_a1" mov %8863,1 : return
-if $lbg_name == "bac_ga2n" mov %8864,1 : return
+if $lbg_name == "wic_c" mov %8830,1 : return
+if $lbg_name == "evc_c" mov %8831,1 : return
+if $lbg_name == "dlc_d1" mov %8832,1 : return
+if $lbg_name == "fec_a" mov %8833,1 : return
+if $lbg_name == "bec_a" mov %8834,1 : return
+if $lbg_name == "brc_er" mov %8835,1 : return
+if $lbg_name == "lac_a3" mov %8836,1 : return
+if $lbg_name == "wrc_a" mov %8837,1 : return
+if $lbg_name == "erc_ra" mov %8838,1 : return
+if $lbg_name == "enc_a1" mov %8839,1 : return
+if $lbg_name == "bac_ga2n" mov %8840,1 : return
 ;25
 ;Special
-if $lbg_name == "portrait1" mov %8654,1 : return
-if $lbg_name == "portrait3" mov %8655,1 : return
-if $lbg_name == "portrait4" mov %8656,1 : return
-if $lbg_name == "portrait_ep4" mov %8657,1 : return ;omake
+if $lbg_name == "portrait1" mov %8841,1 : return
+if $lbg_name == "portrait3" mov %8842,1 : return
+if $lbg_name == "portrait4" mov %8843,1 : return
+if $lbg_name == "portrait_ep4" mov %8844,1 : return ;omake
 
-if $lbg_name == "portrait5" mov %8872,1 : return
-if $lbg_name == "portrait6" mov %8873,1 : return
+if $lbg_name == "portrait5" mov %8845,1 : return
+if $lbg_name == "portrait6" mov %8846,1 : return
 ;These two are obtained after completing ura7 and ura8
-if $lbg_name == "portrait_ep7" mov %8874,1 : return
-if $lbg_name == "portrait_ep8" mov %8875,1 : return
-if $lbg_name == "congra_t" mov
-if $lbg_name == "PACKAGE01" mov
-if $lbg_name == "package03" mov %8876,1 : return
-if $lbg_name == "package04" mov %8877,1 : return
+if $lbg_name == "portrait_ep7" mov %8847,1 : return
+if $lbg_name == "portrait_ep8" mov %8848,1 : return
+if $lbg_name == "congra_t" mov %8849,1 : return
+if $lbg_name == "PACKAGE01" mov %8850,1 : return
+if $lbg_name == "package03" mov %8851,1 : return
+if $lbg_name == "package04" mov %8852,1 : return
 ;12
 
 return
@@ -24371,7 +24227,7 @@ if $lbg_name == "ep606" mov ?cg_list[0][35],1 : return ;Story
 ;Pg2
 if $lbg_name == "ex02" mov ?cg_list[0][36],1 : return ;Story
 if $lbg_name == "ep607" mov ?cg_list[0][37],1 : return ;Story
-if $lbg_name == "c0201_b" mov ?cg_list[0][38],1 : return ;X ;Story
+;if $lbg_name == "c0201_b" mov ?cg_list[0][38],1 : return ;X ;Story
 
 if $lbg_name == "ep701" mov ?cg_list[0][39],1 : return ;Story
 
@@ -24434,8 +24290,8 @@ if $lbg_name == "package03" mov ?cg_list[3][10],1 : return ;Extra
 if $lbg_name == "package04" mov ?cg_list[3][11],1 : return ;Extra
 
 ;Custom New Images
-;Last of Basic: Story: 60 - Murder: 17 - Char: 25 - Extra: 12
-;111
+;Last of Basic: Story: 59 - Murder: 17 - Char: 25 - Extra: 12
+;113
 return
 ;End Custom
 
@@ -25042,22 +24898,52 @@ return
 return
 
 *bgmtitle
-		enable_transitions 748,0
-		aspt ypos,748,-100,200 ;remove if still here
-		sptwait ypos,748
-		_csp 748
+;OLD
+		;enable_transitions 748,0
+		;aspt ypos,748,-100,200 ;remove if still here
+		;sptwait ypos,748
+		;_csp 748
+		;if %bgm_chapter_display == 0 mov %bgm_title_delay,0 : return
+		;border_pad_push 3
+		;lsp 748,":s;#FFFFFF`{p:7:♪"+$BGM_Title+"}",18,-100
+		;border_pad_pop
+		;spt ypos,748,0,%bgm_title_delay
+		;mov %bgm_title_delay,0
+		;aspt ypos,748,12,200
+		;spt ypos,748,0,6000
+		;aspt ypos,748,-100,200
+		;;make invisible in case of quakes?
+		;spt alpha,748,0,7100
+		;aspt alpha,748,0,1
+
+;NEW
+		enable_transitions 723,0
+		enable_transitions 726,0
+		enable_transitions2 725,0
+		enable_transitions 724,0
+		aspt alpha,723,0,1 : aspt2 alpha,725,0,1 : aspt alpha,726,0,1 : aspt alpha,724,0,1 ;remove if still here
+		;aspt xpos,723,-305+45,200 : aspt2 xpos,725,-172,200 : aspt xpos,726,-39,200 ;remove if still here
+		sptwait alpha,723 : sptwait2 alpha,725 : sptwait alpha,726 : sptwait alpha,724
+		_csp 723 : _csp 725 : _csp 726 : _csp 724
 		if %cfg_bgm_display == 0 mov %bgm_title_delay,0 : return
 		border_pad_push 3
-		lsp 748,":s;#FFFFFF`{p:7:♪"+$BGM_Title+"}",18,-100
-		border_pad_pop
-		spt ypos,748,0,%bgm_title_delay
-		mov %bgm_title_delay,0
-		aspt ypos,748,12,200
-		spt ypos,748,0,6000
-		aspt ypos,748,-100,200
-		;make invisible in case of quakes?
-		spt alpha,748,0,7100
-		aspt alpha,748,0,1
+
+        lsp 723,":s;#FFFFFF`{p:7:"+$BGM_Title+"}",-1000,8
+        getspsize 723,%bgm_title_w,%temp_var3
+        amsp 723,-121-%bgm_title_w+65,8
+        lsp 726,drawer_edge,-39,9
+        lsp2 725,drawer_bg,-80-(%bgm_title_w/2),9+25,100+(%bgm_title_w*100/82),100,0
+        lsp 724,drawer_music_icon,-121-%bgm_title_w,9
+
+        border_pad_pop
+        mov %bgm_title_delay,0
+        aspt alpha,723,230 : aspt2 alpha,725,230 : aspt alpha,726,230 : aspt alpha,724,230
+        aspt xpos,723,65,200 : aspt2 xpos,725,41+(%bgm_title_w/2),200 : aspt xpos,726,41+(%bgm_title_w/2)+(82+%bgm_title_w)/2,200 : aspt xpos,724,0,200
+        spt xpos,723,0,6000 : spt2 xpos,725,0,6000 : spt xpos,726,0,6000 : spt xpos,724,0,6000
+        aspt xpos,723,-121-%bgm_title_w+65,200 : aspt2 xpos,725,-80-(%bgm_title_w/2),200 : aspt xpos,726,-39,200 : aspt xpos,724,-121-%bgm_title_w,200
+        spt alpha,723,0,7100 : spt2 alpha,725,0,7100 : spt alpha,726,0,7100 : spt alpha,724,0,7100
+        aspt alpha,723,0,1 : aspt2 alpha,725,0,1 : aspt alpha,726,0,1 : aspt alpha,724,0,1
+
 return
 
 ;****************************Aim***********************************
@@ -25533,8 +25419,7 @@ if %snow_sprite > 0 snow %snow_sprite : jumpf
 	snow -1
 ~
 
-;Load BGM title
-if %bgm_current_id != 0 _csp 748 : gosub *BGM_List : gosub *bgmtitle
+if %bgm_current_id != 0 _csp 723 : _csp 724 : _csp 725 : _csp 726 : gosub *BGM_List : gosub *bgmtitle
 _csp 746 ;no chapter titles
 
 ;So that we save after loading
@@ -27392,8 +27277,16 @@ return
 		if %%music_box_tmp == 1 mov ?cg_list[0][%music_box_tmp-8600],1
 	next
 	
-	for %music_box_tmp = 8800 to 8877
-		if %%music_box_tmp == 1 mov ?cg_list[1][%music_box_tmp-8800],1
+	for %music_box_tmp = 8800 to 8815
+		if %%music_box_tmp == 1 mov ?cg_list[1][%music_box_tmp-8815],1
+	next
+
+	for %music_box_tmp = 8816 to 8840
+		if %%music_box_tmp == 1 mov ?cg_list[2][%music_box_tmp-8840],1
+	next
+
+	for %music_box_tmp = 8841 to 8852
+		if %%music_box_tmp == 1 mov ?cg_list[3][%music_box_tmp-8852],1
 	next
 
 	operate_config u_read,$music_box_tmp,"cg_unlock"
@@ -27430,6 +27323,29 @@ return
 return
 
 *load_bgms_8
+	;special - to order still
+	;bgm mancanti serie standard
+		mov ?bgm_list[94],1
+		mov ?bgm_list[189],1
+		mov ?bgm_list[196],1
+		mov ?bgm_list[197],1
+		mov ?bgm_list[198],1
+		mov ?bgm_list[200],1
+		mov ?bgm_list[243],1
+		mov ?bgm_list[250],1
+		mov ?bgm_list[251],1
+		mov ?bgm_list[252],1
+		mov ?bgm_list[253],1
+		mov ?bgm_list[254],1
+	;bgm speciali e custom
+		mov ?bgm_list[1011],1
+		mov ?bgm_list[1021],1
+		mov ?bgm_list[1022],1
+		mov ?bgm_list[1023],1
+		mov ?bgm_list[1024],1
+		mov ?bgm_list[1025],1
+		mov ?bgm_list[1026],1
+		mov ?bgm_list[2007],1
 	;ep
 	mov ?bgm_list[187],1
 	mov ?bgm_list[188],1
@@ -27734,7 +27650,7 @@ return
 	mov $lbg_name,"c_c0902_a" : gosub *load_cg
 	mov $lbg_name,"ep704_b" : gosub *load_cg
 	mov $lbg_name,"ep705_4" : gosub *load_cg
-	mov $lbg_name,"c0201_b" : gosub *load_cg
+	;mov $lbg_name,"c0201_b" : gosub *load_cg
 	mov $lbg_name,"g0203_a" : gosub *load_cg
 	mov $lbg_name,"portrait_ep7" : gosub *load_cg
 
@@ -27895,8 +27811,8 @@ if %BtnRes = -20 gosub *log_jump_next_chapter
 
 if %BtnRes = -1 && %r_mode_flg = 0  gosub *text_cw_rclk : goto *text_cw
 if %BtnRes = -3 && %r_mode_flg = 0  gosub *text_cw_hide : goto *text_cw
-if %BtnRes = -10 && %r_mode_flg = 0  gosub *text_cw_hide : goto *text_cw
-if %BtnRes = -51 && %r_mode_flg = 0  gosub *text_cw_rclk : goto *text_cw
+if %BtnRes = -10 && %r_mode_flg = 0  gosub *text_cw_rclk : goto *text_cw ;W_CUSTOM - Prevents esc from hiding the textbox, changed to opening main menu
+if %BtnRes = -51 && %r_mode_flg = 0  gosub *text_cw_rclk : goto *text_cw ;"z" button
 
 if %BtnRes = -2 && %r_mode_flg = 0 gosub *text_cw_lookback_go : goto *text_cw
 
@@ -27947,7 +27863,7 @@ return
 	gosub *textoff2	;We need to hide the textbox either
 
 	;Get a screenshot image for savedata before entering the Bookmark unless we already have one
-	if %disallow_saving == off _csp 748 : getscreenshot 309,174
+	if %disallow_saving == off _csp 723 : _csp 724 : _csp 725 : _csp 726 : _csp 719 : _csp 720 : _csp 721 : _csp 722 : getscreenshot 309,174
 
 	gosub *rmenu_custom
 
@@ -29367,6 +29283,12 @@ return
 #locale_import "tmp_cfg.txt"
 
 ;***********************************************************************
+; Movie Box
+;***********************************************************************
+
+#locale_import "tmp_movie.txt"
+
+;***********************************************************************
 ; Picture Box
 ;***********************************************************************
 
@@ -29627,13 +29549,16 @@ jnskip
 	return
 ~
 
+;isctrl %skip_status
+;debug_var %skip_status
+;if %skip_flg==off if %skip_status==1 vsp TextCC3SpNumDenied,1 : aspt alpha,TextCC3SpNumDenied,255,300
+;if %skip_flg==off if %skip_status==0 aspt alpha,TextCC3SpNumDenied,0,1000 : vsp TextCC3SpNumDenied,0
+
 jnauto
 	if %skip_icon = on vsp TextCC3SpNum,0 : mov %skip_icon,off
 	vsp TextCC4SpNum,1 : mov %autom_icon,on
 	return
 ~
-
-aspt alpha,TextCC3SpNumDenied,0,500 : vsp TextCC3SpNumDenied,0
 
 if %msgwnd_type == 4 lsph %msgwnd4_bg_slot,msgwnd4_bg,0,0 : aspt alpha,%msgwnd4_bg_slot,0 ;W_TEMP
 
@@ -29641,14 +29566,6 @@ if %autom_icon == 1 && %autom_no_cur = 1 && %TextCC12Flag = 0 vsp TextCC1SpNum,1
 if %autom_icon == 1 && %autom_no_cur = 1 && %TextCC12Flag = 1 vsp TextCC2SpNum,1 : print 1
 if %skip_icon = on vsp TextCC3SpNum,0 : mov %skip_icon,off
 vsp TextCC4SpNum,0 : mov %autom_icon,off
-
-return
-
-*ctrl_state
-
-	debug_str "ctrl pressed"
-	vsp TextCC3SpNumDenied,1 : aspt alpha,TextCC3SpNumDenied,255,500
-
 
 return
 
@@ -32215,7 +32132,7 @@ goto *quick_reload
 ;======================
 ;CHARS_MENU
 ;======================
-*rmenu_main_new
+*rmenu_main_new ;r_click r_menu
 ;========ДЛЯ ТЕСТА================
 ;mov %scenario_Number,2
 ;mov %r_side,1
@@ -32297,21 +32214,21 @@ if %r_display = 2 goto *rmenu_main_tips
 		if %UMINEKOEND >= 80 mov %temp_var2,93+53*0+(53/2)
 		if %UMINEKOEND >= 90 mov %temp_var2,93+53*0
 		;debug_var %temp_var2
-		if %UMINEKOEND >= 30 lsp gen_txt_2,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_2,"char_ep_btn",%temp_var2,902,"1" : if %scenario_Number = 1 lsp gen_txt_2,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_2,"char_ep_btn",%temp_var2,902,"1","disabled"  
+		if %UMINEKOEND >= 30 lsp gen_txt_2,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_2,"char_ep_btn",%temp_var2,902,"1" : if %scenario_Number = 1 lsp gen_txt_2,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_2,"char_ep_btn",%temp_var2,902,"1","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 30 lsp gen_txt_3,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_3,"char_ep_btn",%temp_var2,902,"2" : if %scenario_Number = 2 lsp gen_txt_3,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_3,"char_ep_btn",%temp_var2,902,"2","disabled"  
+		if %UMINEKOEND >= 30 lsp gen_txt_3,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_3,"char_ep_btn",%temp_var2,902,"2" : if %scenario_Number = 2 lsp gen_txt_3,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_3,"char_ep_btn",%temp_var2,902,"2","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 40 lsp gen_txt_4,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_4,"char_ep_btn",%temp_var2,902,"3" : if %scenario_Number = 3 lsp gen_txt_4,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_4,"char_ep_btn",%temp_var2,902,"3","disabled"  
+		if %UMINEKOEND >= 40 lsp gen_txt_4,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_4,"char_ep_btn",%temp_var2,902,"3" : if %scenario_Number = 3 lsp gen_txt_4,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_4,"char_ep_btn",%temp_var2,902,"3","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 50 lsp gen_txt_5,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_5,"char_ep_btn",%temp_var2,902,"4" : if %scenario_Number = 4 lsp gen_txt_5,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_5,"char_ep_btn",%temp_var2,902,"4","disabled"  
+		if %UMINEKOEND >= 50 lsp gen_txt_5,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_5,"char_ep_btn",%temp_var2,902,"4" : if %scenario_Number = 4 lsp gen_txt_5,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_5,"char_ep_btn",%temp_var2,902,"4","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 60 lsp gen_txt_6,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_6,"char_ep_btn",%temp_var2,902,"5" : if %scenario_Number = 5 lsp gen_txt_6,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_6,"char_ep_btn",%temp_var2,902,"5","disabled"  
+		if %UMINEKOEND >= 60 lsp gen_txt_6,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_6,"char_ep_btn",%temp_var2,902,"5" : if %scenario_Number = 5 lsp gen_txt_6,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_6,"char_ep_btn",%temp_var2,902,"5","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 70 lsp gen_txt_7,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_7,"char_ep_btn",%temp_var2,902,"6" : if %scenario_Number = 6 lsp gen_txt_7,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_7,"char_ep_btn",%temp_var2,902,"6","disabled"  
+		if %UMINEKOEND >= 70 lsp gen_txt_7,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_7,"char_ep_btn",%temp_var2,902,"6" : if %scenario_Number = 6 lsp gen_txt_7,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_7,"char_ep_btn",%temp_var2,902,"6","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 80 lsp gen_txt_8,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_8,"char_ep_btn",%temp_var2,902,"7" : if %scenario_Number = 7 lsp gen_txt_8,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_8,"char_ep_btn",%temp_var2,902,"7","disabled"  
+		if %UMINEKOEND >= 80 lsp gen_txt_8,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_8,"char_ep_btn",%temp_var2,902,"7" : if %scenario_Number = 7 lsp gen_txt_8,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_8,"char_ep_btn",%temp_var2,902,"7","disabled"  
 		add %temp_var2,53
-		if %UMINEKOEND >= 90 lsp gen_txt_9,char_change_ep_btn,%temp_var2,898 : write_special_text gen_txt_9,"char_ep_btn",%temp_var2,902,"8" : if %scenario_Number = 8 lsp gen_txt_9,char_change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_9,"char_ep_btn",%temp_var2,902,"8","disabled" 
+		if %UMINEKOEND >= 90 lsp gen_txt_9,change_ep_btn,%temp_var2,898 : write_special_text gen_txt_9,"char_ep_btn",%temp_var2,902,"8" : if %scenario_Number = 8 lsp gen_txt_9,change_ep_btn_clicked,%temp_var2,898 : write_special_text gen_txt_9,"char_ep_btn",%temp_var2,902,"8","disabled" 
 	~
 	if %r_for_title = 1 jumpf
 		csp_text gen_txt_2
@@ -34389,14 +34306,14 @@ return
 	;if %scenario_Number != 6 if %BtnRes=gen_txt_7 lsp 2,":c;graphics\colour\black.png",0,0 : seplay 9,1010,100 : print 10,500 : mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,6 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
 	;if %scenario_Number != 7 if %BtnRes=gen_txt_8 lsp 2,":c;graphics\colour\black.png",0,0 : seplay 9,1010,100 : print 10,500 : mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,7 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
 	;if %scenario_Number != 8 if %BtnRes=gen_txt_9 lsp 2,":c;graphics\colour\black.png",0,0 : seplay 9,1010,100 : print 10,500 : mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,8 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 1 if %BtnRes=gen_txt_2 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,1 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 2 if %BtnRes=gen_txt_3 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,2 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 3 if %BtnRes=gen_txt_4 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,3 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 4 if %BtnRes=gen_txt_5 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,4 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 5 if %BtnRes=gen_txt_6 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,5 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 6 if %BtnRes=gen_txt_7 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,6 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 7 if %BtnRes=gen_txt_8 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,7 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
-	if %scenario_Number != 8 if %BtnRes=gen_txt_9 mov %char_save_scenario_Num,%scenario_Number : mov %scenario_Number,8 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 1 if %BtnRes=gen_txt_2 mov %scenario_Number,1 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 2 if %BtnRes=gen_txt_3 mov %scenario_Number,2 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 3 if %BtnRes=gen_txt_4 mov %scenario_Number,3 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 4 if %BtnRes=gen_txt_5 mov %scenario_Number,4 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 5 if %BtnRes=gen_txt_6 mov %scenario_Number,5 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 6 if %BtnRes=gen_txt_7 mov %scenario_Number,6 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 7 if %BtnRes=gen_txt_8 mov %scenario_Number,7 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 8 if %BtnRes=gen_txt_9 mov %scenario_Number,8 : mov %char_switching_ep,1 : mov %char_selector_ep_change,1 : mov %r_for_title,1 : mov %r_ber_flg,0 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
 
 
 	;rondo
@@ -34881,8 +34798,10 @@ return
 	border_pad_pop
 	mov %char_is_selected,0 ;W_CUSTOM ;Char Menu - needed for drawer animation
 	mov %char_switching_ep,0
+	mov %tips_switching_ep,0
 	mov %char_moving_side,1
-	if %r_for_title == 1 mov %scenario_Number,%char_save_scenario_Num
+	if %r_for_title == 1 if %char_save_scenario_Num != %scenario_Number mov %scenario_Number,%char_save_scenario_Num
+	if %r_for_title == 1 if %tips_save_scenario_Num != %scenario_Number mov %scenario_Number,%tips_save_scenario_Num
 	gosub *menu_rain_unpause
 	goto *r_exit
 return

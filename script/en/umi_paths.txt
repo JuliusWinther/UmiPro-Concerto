@@ -4,6 +4,12 @@ stralias title_back_no,":c/2,0,3;graphics\system\btns\no.png"
 stralias title_back_bg,":a;graphics\system\btns\title_bg.png" ;TODO automate text generation
 stralias extra_story_btn,":a/2,0,3;graphics\system\btns\story_choice_btn.png"
 
+;========================== Popup drawers ==========================
+stralias drawer_music_icon,":a;graphics\system\drawers\drawer_music_icon.png" 
+stralias drawer_chapter_icon,":a;graphics\system\drawers\drawer_chapter_icon.png" 
+stralias drawer_bg,":c;graphics\system\drawers\drawer_bg.png" 
+stralias drawer_edge,":a;graphics\system\drawers\drawer_edge.png" 
+
 ;========================== Shared Menu Elements ==========================
 stralias menu_bg,":c;graphics\menu\shared\menu_bg.png"
 stralias left_arrow,":a/2,0,3;graphics\menu\shared\left.png"
@@ -15,6 +21,8 @@ stralias h_dragbar,":a;graphics\menu\shared\hbar.png"
 stralias move_up,":a/2,0,3;graphics\system\wnd\uoncur.png"
 stralias move_down,":a/2,0,3;graphics\system\wnd\uoffcur.png"
 stralias info_btn,":a/2,0,3;graphics\menu\shared\info_btn.png"
+stralias change_ep_btn,":a/2,0,3;graphics\menu\shared\change_ep_btn.png"
+stralias change_ep_btn_clicked,":a/2,0,3;graphics\menu\shared\change_ep_btn_clicked.png"
 
 ;========================== Config Menu Elements ==========================
 stralias cfg_menu_wnd,":a;graphics\menu\config\cfg_menu_wnd.png"
@@ -55,8 +63,6 @@ stralias char_action_btn,":a/2,0,3;graphics\menu\char\char_action_btn.png"
 stralias char_action_btn_disabled,":a/2,0,3;graphics\menu\char\char_action_btn_disabled.png"
 stralias char_outfit_btn,":a/2,0,3;graphics\menu\char\char_outfit_btn.png"
 stralias char_outfit_btn_disabled,":a/2,0,3;graphics\menu\char\char_outfit_btn_disabled.png"
-stralias char_change_ep_btn,":a/2,0,3;graphics\menu\char\char_change_ep.png"
-stralias char_change_ep_btn_clicked,":a/2,0,3;graphics\menu\char\char_change_ep_clicked.png"
 
 ;f = family <> m = magic <> a = ange
 stralias char_tree_1f,":a;graphics\menu\char\trees\1f.png"

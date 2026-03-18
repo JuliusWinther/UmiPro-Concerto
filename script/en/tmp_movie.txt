@@ -1,4 +1,4 @@
-*cg_gui 
+*movie_gui 
 ;602;603
     mov %in_movie_mode,1
 	mov %current_movie,1
@@ -37,7 +37,7 @@
 
 return
 
-*cg_mode_ps3
+*movie_mode_ps3
 	;E_A   		;Stop the currently playing song
  	
 	csp_rst
@@ -48,15 +48,15 @@ return
  
  	mov %mcurrent_page,1
 
-	if %UMINEKOEND_CG_FLG = 1 mov %UMINEKOEND_CG_FLG,0
+	if %UMINEKOEND_movie_FLG = 1 mov %UMINEKOEND_movie_FLG,0
 
  	btndef ""
 
  	csp_rst
 
-	gosub *cg_gui ;Берем кнопки
+	gosub *movie_gui ;Берем кнопки
 
-*cg_loop
+*movie_loop
 	btndef ""
 
 	spbtn 329,329
@@ -74,14 +74,14 @@ return
 
 	isdown %cfg_mouse_click
 
-	if %cfg_mouse_click = 0 if %BtnRes = -1 seplay 9,1005,100 : goto *cg_end		;Exit by right-clicking
+	if %cfg_mouse_click = 0 if %BtnRes = -1 seplay 9,1005,100 : goto *movie_end		;Exit by right-clicking
 	if %cfg_mouse_click = 0 if %BtnRes = 4 seplay 9,1005,100 : goto *save_exit	;Exit by clicking the exit button	
-	if %cfg_mouse_click = 0 if %BtnRes = -10 seplay 9,1005,100 : goto *cg_end 	;Exit by ESC
-	if %BtnRes = -81 goto *cg_end 
+	if %cfg_mouse_click = 0 if %BtnRes = -10 seplay 9,1005,100 : goto *movie_end 	;Exit by ESC
+	if %BtnRes = -81 goto *movie_end 
 
-	if %BtnRes=1 seplay 9,1005,100 : goto *cg_end
+	if %BtnRes=1 seplay 9,1005,100 : goto *movie_end
 
-	if %cfg_mouse_click = 0 if %BtnRes=0  goto *cg_loop 
+	if %cfg_mouse_click = 0 if %BtnRes=0  goto *movie_loop 
 
 	if %cfg_mouse_click = 0 if %BtnRes = 309 : _csp 309 : seplay 9,1901,100 : print 10,100 : pam 100,"op",1 : seplay 9,1902,50 : lsp 309,moviebox_play,1483,698
 
@@ -101,9 +101,9 @@ return
 	lsp 311,moviebox_next,1554,617
 	lsp 310,moviebox_previous,1413,617
 
-goto *cg_loop
+goto *movie_loop
 
-*cg_end 
+*movie_end 
 	mov %in_movie_mode,0
 	csp_rst
 return

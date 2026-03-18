@@ -2656,15 +2656,11 @@ d `顔面は粉砕され、真っ当な人間ならたとえ死後でも浮か�
 d `でも、前歯は飛んでるし、そもそもそれを覆う頬っぺただってぐちゃぐちゃで剥き出しで！`[@]`　男のくせにやたら気遣ってたお洒落化粧も何の役にも立っちゃいない…！！`[\]
 textoff2
 waits 167
-
-;lbg "c:backgrounds",s0_1,"warehous_i1c_bg"
-;lbg "a:backgrounds",s0_3,"warehous_i1c"
-;lss s0_9,"but","b11_kuyasigaru1" ;
-_csp s0_3
-lsp2 s0_3,":c;graphics\test2.png",250,-30
-flush 26 : seplay 1,27,71
+lbg "c:backgrounds",s0_1,"warehous_i1c_bg"
+lbg "a:backgrounds",s0_3,"warehous_i1c"
+lss s0_9,"but","b11_kuyasigaru1" ;1
+flush 26
 meplay 4,16,71
-
 msgwnd_but
 *d4241
 d2 [lv 0*"10"*"10100728"]`「…うおおおぉおおおおおぉおぉおぉぉ！！！`[#][*][@][lv 0*"10"*"10100729"]`　親父ぃいいぃ！！`[@][lv 0*"10"*"10100730"]`　てめぇは絶対地獄行きだとは思ってたぜッ？！」`[\]
@@ -2677,8 +2673,6 @@ rumble 63,500
 gptwait quakexamp
 d_continue
 wait_on_d -1
-        lbg "c:backgrounds",s0_1,"warehous_i1c_bg"
-        lbg "a:backgrounds",s0_3,"warehous_i1c"
 lss s0_9,"but","b26_kuyasigaru1" ;1
 flush 10,167
 *d4242

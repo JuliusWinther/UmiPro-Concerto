@@ -13,6 +13,44 @@
 	if %r_display = 2 lsp 210,tips_tab,136,38
 	if %r_display = 1 lsp 210,tips_tab,1524,38
 	lsp r_exit_lsp,set_exit,0,0
+
+	if %r_for_title != 1 jumpf
+	    mov %temp_var2,0
+		;debug_var %temp_var2
+		if %UMINEKOEND >= 30 mov %temp_var2,233+53*3
+		if %UMINEKOEND >= 40 mov %temp_var2,233+53*2+(53/2)
+		if %UMINEKOEND >= 50 mov %temp_var2,233+53*2
+		if %UMINEKOEND >= 60 mov %temp_var2,233+53*1+(53/2)
+		if %UMINEKOEND >= 70 mov %temp_var2,233+53*1
+		if %UMINEKOEND >= 80 mov %temp_var2,233+53*0+(53/2)
+		if %UMINEKOEND >= 90 mov %temp_var2,233+53*0
+		;debug_var %temp_var2
+		if %UMINEKOEND >= 30 lsp gen_txt_2,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_2,"char_ep_btn",%temp_var2,902-10,"1" : if %scenario_Number = 1 lsp gen_txt_2,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_2,"char_ep_btn",%temp_var2,902-10,"1","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 30 lsp gen_txt_3,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_3,"char_ep_btn",%temp_var2,902-10,"2" : if %scenario_Number = 2 lsp gen_txt_3,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_3,"char_ep_btn",%temp_var2,902-10,"2","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 40 lsp gen_txt_4,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_4,"char_ep_btn",%temp_var2,902-10,"3" : if %scenario_Number = 3 lsp gen_txt_4,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_4,"char_ep_btn",%temp_var2,902-10,"3","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 50 lsp gen_txt_5,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_5,"char_ep_btn",%temp_var2,902-10,"4" : if %scenario_Number = 4 lsp gen_txt_5,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_5,"char_ep_btn",%temp_var2,902-10,"4","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 60 lsp gen_txt_6,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_6,"char_ep_btn",%temp_var2,902-10,"5" : if %scenario_Number = 5 lsp gen_txt_6,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_6,"char_ep_btn",%temp_var2,902-10,"5","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 70 lsp gen_txt_7,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_7,"char_ep_btn",%temp_var2,902-10,"6" : if %scenario_Number = 6 lsp gen_txt_7,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_7,"char_ep_btn",%temp_var2,902-10,"6","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 80 lsp gen_txt_8,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_8,"char_ep_btn",%temp_var2,902-10,"7" : if %scenario_Number = 7 lsp gen_txt_8,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_8,"char_ep_btn",%temp_var2,902-10,"7","disabled"  
+		add %temp_var2,53
+		if %UMINEKOEND >= 90 lsp gen_txt_9,change_ep_btn,%temp_var2,898-10 : write_special_text gen_txt_9,"char_ep_btn",%temp_var2,902-10,"8" : if %scenario_Number = 8 lsp gen_txt_9,change_ep_btn_clicked,%temp_var2,898-10 : write_special_text gen_txt_9,"char_ep_btn",%temp_var2,902-10,"8","disabled" 
+	~
+	if %r_for_title = 1 jumpf
+		csp_text gen_txt_2
+		csp_text gen_txt_3
+		csp_text gen_txt_4
+		csp_text gen_txt_5
+		csp_text gen_txt_6
+		csp_text gen_txt_7
+		csp_text gen_txt_8
+		csp_text gen_txt_9
+	~
 	;lsp r_cha_back_lsp,":a;graphics\menu\chars\chars_left.png",100,150
 	;lsp r_txt_lsp,":a;graphics\menu\tips\tips_right.png",900,150
 	;lsp 97,set_ctrl,100,990
@@ -1063,6 +1101,16 @@ return
 	if %r_display_arrow > 0 spbtn 98,98 ;down
 	spbtn 97,97
 
+	;W_CUSTOM - ;Char menu - spbtns of sys
+	if %scenario_Number != 1 spbtn gen_txt_2,gen_txt_2
+	if %scenario_Number != 2 spbtn gen_txt_3,gen_txt_3
+	if %scenario_Number != 3 spbtn gen_txt_4,gen_txt_4
+	if %scenario_Number != 4 spbtn gen_txt_5,gen_txt_5
+	if %scenario_Number != 5 spbtn gen_txt_6,gen_txt_6
+	if %scenario_Number != 6 spbtn gen_txt_7,gen_txt_7
+	if %scenario_Number != 7 spbtn gen_txt_8,gen_txt_8
+	if %scenario_Number != 8 spbtn gen_txt_9,gen_txt_9
+
 	if ?tips[1][tips_flg] = 1 notif %r_display_tips = 1 spbtn tips1_lsp,tips1_lsp
 	if ?tips[2][tips_flg] = 1 notif %r_display_tips = 2 spbtn tips2_lsp,tips2_lsp
 	if ?tips[3][tips_flg] = 1 notif %r_display_tips = 3 spbtn tips3_lsp,tips3_lsp
@@ -1098,6 +1146,22 @@ return
 	if %BtnRes = r_exit_lsp goto *rmenu_go_out
 	if %BtnRes = -1 goto *rmenu_go_out
 	if %BtnRes = -10 goto *rmenu_go_out
+
+	;W_CUSTOM - ;Tips menu - Ep change btns
+	mov %tips_switching_ep,0 ;lsp 2,":c;graphics\colour\black.png",0,0 : print 22 : _csp 97,r_used_lsp : _csp 2
+	if %scenario_Number != 1 if %BtnRes=gen_txt_2 border_pad_pop: mov %scenario_Number,1 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 2 if %BtnRes=gen_txt_3 border_pad_pop: mov %scenario_Number,2 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 3 if %BtnRes=gen_txt_4 border_pad_pop: mov %scenario_Number,3 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 4 if %BtnRes=gen_txt_5 border_pad_pop: mov %scenario_Number,4 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 5 if %BtnRes=gen_txt_6 border_pad_pop: mov %scenario_Number,5 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 6 if %BtnRes=gen_txt_7 border_pad_pop: mov %scenario_Number,6 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 7 if %BtnRes=gen_txt_8 border_pad_pop: mov %scenario_Number,7 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	if %scenario_Number != 8 if %BtnRes=gen_txt_9 border_pad_pop: mov %scenario_Number,8 : mov %tips_switching_ep,1 : mov %tips_selector_ep_change,1 : mov %r_for_title,1 : btndef "" : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+
+	;Char and Tips main menu buttons for reference
+	;if %BtnRes = t_btn_ep1_tips_lsp csp_rst : mov %scenario_Number,1 : seplay 9,1001,100 : mov %r_display,0 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+	;if %BtnRes = t_btn_ep1_tips_lsp csp_rst : mov %scenario_Number,1 : seplay 9,1001,100 : mov %r_display,1 : mov %r_for_title,1 : gosub *rmenu_main_new : mov %title_skip,1 : goto *b_title
+		
 
 	notif %BtnRes = tips1_lsp jumpf
 		mov %r_display_tips,1
