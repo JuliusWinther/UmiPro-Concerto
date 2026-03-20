@@ -1752,6 +1752,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 wait 1000
@@ -2163,6 +2164,7 @@ spt_mem "a2","breakupdir",s0_13,2
 spt_mem "a2","breakup",s0_12,1000,2000
 spt_mem "a2","breakup",s0_13,1000,2000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 csp_slot s0_13
 meplay 1,13,40
@@ -2197,6 +2199,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 lss s0_8,"kan","b21_ikari2" ;1
 spt_mem "a2","xpos",s0_8,-570
 flush 10,167
@@ -2356,6 +2359,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 *d11206
 d `…魔女の姿は、さっきからずっとそこにいたかのような当り前の表情を浮かべつつ、嘉音の後にあった。`[\]
 textoff2
@@ -2528,6 +2532,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg7
 *d11224
 d [lv 0*"44"*"22900001"]`「……色欲のアスモデウス。`[@][lv 0*"44"*"22900002"]`ここに」`[\]
@@ -2641,6 +2646,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,500
 spt_mem "a2","alpha",s0_8,0,500
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 csp_slot s0_5
@@ -2783,6 +2789,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg3
 *d11250
 d [lv 0*"40"*"22500001"]`「……憤怒のサタン。`[@][lv 0*"40"*"22500002"]`ここに」`[\]
@@ -2838,6 +2845,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 csp_slot s0_5

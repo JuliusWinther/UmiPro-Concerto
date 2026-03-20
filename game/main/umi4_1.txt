@@ -38,6 +38,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ron
 *d21642
 d2 [lv 0*"31"*"43100001"]`「おはようございます、お嬢様。`[@][#][*][lv 0*"31"*"43100002"]`これはこれは、上機嫌なご様子。`[@][lv 0*"31"*"43100003"]`快適なお目覚めのようですな」`[\]
@@ -350,6 +351,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg6
 *d21671
 d2 [lv 0*"43"*"42800001"]`「きゃーっはっはっは！！`[@][lv 0*"43"*"42800002"]`　戦人くぅん、こ〜ちらー！`[@][lv 0*"43"*"42800003"]`　あんた如きにロノウェさまが焼いてくれたクロワッサンなんて勿体無いもーん！`[@][#][*][lv 0*"43"*"42800004"]`　私が美味しく食べちゃおっかなぁ？」`[\]
@@ -503,6 +505,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_bea
 *d21680
 d [lv 0*"27"*"40700034"]`「イ、イェ〜イ、やっほおおおおはよおおお戦人あああ〜っ！！`[@][lv 0*"27"*"40700035"]`　こいつ、朝っぱらからまだクヨクヨしてるのかあ〜？！？！`[@][lv 0*"27"*"40700036"]`　新しい一日とゲームの始まりであるぞォ、元気出してイってみよおおぉおおおぉぉぉおぉ！！」`[\]
@@ -566,6 +569,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 lss s0_10,"but","b11_kuyasigaru1" ;1
@@ -651,6 +655,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 lss s0_9,"ron","a23_warai1" ;1
 flush 10,167
 msgwnd_ron

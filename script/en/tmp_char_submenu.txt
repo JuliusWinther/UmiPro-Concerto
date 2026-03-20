@@ -66,49 +66,49 @@
 
     ;CHARS
 	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 20 lsp t_btn_ep1_tips_lsp,ep_btn_bg,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND >= 30 lsp t_btn_ep2_tips_lsp,ep_btn_bg,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND >= 40 lsp t_btn_ep3_tips_lsp,ep_btn_bg,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND >= 50 lsp t_btn_ep4_tips_lsp,ep_btn_bg,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep4_n_txt,""
+	if %UMINEKOEND >= 20 lsp t_btn_ep1_tips_lsp,ep_btn_bg,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,m_chars,ep1_n_txt,""
+	if %UMINEKOEND >= 30 lsp t_btn_ep2_tips_lsp,ep_btn_bg,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,m_chars,ep2_n_txt,""
+	if %UMINEKOEND >= 40 lsp t_btn_ep3_tips_lsp,ep_btn_bg,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,m_chars,ep3_n_txt,""
+	if %UMINEKOEND >= 50 lsp t_btn_ep4_tips_lsp,ep_btn_bg,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,m_chars,ep4_n_txt,""
 	;new
-	if %UMINEKOEND_TIPS_CHA_FLG = 1 lsp t_btn_ep1_tips_lsp,ep_btn_bg_new,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 2 lsp t_btn_ep2_tips_lsp,ep_btn_bg_new,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 3 lsp t_btn_ep3_tips_lsp,ep_btn_bg_new,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 4 lsp t_btn_ep4_tips_lsp,ep_btn_bg_new,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,ep_txt,ep4_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 1 lsp t_btn_ep1_tips_lsp,ep_btn_bg_new,1562,488 : write_special_text gen_txt_1,"ep_w_n",1562+19,488,m_chars,ep1_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 2 lsp t_btn_ep2_tips_lsp,ep_btn_bg_new,1562,548 : write_special_text gen_txt_2,"ep_w_n",1562+19,548,m_chars,ep2_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 3 lsp t_btn_ep3_tips_lsp,ep_btn_bg_new,1562,608 : write_special_text gen_txt_3,"ep_w_n",1562+19,608,m_chars,ep3_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 4 lsp t_btn_ep4_tips_lsp,ep_btn_bg_new,1562,668 : write_special_text gen_txt_4,"ep_w_n",1562+19,668,m_chars,ep4_n_txt,""
 
 	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 60 lsp t_btn_ep1_lsp,ep_btn_bg,1562,728 : write_special_text gen_txt_5,"ep_w_n",1562+19,728,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND >= 70 lsp t_btn_ep2_lsp,ep_btn_bg,1562,788 : write_special_text gen_txt_6,"ep_w_n",1562+19,788,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND >= 80 lsp t_btn_ep3_lsp,ep_btn_bg,1562,848 : write_special_text gen_txt_7,"ep_w_n",1562+19,848,ep_txt,ep7_n_txt,""	
-	if %UMINEKOEND >= 90 lsp t_btn_ep4_lsp,ep_btn_bg,1562,908 : write_special_text gen_txt_8,"ep_w_n",1562+19,908,ep_txt,ep8_n_txt,""	
+	if %UMINEKOEND >= 60 lsp t_btn_ep1_lsp,ep_btn_bg,1562,728 : write_special_text gen_txt_5,"ep_w_n",1562+19,728,m_chars,ep5_n_txt,""
+	if %UMINEKOEND >= 70 lsp t_btn_ep2_lsp,ep_btn_bg,1562,788 : write_special_text gen_txt_6,"ep_w_n",1562+19,788,m_chars,ep6_n_txt,""
+	if %UMINEKOEND >= 80 lsp t_btn_ep3_lsp,ep_btn_bg,1562,848 : write_special_text gen_txt_7,"ep_w_n",1562+19,848,m_chars,ep7_n_txt,""	
+	if %UMINEKOEND >= 90 lsp t_btn_ep4_lsp,ep_btn_bg,1562,908 : write_special_text gen_txt_8,"ep_w_n",1562+19,908,m_chars,ep8_n_txt,""	
 	;new
-	if %UMINEKOEND_TIPS_CHA_FLG = 5 lsp t_btn_ep1_lsp,ep_btn_bg_new,1562,728 : write_special_text gen_txt_5,"ep_w_n",1562+19,728,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 6 lsp t_btn_ep2_lsp,ep_btn_bg_new,1562,788 : write_special_text gen_txt_6,"ep_w_n",1562+19,788,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 7 lsp t_btn_ep3_lsp,ep_btn_bg_new,1562,848 : write_special_text gen_txt_7,"ep_w_n",1562+19,848,ep_txt,ep7_n_txt,""
-	if %UMINEKOEND_TIPS_CHA_FLG = 8 lsp t_btn_ep4_lsp,ep_btn_bg_new,1562,908 : write_special_text gen_txt_8,"ep_w_n",1562+19,908,ep_txt,ep8_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 5 lsp t_btn_ep1_lsp,ep_btn_bg_new,1562,728 : write_special_text gen_txt_5,"ep_w_n",1562+19,728,m_chars,ep5_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 6 lsp t_btn_ep2_lsp,ep_btn_bg_new,1562,788 : write_special_text gen_txt_6,"ep_w_n",1562+19,788,m_chars,ep6_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 7 lsp t_btn_ep3_lsp,ep_btn_bg_new,1562,848 : write_special_text gen_txt_7,"ep_w_n",1562+19,848,m_chars,ep7_n_txt,""
+	if %UMINEKOEND_TIPS_CHA_FLG = 8 lsp t_btn_ep4_lsp,ep_btn_bg_new,1562,908 : write_special_text gen_txt_8,"ep_w_n",1562+19,908,m_chars,ep8_n_txt,""
 
     ;TIPS
 	;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 20 lsp t_btn_ep1_lock_lsp,ep_btn_bg,1277,488 : write_special_text t_btn_ep2_tea_lsp,"ep_w_n",1277+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND >= 30 lsp t_btn_ep2_lock_lsp,ep_btn_bg,1277,548 : write_special_text t_btn_ep2_ura_tea_lsp,"ep_w_n",1277+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND >= 40 lsp t_btn_ep3_lock_lsp,ep_btn_bg,1277,608 : write_special_text t_btn_ep4_tea_lsp,"ep_w_n",1277+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND >= 50 lsp t_btn_ep4_lock_lsp,ep_btn_bg,1277,668 : write_special_text t_btn_ep4_ura_tea_lsp,"ep_w_n",1277+19,668,ep_txt,ep4_n_txt,""
+	if %UMINEKOEND >= 20 lsp t_btn_ep1_lock_lsp,ep_btn_bg,1277,488 : write_special_text t_btn_ep2_tea_lsp,"ep_w_n_l",1277+19,488,m_tips,ep1_n_txt,""
+	if %UMINEKOEND >= 30 lsp t_btn_ep2_lock_lsp,ep_btn_bg,1277,548 : write_special_text t_btn_ep2_ura_tea_lsp,"ep_w_n_l",1277+19,548,m_tips,ep2_n_txt,""
+	if %UMINEKOEND >= 40 lsp t_btn_ep3_lock_lsp,ep_btn_bg,1277,608 : write_special_text t_btn_ep4_tea_lsp,"ep_w_n_l",1277+19,608,m_tips,ep3_n_txt,""
+	if %UMINEKOEND >= 50 lsp t_btn_ep4_lock_lsp,ep_btn_bg,1277,668 : write_special_text t_btn_ep4_ura_tea_lsp,"ep_w_n_l",1277+19,668,m_tips,ep4_n_txt,""
 	;new
-	if %UMINEKOEND_TIPS_FLG = 1 lsp t_btn_ep1_lock_lsp,ep_btn_bg_new,1277,488 : write_special_text t_btn_ep2_tea_lsp,"ep_w_n",1277+19,488,ep_txt,ep1_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 2 lsp t_btn_ep2_lock_lsp,ep_btn_bg_new,1277,548 : write_special_text t_btn_ep2_ura_tea_lsp,"ep_w_n",1277+19,548,ep_txt,ep2_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 3 lsp t_btn_ep3_lock_lsp,ep_btn_bg_new,1277,608 : write_special_text t_btn_ep4_tea_lsp,"ep_w_n",1277+19,608,ep_txt,ep3_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 4 lsp t_btn_ep4_lock_lsp,ep_btn_bg_new,1277,668 : write_special_text t_btn_ep4_ura_tea_lsp,"ep_w_n",1277+19,668,ep_txt,ep4_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 1 lsp t_btn_ep1_lock_lsp,ep_btn_bg_new,1277,488 : write_special_text t_btn_ep2_tea_lsp,"ep_w_n_l",1277+19,488,m_tips,ep1_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 2 lsp t_btn_ep2_lock_lsp,ep_btn_bg_new,1277,548 : write_special_text t_btn_ep2_ura_tea_lsp,"ep_w_n_l",1277+19,548,m_tips,ep2_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 3 lsp t_btn_ep3_lock_lsp,ep_btn_bg_new,1277,608 : write_special_text t_btn_ep4_tea_lsp,"ep_w_n_l",1277+19,608,m_tips,ep3_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 4 lsp t_btn_ep4_lock_lsp,ep_btn_bg_new,1277,668 : write_special_text t_btn_ep4_ura_tea_lsp,"ep_w_n_l",1277+19,668,m_tips,ep4_n_txt,""
 
     ;Adjust the layer you want to display by a clear state
-	if %UMINEKOEND >= 60 lsp t_btn_ep1_unlock_lsp,ep_btn_bg,1277,728 : write_special_text gen_txt_9,"ep_w_n",1277+19,728,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND >= 70 lsp t_btn_ep2_unlock_lsp,ep_btn_bg,1277,788 : write_special_text gen_txt_10,"ep_w_n",1277+19,788,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND >= 80 lsp t_btn_ep3_unlock_lsp,ep_btn_bg,1277,848 : write_special_text t_txt_ep2_tea_lsp,"ep_w_n",1277+19,848,ep_txt,ep7_n_txt,""
-	if %UMINEKOEND >= 90 lsp t_btn_ep4_unlock_lsp,ep_btn_bg,1277,908 : write_special_text t_txt_ep4_tea_lsp,"ep_w_n",1277+19,908,ep_txt,ep8_n_txt	,""
+	if %UMINEKOEND >= 60 lsp t_btn_ep1_unlock_lsp,ep_btn_bg,1277,728 : write_special_text gen_txt_9,"ep_w_n_l",1277+19,728,m_tips,ep5_n_txt,""
+	if %UMINEKOEND >= 70 lsp t_btn_ep2_unlock_lsp,ep_btn_bg,1277,788 : write_special_text gen_txt_10,"ep_w_n_l",1277+19,788,m_tips,ep6_n_txt,""
+	if %UMINEKOEND >= 80 lsp t_btn_ep3_unlock_lsp,ep_btn_bg,1277,848 : write_special_text t_txt_ep2_tea_lsp,"ep_w_n_l",1277+19,848,m_tips,ep7_n_txt,""
+	if %UMINEKOEND >= 90 lsp t_btn_ep4_unlock_lsp,ep_btn_bg,1277,908 : write_special_text t_txt_ep4_tea_lsp,"ep_w_n_l",1277+19,908,m_tips,ep8_n_txt	,""
 	;new
-	if %UMINEKOEND_TIPS_FLG = 5 lsp t_btn_ep1_unlock_lsp,ep_btn_bg_new,1277,728 : write_special_text gen_txt_9,"ep_w_n",1277+19,728,ep_txt,ep5_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 6 lsp t_btn_ep2_unlock_lsp,ep_btn_bg_new,1277,788 : write_special_text gen_txt_10,"ep_w_n",1277+19,788,ep_txt,ep6_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 7 lsp t_btn_ep3_unlock_lsp,ep_btn_bg_new,1277,848 : write_special_text t_txt_ep2_tea_lsp,"ep_w_n",1277+19,848,ep_txt,ep7_n_txt,""
-	if %UMINEKOEND_TIPS_FLG = 8 lsp t_btn_ep4_unlock_lsp,ep_btn_bg_new,1277,908 : write_special_text t_txt_ep4_tea_lsp,"ep_w_n",1277+19,908,ep_txt,ep8_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 5 lsp t_btn_ep1_unlock_lsp,ep_btn_bg_new,1277,728 : write_special_text gen_txt_9,"ep_w_n_l",1277+19,728,m_tips,ep5_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 6 lsp t_btn_ep2_unlock_lsp,ep_btn_bg_new,1277,788 : write_special_text gen_txt_10,"ep_w_n_l",1277+19,788,m_tips,ep6_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 7 lsp t_btn_ep3_unlock_lsp,ep_btn_bg_new,1277,848 : write_special_text t_txt_ep2_tea_lsp,"ep_w_n_l",1277+19,848,m_tips,ep7_n_txt,""
+	if %UMINEKOEND_TIPS_FLG = 8 lsp t_btn_ep4_unlock_lsp,ep_btn_bg_new,1277,908 : write_special_text t_txt_ep4_tea_lsp,"ep_w_n_l",1277+19,908,m_tips,ep8_n_txt,""
 
 
 	print 85 ;15,10

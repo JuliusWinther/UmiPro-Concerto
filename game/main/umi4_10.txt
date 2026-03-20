@@ -370,6 +370,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg5
 *d25396
 d2 [lv 0*"42"*"42700237"]`「そんなのつまらないです。`[@][#][*][lv 0*"42"*"42700238"]`人生はどこまでも強欲でなくっちゃ」`[\]

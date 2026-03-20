@@ -11781,6 +11781,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 textoff2
@@ -11803,6 +11804,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_non
 *d67369
 d `ベルンカステルは、その死神の鎌の切っ先を、クレルの下腹に押し当て、`[@]`すぅっと縦になぞって見せる。`[\]
@@ -12470,6 +12472,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d67439
 d [lv 0*"28"*"72100364"]`「私は最初から魔女よ。`[@][lv 0*"28"*"72100365"]`退屈から逃れることだけが目的の旅人。`[@][lv 0*"28"*"72100366"]`……生きては愛でて、死しては喰らって二度愛でる。`[@][lv 0*"28"*"72100367"]`それが魔女の生き様よッ！」`[\]
@@ -13001,6 +13004,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d67511
 d2 [lv 0*"28"*"72100449"]`「ベアトにゲームで負けたから、腹いせで。`[@][lv 0*"28"*"72100450"]`……くすくすくすくす！！`[#][*][@][lv 0*"28"*"72100451"]`　あぁ、これで少しは負けたムカツキも晴れてきたわ…！`[@][lv 0*"28"*"72100452"]`　ねぇ、ベアト、見てる？`[@][lv 0*"28"*"72100453"]`　見えてる？！`[@][lv 0*"28"*"72100454"]`　そして覚えてる？！`[@][lv 0*"28"*"72100455"]`　あなたには、絶対に奇跡は起きないって、私、約束したわよね？！」`[\]
@@ -13040,6 +13044,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 lss s0_23,"ber","a21_akuwarai1" ;1
 spt_mem "a2","xpos",s0_23,370
 flush 80
@@ -13561,6 +13566,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d67546
 d [lv 0*"28"*"72100471"]`「私が勝ち逃げなんて許すと思う…？`[@][lv 0*"28"*"72100472"]`　私に敗北の屈辱を味わわせてくれた分、たっぷりとお返しをしないとね。`[@][lv 0*"28"*"72100473"]`私、根に持つと百年は忘れないわよ」`[\]
@@ -13681,6 +13687,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d67558
 d [lv 0*"28"*"72100479"]`「なぁに？`[@][lv 0*"28"*"72100480"]`　連れて逃げる気？`[@][lv 0*"28"*"72100481"]`　逃がさないわよ。`[@][lv 0*"28"*"72100482"]`理御が血を吐いて、数多の世界全てに希望がないことを絶望して、`[@][lv 0*"28"*"72100483"]`悶えながら死ぬところを今からみんなで観賞して楽しむんだから」`[\]
@@ -13756,6 +13763,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d67564
 d2 [lv 0*"28"*"72100485"]`「………くすくすくす、`[#][*][|][lv 0*"28"*"72100486"]`はっはははははははははは…！！`[#][*][@][lv 0*"28"*"72100487"]`　元老院の魔女、この大ベルンカステルによくそれだけのことを言えたわ！`[@][lv 0*"28"*"72100488"]`　理御だけじゃなく、あんたも用済みなのよ…？」`[\]
@@ -14353,6 +14361,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 lss s0_9,"ber","a21_odoroki2" ;1
 flush 80
 msgwnd_ber
@@ -14460,6 +14469,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 lss s0_10,"ber","a21_akuwarai2" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 22
@@ -14548,6 +14558,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 wait 1000
 lss s0_9,"ber","a21_akuwarai3" ;1
 flush 22
@@ -14839,6 +14850,7 @@ flush 1
 spt_mem "a2","breakup",s0_17,0,2000
 spt_mem "a2","alpha",s0_17,255,2000
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 wait 1000
 csp_slot s0_17
 textoff2

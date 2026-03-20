@@ -306,8 +306,7 @@ waits 167
 lbg "c:colour",s0_3,"black"
 flush 22
 skip_off
-;START CUSTOM
-pam 749,"op",1 ;CONVERSION last param from 0 to 1 to enable skip
+pam 749,"op",0
 skip_on
 textoff2
 waits 167
@@ -316,10 +315,9 @@ flush 1
 textoff2
 waits 167
 wait 5000
-*op_skip_ep1 ;CONVERSION when the op is skipped it restarts from here to skip the 5s wait
-if %msgwnd_type = 4 lsph %msgwnd4_bg_slot,msgwnd4_bg,0,0 : aspt alpha,%msgwnd4_bg_slot,0
-skip_on ;Important to repeat
-;END CUSTOM
+seplay 1,29,71
+textoff2
+waits 167
 lbg "c:locale_lan",s0_3,"oct_4_1986"
 flush 2
 wait 7000

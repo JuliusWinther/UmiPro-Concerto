@@ -26,6 +26,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d24480
 d [lv 0*"39"*"42400006"]`「ちょっとー！！`[@][lv 0*"39"*"42400007"]`　それ、私のー！`[@][lv 0*"39"*"42400008"]`　かーえーしーてぇー！！」`[\]
@@ -40,6 +41,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg6
 *d24481
 d [lv 0*"43"*"42800025"]`「やだやだ、私が食べるの〜！`[@][lv 0*"43"*"42800026"]`　アスモ、アスモ、パース！」`[\]
@@ -59,6 +61,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -290,6 +293,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg7
 *d24523
 d [lv 0*"44"*"42900023"]`「きゃはは！`[@][lv 0*"44"*"42900024"]`　縁寿さま、休憩だって！」`[\]
@@ -304,6 +308,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg6
 *d24524
 d [lv 0*"43"*"42800027"]`「遊ぼ遊ぼ！`[@][lv 0*"43"*"42800028"]`　縁寿さま、遊ぼー！！」`[\]
@@ -328,6 +333,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 seplay 2,52,71
 lss s0_10,"sak","a11_defo1" ;1
 spt_mem "a2","xpos",s0_10,550
@@ -337,6 +343,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 *d24527
 d `真里亞お姉ちゃんにさくたろまで姿を現す。`[\]
 *d24528
@@ -419,6 +426,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg4
 *d24534
 d2 [lv 0*"41"*"42600021"]`「七姉妹が揃ってる時に現れたのが運の尽きだ。`[@][#][*][lv 0*"41"*"42600022"]`大人しく、モフモフされてもらおう」`[\]
@@ -1210,6 +1218,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg5
 *d24648
 d [lv 0*"42"*"42700179"]`「相変わらずおかしな学校ね。`[@][lv 0*"42"*"42700180"]`自分の成績が良かったなら万々歳じゃないの？」`[\]
@@ -1240,6 +1249,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg2
 *d24652
 d [lv 0*"39"*"42400016"]`「……妬ましくて恥ずかしいのよ。`[@][lv 0*"39"*"42400017"]`誰かより劣りたくない、辱められたくない。`[@][lv 0*"39"*"42400018"]`そんな気持ちだけが、彼女らを勉強に駆り立ててる」`[\]
@@ -1260,6 +1270,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d24653
 d [lv 0*"38"*"42300037"]`「勉強がしたければ勝手にすればいいのに、騒がしいやつら」`[\]
@@ -1274,6 +1285,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg4
 *d24654
 d2 [lv 0*"41"*"42600030"]`「つまるところ。`[@][lv 0*"41"*"42600031"]`連帯責任も奉仕活動もなければ、彼女らは勉強などする気もないわけだ。`[@][#][*][lv 0*"41"*"42600032"]`……勉強の意味も知らず勉強することの、何と愚かしいことか」`[\]
@@ -1294,6 +1306,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg3
 *d24655
 d [lv 0*"40"*"42500032"]`「しかし、本当にこいつらはうるさくて馬鹿馬鹿しいッ！`[@][lv 0*"40"*"42500033"]`　縁寿さまの貴重な昼の一時を邪魔するなというのに！」`[\]
@@ -1665,6 +1678,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg7
 *d24737
 d [lv 0*"44"*"42900028"]`「何なのよ、こいつら…！！」`[\]
@@ -1678,6 +1692,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg6
 *d24738
 d [lv 0*"43"*"42800041"]`「最低のヤツら！`[@][lv 0*"43"*"42800042"]`　腸が煮えくり返るわよ！`[@][lv 0*"43"*"42800043"]`　縁寿さまを寄って集って嬲り者にして、何が楽しいわけッ？！」`[\]
@@ -1692,6 +1707,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg2
 *d24739
 d [lv 0*"39"*"42400019"]`「妬ましくても吐き出せない怨嗟。`[@][lv 0*"39"*"42400020"]`誰でもいいのよ、吐き出せればね。`[@][lv 0*"39"*"42400021"]`最低のヤツら」`[\]
@@ -1710,6 +1726,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg3
 *d24740
 d [lv 0*"40"*"42500034"]`「縁寿さまッ！`[@][lv 0*"40"*"42500035"]`　ここはご自身の名誉のために怒りくるうことが許される場面です！！`[@][lv 0*"40"*"42500036"]`　怒りは正当な感情で正当な反応！`[@][lv 0*"40"*"42500037"]`　ここで怒らなかったら、どこで怒るんですかッ！！」`[\]
@@ -1724,6 +1741,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg1
 *d24741
 d [lv 0*"38"*"42300038"]`「やめなさいよ、安っぽく縁寿さまを怒らせないでっ！！`[@][lv 0*"38"*"42300039"]`　それが出来たらもうやってるわよ縁寿さまはっ！！」`[\]
@@ -1738,6 +1756,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg4
 *d24742
 d [lv 0*"41"*"42600033"]`「……………怒って状況が改善できるならそうすべきだ。`[@][lv 0*"41"*"42600034"]`だが、客観的に判断して、それはますますに状況を悪化させるだけだろう。`[@][lv 0*"41"*"42600035"]`……屈辱的だが、今は耐えるのが賢明だ」`[\]
@@ -2146,6 +2165,7 @@ spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,3000
 spt_mem "a2","alpha",s0_12,0,3000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 seplay 3,39,71

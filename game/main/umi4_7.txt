@@ -72,6 +72,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_mar
 *d24003
 d [lv 0*"13"*"40400690"]`「うぅん、まだまだ狭い。`[@][lv 0*"13"*"40400691"]`もっともっと広い空間をイメージして。`[@][lv 0*"13"*"40400692"]`そして、縁寿だけの心象世界を作り上げるの」`[\]
@@ -91,6 +92,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_sak
 *d24005
 d [lv 0*"33"*"44200201"]`『うりゅ。`[@][lv 0*"33"*"44200202"]`……どうして広い空間のイメージが必要なの？』`[\]
@@ -234,6 +236,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_mar
 *d24031
 d [lv 0*"13"*"40400707"]`「………………………………。`[@][lv 0*"13"*"40400708"]`……そう。`[@][lv 0*"13"*"40400709"]`その感覚を、維持して」`[\]
@@ -251,6 +254,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_sak
 *d24033
 d [lv 0*"33"*"44200210"]`『やった縁寿、やった縁寿…！`[@][lv 0*"33"*"44200211"]`　魔女の世界への、最初の第一歩を踏み出した…！』`[\]
@@ -484,6 +488,7 @@ flush 1
 spt_mem "a2","breakup",s0_12,0,1000
 spt_mem "a2","alpha",s0_12,255,1000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 lss s0_13,"rg6","a12_akuwarai1" ;1
 spt_mem "a2","xpos",s0_13,-520
 seplay 1,52,71
@@ -493,6 +498,7 @@ flush 1
 spt_mem "a2","breakup",s0_13,0,1000
 spt_mem "a2","alpha",s0_13,255,1000
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 lss s0_14,"rg5","a12_akuwarai2" ;1
 spt_mem "a2","xpos",s0_14,-260
 seplay 3,52,71
@@ -502,6 +508,7 @@ flush 1
 spt_mem "a2","breakup",s0_14,0,1000
 spt_mem "a2","alpha",s0_14,255,1000
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 lss s0_15,"rg4","a12_defo1" ;1
 spt_mem "a2","xpos",s0_15,260
 seplay 2,52,71
@@ -511,6 +518,7 @@ flush 1
 spt_mem "a2","breakup",s0_15,0,1000
 spt_mem "a2","alpha",s0_15,255,1000
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 lss s0_16,"rg3","a12_fuman1" ;1
 spt_mem "a2","xpos",s0_16,520
 seplay 1,52,71
@@ -520,6 +528,7 @@ flush 1
 spt_mem "a2","breakup",s0_16,0,1000
 spt_mem "a2","alpha",s0_16,255,1000
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 lss s0_17,"rg2","a12_hohoemi1" ;1
 spt_mem "a2","xpos",s0_17,780
 seplay 3,52,71
@@ -529,6 +538,7 @@ flush 1
 spt_mem "a2","breakup",s0_17,0,1000
 spt_mem "a2","alpha",s0_17,255,1000
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 lss s0_18,"rg1","a12_hohoemi1" ;1
 seplay 3,52,71
 spt_mem "a2","breakup",s0_18,1000
@@ -537,6 +547,7 @@ flush 1
 spt_mem "a2","breakup",s0_18,0,1000
 spt_mem "a2","alpha",s0_18,255,1000
 sptwait2 breakup,s0_18
+ : sptwait2 butterflybreakup,s0_18
 bgmplay 7,71,0
 *d24072
 d `１人、２人、３人。`[@]`４人、５人、６人、７人…。`[\]
@@ -589,6 +600,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 bgmplay 3,71,0
 msgwnd_rg7
 *d24079
@@ -604,6 +616,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg6
 *d24080
 d [lv 0*"43"*"42800023"]`「相変わらず美味し、じゃなかった、可愛い〜！！」`[\]
@@ -784,6 +797,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 2,52,71
 lss s0_8,"rg7","d11_warai3" ;1
 spt_mem "a2","xpos",s0_8,-550
@@ -793,6 +807,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 wait 500
 lss s0_10,"rg6","c11_warai1" ;1
 spt_mem "a2","xpos",s0_10,550
@@ -1249,6 +1264,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 bgmplay 90,71,0
 msgwnd_rg5
 *d24149
@@ -1442,6 +1458,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_mar
 *d24179
 d [lv 0*"13"*"40400766"]`「……ほら、縁寿。`[@][lv 0*"13"*"40400767"]`修行を忘れてるよ。`[@][lv 0*"13"*"40400768"]`…………マモンを連れて行って」`[\]
@@ -1466,6 +1483,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg5
 *d24182
 d [lv 0*"42"*"42700083"]`「もう、縁寿さまったらひどいです。`[@][lv 0*"42"*"42700084"]`いきなり私を消すなんて…！`[@][lv 0*"42"*"42700085"]`　そんなんじゃ、七姉妹を全員呼ぶなんて、なかなか出来ませんよー！」`[\]
@@ -1567,6 +1585,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 *d24204
 d `マモンは、すれ違う子たちや寮内の設備などを興味深そうに見ている。`[\]
 *d24205

@@ -245,6 +245,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg1
 *d59591
 d [lv 0*"38"*"82300001"]`「煉獄の七姉妹、ここにッ！！」`[\]
@@ -265,6 +266,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg2
 *d59592
 d [lv 0*"39"*"82400001"]`「もうこれでゲームが終わりなんてぇ！`[@][lv 0*"39"*"82400002"]`　うわあん！」`[\]
@@ -277,6 +279,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg3
 *d59593
 d [lv 0*"40"*"82500001"]`「二次会で泣かないの、もうッ。`[@][lv 0*"40"*"82500002"]`この泣き虫！」`[\]
@@ -290,6 +293,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg4
 *d59594
 d [lv 0*"41"*"82600001"]`「バトラ卿、ベアトリーチェさま、お招きを感謝します！」`[\]
@@ -311,6 +315,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg5
 *d59595
 d [lv 0*"42"*"82700001"]`「６歳の縁寿さまの寝顔、ひとり占めしたぁい！」`[\]
@@ -324,6 +329,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg6
 *d59596
 d [lv 0*"43"*"82800001"]`「私はお料理ぜぇんぶ、ひとり占めしたぁい！！」`[\]
@@ -347,6 +353,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 lss s0_9,"rg7","d11_warai3" ;1
 flush 24
@@ -590,6 +597,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d59614
 d [lv 0*"51"*"85100001"]`「賑やかと聞いてはッ！」`[\]
@@ -603,6 +611,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d59615
 d [lv 0*"52"*"85200001"]`「私たちの出番がないとは言わせないッ！」`[\]
@@ -684,6 +693,7 @@ flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 wait 500
 seplay 1,30,71
 lss s0_24,"dla","a11_majime2" ;1
@@ -708,7 +718,9 @@ spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 lss s0_10,"ger","a11_defo2" ;1
 spt_mem "a2","xpos",s0_10,550
 lss s0_8,"cor","a11_majime1" ;1
@@ -1230,6 +1242,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_zep
 *d59681
 d [lv 0*"51"*"85100002"]`「さぁ、バトラ卿！」`[\]
@@ -1243,6 +1256,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_fur
 *d59682
 d [lv 0*"52"*"85200002"]`「あなたが告げなきゃ始まらないッ」`[\]
@@ -3921,6 +3935,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d60037
 d [lv 0*"28"*"82100071"]`「もちろん。`[@][lv 0*"28"*"82100072"]`……じっくりと作り上げた、自信作のゲームよ」`[\]

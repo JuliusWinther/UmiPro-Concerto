@@ -753,6 +753,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d53124
 d [lv 0*"28"*"72100087"]`「……案外、早かったわ。`[@][lv 0*"28"*"72100088"]`もう少し、思考を遊ばせてくれると思ったら」`[\]
@@ -813,6 +814,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d53131
 d [lv 0*"28"*"72100091"]`「そう言いつつも、心当たりはあるみたいね。`[@][lv 0*"28"*"72100092"]`……くすくす。`[@][lv 0*"28"*"72100093"]`そうよ。`[@][lv 0*"28"*"72100094"]`右代宮理御は、夏妃の子じゃないわ。`[@][lv 0*"28"*"72100095"]`１９年前に金蔵が何処かより連れてきた赤ん坊の成長した姿よ」`[\]
@@ -925,6 +927,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d53142
 d [lv 0*"28"*"72100099"]`「そういうこと。`[@][lv 0*"28"*"72100100_UP_MODIFIED"]`金蔵はベアトリーチェにベアトリーチェを生ませ、`[@][lv 0*"28"*"72100101"]`さらにそのベアトリーチェにあんたを生ませたの。`[@][lv 0*"28"*"72100102"]`……あんたは金蔵の子であると同時に、ベアトリーチェの孫、ということね」`[\]
@@ -1093,6 +1096,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,800,2000
 spt_mem "a2","alpha",s0_9,125,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 lss s0_9,"bea","a11_nayamu1" ;1
 spt_mem "a2","breakup",s0_9,800
@@ -1101,6 +1105,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 *d53166
 d `その生まれを祝福されなかった赤ん坊は、魔女となるのだ…。`[\]
 textoff2

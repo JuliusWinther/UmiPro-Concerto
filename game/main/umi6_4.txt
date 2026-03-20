@@ -2544,6 +2544,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 *d43694
 d `子供たちが出て行った後の、静寂のホールで、`[@]`……ベアトはひとり静かに、自分の肖像画を見上げていた…。`[\]
 textoff2

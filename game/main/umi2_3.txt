@@ -2799,6 +2799,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,6000
 spt_mem "a2","alpha",s0_8,0,6000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non

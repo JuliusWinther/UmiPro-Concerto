@@ -1886,6 +1886,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 seplay 2,37,100
 msgwnd_bea
 *d13233
@@ -2261,6 +2262,7 @@ flush 1
 spt_mem "a2","breakup",s0_12,0,1000
 spt_mem "a2","alpha",s0_12,255,1000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 seplay 2,37,100
 *d13277
 d `新しき主が高笑いしながら、新しき使用人たちを６人も整然と率いながら、`[@]`廊下の彼方から暗闇を切り裂きながらやって来るのが見えた。`[\]
@@ -2533,6 +2535,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 textoff2
@@ -2661,6 +2664,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 wait 1000
 seplay 1,37,100
 lss s0_9,"bea","a11_akuwarai3" ;1
@@ -2904,6 +2908,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,800,2000
 spt_mem "a2","alpha",s0_9,125,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 seplay 2,52,100
 lss s0_9,"ka2","a12_nayamu1" ;1
@@ -2914,6 +2919,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d13339
 d `魔女が指を弾くと、……６人いた山羊の従者の１人の姿が、……金色の輝きと共に嘉音に変わる。`[\]

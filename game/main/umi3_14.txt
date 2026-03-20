@@ -592,6 +592,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 vol_mix_fade 1000
 wait 1000
 seplay 2,2,71
@@ -652,6 +653,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d19046
 d2 [lv 0*"31"*"33100500"]`「……お見事です。`[@][lv 0*"31"*"33100501"]`無限の魔女を継承してから、まだ半日も経たないのに、それほどまでに魔法を使いこなされるとは。`[@][#][*][lv 0*"31"*"33100502"]`……その才能に驚きます。`[@][lv 0*"31"*"33100503"]`まるであなたは、生まれながらにしての魔女のようだ」`[\]
@@ -862,6 +864,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 2,52,71
 lss s0_10,"rg4","a31_defo1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -871,6 +874,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d19073
 d [lv 0*"39"*"32400048"]`「嫉妬のレヴィアタン、ここに」`[\]
@@ -961,6 +965,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 seplay 2,52,71
@@ -968,6 +973,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -980,6 +986,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 csp_slot s0_5
@@ -1296,7 +1303,9 @@ spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 lss s0_10,"rg4","a12_akuwarai2" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 10,167
@@ -1371,6 +1380,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg2
 *d19126
 d2 [lv 0*"39"*"32400054"]`「ちょっとぉ！`[@][lv 0*"39"*"32400055"]`　名乗りも上げさせないつもりぃ？！`[@][#][*][lv 0*"39"*"32400056"]`　これだからニンゲンは嫌なのよぅ！」`[\]
@@ -1466,6 +1476,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 seplay 2,52,71
@@ -1473,6 +1484,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -1490,6 +1502,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ev2
 *d19141
 d [lv 0*"34"*"33300468"]`「…………家具のお手並み、拝見させてもらうわ。`[@][lv 0*"34"*"33300469"]`楽しませてくれるといいのだけど」`[\]
@@ -1529,6 +1542,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 2,2,100
 msgwnd_non
 *d19144
@@ -2354,6 +2368,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 textoff2
@@ -3481,6 +3496,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ron
 *d19301
 d [lv 0*"31"*"33100532"]`「ベアトリーチェさま、ここは退くべきです。`[@][lv 0*"31"*"33100533"]`……銃弾を防ぐ結界も家具もここにはありませんよ」`[\]
@@ -3707,6 +3723,7 @@ seplay 1,52,100
 spt_mem "a2","breakup",s0_27,0
 spt_mem "a2","breakup",s0_27,1000,2000
 sptwait2 breakup,s0_27
+ : sptwait2 butterflybreakup,s0_27
 csp_slot s0_27
 flush 1 ;flush2: NO frames
 *d19326
@@ -3815,6 +3832,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d19341
 d [lv 0*"38"*"32300143"]`「お、…恐れながらっ。`[@][lv 0*"38"*"32300144"]`…先代さまよりそのような残酷行為は慎むようにと…、」`[\]
@@ -3918,6 +3936,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 csp_slot s0_11
@@ -4249,6 +4268,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 bgmplay 70,71,0
 msgwnd_bea
 *d19393
@@ -4594,6 +4614,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -5378,6 +5399,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ron
 *d19526
 d [lv 0*"31"*"33100540"]`「はい、ここに」`[\]
@@ -5412,6 +5434,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d19529
 d [lv 0*"38"*"32300147"]`「傲慢のルシファー、ここに」`[\]

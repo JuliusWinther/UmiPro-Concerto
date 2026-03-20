@@ -397,7 +397,9 @@ spt_mem "a2","breakup",s0_10,1000,1000
 spt_mem "a2","alpha",s0_8,0,1000
 spt_mem "a2","alpha",s0_10,0,1000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames
@@ -406,6 +408,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 waits 167
@@ -639,9 +642,13 @@ spt_mem "a2","alpha",s0_17,0,2000
 spt_mem "a2","alpha",s0_18,0,2000
 spt_mem "a2","alpha",s0_19,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 sptwait2 breakup,s0_18
+ : sptwait2 butterflybreakup,s0_18
 sptwait2 breakup,s0_19
+ : sptwait2 butterflybreakup,s0_19
 csp_slot s0_9
 csp_slot s0_17
 csp_slot s0_18
@@ -669,6 +676,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg7
 *d16753
 d [lv 0*"44"*"32900025"]`「………えぇ…？`[@][lv 0*"44"*"32900026"]`　………あれぇ？」`[\]
@@ -692,6 +700,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d16754
 d [lv 0*"38"*"32300123"]`「なっ、`[|][lv 0*"38"*"32300124"]`……何よ、`[|][lv 0*"38"*"32300125"]`…これぇ…」`[\]
@@ -735,6 +744,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d16756
 d [lv 0*"39"*"32400046"]`「…何こいつ、…………バ、ババアのくせに…！」`[\]
@@ -752,6 +762,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg3
 *d16757
 d2 [lv 0*"40"*"32500026"]`「何かの間違いよ！！`[@][#][*][lv 0*"40"*"32500027"]`　もう一度ッ！！」`[\]
@@ -865,6 +876,7 @@ spt_mem "a2","breakup",s0_17,0
 spt_mem "a2","breakup",s0_17,1000,2000
 spt_mem "a2","alpha",s0_17,0,2000
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 csp_slot s0_17
 flush 1 ;flush2: NO frames
 lss s0_9,"kum","a12_warai1" ;1
@@ -910,6 +922,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 lss s0_10,"rg6","a12_odoroki1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -934,6 +947,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 2,57,80
 lss s0_8,"rg5","a12b_ikari1" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1024,6 +1038,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 meplay 1,12,40
 msgwnd_bea
 *d16763
@@ -1055,6 +1070,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d16765
 d [lv 0*"31"*"33100311"]`「…………私が顕現するほどでございます。`[@][lv 0*"31"*"33100312"]`…必ずやお目覚めと思いました」`[\]
@@ -1591,6 +1607,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 textoff2
@@ -1608,6 +1625,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 wait 500
 seplay 3,22,71
 anim s0_5,"no83",1
@@ -1666,6 +1684,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,1000
 spt_mem "a2","alpha",s0_10,255,1000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 1,52,71
 seplay 3,37,100
 lss s0_8,"bea","a23_akuwarai4" ;1
@@ -1679,6 +1698,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,1000
 spt_mem "a2","alpha",s0_8,255,1000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 2,52,71
 seplay 1,37,100
 lss s0_9,"bea","a23_akuwarai2" ;1
@@ -1691,6 +1711,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,1000
 spt_mem "a2","alpha",s0_9,255,1000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 seplay 3,52,71
 seplay 2,37,100
 wait 500
@@ -1709,7 +1730,9 @@ spt_mem "a2","breakup",s0_10,1000,1000
 spt_mem "a2","alpha",s0_8,0,1000
 spt_mem "a2","alpha",s0_10,0,1000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames
@@ -2466,6 +2489,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_non
 *d16853
 d [lv 0*"30"*"33200107"]`「………………このような荒事ばかり腕をあげましたね」`[\]
@@ -3621,6 +3645,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 *d16947
 d `ベアトリーチェはようやく大地に降り立つ。`[@]`{n}…傷跡など、わずかほども残っていなかった。`[\]
 lss s0_10,"bea","a11_futeki2" ;1
@@ -3769,6 +3794,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 lss s0_8,"ron","a11_akuwarai1" ;1

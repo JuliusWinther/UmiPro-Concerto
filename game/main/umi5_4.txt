@@ -251,6 +251,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_bea
 *d36662
 d [lv 0*"27"*"50700209"]`「安心せよ。`[@][lv 0*"27"*"50700210"]`書斎の密室結界は完璧だ。`[@][lv 0*"27"*"50700211"]`結界を破らぬ限り、誰にも金蔵の秘密を暴くことなど出来ん」`[\]
@@ -292,6 +293,7 @@ flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 msgwnd_ron
 *d36667
 d [lv 0*"31"*"53100025"]`「………これほどまでに反魔法の毒素が満ちては、`[@][lv 0*"31"*"53100026"]`来年の親族会議でも、ゴールドスミス卿の魔法を維持するのは難しいでしょう」`[\]
@@ -345,6 +347,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_gap
 *d36674
 d [lv 0*"32"*"53700001"]`「…………ついでだから、私も紹介してもらおうかしら。`[@][lv 0*"32"*"53700002"]`ハァイ、リーチェ。`[@][lv 0*"32"*"53700003"]`ご無沙汰……」`[\]
@@ -510,6 +513,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d36691
 d [lv 0*"28"*"52100241"]`「…………知ってる？`[@][lv 0*"28"*"52100242"]`　チェスの先手と後手では、先手の勝率が２倍とも言われてるのよ」`[\]

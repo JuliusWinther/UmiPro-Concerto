@@ -1433,6 +1433,7 @@ defsub settings_sprite_type
 defsub settings_bg_type
 defsub settings_book_mode
 defsub settings_bg_movement
+defsub settings_but_breakup
 defsub textoff2
 defsub texton2
 defsub write_slider_text
@@ -1575,6 +1576,7 @@ numalias cfg_rm_sex_content_index,2913	;Global Variable = Saved
 numalias skip_unread,8085	;Global Variable = Saved
 numalias hide_textbox,8086	;Global Variable = Saved
 numalias last_save,2914 ;Global Variable = Saved
+numalias use_but_breakup,2915 ;Global Variable = Saved
 
 numalias cfg_mouse_y,9574
 numalias is_log_param,9575 ;W_TEMP
@@ -1647,8 +1649,6 @@ numalias tips_save_scenario_Num,10650
 numalias tips_selector_ep_change,10651
 
 numalias skip_status,10652
-
-numalias title_rewrite_request,10653
 
 numalias outfits,11500 : dim ?outfits[70][6][6] ;a lot of slots
 

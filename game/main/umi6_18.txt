@@ -45,6 +45,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 lss s0_8,"ger","a11_defo2" ;1
 spt_mem "a2","xpos",s0_8,-550
 flush 80
@@ -89,6 +90,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 wait 667
@@ -142,6 +144,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 d_continue
@@ -472,6 +475,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg7
 *d49625
 d [lv 0*"44"*"62900004"]`「ルシ姉ぇ。`[@][lv 0*"44"*"62900005"]`ゲストハウスで動きがあったそうよ」`[\]
@@ -490,6 +494,7 @@ flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 msgwnd_rg6
 *d49627
 d [lv 0*"43"*"62800004"]`「それがぁ。`[@][lv 0*"43"*"62800005"]`……密室のいとこ部屋から嘉音くんが失踪したぁって」`[\]
@@ -515,6 +520,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg4
 *d49629
 d [lv 0*"41"*"62600003"]`「いや、私も裏を取ってきた。`[@][lv 0*"41"*"62600004"]`……間違いない。`[@][lv 0*"41"*"62600005"]`嘉音はいとこ部屋より姿を消している」`[\]
@@ -527,6 +533,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg5
 *d49630
 d [lv 0*"42"*"62700007"]`「……いとこ部屋のどこかに隠れてるとか。`[@][lv 0*"42"*"62700008"]`あるいは最初からうまく誤魔化して、元々部屋に入ってなかったとか」`[\]
@@ -542,6 +549,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_rg2
 *d49631
 d [lv 0*"39"*"62400031"]`「不可能だわ。`[@][lv 0*"39"*"62400032"]`いとこ部屋には、ヱリカ卿が読み上げた特定個人数名以外の“全員”が入ってることが保証されてるのよ。`[@][lv 0*"39"*"62400033"]`誤魔化して逃れることは不可能だわッ」`[\]
@@ -800,6 +808,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d49652
 d [lv 0*"28"*"62100354"]`「遅かったじゃない。`[@][lv 0*"28"*"62100355"]`ねぇ、ラムダ？」`[\]
@@ -3014,6 +3023,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d49840
 d [lv 0*"28"*"62100358"]`「……どうして誰も撃たないの…」`[\]
@@ -5132,6 +5142,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d50109
 d [lv 0*"28"*"62100359"]`「………ふん、`[@][lv 0*"28"*"62100360"]`下らない物語」`[\]
@@ -6233,6 +6244,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d50233
 d [lv 0*"27"*"60701160"]`「立会人よ。`[@][lv 0*"27"*"60701161"]`ヱリカに、Ｘを許す」`[\]

@@ -1884,6 +1884,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_ber
 *d36607
 d [lv 0*"28"*"52100223"]`「…………ラムダ、いる？」`[\]

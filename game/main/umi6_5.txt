@@ -173,6 +173,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 lss s0_10,"be3","b11_defo2" ;1
 spt_mem "a2","xpos",s0_10,370
 spt_mem "a2","darken_r",s0_10,186
@@ -195,6 +196,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_bea
 *d43798
 d [lv 0*"27"*"60700179"]`「い、いいえ。`[@][lv 0*"27"*"60700180"]`何ですか、お姉様」`[\]
@@ -391,6 +393,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 lss s0_9,"be3","b11_warai2" ;1
 spt_mem "a2","darken_r",s0_9,186
 spt_mem "a2","darken_g",s0_9,186
@@ -877,6 +880,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 seplay 3,22,71
@@ -885,6 +889,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 wait 500
@@ -1481,6 +1486,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 wait 500
 lss s0_8,"mar","b11_akuwarai2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1547,6 +1553,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 2,30,71
 lss s0_8,"dla","a11_majime1" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -2175,6 +2182,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ger
 *d43966
 d [lv 0*"48"*"64800003"]`「……無用の戦いと、思はるる也…」`[\]
@@ -2640,6 +2648,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 meplay 1,5,50
 msgwnd_ger
 *d44001
@@ -2654,6 +2663,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_cor
 *d44002
 d [lv 0*"49"*"64700002"]`「無用の勝負、これまでと知り給え」`[\]
@@ -2923,6 +2933,7 @@ spt_mem "a2","breakup",s0_24,0
 spt_mem "a2","breakup",s0_24,1000,2000
 spt_mem "a2","alpha",s0_24,0,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 csp_slot s0_24
 flush 1 ;flush2: NO frames
 *d44030
@@ -2944,7 +2955,9 @@ spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames

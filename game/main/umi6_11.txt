@@ -961,6 +961,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,800,2000
 spt_mem "a2","alpha",s0_9,125,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 lss s0_9,"mar","b23_naku1" ;1
 spt_mem "a2","breakup",s0_9,800
@@ -969,6 +970,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 d_continue
 wait_on_d -1
 csp_slot s0_5
@@ -1294,6 +1296,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,1000,2000
 spt_mem "a2","alpha",s0_23,0,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 csp_slot s0_23
 lss s0_10,"kan","a12_ikari1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1379,6 +1382,7 @@ spt_mem "a2","breakup",s0_25,0
 spt_mem "a2","breakup",s0_25,1000,2000
 spt_mem "a2","alpha",s0_25,0,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 csp_slot s0_25
 flush 1 ;flush2: NO frames
 d_continue
@@ -2008,6 +2012,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 meplay 1,28,70
@@ -3185,6 +3190,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg1
 *d46447
 d2 [lv 0*"38"*"62300003"]`「傲慢のルシファー、ここにっ！`[@][#][*][lv 0*"38"*"62300004"]`　……久しぶりの獲物が古ぼけた鏡一枚だなんて、私を愚弄するにもほどがあるわっ」`[\]
@@ -3508,6 +3514,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_but
 *d46476
 d [lv 0*"10"*"60100369"]`「たかだか第一の晩から、はらはらさせるな、お前は」`[\]
@@ -3642,6 +3649,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d46498
 d [lv 0*"51"*"65100087"]`「えぇ、そのとおりです、バトラ卿！！」`[\]
@@ -3655,6 +3663,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d46499
 d [lv 0*"52"*"65200081"]`「もしも見事、我らの試練を勝ち残れたなら！」`[\]
@@ -3822,7 +3831,9 @@ spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames

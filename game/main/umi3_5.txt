@@ -811,6 +811,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,3000
 spt_mem "a2","alpha",s0_8,0,3000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -1378,6 +1379,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 waitvideo
 csp_slot s0_17
 flush 1
@@ -1487,6 +1489,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -3435,6 +3438,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_non
 *d16143
 d `ベアトが手をパンと叩くと、ロノウェが姿を現す。`[\]
@@ -3545,6 +3549,7 @@ spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,4000
 spt_mem "a2","alpha",s0_12,0,4000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 *d16165
@@ -4320,6 +4325,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,3000
 spt_mem "a2","alpha",s0_10,255,3000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 wait 3000
 break_glass
 wait 500

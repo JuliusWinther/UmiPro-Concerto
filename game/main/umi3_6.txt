@@ -706,6 +706,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d16326
 d [lv 0*"31"*"33100260"]`「相変わらず、さすがです。`[@][lv 0*"31"*"33100261"]`だいぶの久し振りになりますね。`[@][lv 0*"31"*"33100262"]`………それにしても老けましたね。`[@][lv 0*"31"*"33100263"]`それだけの齢を重ねましたか」`[\]
@@ -1386,6 +1387,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d16421
 d [lv 0*"38"*"32300041"]`「……傲慢のルシファー、ここに」`[\]
@@ -1539,6 +1541,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 textoff2
@@ -1564,6 +1567,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 lss s0_8,"kan","a11_fuman1" ;1
 spt_mem "a2","xpos",s0_8,-370
 flush 10,167
@@ -2378,6 +2382,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 lss s0_10,"rg1","a12_ikari1" ;1
@@ -2388,6 +2393,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 1,57,100
 textoff2
 waits 167
@@ -2535,6 +2541,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -2742,6 +2749,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 2,27,40
 lss s0_10,"rg1","a12_ikari1" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -3142,6 +3150,7 @@ flush 1
 spt_mem "a2","breakup",s0_12,0,1000
 spt_mem "a2","alpha",s0_12,255,1000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 lss s0_13,"rg6","d21_akuwarai1" ;1
 spt_mem "a2","xpos",s0_13,-750
 seplay 1,52,71
@@ -3151,6 +3160,7 @@ flush 1
 spt_mem "a2","breakup",s0_13,0,1000
 spt_mem "a2","alpha",s0_13,255,1000
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 lss s0_14,"rg5","c11_akuwarai2" ;1
 spt_mem "a2","xpos",s0_14,450
 seplay 3,52,71
@@ -3160,6 +3170,7 @@ flush 1
 spt_mem "a2","breakup",s0_14,0,1000
 spt_mem "a2","alpha",s0_14,255,1000
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 lss s0_15,"rg4","a11_defo1" ;1
 spt_mem "a2","xpos",s0_15,-450
 seplay 2,52,71
@@ -3169,6 +3180,7 @@ flush 1
 spt_mem "a2","breakup",s0_15,0,1000
 spt_mem "a2","alpha",s0_15,255,1000
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 lss s0_16,"rg3","b11_fuman1" ;1
 spt_mem "a2","xpos",s0_16,150
 seplay 1,52,71
@@ -3178,6 +3190,7 @@ flush 1
 spt_mem "a2","breakup",s0_16,0,1000
 spt_mem "a2","alpha",s0_16,255,1000
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 lss s0_17,"rg2","a12_hohoemi1" ;1
 spt_mem "a2","xpos",s0_17,-150
 seplay 3,52,71
@@ -3187,6 +3200,7 @@ flush 1
 spt_mem "a2","breakup",s0_17,0,1000
 spt_mem "a2","alpha",s0_17,255,1000
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 *d16546
 d `空間が黄色い笑い声と共に爆ぜ、`[@]`黄金の飛沫を飛び散らせながら、煉獄の七姉妹の残り６人が姿を現す…。`[\]
 *d16547
@@ -3676,11 +3690,17 @@ spt_mem "a2","alpha",s0_15,255,1000
 spt_mem "a2","alpha",s0_16,255,1000
 spt_mem "a2","alpha",s0_17,255,1000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 seplay 1,37,71
 wait 500
 seplay 2,37,100
@@ -3721,12 +3741,19 @@ spt_mem "a2","alpha",s0_15,0,1000
 spt_mem "a2","alpha",s0_16,0,1000
 spt_mem "a2","alpha",s0_17,0,1000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 csp_slot s0_9
 csp_slot s0_12
 csp_slot s0_13
@@ -3926,8 +3953,11 @@ spt_mem "a2","alpha",s0_8,0,1000
 spt_mem "a2","alpha",s0_9,0,1000
 spt_mem "a2","alpha",s0_10,0,1000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_9
 csp_slot s0_10
@@ -4602,6 +4632,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 msgwnd_non

@@ -141,6 +141,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d35936
 d `どうやって、そこに上がったやら。`[@]`{n}……いや、魔女にそれを悩んでも無意味だ。`[\]
@@ -389,6 +390,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -432,6 +434,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_ber
 *d35972
 d [lv 0*"28"*"52100056"]`「………何もないわよ。`[@][lv 0*"28"*"52100057"]`おしっこしたいなら、さっさと行ってくれば…？」`[\]
@@ -633,6 +636,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d35993
 d [lv 0*"28"*"52100060"]`「…………生憎ね、ラムダ。`[@][lv 0*"28"*"52100061"]`もう戦人は、その程度の子供騙しには引っ掛からないのよ」`[\]
@@ -784,6 +788,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d36008
 d [lv 0*"28"*"52100064"]`「そんな妄言、口にするわけもないでしょう……？`[@][lv 0*"28"*"52100065"]`　だって、その存在を仮定することは、ファンタジーに屈したのとまったく同じだもの。`[@][lv 0*"28"*"52100066"]`……ウィルスだろうと薬物だろうと病気だろうと、未知の要素である限り、ノックス第４条に違反する」`[\]
@@ -808,6 +813,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d36010
 d [lv 0*"28"*"52100067"]`「ノックス第４条。`[@][lv 0*"28"*"52100068"]`未知の薬物、及び、難解な科学装置の使用を禁ず。`[@][lv 0*"28"*"52100069"]`………殺人に、これを用いてはならないという規則よ」`[\]
@@ -1087,6 +1093,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d36045
 d [lv 0*"28"*"52100118"]`「………あなただって今。`[@][lv 0*"28"*"52100119"]`金蔵が存在するわけがないと魔女幻想を打ち破ったわ。`[@][lv 0*"28"*"52100120"]`……あなたの攻撃がベアトに通った証拠よ。`[@][lv 0*"28"*"52100121"]`彼女のその苦悶は」`[\]
@@ -2016,6 +2023,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 wait 2000
 lss s0_8,"but","b22_niramu1" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -2068,6 +2076,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d36192
 d [lv 0*"28"*"52100126"]`「ベアトがそのザマなのは、あなたが勝ったからこその結果だからよ」`[\]
@@ -2451,6 +2460,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_ber
 *d36258
 d [lv 0*"28"*"52100186"]`「……で。`[@][lv 0*"28"*"52100187"]`あそこで夏妃とお茶を飲んでるベアトだけど。`[@][lv 0*"28"*"52100188"]`大丈夫よね…？」`[\]
@@ -2804,6 +2814,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 d_continue

@@ -1255,6 +1255,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 1,52,71
 seplay 2,52,71
 lss s0_8,"lam","a11_akuwarai1" ;1
@@ -1266,6 +1267,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 bgmplay 115,71,0
 *d37065
 d `見れば、`[!w500]`……俺と二人の魔女は、`[!w667]`……真っ暗な宇宙に放り出されていた。`[\]
@@ -1297,6 +1299,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d37069
 d [lv 0*"28"*"52100271"]`「…………酔うなと言ったのに」`[\]
@@ -1398,6 +1401,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d37083
 d [lv 0*"28"*"52100272"]`「………では、始めるわ。`[@][lv 0*"28"*"52100273"]`………碑文の謎を解くためのカケラを紡ぐ……」`[\]
@@ -1526,6 +1530,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d37097
 d [lv 0*"28"*"52100274"]`「…………では、始めるわ。`[@][lv 0*"28"*"52100275"]`…まずは、このカケラから」`[\]
@@ -2557,6 +2562,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d37195
 d [lv 0*"28"*"52100314"]`「あぁ、ごめんなさい。`[@][lv 0*"28"*"52100315"]`……戦人はこの時、不在だったから、私の方で勝手に駒を操らせてもらったわ。`[@][lv 0*"28"*"52100316"]`………切れ者っぽくていいでしょう…？」`[\]

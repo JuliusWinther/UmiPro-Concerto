@@ -109,7 +109,7 @@ stralias cfg_option_5_2,"Textbox Type"
 stralias cfg_option_5_3,"Background Type"
 stralias cfg_option_5_4,"Book Mode"
 stralias cfg_option_5_5,"Background Movement"
-stralias cfg_option_5_6,"" ; - Unused
+stralias cfg_option_5_6,"Use New Breakup Transition"
 stralias cfg_submenu_btn_txt,"SELECT"
 stralias cfg_wnd_size_1280,"1280"
 stralias cfg_wnd_size_1366,"1366"
@@ -611,6 +611,11 @@ stralias ep8_9_hint_20,"{p:32:The three culprits are a family.}"
 stralias ep8_9_hint_21,"{p:32:The child culprit is Battler.}"
 stralias ep8_9_criminal,":s;#FFFFFF`{p:0:Select the culprit(s).}"
 stralias ep8_9_criminal_2,":s;#FFFFFF`{p:0:Confirm selection}"
+
+;========================== Memoirs Menu ==========================
+stralias m_tips,"Tips"
+
+stralias m_chars,"Characters"
 
 ;========================== Extra Stories Names and Descriptions ==========================
 stralias extra_1_1_btn_desc_t,"Bernkastel's Letter"

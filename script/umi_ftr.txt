@@ -1769,6 +1769,7 @@ if %init_done = 1 jumpf
 	mov %cfg_bg_type_index,2
 	mov %cfg_book_mode,0
 	mov %cfg_bg_movement,0
+	mov %use_but_breakup,0
 
 
 	;Old code for low ram devices, c'mon, what has low ram now-a-days
@@ -14808,29 +14809,31 @@ if %CHIRU_MODE != 0 jumpf
 
 	;End EP1 - Before First Tea Party
 	if %UMINEKOEND = 11 lsph t_config_lsp,title_btn_3,1325,552 : write_special_text gen_txt_17,"title_btn_txt",1325,552,title_config_txt
-	if %UMINEKOEND = 11 lsph t_cg_lsp,title_btn_4,1325,616 : write_special_text gen_txt_18,"title_btn_txt",1325,616,title_cg_txt
-	if %UMINEKOEND = 11 lsph t_btn_music_lsp,title_btn_5,1325,680 : write_special_text gen_txt_19,"title_btn_txt",1325,680,title_bgm_txt
-	if %UMINEKOEND = 11 lsph t_btn_exit_lsp,title_btn_6,1325,744 : write_special_text gen_txt_20,"title_btn_txt",1325,744,title_exit_txt
+	if %UMINEKOEND = 11 lsph t_btn_tips_lsp,title_btn_4,1325,616 : write_special_text gen_txt_16,"title_btn_txt",1325,616,title_movie_txt
+	if %UMINEKOEND = 11 lsph t_cg_lsp,title_btn_5,1325,680 : write_special_text gen_txt_18,"title_btn_txt",1325,680,title_cg_txt
+	if %UMINEKOEND = 11 lsph t_btn_music_lsp,title_btn_6,1325,744 : write_special_text gen_txt_19,"title_btn_txt",1325,744,title_bgm_txt
+	if %UMINEKOEND = 11 lsph t_btn_exit_lsp,title_btn_7,1325,808 : write_special_text gen_txt_20,"title_btn_txt",1325,808,title_exit_txt
 	
 	;After First Tea Party - Before First Ura
 	if %UMINEKOEND >= 12 lsph t_btn_tea_lsp,title_btn_3,1325,552 : write_special_text gen_txt_13,"title_btn_txt",1325,552,title_tea_txt
 	if %UMINEKOEND = 12 lsph t_config_lsp,title_btn_4,1325,616 : write_special_text gen_txt_17,"title_btn_txt",1325,616,title_config_txt 
-	if %UMINEKOEND = 12 lsph t_cg_lsp,title_btn_5,1325,680 : write_special_text gen_txt_18,"title_btn_txt",1325,680,title_cg_txt
-	if %UMINEKOEND = 12 lsph t_btn_music_lsp,title_btn_6,1325,744 : write_special_text gen_txt_19,"title_btn_txt",1325,744,title_bgm_txt 
-	if %UMINEKOEND = 12 lsph t_btn_exit_lsp,title_btn_7,1325,808 : write_special_text gen_txt_20,"title_btn_txt",1325,808,title_exit_txt	
+	if %UMINEKOEND = 12 lsph t_btn_tips_lsp,title_btn_5,1325,680 : write_special_text gen_txt_16,"title_btn_txt",1325,680,title_movie_txt
+	if %UMINEKOEND = 12 lsph t_cg_lsp,title_btn_6,1325,744 : write_special_text gen_txt_18,"title_btn_txt",1325,744,title_cg_txt
+	if %UMINEKOEND = 12 lsph t_btn_music_lsp,title_btn_7,1325,808 : write_special_text gen_txt_19,"title_btn_txt",1325,808,title_bgm_txt 
+	if %UMINEKOEND = 12 lsph t_btn_exit_lsp,title_btn_8,1325,872 : write_special_text gen_txt_20,"title_btn_txt",1325,872,title_exit_txt
 	
 	;After First Ura - Before Second Episode - After Second Episode
 	;btn 3 in the before section
 	if %UMINEKOEND > 12 lsph t_btn_ura_tea_lsp,title_btn_4,1325,616 : write_special_text gen_txt_14,"title_btn_txt",1325,616,title_ura_txt 
 	if %UMINEKOEND >= 20 lsph t_chars_lsp,title_btn_5,1325,680 : write_special_text gen_txt_15,"title_btn_txt",1325,680,title_memoirs_txt 
-	if %UMINEKOEND >= 20 lsph t_btn_tips_lsp,title_btn_6,1325,744 : write_special_text gen_txt_16,"title_btn_txt",1325,744,title_movie_txt 
-	if %UMINEKOEND >= 20 lsph t_config_lsp,title_btn_7,1325,808 : write_special_text gen_txt_17,"title_btn_txt",1325,808,title_config_txt 
+	if %UMINEKOEND >= 20 lsph t_config_lsp,title_btn_6,1325,744 : write_special_text gen_txt_17,"title_btn_txt",1325,744,title_config_txt 
+	if %UMINEKOEND >= 20 lsph t_btn_tips_lsp,title_btn_7,1325,808 : write_special_text gen_txt_16,"title_btn_txt",1325,808,title_movie_txt 
 	if %UMINEKOEND >= 20 lsph t_cg_lsp,title_btn_8,1325,872 : write_special_text gen_txt_18,"title_btn_txt",1325,872,title_cg_txt
 	if %UMINEKOEND >= 20 lsph t_btn_music_lsp,title_btn_9,1325,936 : write_special_text gen_txt_19,"title_btn_txt",1325,936,title_bgm_txt 
 	if %UMINEKOEND >= 20 lsph t_btn_exit_lsp,title_btn_10,1325,1000 : write_special_text gen_txt_20,"title_btn_txt",1325,1000,title_exit_txt
 	
 	;Flags - for 'new' label
-
+	;TODO MOVIE BOX NOTIFICATION FIX TIPS NOTIFICATION
 	;multiple are needed because even if the notification isn't remvoed, the button still moves
 	;End EP1
 	if %UMINEKOEND < 12 if %UMINEKOEND_CG_FLG = 1 lsph t_cg_lsp,title_btn_4_new,1325,616
@@ -14844,16 +14847,16 @@ if %CHIRU_MODE != 0 jumpf
 
 	;Char and Tips - EP 1
 	if %UMINEKOEND_TIPS_CHA_FLG = 1 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 1 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 1 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 	;Char and Tips - EP 2
 	if %UMINEKOEND_TIPS_CHA_FLG = 2 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 2 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 2 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 	;Char and Tips - EP 3
 	if %UMINEKOEND_TIPS_CHA_FLG = 3 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 3 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 3 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 	;Char and Tips - EP 4
 	if %UMINEKOEND_TIPS_CHA_FLG = 4 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 4 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 4 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 
 	;New EP2
 	if %UMINEKOEND_FLG = 20 lsph t_btn_start_lsp,title_btn_1_new,1325,424 
@@ -14898,29 +14901,32 @@ if %CHIRU_MODE != 1 jumpf
 
 	;First Start Chiru
 	if %UMINEKOEND <= 50 lsph t_config_lsp,title_btn_3,1325,552 : write_special_text gen_txt_17,"title_btn_txt",1325,552,title_config_txt
-	if %UMINEKOEND <= 50 lsph t_cg_lsp,title_btn_4,1325,616 : write_special_text gen_txt_18,"title_btn_txt",1325,616,title_cg_txt
-	if %UMINEKOEND <= 50 lsph t_btn_music_lsp,title_btn_5,1325,680 : write_special_text gen_txt_19,"title_btn_txt",1325,680,title_bgm_txt
-	if %UMINEKOEND <= 50 lsph t_btn_exit_lsp,title_btn_6,1325,744 : write_special_text gen_txt_20,"title_btn_txt",1325,744,title_exit_txt
+	if %UMINEKOEND <= 50 lsph t_btn_tips_lsp,title_btn_4,1325,616 : write_special_text gen_txt_16,"title_btn_txt",1325,616,title_movie_txt 
+	if %UMINEKOEND <= 50 lsph t_cg_lsp,title_btn_5,1325,680 : write_special_text gen_txt_18,"title_btn_txt",1325,680,title_cg_txt
+	if %UMINEKOEND <= 50 lsph t_btn_music_lsp,title_btn_6,1325,744 : write_special_text gen_txt_19,"title_btn_txt",1325,744,title_bgm_txt
+	if %UMINEKOEND <= 50 lsph t_btn_exit_lsp,title_btn_7,1325,808 : write_special_text gen_txt_20,"title_btn_txt",1325,808,title_exit_txt
 
 	;End EP5 - Before First Tea Party - no change
 	if %UMINEKOEND = 51 lsph t_config_lsp,title_btn_3,1325,552 : write_special_text gen_txt_17,"title_btn_txt",1325,552,title_config_txt
-	if %UMINEKOEND = 51 lsph t_cg_lsp,title_btn_4,1325,616 : write_special_text gen_txt_18,"title_btn_txt",1325,616,title_cg_txt
-	if %UMINEKOEND = 51 lsph t_btn_music_lsp,title_btn_5,1325,680 : write_special_text gen_txt_19,"title_btn_txt",1325,680,title_bgm_txt
-	if %UMINEKOEND = 51 lsph t_btn_exit_lsp,title_btn_6,1325,744 : write_special_text gen_txt_20,"title_btn_txt",1325,744,title_exit_txt
+	if %UMINEKOEND = 51 lsph t_btn_tips_lsp,title_btn_4,1325,616 : write_special_text gen_txt_16,"title_btn_txt",1325,616,title_movie_txt 
+	if %UMINEKOEND = 51 lsph t_cg_lsp,title_btn_5,1325,680 : write_special_text gen_txt_18,"title_btn_txt",1325,680,title_cg_txt
+	if %UMINEKOEND = 51 lsph t_btn_music_lsp,title_btn_6,1325,744 : write_special_text gen_txt_19,"title_btn_txt",1325,744,title_bgm_txt
+	if %UMINEKOEND = 51 lsph t_btn_exit_lsp,title_btn_7,1325,808 : write_special_text gen_txt_20,"title_btn_txt",1325,808,title_exit_txt
 
 	;After First Tea Party - Before First Ura
 	if %UMINEKOEND >= 52 lsph t_btn_tea_lsp,title_btn_3,1325,552 : write_special_text gen_txt_13,"title_btn_txt",1325,552,title_tea_txt
 	if %UMINEKOEND = 52 lsph t_config_lsp,title_btn_4,1325,616 : write_special_text gen_txt_17,"title_btn_txt",1325,616,title_config_txt 
-	if %UMINEKOEND = 52 lsph t_cg_lsp,title_btn_5,1325,680 : write_special_text gen_txt_18,"title_btn_txt",1325,680,title_cg_txt
-	if %UMINEKOEND = 52 lsph t_btn_music_lsp,title_btn_6,1325,744 : write_special_text gen_txt_19,"title_btn_txt",1325,744,title_bgm_txt 
-	if %UMINEKOEND = 52 lsph t_btn_exit_lsp,title_btn_7,1325,808 : write_special_text gen_txt_20,"title_btn_txt",1325,808,title_exit_txt	
+	if %UMINEKOEND = 52 lsph t_btn_tips_lsp,title_btn_5,1325,680 : write_special_text gen_txt_16,"title_btn_txt",1325,680,title_movie_txt 
+	if %UMINEKOEND = 52 lsph t_cg_lsp,title_btn_6,1325,744 : write_special_text gen_txt_18,"title_btn_txt",1325,744,title_cg_txt
+	if %UMINEKOEND = 52 lsph t_btn_music_lsp,title_btn_7,1325,808 : write_special_text gen_txt_19,"title_btn_txt",1325,808,title_bgm_txt 
+	if %UMINEKOEND = 52 lsph t_btn_exit_lsp,title_btn_8,1325,872 : write_special_text gen_txt_20,"title_btn_txt",1325,872,title_exit_txt	
 	
 	;After First Ura - Before Sixth Episode - After Fifth Episode
 	;btn 3 in the before section
 	if %UMINEKOEND > 52 lsph t_btn_ura_tea_lsp,title_btn_4,1325,616 : write_special_text gen_txt_14,"title_btn_txt",1325,616,title_ura_txt 
 	if %UMINEKOEND >= 60 lsph t_chars_lsp,title_btn_5,1325,680 : write_special_text gen_txt_15,"title_btn_txt",1325,680,title_memoirs_txt 
-	if %UMINEKOEND >= 60 lsph t_btn_tips_lsp,title_btn_6,1325,744 : write_special_text gen_txt_16,"title_btn_txt",1325,744,title_movie_txt 
-	if %UMINEKOEND >= 60 lsph t_config_lsp,title_btn_7,1325,808 : write_special_text gen_txt_17,"title_btn_txt",1325,808,title_config_txt 
+	if %UMINEKOEND >= 60 lsph t_config_lsp,title_btn_6,1325,744 : write_special_text gen_txt_17,"title_btn_txt",1325,744,title_config_txt 
+	if %UMINEKOEND >= 60 lsph t_btn_tips_lsp,title_btn_7,1325,808 : write_special_text gen_txt_16,"title_btn_txt",1325,808,title_movie_txt 
 	if %UMINEKOEND >= 60 lsph t_cg_lsp,title_btn_8,1325,872 : write_special_text gen_txt_18,"title_btn_txt",1325,872,title_cg_txt
 	if %UMINEKOEND >= 60 lsph t_btn_music_lsp,title_btn_9,1325,936 : write_special_text gen_txt_19,"title_btn_txt",1325,936,title_bgm_txt 
 	if %UMINEKOEND >= 60 lsph t_btn_exit_lsp,title_btn_10,1325,1000 : write_special_text gen_txt_20,"title_btn_txt",1325,1000,title_exit_txt
@@ -14929,16 +14935,16 @@ if %CHIRU_MODE != 1 jumpf
 
 	;Char and Tips - EP 5
 	if %UMINEKOEND_TIPS_CHA_FLG = 5 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 5 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 5 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 	;Char and Tips - EP 6
 	if %UMINEKOEND_TIPS_CHA_FLG = 6 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 6 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 6 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 	;Char and Tips - EP 7
 	if %UMINEKOEND_TIPS_CHA_FLG = 7 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 7 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 7 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 	;Char and Tips - EP 8
 	if %UMINEKOEND_TIPS_CHA_FLG = 8 lsph t_chars_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND_TIPS_FLG = 8 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
+	;if %UMINEKOEND_TIPS_FLG = 8 lsph t_btn_tips_lsp,title_btn_6_new,1325,744
 
 	;New EP6
 	if %UMINEKOEND_FLG = 60 lsph t_btn_start_lsp,title_btn_1_new,1325,424 
@@ -15032,14 +15038,14 @@ if %title_skip = 1 goto *b_title_skip_100
 		if %UMINEKOEND >= 11 vsp t_btn_tea_lsp,1 : vsp_special gen_txt_13,1 : amsp t_btn_tea_lsp,1325,552,250 : amsp gen_txt_13,1325,552,250 : amsp gen_txt_13+1,1325+2,552+1,250 : print 22
 		if %UMINEKOEND >= 12 vsp t_btn_ura_tea_lsp,1 : vsp_special gen_txt_14,1 : amsp t_btn_ura_tea_lsp,1325,616,250 : amsp gen_txt_14,1325,616,250 : amsp gen_txt_14+1,1325+2,616+1,250 : print 22
 		if %UMINEKOEND >= 20 vsp t_chars_lsp,1 : vsp_special gen_txt_15,1 : amsp t_chars_lsp,1325,680,250 : amsp gen_txt_15,1325,680,250 : amsp gen_txt_15+1,1325+2,680+1,250 : print 22
-		if %UMINEKOEND >= 20 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 : amsp t_btn_tips_lsp,1325,744,250 : amsp gen_txt_16,1325,744,250 : amsp gen_txt_16+1,1325+2,744+1,250 : print 22
+		;if %UMINEKOEND >= 20 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 : amsp t_btn_tips_lsp,1325,808,250 : amsp gen_txt_16,1325,808,250 : amsp gen_txt_16+1,1325+2,808+1,250 : print 22
 	~
 	
 	if %CHIRU_MODE != 1 jumpf
 		if %UMINEKOEND >= 51 vsp t_btn_tea_lsp,1 : vsp_special gen_txt_13,1 : amsp t_btn_tea_lsp,1325,552,250 : amsp gen_txt_13,1325,552,250 : amsp gen_txt_13+1,1325+2,552+1,250 : print 22
 		if %UMINEKOEND >= 52 vsp t_btn_ura_tea_lsp,1 : vsp_special gen_txt_14,1 : amsp t_btn_ura_tea_lsp,1325,616,250 : amsp gen_txt_14,1325,552,250 : amsp gen_txt_14+1,1325+2,616+1,250 : print 22
 		if %UMINEKOEND >= 60 vsp t_chars_lsp,1 : vsp_special gen_txt_15,1 : amsp t_chars_lsp,1325,680,250 : amsp gen_txt_15,1325,680,250 : amsp gen_txt_15+1,1325+2,680+1,250 : print 22
-		if %UMINEKOEND >= 60 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 : amsp t_btn_tips_lsp,1325,744,250 : amsp gen_txt_16,1325,744,250 : amsp gen_txt_16+1,1325+2,744+1,250 : print 22
+		;if %UMINEKOEND >= 60 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 : amsp t_btn_tips_lsp,1325,808,250 : amsp gen_txt_16,1325,808,250 : amsp gen_txt_16+1,1325+2,808+1,250 : print 22
 	~
 
 	if %CHIRU_MODE != 2 jumpf ;TODO unlock extra flavor only when the game has ended
@@ -15048,6 +15054,7 @@ if %title_skip = 1 goto *b_title_skip_100
 	~
 	
 	vsp t_config_lsp,1 : vsp_special gen_txt_17,1 : print 22
+	if %UMINEKOEND >= 1 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 : print 22
 	if %UMINEKOEND >= 1 vsp t_cg_lsp,1 : vsp_special gen_txt_18,1 : print 22
 	if %UMINEKOEND >= 1 vsp t_btn_music_lsp,1 : vsp_special gen_txt_19,1 : print 22
 	vsp t_btn_exit_lsp,1 : vsp_special gen_txt_20,1 : print 22
@@ -15118,7 +15125,7 @@ if %title_skip = 1 goto *b_title_skip_100
 	vsp t_btn_load_lsp,0
 	if %UMINEKOEND >= 11 vsp t_btn_tea_lsp,1 : vsp_special gen_txt_13,1 : amsp t_btn_tea_lsp,1325,552,250 : amsp gen_txt_13,1325,552,250  : amsp gen_txt_13+1,1325+2,552+1,250
 	if %UMINEKOEND >= 12 vsp t_btn_ura_tea_lsp,1 : vsp_special gen_txt_14,1 : amsp t_btn_ura_tea_lsp,1325,616,250 : amsp gen_txt_14,1325,616,250  : amsp gen_txt_14+1,1325+2,616+1,250
-	if %UMINEKOEND >= 20 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 : amsp t_btn_tips_lsp,1325,744,250	 : amsp gen_txt_16,1325,744,250  : amsp gen_txt_16+1,1325+2,744+1,250
+	if %UMINEKOEND >= 1 vsp t_btn_tips_lsp,1 : vsp_special gen_txt_16,1 ;: amsp t_btn_tips_lsp,1325,808,250	 : amsp gen_txt_16,1325,808,250  : amsp gen_txt_16+1,1325+2,808+1,250
 	if %UMINEKOEND >= 1 vsp t_btn_music_lsp,1 : vsp_special gen_txt_19,1
 	if %UMINEKOEND >= 20 vsp t_chars_lsp,1 : vsp_special gen_txt_15,1 : amsp t_chars_lsp,1325,680,250 : amsp gen_txt_15,1325,680,250  : amsp gen_txt_15+1,1325+2,680+1,250
 
@@ -15168,8 +15175,8 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 	exbtn t_btn_tea_lsp,t_btn_tea_lsp,"P165P146"
 	exbtn t_btn_ura_tea_lsp,t_btn_ura_tea_lsp,"P165P141"
 	exbtn t_chars_lsp,t_chars_lsp,"P165P163"
-	exbtn t_btn_tips_lsp,t_btn_tips_lsp,"P165P145"
 	exbtn t_config_lsp,t_config_lsp,"P165P161"
+	exbtn t_btn_tips_lsp,t_btn_tips_lsp,"P165P145" ;Movie
 	exbtn t_cg_lsp,t_cg_lsp,"P165P149"
 	exbtn t_btn_music_lsp,t_btn_music_lsp,"P165P144"
 	exbtn t_btn_exit_lsp,t_btn_exit_lsp,"P165P142"
@@ -23272,7 +23279,7 @@ return
 		enable_transitions 720,0
 		aspt alpha,719,0,1 : aspt2 alpha,721,0,1 : aspt alpha,722,0,1 : aspt alpha,720,0,1 ;remove if still here
 		sptwait alpha,719 : sptwait2 alpha,721 : sptwait alpha,722 : sptwait alpha,720
-		_csp 719 : _csp 721 : _csp 722 : _csp 720
+		_csp 719 : _csp2 721 : _csp 722 : _csp 720
 		border_pad_push 3
 
 		split $name_chapter_r_click,"|",$chapter_title_w,$temp_var3,$Free3
@@ -23326,7 +23333,7 @@ return
 		enable_transitions 720,0
 		aspt alpha,719,0,1 : aspt2 alpha,721,0,1 : aspt alpha,722,0,1 : aspt alpha,720,0,1 ;remove if still here
 		sptwait alpha,719 : sptwait2 alpha,721 : sptwait alpha,722 : sptwait alpha,720
-		_csp 719 : _csp 721 : _csp 722 : _csp 720
+		_csp 719 : _csp2 721 : _csp 722 : _csp 720
 		border_pad_push 3
 
 		split $name_chapter_r_click,"|",$chapter_title_w,$temp_var3,$Free3
@@ -23719,8 +23726,10 @@ if $spt_mem_type != "r" jumpf
 	if $aspt_prop == "scaley" spt scaley,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][8],"spt|scaley|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "rot" spt rot,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][9],"spt|rot|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "blur" spt blur,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][10],"spt|blur|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
-	if $aspt_prop == "breakup" spt breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"spt|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
-	if $aspt_prop == "breakupdir" spt breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakup" if %use_but_breakup==off spt breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"spt|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakupdir" if %use_but_breakup==off spt breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakup" if %use_but_breakup==on spt butterflybreakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"spt|butterflybreakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakupdir" if %use_but_breakup==on spt butterflybreakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt|butterflybreakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done
 	if $aspt_prop == "quakexmul" spt quakexmul,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][13],"spt|quakexmul|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "quakexamp" spt quakexamp,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][14],"spt|quakexamp|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "quakexcycle" spt quakexcycle,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][15],"spt|quakexcycle|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
@@ -23748,8 +23757,10 @@ if $spt_mem_type != "r2" jumpf
 	if $aspt_prop == "scaley" spt2 scaley,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][8],"spt2|scaley|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "rot" spt2 rot,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][9],"spt2|rot|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "blur" spt2 blur,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][10],"spt2|blur|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
-	if $aspt_prop == "breakup" spt2 breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"spt2|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
-	if $aspt_prop == "breakupdir" spt2 breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt2|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakup" if %use_but_breakup==off spt2 breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"spt2|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakupdir" if %use_but_breakup==off spt2 breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt2|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakup" if %use_but_breakup==on spt2 butterflybreakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"spt2|butterflybreakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakupdir" if %use_but_breakup==on spt2 butterflybreakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt2|butterflybreakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done
 	if $aspt_prop == "quakexmul" spt2 quakexmul,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][13],"spt2|quakexmul|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "quakexamp" spt2 quakexamp,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][14],"spt2|quakexamp|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "quakexcycle" spt2 quakexcycle,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][15],"spt2|quakexcycle|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
@@ -23777,8 +23788,10 @@ if $spt_mem_type != "a" jumpf
 	if $aspt_prop == "scaley" aspt scaley,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][8],"aspt|scaley|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "rot" aspt rot,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][9],"aspt|rot|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "blur" aspt blur,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][10],"aspt|blur|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
-	if $aspt_prop == "breakup" aspt breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"aspt|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
-	if $aspt_prop == "breakupdir" aspt breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"aspt|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakup" if %use_but_breakup==off aspt breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"aspt|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakupdir" if %use_but_breakup==off aspt breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"aspt|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakup" if %use_but_breakup==on aspt butterflybreakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"aspt|butterflybreakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+	if $aspt_prop == "breakupdir" if %use_but_breakup==on aspt butterflybreakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"aspt|butterflybreakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done
 	if $aspt_prop == "quakexmul" aspt quakexmul,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][13],"aspt|quakexmul|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "quakexamp" aspt quakexamp,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][14],"aspt|quakexamp|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
 	if $aspt_prop == "quakexcycle" aspt quakexcycle,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][15],"aspt|quakexcycle|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
@@ -23805,8 +23818,10 @@ if $aspt_prop == "scalex" aspt2 scalex,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_va
 if $aspt_prop == "scaley" aspt2 scaley,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][8],"aspt2|scaley|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
 if $aspt_prop == "rot" aspt2 rot,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][9],"aspt2|rot|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
 if $aspt_prop == "blur" aspt2 blur,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][10],"aspt2|blur|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
-if $aspt_prop == "breakup" aspt2 breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"aspt2|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
-if $aspt_prop == "breakupdir" aspt2 breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"aspt2|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
+if $aspt_prop == "breakup" if %use_but_breakup==off aspt2 breakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"aspt2|breakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+if $aspt_prop == "breakupdir" if %use_but_breakup==off aspt2 breakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"aspt2|breakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+if $aspt_prop == "breakup" if %use_but_breakup==on aspt2 butterflybreakup,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][11],"aspt2|butterflybreakup|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done 
+if $aspt_prop == "breakupdir" if %use_but_breakup==on aspt2 butterflybreakupdir,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][12],"spt|butterflybreakupdir|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : goto *spt_mem_done
 if $aspt_prop == "quakexmul" aspt2 quakexmul,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][13],"aspt2|quakexmul|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
 if $aspt_prop == "quakexamp" aspt2 quakexamp,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][14],"aspt2|quakexamp|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
 if $aspt_prop == "quakexcycle" aspt2 quakexcycle,%aspt_slot,%aspt_val1,%aspt_val2,%aspt_val3 : mov $?slot_cache[%aspt_slot-750][15],"aspt2|quakexcycle|"+$string_temp4+"\"+$string_temp5+"\"+$string_temp6 : jumpf 
@@ -24924,7 +24939,7 @@ return
 		aspt alpha,723,0,1 : aspt2 alpha,725,0,1 : aspt alpha,726,0,1 : aspt alpha,724,0,1 ;remove if still here
 		;aspt xpos,723,-305+45,200 : aspt2 xpos,725,-172,200 : aspt xpos,726,-39,200 ;remove if still here
 		sptwait alpha,723 : sptwait2 alpha,725 : sptwait alpha,726 : sptwait alpha,724
-		_csp 723 : _csp 725 : _csp 726 : _csp 724
+		_csp 723 : _csp2 725 : _csp 726 : _csp 724
 		if %cfg_bgm_display == 0 mov %bgm_title_delay,0 : return
 		border_pad_push 3
 
@@ -25419,8 +25434,8 @@ if %snow_sprite > 0 snow %snow_sprite : jumpf
 	snow -1
 ~
 
-if %bgm_current_id != 0 _csp 723 : _csp 724 : _csp 725 : _csp 726 : gosub *BGM_List : gosub *bgmtitle
-_csp 746 ;no chapter titles
+if %bgm_current_id != 0 _csp 723 : _csp 724 : _csp2 725 : _csp 726 : gosub *BGM_List : gosub *bgmtitle
+_csp 719 : _csp 720 : _csp2 721 : _csp 722 ;no chapter titles
 
 ;So that we save after loading
 mov %TextCC12Flag,1
@@ -27863,7 +27878,7 @@ return
 	gosub *textoff2	;We need to hide the textbox either
 
 	;Get a screenshot image for savedata before entering the Bookmark unless we already have one
-	if %disallow_saving == off _csp 723 : _csp 724 : _csp 725 : _csp 726 : _csp 719 : _csp 720 : _csp 721 : _csp 722 : getscreenshot 309,174
+	if %disallow_saving == off _csp 723 : _csp 724 : _csp2 725 : _csp 726 : _csp 719 : _csp 720 : _csp2 721 : _csp 722 : getscreenshot 309,174
 
 	gosub *rmenu_custom
 
@@ -30538,6 +30553,12 @@ return
 *write_special_text ;Text Generator
 	getparam %lsp_slot,$lsp_type,%lsp_x,%lsp_y,$lsp_text1,$lsp_text2,$lsp_text3,%parent_slot
 
+	if $lsp_type != "ep_w_n_l" jumpf
+		lsp %lsp_slot,":s;#FFFFFF`{w:245:{fit:{a:l:{p:43:"+$lsp_text1+"} {s:-1,0:{p:44:"+$lsp_text2+"}}{n}}}}",%lsp_x,%lsp_y
+		lsp %lsp_slot+1,":s;#000000`{w:245:{fit:{a:l:{s:1,2:{p:83:"+$lsp_text1+"} {p:84:"+$lsp_text2+"}}{n}}}}",%lsp_x,%lsp_y+1
+		spt blur,%lsp_slot+1,300
+		return
+	~
 	if $lsp_type != "ep_w_n" jumpf
 		lsp %lsp_slot,":s;#FFFFFF`{w:245:{fit:{a:r:{p:43:"+$lsp_text1+"} {s:-1,0:{p:44:"+$lsp_text2+"}}{n}}}}",%lsp_x,%lsp_y
 		lsp %lsp_slot+1,":s;#000000`{w:245:{fit:{a:r:{s:1,2:{p:83:"+$lsp_text1+"} {p:84:"+$lsp_text2+"}}{n}}}}",%lsp_x,%lsp_y+1
@@ -31212,6 +31233,12 @@ reset
 	if $cfg_bg_movement == "undef" jumpf
 		if $cfg_bg_movement == "true" mov %cfg_bg_movement,1
 		if $cfg_bg_movement == "false"  mov %cfg_bg_movement,0
+	~
+
+	operate_config u_read,$use_but_breakup,"butterfly_breakup"
+	if $use_but_breakup == "undef" jumpf
+		if $use_but_breakup == "true" mov %use_but_breakup,on
+		if $use_but_breakup == "false"  mov %use_but_breakup,off
 	~
 
 	operate_config u_read,$sprite_folder_name,"sprite_folder_name"

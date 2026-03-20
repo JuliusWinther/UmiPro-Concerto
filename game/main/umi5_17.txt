@@ -1776,6 +1776,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ger
 *d68026
 d2 [lv 0*"48"*"54800059"]`「……謹んで申し上げる。`[@][#][*][lv 0*"48"*"54800060"]`ノックス第１条。`[@][lv 0*"48"*"54800061"]`犯人は物語当初の登場人物以外を禁ず」`[\]
@@ -1891,6 +1892,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_cor
 *d68054
 d2 [lv 0*"49"*"54700065"]`「謹んで申し上げ奉る。`[@][#][*][lv 0*"49"*"54700066"]`ノックス第２条。`[@][lv 0*"49"*"54700067"]`探偵方法に超自然能力の使用を禁ず」`[\]
@@ -1918,6 +1920,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ger
 *d68058
 d [lv 0*"48"*"54800062"]`「謹んで申し上げる。`[@][lv 0*"48"*"54800063"]`……解釈は自由と知り給え」`[\]
@@ -2123,6 +2126,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ger
 *d68104
 d2 [lv 0*"48"*"54800064"]`「謹んで申し上げる。`[@][#][*][lv 0*"48"*"54800065"]`ノックス第８条。`[@][lv 0*"48"*"54800066"]`提示されない手掛かりでの解決を禁ず」`[\]
@@ -2140,6 +2144,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_cor
 *d68105
 d2 [lv 0*"49"*"54700068"]`「謹んで申し上げる。`[@][#][*][lv 0*"49"*"54700069"]`ノックス第６条。`[@][lv 0*"49"*"54700070"]`探偵方法に偶然と第六感の使用を禁ず」`[\]
@@ -2368,6 +2373,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ger
 *d68141
 d [lv 0*"48"*"54800067"]`「謹啓。`[@][lv 0*"48"*"54800068"]`謹んで申し上げる」`[\]
@@ -2399,6 +2405,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_cor
 *d68145
 d [lv 0*"49"*"54700071"]`「推理可能とは、信頼関係の先に、あるものと知り奉れ」`[\]
@@ -2827,6 +2834,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,10000
 spt_mem "a2","alpha",s0_9,0,10000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 wait 1000
@@ -3139,6 +3147,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d68224
 d [lv 0*"28"*"52100862"]`「…………何事……？」`[\]
@@ -3268,6 +3277,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d68235
 d [lv 0*"28"*"52100863"]`「……手の込んだ演出ね。`[@][lv 0*"28"*"52100864"]`…これ、ラムダの隠し玉？」`[\]
@@ -3314,6 +3324,7 @@ flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 msgwnd_s00
 *d68240
 d [lv 0*"37"*"53600029"]`「了解であります。`[@][lv 0*"37"*"53600030"]`４５、４１０、発砲許可」`[\]
@@ -3336,7 +3347,9 @@ spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 wait 500
 csp_slot s0_24
 seplay 1,57,71
@@ -3517,6 +3530,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 2,59,100
 msgwnd_ber
 *d68249
@@ -3603,6 +3617,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 2,37,100
 seplay 3,37,100
 msgwnd_ber
@@ -3676,6 +3691,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d68263
 d [lv 0*"28"*"52100881"]`「………領主……。`[@][lv 0*"28"*"52100882"]`……まさか………、`[|][lv 0*"28"*"52100883"]`……戦人が………？」`[\]
@@ -3772,6 +3788,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d68268
 d2 [lv 0*"28"*"52100884"]`「……く、………くすくすくすくすくすくす！！`[@][#][*][lv 0*"28"*"52100885"]`　えぇ、信じたくもない…！！`[@][lv 0*"28"*"52100886"]`　いいわ、戦人が本当に全てを理解したのか、試してあげるわ…！！`[@][#][*][lv 0*"28"*"52100887"]`　ヱリカ！」`[\]
@@ -4314,6 +4331,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 seplay 3,37,100
 seplay 1,37,100
 msgwnd_ber
@@ -6253,12 +6271,19 @@ spt_mem "a2","alpha",s0_16,255,1333
 spt_mem "a2","alpha",s0_17,255,1333
 spt_mem "a2","alpha",s0_18,255,1333
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 sptwait2 breakup,s0_18
+ : sptwait2 butterflybreakup,s0_18
 seplay 3,37,100
 seplay 1,37,100
 *d68356
@@ -6299,12 +6324,19 @@ spt_mem "a2","alpha",s0_15,0,1333
 spt_mem "a2","alpha",s0_16,0,1333
 spt_mem "a2","alpha",s0_17,0,1333
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 csp_slot s0_9
 csp_slot s0_12
 csp_slot s0_13
@@ -6331,6 +6363,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg7
 *d68359
 d2 [lv 0*"44"*"52900013"][#][*]`「{p:1:譲治は死後、遺体は一切、移動されていない！}」`[\]
@@ -6363,6 +6396,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg6
 *d68360
 d2 [lv 0*"43"*"52800008"][#][*]`「{p:1:朱志香は死後、遺体は一切、移動されていない！}」`[\]
@@ -6396,6 +6430,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg5
 *d68361
 d2 [lv 0*"42"*"52700009"][#][*]`「{p:1:真里亞は死後、遺体は一切、移動されていない！}」`[\]
@@ -6428,6 +6463,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg4
 *d68362
 d2 [lv 0*"41"*"52600009"][#][*]`「{p:1:楼座は死後、遺体は一切、移動されていない！}」`[\]
@@ -6461,6 +6497,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg3
 *d68363
 d2 [lv 0*"40"*"52500021"][#][*]`「{p:1:源次は死後、遺体は一切、移動されていない！}」`[\]
@@ -6494,6 +6531,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d68364
 d2 [lv 0*"39"*"52400013"][#][*]`「{p:1:蔵臼は死後、遺体は一切、移動されていない！}」`[\]
@@ -6527,6 +6565,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d68365
 d2 [lv 0*"38"*"52300015"][#][*]`「{p:1:よって、遺体発見後に遺体が消失することはありえないッ！！`[@][lv 0*"38"*"52300016"][#][*]`　貴様の推理、遺体は金蔵が運び出したは、破綻する！}」`[\]
@@ -6715,6 +6754,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d68371
 d [lv 0*"31"*"53100197"]`「推理を遊びすぎましたな。`[@][lv 0*"31"*"53100198"]`……金蔵の死を赤き真実で語れるのは、今やあなたの主だけではありませんよ」`[\]
@@ -6727,6 +6767,7 @@ flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 msgwnd_wal
 *d68372
 d [lv 0*"30"*"53200332"]`「これが、魔女の闇を遊んだ報いです。`[@][lv 0*"30"*"53200333"]`……それを知りなさい、古戸ヱリカ…！」`[\]
@@ -7058,6 +7099,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d68386
 d2 [lv 0*"28"*"52100890"]`「確かに、第三者の死体が存在しないことは、すでに赤で語られてる。`[@][lv 0*"28"*"52100891"]`しかし、それを赤で語ることを禁じられたら、`[@][lv 0*"28"*"52100892"]`……くすくす、戦人のヤツ、お手上げじゃない。`[@][#][*][lv 0*"28"*"52100893"]`うっふふふふふふふふ！」`[\]
@@ -7501,6 +7543,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d68413
 d2 [lv 0*"28"*"52100899"]`「………なるほど。`[@][lv 0*"28"*"52100900"]`……叙述トリックの寄せ集めかと思ったら。`[@][lv 0*"28"*"52100901"]`……これはいつの間にか、……………………。`[@][#][*][lv 0*"28"*"52100902"]`………くすくすくす、`[|][lv 0*"28"*"52100903"][#][*]`あっはははははははははははっはっははあははははッ！！`[@][lv 0*"28"*"52100904"][#][*]`　とんだ傑作集だわッ！！」`[\]
@@ -8378,6 +8421,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d68476
 d [lv 0*"28"*"52100905"]`「……………修正と、ヱリカの推理の誤りを認めるわ」`[\]
@@ -8664,6 +8708,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 bgmplay 130,71,0
 msgwnd_ber
 *d68506
@@ -8726,6 +8771,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_dla
 *d68510
 d2 [lv 0*"47"*"54600492"]`「無論デス。`[@][#][*][lv 0*"47"*"54600493"]`次なるゲームにても全力を尽くしマス」`[\]

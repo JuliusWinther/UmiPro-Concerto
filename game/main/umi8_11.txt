@@ -1078,6 +1078,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 seplay 3,52,71
@@ -1086,6 +1087,7 @@ spt_mem "a2","breakup",s0_5,0
 spt_mem "a2","breakup",s0_5,1000,2000
 spt_mem "a2","alpha",s0_5,0,2000
 sptwait2 breakup,s0_5
+ : sptwait2 butterflybreakup,s0_5
 csp_slot s0_5
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -1243,6 +1245,7 @@ spt_mem "a2","breakup",s0_5,0
 spt_mem "a2","breakup",s0_5,1000,2667
 spt_mem "a2","alpha",s0_5,0,2667
 sptwait2 breakup,s0_5
+ : sptwait2 butterflybreakup,s0_5
 csp_slot s0_5
 flush 1 ;flush2: NO frames
 bgmplay 152,85,0
@@ -1268,6 +1271,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 seplay 3,52,71
@@ -1275,6 +1279,7 @@ spt_mem "a2","breakup",s0_5,0
 spt_mem "a2","breakup",s0_5,1000,2000
 spt_mem "a2","alpha",s0_5,0,2000
 sptwait2 breakup,s0_5
+ : sptwait2 butterflybreakup,s0_5
 csp_slot s0_5
 flush 1 ;flush2: NO frames
 *d61598
@@ -2583,6 +2588,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d61704
 d [lv 0*"39"*"82400007"]`「こんなマズイ連中、何匹も食ってらんないわ…！」`[\]
@@ -2926,12 +2932,19 @@ spt_mem "a2","alpha",s0_16,255,1000
 spt_mem "a2","alpha",s0_17,255,1000
 spt_mem "a2","alpha",s0_18,255,1000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 sptwait2 breakup,s0_13
+ : sptwait2 butterflybreakup,s0_13
 sptwait2 breakup,s0_14
+ : sptwait2 butterflybreakup,s0_14
 sptwait2 breakup,s0_15
+ : sptwait2 butterflybreakup,s0_15
 sptwait2 breakup,s0_16
+ : sptwait2 butterflybreakup,s0_16
 sptwait2 breakup,s0_17
+ : sptwait2 butterflybreakup,s0_17
 sptwait2 breakup,s0_18
+ : sptwait2 butterflybreakup,s0_18
 msgwnd_rg1
 *d61724
 d [lv 0*"38"*"82300005"]`「煉獄の七姉妹、ここにッ。`[@][lv 0*"38"*"82300006"]`さぁ行くよ、お前たち！`[@][lv 0*"38"*"82300007"]`　今夜は食い放題だわ！！」`[\]
@@ -4355,6 +4368,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 seplay 2,57,71
 lss s0_10,"rg3","a12b_odoroki1" ;1
 spt_mem "a2","xpos",s0_10,550
@@ -4592,6 +4606,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg7
 *d61863
 d [lv 0*"44"*"82900005"]`「な、何？！`[@][lv 0*"44"*"82900006"]`　どういうことぉ？！」`[\]
@@ -4604,6 +4619,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg6
 *d61864
 d [lv 0*"43"*"82800006"]`「……こいつら、何か喋ってるわ」`[\]
@@ -7457,8 +7473,11 @@ spt_mem "a2","alpha",s0_8,0,1333
 spt_mem "a2","alpha",s0_9,0,1333
 spt_mem "a2","alpha",s0_10,0,1333
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_9
 csp_slot s0_10
@@ -7469,6 +7488,7 @@ spt_mem "a2","breakup",s0_5,0
 spt_mem "a2","breakup",s0_5,1000,2000
 spt_mem "a2","alpha",s0_5,0,2000
 sptwait2 breakup,s0_5
+ : sptwait2 butterflybreakup,s0_5
 csp_slot s0_5
 flush 1 ;flush2: NO frames
 seplay 3,22,71
@@ -7626,6 +7646,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 textoff2
@@ -7655,6 +7676,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 lss s0_10,"but","d11_majime2" ;1
 spt_mem "a2","xpos",s0_10,370
 spt_mem "a2","darken_r",s0_10,156
@@ -8194,6 +8216,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 msgwnd_non

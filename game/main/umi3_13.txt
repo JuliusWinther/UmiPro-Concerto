@@ -808,6 +808,7 @@ spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -2070,6 +2071,7 @@ spt_mem "a2","breakup",s0_23,0
 spt_mem "a2","breakup",s0_23,1000,2000
 spt_mem "a2","alpha",s0_23,0,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 csp_slot s0_23
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -2124,6 +2126,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 bgmplay 70,71,0
 msgwnd_ron
 *d18950

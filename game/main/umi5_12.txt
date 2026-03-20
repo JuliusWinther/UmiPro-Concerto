@@ -1940,6 +1940,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_dla
 *d40204
 d [lv 0*"47"*"54600220"]`「ミス・ヱリカ。`[@][lv 0*"47"*"54600221"]`我が部下の咎は、上司の私が背負いマス。`[@][lv 0*"47"*"54600222"]`どうか部下をお許し下サイ」`[\]
@@ -2068,7 +2069,9 @@ spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_24
+ : sptwait2 butterflybreakup,s0_24
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_non
 *d40220
 d [lv 0*"00"*"awase5005"]`「「御意」」`[\]
@@ -2235,6 +2238,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_ger
 *d40230
 d2 [lv 0*"48"*"54800034"]`「謹啓、謹んで申し上げる。`[@][lv 0*"48"*"54800035"][#][*]`{p:1:親族会議以前に、ヱリカ、譲治、朱志香、真里亞、南條、郷田、熊沢は、屋敷より退出し、ゲストハウスへ移動したものなり}」`[\]
@@ -2252,6 +2256,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_cor
 *d40231
 d2 [lv 0*"49"*"54700051"]`「謹啓、謹んで申し上げる。`[@][lv 0*"49"*"54700046"][#][*]`{p:1:残りは、蔵臼、夏妃、源次の３人のみが２階廊下におり、`[@][lv 0*"49"*"54700047"]`それ以外の全員は食堂におりしこと、申し上げ奉る}」`[\]
@@ -2686,6 +2691,7 @@ flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,255,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 msgwnd_cor
 *d40266
 d2 [lv 0*"49"*"54700048"]`「謹啓、謹んで申し上げ奉る。`[@][lv 0*"49"*"54700049"][#][*]`{p:1:２４時の時点で、２階廊下にいた、蔵臼、夏妃、源次の３人と、`[@][lv 0*"49"*"54700050"]`食堂にいた全員以外の、一切のニンゲンは屋敷内に存在しなかった}旨、申し上げ奉る」`[\]
@@ -2703,6 +2709,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_ger
 *d40267
 d2 [lv 0*"48"*"54800040"]`「謹啓、謹んで申し上げる。`[@][lv 0*"48"*"54800041"][#][*]`{p:1:蔵臼、夏妃、源次の３人に加え、食堂の全員もまた、ノックしていないこと、申し上げる。`[@][lv 0*"48"*"54800042"]`このノックとは、ノック音を生み出す、直接的、間接的、意図的、無意識的、偶発的な全てを含めるものなり}」`[\]
@@ -3284,6 +3291,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 meplay 1,18,50
 msgwnd_ber
 *d40331
@@ -3334,6 +3342,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d40335
 d [lv 0*"28"*"52100488"]`「…………あら、さすがは私の分身ね、頼もしいわ。`[@][lv 0*"28"*"52100489"]`……なら、本当に頑張ってね、いろいろと。`[@][lv 0*"28"*"52100490"]`あまり活躍がないと私、あなたのこと、忘れちゃうかもしれないんだから……」`[\]

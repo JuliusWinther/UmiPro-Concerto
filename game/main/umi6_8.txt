@@ -666,6 +666,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d44912
 d [lv 0*"27"*"60700426"]`「は、……はい、何でしょうか、縁寿さん…」`[\]
@@ -1108,6 +1109,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 wait 500
 lss s0_10,"bea","a21_akuwarai2" ;1
 spt_mem "a2","xpos",s0_10,370
@@ -1125,6 +1127,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ron
 *d44985
 d [lv 0*"31"*"63100001"]`「“ぷっくっくっく！`[@][lv 0*"31"*"63100002"]`　お嬢様の場合、むしろ自信作の方が不安になろうと言うものですな”」`[\]
@@ -1154,6 +1157,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_wal
 *d44988
 d [lv 0*"30"*"63200014"]`「“そういうことばかり普段からしているから、戦人くんに食べてもらえないのですっ”」`[\]
@@ -1196,6 +1200,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg6
 *d44990
 d [lv 0*"43"*"62800001"]`「“ハーイ！！`[@][lv 0*"43"*"62800002"]`　何も入れませーん、おいしく自分でいただいちゃいまーす！”」`[\]
@@ -1209,6 +1214,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg3
 *d44991
 d [lv 0*"40"*"62500001"]`「“だと思ったわ、あんたは出オチなのよ、まったく！！”」`[\]
@@ -1229,6 +1235,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg7
 *d44992
 d2 [lv 0*"44"*"62900001"]`「“でもォ、女は３つの袋を掴めって言うしィ☆　胃袋は最初の第一歩よね？`[@][#][*][lv 0*"44"*"62900002"]`　次がお財布の袋でェ、３つ目は何かしらァ、きゃっきゃ☆”」`[\]
@@ -1248,6 +1255,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg5
 *d44993
 d2 [lv 0*"42"*"62700001"]`「“男を振り向かせるなら、身も心も魂さえも、全てを私のために捧げさせたい！`[@][#][*][lv 0*"42"*"62700002"]`　だからこそ、私は手料理に全ての力と愛情を注ぎ込めるの”」`[\]
@@ -1266,6 +1274,7 @@ flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_rg4
 *d44994
 d [lv 0*"41"*"62600001"]`「“ふふ、いずれにせよ、手料理を食べさせるのは、古今不変の正攻法と言えるだろうな”」`[\]
@@ -1286,6 +1295,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_rg1
 *d44995
 d2 [lv 0*"38"*"62300001"]`「“馬鹿馬鹿しい。`[@][#][*][lv 0*"38"*"62300002"]`そんな小細工をしないと男心一つ掴めないなんて、情けないったらありゃしないわ”」`[\]
@@ -1305,6 +1315,7 @@ flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d44996
 d [lv 0*"39"*"62400001"]`「“へ〜？`[@][lv 0*"39"*"62400002"]`　お姉様が男心をどの程度お掴みになった経験がおありか、聞いてみたいものですけどぉ？”」`[\]

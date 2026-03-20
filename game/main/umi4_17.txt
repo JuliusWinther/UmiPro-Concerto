@@ -2667,6 +2667,7 @@ flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 msgwnd_bea
 *d29266
 d [lv 0*"27"*"40700721"]`「あとのゲームは妾が引き継ぐ。`[@][lv 0*"27"*"40700722"]`………そなたは休め」`[\]
@@ -2701,6 +2702,7 @@ spt_mem "a2","breakup",s0_23,0
 spt_mem "a2","breakup",s0_23,1000,2000
 spt_mem "a2","alpha",s0_23,0,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 csp_slot s0_23
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -3087,6 +3089,7 @@ spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
 sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -3112,6 +3115,7 @@ spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,2000
 spt_mem "a2","alpha",s0_12,0,2000
 sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 seplay 2,52,71
@@ -3119,6 +3123,7 @@ spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
 sptwait2 breakup,s0_10
+ : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 *d29327
@@ -3491,6 +3496,7 @@ flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d29378
 d [lv 0*"28"*"42100066"]`「………そういうことよ。`[@][lv 0*"28"*"42100067"]`勝負は敵味方が揃わなきゃ決着しないわ。`[@][lv 0*"28"*"42100068"]`………あなたには、もう永遠に、勝利してこの世界から抜け出すことが、出来ないということよ」`[\]
@@ -4679,6 +4685,7 @@ spt_mem "a2","breakup",s0_23,0
 spt_mem "a2","breakup",s0_23,1000,2000
 spt_mem "a2","alpha",s0_23,0,2000
 sptwait2 breakup,s0_23
+ : sptwait2 butterflybreakup,s0_23
 csp_slot s0_23
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -4710,6 +4717,7 @@ spt_mem "a2","breakup",s0_25,0
 spt_mem "a2","breakup",s0_25,1000,2000
 spt_mem "a2","alpha",s0_25,0,2000
 sptwait2 breakup,s0_25
+ : sptwait2 butterflybreakup,s0_25
 csp_slot s0_25
 flush 1 ;flush2: NO frames
 csp_slot s0_23
