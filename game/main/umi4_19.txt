@@ -336,8 +336,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_non
 *d30341
 d `真里亞の後に黄金の蝶が集まり、`[@]`やさしく微笑む楼座叔母さんを形作った。`[\]
@@ -353,8 +352,7 @@ spt_mem "a2","breakupdir",s0_10,2
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,3000
 spt_mem "a2","alpha",s0_10,0,3000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 wait 500
@@ -475,8 +473,7 @@ seplay 2,22,85
 spt_mem "a2","breakup",s0_5,0
 spt_mem "a2","breakup",s0_5,1000,2000
 spt_mem "a2","alpha",s0_5,0,2000
-sptwait2 breakup,s0_5
- : sptwait2 butterflybreakup,s0_5
+sptwait2 breakup,s0_5 : sptwait2 butterflybreakup,s0_5
 csp_slot s0_5
 flush 1 ;flush2: NO frames
 wait 1000
@@ -574,8 +571,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 *d30366
 d [lv 0*"27"*"40700919"]`「さくたろうでこの庭園を埋めることだって出来ようぞ…！！」`[\]
 textoff2
@@ -584,8 +580,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,2000
 spt_mem "a2","alpha",s0_12,0,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 lss s0_8,"enj","a11_ikari1" ;1
@@ -1108,8 +1103,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,3000
 spt_mem "a2","alpha",s0_8,255,3000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 vol_bgm 95,1000
 wait 1000
 lss s0_8,"sak","a11_warai2" ;1

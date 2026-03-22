@@ -631,8 +631,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,3500
 spt_mem "a2","alpha",s0_9,255,3500
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d19628
 d `数心拍を置いてから、虚空に黄金の蝶が群れ集まり、ベアトの姿を形作る。`[\]
@@ -1314,8 +1313,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non

@@ -2656,8 +2656,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_s45
 *d26017
 d [lv 0*"35"*"43400001"]`「シエスタ４５、ここに…！」`[\]
@@ -2671,8 +2670,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_s41
 *d26018
 d [lv 0*"36"*"43500001"]`「シエスタ４１０、ここにぃ！」`[\]
@@ -2685,8 +2683,7 @@ spt_mem "a2","alpha",s0_24,0
 flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 msgwnd_s00
 *d26019
 d2 [lv 0*"37"*"43600001"]`「シエスタ００、ここにであります」`[#][*][\]
@@ -3094,8 +3091,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 seplay 1,12,71
 csp_slot s0_10
 flush 10,167
@@ -3753,8 +3749,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 gstc 254
 seplay 9,1060,71
 msgwnd_non
@@ -3848,8 +3843,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d26140
 d `再び虚空に、親族たちにとって未知なる人影が現れる。`[@]`{n}それは優雅なドレス姿で上品に挨拶をしながら現れる。`[\]
@@ -4558,8 +4552,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_gap
 *d26215
 d [lv 0*"32"*"43700026"]`「……実に理想的じゃない。`[@][lv 0*"32"*"43700027"]`一番最初のゲームを思い出してみるといい」`[\]

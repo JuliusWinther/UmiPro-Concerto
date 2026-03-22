@@ -123,8 +123,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 lss s0_8,"ber","a21_warai1" ;1
 spt_mem "a2","xpos",s0_8,-370
 flush 80
@@ -214,8 +213,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d46596
 d [lv 0*"28"*"62100042"]`「大丈夫よ、ちゃんと賭けるものは公平だわ。`[@][lv 0*"28"*"62100043"]`……今回のゲームに、探偵宣言なしのニンゲンで勝てれば、戦人たちの魔女幻想は粉々の再起不能」`[\]
@@ -380,8 +378,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d46613
 d [lv 0*"28"*"62100053"]`「そういうこと。`[@][lv 0*"28"*"62100054"]`ある意味、前回のゲームの方がアンフェアだったわけだわ。`[@][lv 0*"28"*"62100055"]`………それで勝ちを落とすのだから、それは負けとまったく同じ…」`[\]
@@ -446,8 +443,7 @@ textoff2
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 lss s0_10,"eri","a11_niramu1a" ;1
@@ -1611,8 +1607,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ger
 *d46754
 d [lv 0*"48"*"64800007"]`「謹啓、謹んで申し上げる。`[@][lv 0*"48"*"64800008"]`帽子掛けがかんぬきにされていたものなり」`[\]
@@ -1625,8 +1620,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_cor
 *d46755
 d [lv 0*"49"*"64700004"]`「実質的にチェーンロックと同様の、内側のみより施錠可能と思われるものなりや」`[\]
@@ -1731,8 +1725,7 @@ spt_mem "a2","alpha",s0_25,0
 flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
-sptwait2 breakup,s0_25
- : sptwait2 butterflybreakup,s0_25
+sptwait2 breakup,s0_25 : sptwait2 butterflybreakup,s0_25
 lss s0_25,"ber","a21_warai2" ;1
 spt_mem "a2","xpos",s0_25,-370
 flush 80
@@ -1795,8 +1788,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d46774
 d [lv 0*"28"*"62100066"]`「それ、赤で言える？」`[\]
@@ -1901,8 +1893,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d46786
 d [lv 0*"28"*"62100077"]`「……あら。そうなるわ？」`[\]
@@ -1956,8 +1947,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d46792
 d [lv 0*"28"*"62100083"]`「ベアトのゲーム盤でも、さんざん遊ばせてもらってるけど。`[@][lv 0*"28"*"62100084"]`……もう何も出て来やしないくらいに絞り尽くしたわ」`[\]
@@ -2070,8 +2060,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 seplay 2,30,71
 lss s0_8,"dla","a11_majime2" ;1
 spt_mem "a2","xpos",s0_8,-550

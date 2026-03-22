@@ -5005,8 +5005,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 *d64833
 d `ベルンカステルのその姿はすぐに粉々に散って、戦人の正面に再構成される。`[@]`何事もなかったように。`[\]
 textoff2
@@ -5094,8 +5093,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d64844
 d `次の一撃は許さなかった。`[\]
@@ -5415,8 +5413,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 wait 1000
 seplay 1,1006,71
 lss s0_9,"ber","a21_niramu1" ;1
@@ -12945,8 +12942,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 bgmplay 163,71,0
 lss s0_10,"eri","a11_warai1" ;1
 spt_mem "a2","xpos",s0_10,370

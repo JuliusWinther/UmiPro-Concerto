@@ -1209,8 +1209,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 d_continue
 wait_on_d -1
 lss s0_9,"mar","a22_odoroki1" ;1
@@ -2423,8 +2422,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_23,0
 spt_mem "a2","breakup",s0_23,1000,2000
 spt_mem "a2","alpha",s0_23,0,2000
-sptwait2 breakup,s0_23
- : sptwait2 butterflybreakup,s0_23
+sptwait2 breakup,s0_23 : sptwait2 butterflybreakup,s0_23
 csp_slot s0_23
 flush 1 ;flush2: NO frames
 vol_bgm 0,3000

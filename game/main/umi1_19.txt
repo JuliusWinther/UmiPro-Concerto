@@ -35,8 +35,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,3000
 spt_mem "a2","alpha",s0_10,255,3000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d32044
 d [lv 0*"27"*"90700088"]`「…次は何の紅茶を淹れようか？`[@][lv 0*"27"*"90700089"]`　古今のありとあらゆる銘茶を披露しようぞ」`[\]
@@ -50,8 +49,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,3000
 spt_mem "a2","alpha",s0_8,255,3000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_non
 *d32045
 d [lv 0*"28"*"92100001"]`「……梅干紅茶。`[@][lv 0*"28"*"92100002"]`……梅干は１パック２００円のヤツよ」`[\]
@@ -103,8 +101,7 @@ spt_mem "a2","breakupdir",s0_8,1
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,1500
 spt_mem "a2","alpha",s0_8,0,1500
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 textoff2
@@ -124,8 +121,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,1500
 spt_mem "a2","alpha",s0_10,255,1500
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d32053
 d [lv 0*"28"*"92100012"]`「……あの子は恐ろしい力を持ってる。`[@][lv 0*"28"*"92100013"]`…………１人を“必ず”殺す力。`[@][lv 0*"28"*"92100014"]`しかしこの世に“必ず”は存在しない。`[@][lv 0*"28"*"92100015"]`１をいくら割ろうとも決してゼロには出来ぬように」`[\]
@@ -152,8 +148,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,1500
 spt_mem "a2","alpha",s0_8,255,1500
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d32056
 d [lv 0*"28"*"92100018"]`「……１人を“無限に”殺す力。`[@][lv 0*"28"*"92100019"]`…私は貴女の方が恐ろしいけれども」`[\]
@@ -221,8 +216,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,1500
 spt_mem "a2","alpha",s0_8,255,1500
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d32062
 d [lv 0*"28"*"92100027"]`「……私は賽を振る時、はっきりと出したい目がある。`[@][lv 0*"28"*"92100028"]`貴女とは違う。`[@][lv 0*"28"*"92100029"]`でも貴女にとっては、全ての目が、貴女の掌を出ない」`[\]
@@ -234,8 +228,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,1500
 spt_mem "a2","alpha",s0_8,0,1500
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 *d32064
@@ -260,8 +253,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,1500
 spt_mem "a2","alpha",s0_8,255,1500
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d32066
 d [lv 0*"28"*"92100039"]`「……なら良かったわ。`[@][lv 0*"28"*"92100040"]`退屈は私を殺す唯一の毒なの。`[@][lv 0*"28"*"92100041"]`……だから、私を殺さないでね？`[@][lv 0*"28"*"92100042"]`　無限の魔女、ベアトリーチェ卿」`[\]
@@ -291,8 +283,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,3000
 spt_mem "a2","alpha",s0_10,0,3000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 wait 3000
@@ -431,8 +422,7 @@ seplay 3,52,71
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,3000
 spt_mem "a2","alpha",s0_10,0,3000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 *d32094

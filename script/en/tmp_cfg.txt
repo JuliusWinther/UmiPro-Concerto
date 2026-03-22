@@ -77,7 +77,7 @@
 		;cell 326,2
 
 		if %cfg_current_page = 4 lsp 325,cfg_focus_last,111,187+42+((%cfg_temp2)*4)+%cfg_height : _csp 326
-		if %cfg_current_page = 5 lsp 325,cfg_focus_last,111,187+42+((%cfg_temp2)*4)+%cfg_height : _csp 326
+		;if %cfg_current_page = 5 lsp 325,cfg_focus_last,111,187+42+((%cfg_temp2)*4)+%cfg_height : _csp 326
 
 
 	lsp 330,cfg_section_btn,155+10,85+%cfg_height

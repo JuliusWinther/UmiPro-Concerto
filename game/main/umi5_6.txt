@@ -74,8 +74,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"bea","a11_majime2" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 10,167
@@ -110,8 +109,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ron
 *d37325
 d [lv 0*"31"*"53100046"]`「去年から疑われていた、だけではないでしょうな」`[\]
@@ -124,8 +122,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_wal
 *d37326
 d [lv 0*"30"*"53200025"]`「………そうですね。`[@][lv 0*"30"*"53200026"]`それだけでは説明がつかないくらいに、毒素は濃密に練り上げられています。`[@][lv 0*"30"*"53200027"]`……恐らく、金蔵さまの死を去年の時点から疑い、今年の会議にて暴こうという強い意志があったに違いありません」`[\]
@@ -921,8 +918,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_gap
 *d37420
 d [lv 0*"32"*"53700049"]`「…………私から授けられる魔法と作戦はそんなところよ。`[@][lv 0*"32"*"53700050"]`ゴールドスミスを、誰にも見つけられない世界へ、私は隠すことが出来る。`[@][lv 0*"32"*"53700051"]`………この魔法が必要になったらいつでも言って。`[@][lv 0*"32"*"53700052"]`その直前まで、夏妃は他の、もっと無難な作戦を思案すればいい」`[\]

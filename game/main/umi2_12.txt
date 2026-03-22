@@ -283,8 +283,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d11643
 d [lv 0*"27"*"20701079"]`「………さぁて次はどう遊ばせてもらおうか。`[@][lv 0*"27"*"20701080"]`…まだまだ駒はいくらでもある。`[@][lv 0*"27"*"20701081"]`…くっくっくっくっくっくっくっく…！」`[\]
@@ -2944,10 +2943,8 @@ spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","breakup",s0_13,0,2000
 spt_mem "a2","alpha",s0_12,128,2000
 spt_mem "a2","alpha",s0_13,128,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
-sptwait2 breakup,s0_13
- : sptwait2 butterflybreakup,s0_13
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_13 : sptwait2 butterflybreakup,s0_13
 *d11974
 d `朱志香は、泣いていた。`[@]`{n}……自分のために命を懸けて戦ってくれた嘉音の胸で、泣いていた。`[\]
 *d11975
@@ -3038,8 +3035,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 seplay 2,37,100
 msgwnd_bea
 *d11988
@@ -3068,8 +3064,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,128,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_jes
 *d11990
 d2 [lv 0*"04"*"20200628"]`「畜生、畜生ォオオォ！！」`[#][*][\]
@@ -3101,8 +3096,7 @@ spt_mem "a2","breakupdir",s0_13,1
 flush 1
 spt_mem "a2","breakup",s0_13,0,2000
 spt_mem "a2","alpha",s0_13,128,2000
-sptwait2 breakup,s0_13
- : sptwait2 butterflybreakup,s0_13
+sptwait2 breakup,s0_13 : sptwait2 butterflybreakup,s0_13
 msgwnd_kan
 *d11992
 d [lv 0*"16"*"20600504"]`「………お嬢様」`[\]
@@ -3159,8 +3153,7 @@ spt_mem "a2","breakupdir",s0_13,1
 flush 1
 spt_mem "a2","breakup",s0_13,0,2000
 spt_mem "a2","alpha",s0_13,128,2000
-sptwait2 breakup,s0_13
- : sptwait2 butterflybreakup,s0_13
+sptwait2 breakup,s0_13 : sptwait2 butterflybreakup,s0_13
 msgwnd_kan
 *d12000
 d [lv 0*"16"*"20600505"]`「……お嬢様…、もういいんです…。`[@][lv 0*"16"*"20600506"]`……ありがとう……」`[\]
@@ -3176,8 +3169,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,128,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 vol_bgm 100
 msgwnd_jes
 *d12001
@@ -3208,8 +3200,7 @@ spt_mem "a2","alpha",s0_14,0
 flush 1
 spt_mem "a2","breakup",s0_14,0,2000
 spt_mem "a2","alpha",s0_14,255,2000
-sptwait2 breakup,s0_14
- : sptwait2 butterflybreakup,s0_14
+sptwait2 breakup,s0_14 : sptwait2 butterflybreakup,s0_14
 msgwnd_bea
 *d12004
 d [lv 0*"27"*"20701114"]`「届かぬわッ！！`[@][lv 0*"27"*"20701115"]`　死者の嘆きは決して届かぬッ！」`[\]

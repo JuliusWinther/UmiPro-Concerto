@@ -1238,8 +1238,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 wait 1000
 lss s0_8,"ev2","b11_odoroki2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -1528,8 +1527,7 @@ flush 42
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,800,2000
 spt_mem "a2","alpha",s0_9,125,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 seplay 1,52,100
 lss s0_9,"ev2","a11_hohoemi2" ;1
@@ -1538,8 +1536,7 @@ spt_mem "a2","alpha",s0_9,125
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 seplay 1,27,100
 wait 500
 textoff2
@@ -1751,8 +1748,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d18134
 d [lv 0*"28"*"32100001"]`「推薦人は子どもの使いじゃないでしょ。`[@][lv 0*"28"*"32100002"]`サインしたなら、きっちり責任取りなさいよ」`[\]
@@ -1940,8 +1936,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_wal
 *d18156
 d [lv 0*"30"*"33200428"]`「はい、おりますとも…」`[\]

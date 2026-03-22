@@ -1885,7 +1885,8 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 seplay 2,37,100
 msgwnd_bea
 *d13233
@@ -2260,7 +2261,8 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,1000
 spt_mem "a2","alpha",s0_12,255,1000
-sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12
+ : sptwait2 butterflybreakup,s0_12
 seplay 2,37,100
 *d13277
 d `新しき主が高笑いしながら、新しき使用人たちを６人も整然と率いながら、`[@]`廊下の彼方から暗闇を切り裂きながらやって来るのが見えた。`[\]
@@ -2388,13 +2390,9 @@ meplay 1,21,50
 d2 `そして、足音だけでなく、息吹までも耳にした時、`[@]`郷田は施錠を諦め、肩からどっかりと扉にぶつかり、その巨体で自らを施錠とした。`[#][*][\]
 wait_on_d 0
 seplay 1,12,100
-;lss s0_10,"goh","a13_odoroki1" ;1
-;spt_mem "a2","xpos",s0_10,370
-;flush 10,167
-csp_slot s0_10
-csp_slot s0_3
-lsp s0_3,":c;graphics/cg/goh/Concerto_Gohda.png",0,0
-flush 22
+lss s0_10,"goh","a13_odoroki1" ;1
+spt_mem "a2","xpos",s0_10,370
+flush 10,167
 agpt quakexcycle,83
 agpt quakexamp,30
 agpt quakexamp,0,500,1
@@ -2402,9 +2400,9 @@ rumble 63,500
 gptwait quakexamp
 d_continue
 wait_on_d -1
-;lss s0_10,"goh","a13_ikari2" ;1
-;spt_mem "a2","xpos",s0_10,370
-;flush 10,167
+lss s0_10,"goh","a13_ikari2" ;1
+spt_mem "a2","xpos",s0_10,370
+flush 10,167
 msgwnd_goh
 *d13291
 d [lv 0*"17"*"21700340"]`「……譲治さまッ、早く早く早く！！！」`[\]
@@ -2437,16 +2435,13 @@ msgwnd_non
 d `譲治はそれを受け取り、再び宝物箱の蓋の隙間にねじ込む。`[@]`{n}…これならうまく行きそうだ…！`[\]
 textoff2
 waits 167
-;lbg "c:backgrounds",s0_3,"m_door1h"
-;textoff2
-;waits 167
-;lbg "a:backgrounds",s0_27,"m_door1x_2"
-;lss s0_10,"goh","a13_odoroki1" ;1
-;spt_mem "a2","xpos",s0_10,550
-;flush 63
-csp_slot s0_3
-lsp s0_3,":c;graphics/cg/goh/Concerto_Gohda.png",0,0
-flush 22
+lbg "c:backgrounds",s0_3,"m_door1h"
+textoff2
+waits 167
+lbg "a:backgrounds",s0_27,"m_door1x_2"
+lss s0_10,"goh","a13_odoroki1" ;1
+spt_mem "a2","xpos",s0_10,550
+flush 63
 msgwnd_goh
 *d13295
 d2 [lv 0*"17"*"21700341"]`「早く早くッ！！`[#][*][@][lv 0*"17"*"21700342"]`　ひぃいいぃ、`[#][*][|][lv 0*"17"*"21700343"]`うおおおおおおおおおおぁああぁあぁあああぁあ！！」`[#][*][\]
@@ -2487,12 +2482,9 @@ d `だから、直接触れたなら、…郷田のその叫びは勇ましい�
 textoff2
 waits 167
 seplay 1,52,100
-;lss s0_8,"rg6","c11_akuwarai1" ;1
-;spt_mem "a2","xpos",s0_8,-370
-;flush 4
-csp_slot s0_3
-lsp s0_3,":c;graphics/cg/goh/Concerto_Gohda_V2.png",0,0
-flush 3
+lss s0_8,"rg6","c11_akuwarai1" ;1
+spt_mem "a2","xpos",s0_8,-370
+flush 4
 *d13301
 d `郷田は眼前のそれが信じられなかった。`[\]
 *d13302
@@ -2505,21 +2497,20 @@ d `もう郷田の悲鳴は、声になってなかった。`[@]`{n}扉の向こ
 d `……魔女のものではなかったが、声だけを聞くならば若い女に聞こえた。`[\]
 *d13306
 d `…しかしこの世ならざる者の声であることに何の変わりもなかった。`[\]
-;seplay 1,52,100
+seplay 1,52,100
 textoff2
 waits 167
-;csp_slot s0_27
-;flush 3
-;lss s0_8,"rg6","c11_akuwarai1" ;1
-;spt_mem "a2","xpos",s0_8,-370
-;flush 10,167
+csp_slot s0_27
+flush 3
+lss s0_8,"rg6","c11_akuwarai1" ;1
+spt_mem "a2","xpos",s0_8,-370
+flush 10,167
 msgwnd_rg6
 *d13307
 d [lv 0*"43"*"22800001"]`「……くすくす。`[@][lv 0*"43"*"22800002"]`かぁわいい。`[@][lv 0*"43"*"22800003"]`……ねぇ。見てるの、走馬灯。`[@][lv 0*"43"*"22800004"]`……教えてね。終わったら」`[\]
-;lss s0_10,"goh","a12_iiwake2" ;1
-;spt_mem "a2","xpos",s0_10,550
-;flush 10,167
-textoff2
+lss s0_10,"goh","a12_iiwake2" ;1
+spt_mem "a2","xpos",s0_10,550
+flush 10,167
 msgwnd_goh
 *d13308
 d2 [lv 0*"17"*"21700344"]`「ひぃいいいいいいぃいぃいいィぃいイぃいいいぃいいいいいいぃイィイイィィイイッ！！」`[#][*][\]
@@ -2531,24 +2522,25 @@ rumble 63,500
 gptwait quakeyamp
 d_continue
 wait_on_d -1
-;lss s0_8,"rg6","a12_akuwarai2" ;1
-;spt_mem "a2","xpos",s0_8,-370
-;flush 10,167
+lss s0_8,"rg6","a12_akuwarai2" ;1
+spt_mem "a2","xpos",s0_8,-370
+flush 10,167
 msgwnd_rg6
 *d13309
 d [lv 0*"43"*"22800005"]`「ありがと。`[@][lv 0*"43"*"22800006"]`もう終わってるのねぇ。`[@][lv 0*"43"*"22800007"]`……くすくす！」`[\]
 textoff2
 waits 167
 seplay 1,36,100
-;spt_mem "a2","breakup",s0_8,0
-;spt_mem "a2","breakup",s0_8,1000,2000
-;spt_mem "a2","alpha",s0_8,0,2000
-;sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
-;csp_slot s0_8
+spt_mem "a2","breakup",s0_8,0
+spt_mem "a2","breakup",s0_8,1000,2000
+spt_mem "a2","alpha",s0_8,0,2000
+sptwait2 breakup,s0_8
+ : sptwait2 butterflybreakup,s0_8
+csp_slot s0_8
 flush 1 ;flush2: NO frames
 textoff2
 waits 167
-;csp_slot s0_10
+csp_slot s0_10
 lbg "c:colour",s0_3,"black"
 vol_me 1,-1,1000
 csp -10
@@ -2671,7 +2663,8 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 wait 1000
 seplay 1,37,100
 lss s0_9,"bea","a11_akuwarai3" ;1
@@ -2914,7 +2907,8 @@ wait 1000
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,800,2000
 spt_mem "a2","alpha",s0_9,125,2000
-sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 seplay 2,52,100
 lss s0_9,"ka2","a12_nayamu1" ;1
@@ -2924,7 +2918,8 @@ spt_mem "a2","alpha",s0_9,125
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9
+ : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d13339
 d `魔女が指を弾くと、……６人いた山羊の従者の１人の姿が、……金色の輝きと共に嘉音に変わる。`[\]

@@ -675,8 +675,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_mar
 *d52263
 d [lv 0*"13"*"70400017"]`「……知ってる？`[@][lv 0*"13"*"70400018"]`　パパとママがいないと赤ちゃんが出来ないって言われてるけど、それは嘘なんだよ」`[\]

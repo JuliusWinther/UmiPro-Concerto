@@ -72,8 +72,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_dla
 *d45285
 d [lv 0*"47"*"64600031"]`「ゲームマスター権限で許された範囲の、初期配置の変更デス。`[@][lv 0*"47"*"64600032"]`妥当な初手カト」`[\]
@@ -761,8 +760,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_dla
 *d45380
 d2 [lv 0*"47"*"64600066"]`「初手。`[@][lv 0*"47"*"64600068"]`……`[#][*]`私が浮気している証拠の提出を要求しマス」`[\]
@@ -779,8 +777,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_eri
 *d45381
 d2 [lv 0*"46"*"64500469"]`「青き真実で反論。`[@][#][*][lv 0*"46"*"64500470"]`構築に状況証拠、物的証拠を８４点提出」`[\]
@@ -1154,8 +1151,7 @@ textoff2
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 textoff2
@@ -1839,15 +1835,15 @@ spt_mem "a2","blur",s0_7,2000,500,1
 spt_mem "a2","blur",s0_3,2000,500,1
 spt_mem "a2","scalex",s0_10,400,500,1
 ;WARN: skipping unsupported effect
-spt_mem "a2","scalex",s0_11,400,500,1
+;aspt scalex,s0_11,400,500,1
 ;WARN: skipping unsupported effect
-spt_mem "a2","scalex",s0_7,400,500,1
+;aspt scalex,s0_7,400,500,1
 spt_mem "a2","scalex",s0_3,400,500,1
 spt_mem "a2","scaley",s0_10,400,500,1
 ;WARN: skipping unsupported effect
-spt_mem "a2","scaley",s0_11,400,500,1
+;aspt scaley,s0_11,400,500,1
 ;WARN: skipping unsupported effect
-spt_mem "a2","scaley",s0_7,400,500,1
+;aspt scaley,s0_7,400,500,1
 spt_mem "a2","scaley",s0_3,400,500,1
 sptwait2 scalex,s0_3
 sptwait2 scaley,s0_3
@@ -1958,8 +1954,7 @@ textoff2
 spt_mem "a2","breakup",s0_24,0
 spt_mem "a2","breakup",s0_24,1000,2000
 spt_mem "a2","alpha",s0_24,0,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 csp_slot s0_24
 flush 1 ;flush2: NO frames
 wait 1000
@@ -2026,8 +2021,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ev2
 *d45497
 d [lv 0*"34"*"63300005"]`「第一歩ォおぉおおおォオ…？！？！」`[\]
@@ -2149,8 +2143,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 lss s0_9,"ev2","a11_akuwarai6" ;1
 spt_mem "a2","darken_r",s0_9,156
 spt_mem "a2","darken_g",s0_9,156
@@ -2374,8 +2367,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ev2
 *d45517
 d2 [lv 0*"34"*"63300020"]`「くすくすくすくす！！`[#][*][@][#][*][lv 0*"34"*"63300021"]`　さぁさ思い出して御覧なさい？`[@][lv 0*"34"*"63300022"]`　火曜日には何があったのか…！！」`[\]
@@ -2492,8 +2484,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ev2
 *d45519
 d2 [lv 0*"34"*"63300023"]`「幼稚園の頃はバイオリン教室だったわぁ。`[@][lv 0*"34"*"63300024"]`デキる子はやってそうでしょオ？`[@][#][*][lv 0*"34"*"63300025"]`　あんた才能なさそうだったからね。`[@][lv 0*"34"*"63300026"]`途中でピアノに変えたけどッ！！」`[\]
@@ -2592,8 +2583,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 *d45520
 d [lv 0*"34"*"63300027"]`「じゃあ水曜日は覚えてるゥ？！」`[\]
 textoff2
@@ -3013,8 +3003,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ev2
 *d45531
 d2 [lv 0*"34"*"63300036"]`「金曜日は覚えてるゥ？！」`[#][*][\]
@@ -3425,8 +3414,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 *d45551
 d2 [lv 0*"34"*"63300058"]`「世界で一番知的で、あなたのために全てを捧げてくれる女性を用意してあげる！！`[@][lv 0*"34"*"63300059"]`　全ての成功も、それに至る道も、全て全てママが用意してあげるわッ！！`[@][#][*][lv 0*"34"*"63300060"]`　そしてやがては右代宮家で最高の名誉である、当主の後継者にあなたは指名されるの！！`[@][lv 0*"34"*"63300061"]`　それから初めて、あなたは自分の人生を始めなさい…！！」`[\]
 wait_on_d 0

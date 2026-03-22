@@ -35,8 +35,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 gstc 319
 msgwnd_bea
 *d32095
@@ -52,8 +51,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d32096
 d [lv 0*"28"*"92100082"]`「……ここまで一方的なワンサイドゲームだと、見応えを通り越して退屈よ」`[\]
@@ -237,8 +235,7 @@ spt_mem "a2","breakupdir",s0_8,1
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_ber
@@ -254,8 +251,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 gstc 320
 seplay 9,1060,71
 msgwnd_bea
@@ -280,8 +276,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d32119
 d [lv 0*"28"*"92100101"]`「…………………………あんた、まだ根に持ってるのね」`[\]
@@ -319,8 +314,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_bea
 *d32122
 d [lv 0*"27"*"90700306"]`「くっくっくっく！`[@][lv 0*"27"*"90700307"]`　というわけだ。`[@][lv 0*"27"*"90700308"]`大ベルンカステル卿が相手ならば、この程度ではハンデにもならぬだろうが、余興には相応しかろう」`[\]
@@ -330,8 +324,7 @@ seplay 3,52,71
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 msgwnd_ber
@@ -370,8 +363,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d32126
 d [lv 0*"28"*"92100104"]`「…………こちらこそよろしくよ、ラムダ。`[@][lv 0*"28"*"92100105"]`そしてベアト。`[@][lv 0*"28"*"92100106"]`…どういう勝敗になろうとも、これは私たちにとってとても有意義な戦いになるわね」`[\]
@@ -403,8 +395,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d32128
 d [lv 0*"27"*"90700313"]`「何しろ妾たちは、退屈を愛さない」`[\]
@@ -434,8 +425,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d32130
 d [lv 0*"28"*"92100107"]`「……その通りよ。`[@][lv 0*"28"*"92100108"]`感謝するわベアト。`[@][lv 0*"28"*"92100109"]`やっと退屈から逃れられそうだわ。`[@][lv 0*"28"*"92100110"]`せいぜい私を楽しませなさい。`[@][lv 0*"28"*"92100111"]`ラムダデルタと二人掛かりで」`[\]
@@ -521,8 +511,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d32136
 d [lv 0*"28"*"92100112"]`「…………でしょ？`[@][lv 0*"28"*"92100113"]`　面倒をよろしくね。`[@][lv 0*"28"*"92100114"]`あれで寂しがり屋なのよ」`[\]
@@ -555,8 +544,7 @@ seplay 3,52,71
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,3000
 spt_mem "a2","alpha",s0_10,0,3000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 vol_mix_fade 3000
@@ -619,8 +607,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 *d32153
 d [lv 0*"28"*"92100136"]`でも、どうか挫けないで。`[@]`{n}`[|][lv 0*"28"*"92100137"]`ベアトになんか決して屈しないで。`[\]
 *d32154
@@ -717,8 +704,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,3000
 spt_mem "a2","alpha",s0_9,0,3000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 vol_mix_fade 3000

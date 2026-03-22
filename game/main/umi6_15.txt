@@ -65,8 +65,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_dla
 *d47831
 d [lv 0*"47"*"64600191"]`「サテ。`[@][lv 0*"47"*"64600192"]`最初はどちらカラ？」`[\]
@@ -284,8 +283,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_dla
 *d47851
 d2 [lv 0*"47"*"64600194"][#][*]`「{p:1:客室の完全な封印を確認しマシタ。`[@][lv 0*"47"*"64600195"][#][*]`ヱリカ卿が戦人の存在を確認して以降、この密室は維持されていマス}」`[\]
@@ -726,8 +724,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d47906
 d2 [lv 0*"28"*"62100181"]`「……どっちに転んでも面白い裁判では特にね？`[@][lv 0*"28"*"62100182"]`　………受けなさい、戦人。`[@][lv 0*"28"*"62100183"]`ヱリカはあんたを詰めるわ。`[@][lv 0*"28"*"62100184"]`わかる？`[@][#][*][lv 0*"28"*"62100185"]`　………この部屋で、あんたと決闘して、殺すということよ。`[@][lv 0*"28"*"62100186"]`……男なら、決闘を受けなさいッ……」`[\]
@@ -1150,8 +1147,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d47956
 d [lv 0*"28"*"62100197"]`「……ドラノール。`[@][lv 0*"28"*"62100198"]`記録を取りなさい」`[\]
@@ -1177,8 +1173,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_non
 *d47958
 d `ドラノールが頷くと、後ろで控えるコーネリアが記録に取る。`[\]
@@ -2152,8 +2147,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d48069
 d [lv 0*"28"*"62100203"]`「……矛盾した予告だわ。`[@][lv 0*"28"*"62100204"]`………嘘吐きはどっちになるのかしら……？」`[\]
@@ -4043,8 +4037,7 @@ spt_mem "a2","alpha",s0_24,0
 flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 msgwnd_ber
 *d48280
 d [lv 0*"28"*"62100220"]`「有効よ。`[@][lv 0*"28"*"62100221"]`………ドラノールの赤き真実は有効よ」`[\]
@@ -4187,8 +4180,7 @@ spt_mem "a2","alpha",s0_25,0
 flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,150,2000
-sptwait2 breakup,s0_25
- : sptwait2 butterflybreakup,s0_25
+sptwait2 breakup,s0_25 : sptwait2 butterflybreakup,s0_25
 d_continue
 wait_on_d -1
 csp_slot s0_25
@@ -4293,8 +4285,7 @@ spt_mem "a2","alpha",s0_24,0
 flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,150,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 d_continue
 wait_on_d -1
 textoff2
@@ -5258,8 +5249,7 @@ spt_mem "a2","alpha",s0_24,0
 flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 msgwnd_eri
 *d48388
 d [lv 0*"46"*"64501221"]`「ブワッっとゥら、すわぁあんッ！！`[@][lv 0*"46"*"64501222"]`　こォれウォッ、見て下さぁあああぁああぁい！！`[@][lv 0*"46"*"64501223"]`　なぁああぁぁぁんでぁああぁああ？！」`[\]
@@ -5497,8 +5487,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 meplay 2,28,100
 msgwnd_ber
 *d48413
@@ -5652,8 +5641,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d48427
 d [lv 0*"28"*"62100256"]`「ここが、これからあなたの過ごす部屋よ。`[@][lv 0*"28"*"62100257"]`………どんな方法でもいいから、あなたはこの部屋から抜け出せばいい」`[\]
@@ -5666,8 +5654,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_eri
 *d48428
 d [lv 0*"46"*"64501244"]`「……ただし、条件があります。`[@][lv 0*"46"*"64501245"]`……おわかりと思いますが、それはあなたが自ら課したものです」`[\]

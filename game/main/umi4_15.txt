@@ -605,10 +605,8 @@ spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 seplay 2,52,71
 lss s0_9,"s00","a11_defo1" ;1
 z_order_override2 s0_9,s0_24
@@ -620,8 +618,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d27575
 d `金蔵が命じると、シエスタ姉妹が背後に整列して現れる。`[\]
@@ -697,8 +694,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 seplay 2,52,71
@@ -801,8 +797,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 seplay 2,52,71
 lss s0_9,"goa","a11_defo1" ;1
 spt_mem "a2","darken_r",s0_9,156
@@ -813,8 +808,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 seplay 3,52,71
 lss s0_10,"goa","a11_defo1" ;1
 spt_mem "a2","xpos",s0_10,550
@@ -826,8 +820,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_non
 *d27592
 d `ワルギリアが暗がりに呼び掛けると、そこより、ぬうっと、山羊頭の大柄な従者が３人現れる。`[\]
@@ -1539,8 +1532,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_s41
 *d27677
 d [lv 0*"36"*"43500016"]`「４５がすっトロいからバレたにぇ〜。`[@][lv 0*"36"*"43500017"]`に〜ひひひ〜、竜王さまに怒られるぅ〜♪」`[\]
@@ -1565,8 +1557,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_s00
 *d27679
 d2 [lv 0*"37"*"43600020"]`「黙れ静かに。`[@][lv 0*"37"*"43600021"]`どうせハッタリだ。`[@][#][*][lv 0*"37"*"43600022"]`…郷田と熊沢の監禁は確認した。`[@][lv 0*"37"*"43600023"]`任務完了。`[@][lv 0*"37"*"43600024"]`報告に戻るぞ」`[\]
@@ -1618,16 +1609,14 @@ seplay 1,52,100
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 seplay 2,52,100
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 lss s0_8,"s41","a13_defo1" ;1
@@ -1640,8 +1629,7 @@ seplay 3,52,100
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 vol_bgm -1,1000

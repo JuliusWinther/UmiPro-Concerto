@@ -81,8 +81,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"s00","a11_majime1" ;1
 spt_mem "a2","xpos",s0_10,550
 flush 80
@@ -94,8 +93,7 @@ textoff2
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 lss s0_9,"lam","a11_futeki2" ;1
@@ -112,8 +110,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d40975
 d [lv 0*"28"*"52100494"]`「…………何人いようとも、１８人を超えた存在は、全て幻よ」`[\]
@@ -126,8 +123,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d40976
 d [lv 0*"27"*"50700743"]`「それを認めさせるのが妾のゲームでな。`[@][lv 0*"27"*"50700744"]`くっくっくっく！」`[\]
@@ -261,8 +257,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_s00
 *d40991
 d [lv 0*"37"*"53600015"]`「……戦人さま。`[@][lv 0*"37"*"53600016"]`次なる序列はあなたであります」`[\]
@@ -293,8 +288,7 @@ textoff2
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -397,8 +391,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_s45
 *d41009
 d [lv 0*"35"*"53400019"]`「ニンゲンども！`[@][lv 0*"35"*"53400020"]`　全員、自己紹介を…！」`[\]
@@ -583,8 +576,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_s41
 *d41030
 d [lv 0*"36"*"53500019"]`「続いて、魔女ども！`[@][lv 0*"36"*"53500020"]`　全員、自己紹介を！」`[\]
@@ -618,8 +610,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_wal
 *d41033
 d [lv 0*"30"*"53200236"]`「………ワルギリアと申します。`[@][lv 0*"30"*"53200237"]`ベアトリーチェの師匠です」`[\]
@@ -647,8 +638,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d41035
 d2 [lv 0*"31"*"53100157"]`「ロノウェ。`[@][lv 0*"31"*"53100158"]`紅茶を淹れる役担当ですな。`[@][#][*][lv 0*"31"*"53100159"]`ぷっくっく…」`[\]
@@ -728,18 +718,12 @@ spt_mem "a2","alpha",s0_14,255,1333
 spt_mem "a2","alpha",s0_15,255,1333
 spt_mem "a2","alpha",s0_16,255,1333
 spt_mem "a2","alpha",s0_17,255,1333
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
-sptwait2 breakup,s0_13
- : sptwait2 butterflybreakup,s0_13
-sptwait2 breakup,s0_14
- : sptwait2 butterflybreakup,s0_14
-sptwait2 breakup,s0_15
- : sptwait2 butterflybreakup,s0_15
-sptwait2 breakup,s0_16
- : sptwait2 butterflybreakup,s0_16
-sptwait2 breakup,s0_17
- : sptwait2 butterflybreakup,s0_17
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_13 : sptwait2 butterflybreakup,s0_13
+sptwait2 breakup,s0_14 : sptwait2 butterflybreakup,s0_14
+sptwait2 breakup,s0_15 : sptwait2 butterflybreakup,s0_15
+sptwait2 breakup,s0_16 : sptwait2 butterflybreakup,s0_16
+sptwait2 breakup,s0_17 : sptwait2 butterflybreakup,s0_17
 seplay 3,37,71
 seplay 1,37,71
 msgwnd_non
@@ -764,8 +748,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_s00
 *d41038
 d [lv 0*"37"*"53600021"]`「続けて、ヱリカ卿の家具どもは自己紹介を」`[\]
@@ -783,8 +766,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ger
 *d41039
 d [lv 0*"48"*"54800049"]`「ガートルード。`[@][lv 0*"48"*"54800050"]`異端審問補佐官なり」`[\]
@@ -797,8 +779,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_cor
 *d41040
 d [lv 0*"49"*"54700056"]`「コーネリア。`[@][lv 0*"49"*"54700057"]`異端審問補佐官なり」`[\]
@@ -847,8 +828,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"dla","a11_warai1" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 80
@@ -929,10 +909,8 @@ spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"s45","a11_komaru1" ;1
 spt_mem "a2","xpos",s0_10,550
 flush 80
@@ -993,8 +971,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41057
 d [lv 0*"28"*"52100501"]`「……私にはポップコーンを」`[\]
@@ -1185,8 +1162,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_s00
 *d41072
 d [lv 0*"37"*"53600026"]`「了解であります」`[\]
@@ -1296,8 +1272,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_bea
 *d41081
 d [lv 0*"27"*"50700756"]`「安心せよ、夏妃。`[@][lv 0*"27"*"50700757"]`そなたは妾の主だ。`[@][lv 0*"27"*"50700758"]`そして心に片翼の鷲を刻んだ、真の当主よ。`[@][lv 0*"27"*"50700759"]`身に覚え無き罪に怯えるでない」`[\]
@@ -1370,8 +1345,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_bea
 *d41088
 d [lv 0*"27"*"50700760"]`「ベアトリーチェは主張する！`[@][lv 0*"27"*"50700761"]`　このゲームの犯人はニンゲンにあらず！`[@][lv 0*"27"*"50700762"]`　妾こそ犯人であるわ！」`[\]
@@ -1453,8 +1427,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_wal
 *d41098
 d [lv 0*"30"*"53200238"]`「それはどうでしょう。`[@][lv 0*"30"*"53200239"]`……ベルンカステル卿には、情けの心がありません。`[@][lv 0*"30"*"53200240"]`……彼女は、自分の望んだ活躍をしなかった駒に、温かい処遇を与えるとは思えません…」`[\]
@@ -1588,8 +1561,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ron
 *d41112
 d [lv 0*"31"*"53100160"]`「………お嬢様。`[@][lv 0*"31"*"53100161"]`ここをさらに切り込むと危険かと」`[\]
@@ -2225,8 +2197,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_dla
 *d41169
 d [lv 0*"47"*"54600259"]`「まだ私の出番ではありマセン。`[@][lv 0*"47"*"54600260"]`そして、ベルンカステル卿の出番でもありマセン」`[\]
@@ -2239,8 +2210,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41170
 d [lv 0*"28"*"52100524"]`「……えぇ、そうよ。`[@][lv 0*"28"*"52100525"]`この程度じゃ私たちの出番にはならないわ。`[@][lv 0*"28"*"52100526"]`……古戸ヱリカという、ただのニンゲン風情がベアトを打ち破ってこそ、意味があるのよ」`[\]
@@ -2653,8 +2623,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_bea
 *d41197
 d2 [lv 0*"27"*"50700810"]`「ニンゲンを超えただと……。`[@][#][*][lv 0*"27"*"50700811"]`この思い上がりめッ、口走るには千年早いわ！」`[\]
@@ -2715,8 +2684,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41202
 d2 [lv 0*"28"*"52100539"]`「えぇ、応じるわ。`[@][lv 0*"28"*"52100540"][#][*]`{p:1:ゲストハウスには、２４時の時点で、譲治、朱志香、真里亞は生存していて、`[@][lv 0*"28"*"52100541"][#][*]`２階のいとこ部屋にいた。`[@][lv 0*"28"*"52100542"][#][*]`南條、郷田、熊沢は１階にいた}」`[\]
@@ -3060,8 +3028,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 *d41232
 d `……こいつは、ゲームマスターでもないくせに、ヱリカの証言を赤き真実に昇華することが出来る。`[\]
 *d41233
@@ -3112,8 +3079,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d41243
 d2 [lv 0*"27"*"50700814"]`「く、くくくくく……。`[@][lv 0*"27"*"50700815"]`これはなかなかに面白い戦いだ。`[@][#][*][lv 0*"27"*"50700816"]`…なるほど、妾はかつての戦人の立場で戦っているというわけか」`[\]
@@ -3220,8 +3186,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_bea
 *d41252
 d [lv 0*"27"*"50700824"]`「ラウンジで過ごした時間は」`[\]
@@ -3971,8 +3936,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41314
 d [lv 0*"28"*"52100561"]`「………くすくすくす。`[@][lv 0*"28"*"52100562"]`流石よ、それでこそ探偵だわ……」`[\]
@@ -4075,8 +4039,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 seplay 2,37,100
 *d41325
 d `ベルンカステルだけが、にやにやと勝ち誇ったように薄ら笑う。`[\]
@@ -4108,8 +4071,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41328
 d [lv 0*"28"*"52100565"]`「ヱリカの記憶力は写真並。`[@][lv 0*"28"*"52100566"]`そして聴力は録音機並。`[@][lv 0*"28"*"52100567"]`……ヱリカの耳を誤魔化して、譲治たちを殺し、首に傷を刻むなど不可能なことよ」`[\]
@@ -4339,8 +4301,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 vol_mix_fade 2000
 vol_bgm -1,2000
 wait 2000
@@ -4763,8 +4724,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41380
 d [lv 0*"28"*"52100571"]`「………そしてヱリカは。`[@][lv 0*"28"*"52100572"]`事件発覚と同時に、全ての封印が破られていないことを確認したわ。`[@][lv 0*"28"*"52100573"]`ヱリカが死体発見時に、一番にいとこ部屋に到着しなかった理由はそういうことよ」`[\]
@@ -5119,8 +5079,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41402
 d2 [lv 0*"28"*"52100580"]`「私、戦人と違って、馬鹿じゃないの。`[@][#][*][lv 0*"28"*"52100581"]`……こんなゲーム。５度も繰り返せば手の内は充分だわ。`[@][lv 0*"28"*"52100582"]`……`[|][lv 0*"28"*"52100583"][#][*]`くすくすくすくすくすくすくす！！」`[\]
@@ -5244,8 +5203,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d41408
 d2 [lv 0*"27"*"50700873"]`「……そ、……それをどうやって証明するのかッ？！`[@][#][*][lv 0*"27"*"50700874"]`　ヱリカはゲストハウス！`[@][lv 0*"27"*"50700875"]`　誰かが食堂の扉に、お得意の封印でもして証明したというのか？！`[@][lv 0*"27"*"50700876"]`　納得の行く証拠も証明もないぞ…！！」`[\]
@@ -5355,8 +5313,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"ber","a21_akuwarai3" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 10,167
@@ -5740,8 +5697,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41451
 d [lv 0*"28"*"52100608"]`「……右代宮夏妃。`[@][lv 0*"28"*"52100609"]`……最後にチャンスをあげるわ。`[@][lv 0*"28"*"52100610"]`全ての犯行は、あなたの夫の仕業だと、自ら告白なさい」`[\]
@@ -6117,8 +6073,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 seplay 2,59,71
 msgwnd_ber
 *d41501
@@ -6231,8 +6186,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d41514
 d2 [lv 0*"27"*"50700882"]`「……よいのか、夏妃……。`[@][lv 0*"27"*"50700883"]`………蔵臼を疑ることを放棄するなら、……もう、そなたしか、……残らぬぞ。`[@][#][*][lv 0*"27"*"50700884"]`…そなた以外の全員のアリバイの証明、……即ち、ヘンペルのカラス…！`[@][lv 0*"27"*"50700885"]`　何の証拠もなく、…そなたを犯人だと断定できてしまう…！」`[\]
@@ -6337,8 +6291,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d41523
 d [lv 0*"27"*"50700887"]`「次のゲームに仕切り直され、………このゲームの夏妃は、`[@][lv 0*"27"*"50700888"]`……このカケラの夏妃はどうなるというのか……」`[\]
@@ -6527,8 +6480,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d41534
 d2 [lv 0*"28"*"52100627"]`「………馬鹿が。`[@][lv 0*"28"*"52100628"]`もう取り返しはつかないわよ…？`[@][lv 0*"28"*"52100629"]`　愚か者の短気に相応しい報いを受けなさい。`[@][lv 0*"28"*"52100630"]`奇跡の魔女、ベルンカステルの名において、赤き真実を語るわ。`[@][#][*][lv 0*"28"*"52100631"]`{p:1:右代宮蔵臼は犯人ではない。`[@][#][*][lv 0*"28"*"52100632"]`そしてとっくに殺されてるわ。`[@][#][*][lv 0*"28"*"52100633"]`あんたに電話で声を聞かせた直後にね？}」`[\]
@@ -6747,8 +6699,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41549
 d [lv 0*"28"*"52100634"]`「主文追加。`[@][lv 0*"28"*"52100635"]`状況証拠から、蔵臼の殺害も追加を」`[\]
@@ -6892,8 +6843,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41566
 d2 [lv 0*"28"*"52100636"]`「………よく吼えること。`[@][lv 0*"28"*"52100637"]`……私は、魔女が火炙りになる時は、命乞いを泣き喚く子が一番好きよ。`[@][#][*][lv 0*"28"*"52100638"]`あんたみたいな虚勢を張るのが、一番興醒めなの。`[@][#][*][lv 0*"28"*"52100639"]`だから、その虚勢を打ち砕く赤き真実を、私からの最後の贈り物としてあげるわ」`[\]
@@ -7070,8 +7020,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 seplay 1,37,100
 seplay 2,37,100
 msgwnd_ber
@@ -7202,8 +7151,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d41586
 d2 [lv 0*"28"*"52100653"][#][*]`「{p:1:哀れな女。`[@][lv 0*"28"*"52100654"]`右代宮金蔵の信頼を、生涯、得られなかった真実を、今こそ正視しなさい}」`[\]
@@ -7822,8 +7770,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,150,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d41650
 d [lv 0*"27"*"50700921"]`「夏妃は犯人ではないッ！！`[@][lv 0*"27"*"50700922"]`　我こそは黄金の魔女、ベアトリーチェ！！`[@][lv 0*"27"*"50700923"]`　そなたらが、夜の闇に怯えた年頃よりはるかに前から君臨する、六軒島の夜の支配者！」`[\]
@@ -7965,8 +7912,7 @@ spt_mem "a2","alpha",s0_24,0
 flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 msgwnd_ber
 *d41659
 d [lv 0*"28"*"52100655"]`「すでにベアトが過去のゲームで一度、はっきりとそれを見せてくれてるわ。`[@][lv 0*"28"*"52100656"]`生きた肉の塊にして、山羊の晩餐会に放り込んで、喰い散らかされるのよ」`[\]
@@ -8060,8 +8006,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41669
 d [lv 0*"28"*"52100659"]`「良い悲鳴を聞かせてね。`[@][lv 0*"28"*"52100660"]`あんたはこの日のために寝かせてきたワインよ」`[\]
@@ -8305,8 +8250,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_dla
 *d41696
 d [lv 0*"47"*"54600265"]`「当法廷の判決に、何が不服デ…？`[@][lv 0*"47"*"54600266"]`　……再審請求に相応しい、新しい証拠を、真実をお持ちなのデショウネ…？」`[\]
@@ -8559,8 +8503,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 wait 1000
 lss s0_9,"ber","a21_defo1" ;1
 flush 22
@@ -8671,8 +8614,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41732
 d [lv 0*"28"*"52100670"]`「あぁ、その挽き肉には、あんたの大切な妹の挽き肉も混ぜてあげるわ。`[@][lv 0*"28"*"52100671"]`素敵な合挽き肉になるでしょうよ。`[@][lv 0*"28"*"52100672"]`……皮に包んで蒸して小籠包にして、やっぱり醤油でしょう？！」`[\]
@@ -8758,8 +8700,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d41739
 d [lv 0*"28"*"52100674"]`「何が飛び出すかと思ったら、馬鹿馬鹿しい…」`[\]
@@ -8768,8 +8709,7 @@ textoff2
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 lss s0_10,"eri","a11_akuwarai1" ;1
@@ -10839,8 +10779,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d41829
 d [lv 0*"28"*"52100679"]`「それが出来たならね。`[@][lv 0*"28"*"52100680"]`………でも、もし新しき真実が示せないなら、あんたはもう、プレイヤーとして無能の用無しよ。`[@][lv 0*"28"*"52100681"]`このゲーム盤から永遠に消えてもらうわ」`[\]
@@ -10971,8 +10910,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41845
 d2 [lv 0*"28"*"52100682"]`「……でももう飽きたわ。`[@][lv 0*"28"*"52100683"]`“私たちのゲーム”に、もう、あんたたちは必要ないわ。`[@][#][*][lv 0*"28"*"52100684"]`………`[|][lv 0*"28"*"52100685"][#][*]`くすくすくすくすくす、`[|][lv 0*"28"*"52100686"][#][*]`うっふふはっははははははははッ！！`[@][lv 0*"28"*"52100687"]`　おやりなさいッ、ドラノールッ！！」`[#][*][\]
@@ -11171,8 +11109,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d41861
 d [lv 0*"28"*"52100688"]`「あなたのその赤き真実は、あなたが自分で手に入れたものではないわ。`[@][lv 0*"28"*"52100689"]`……超常存在から授けられた、超自然の真実よ。`[@][lv 0*"28"*"52100690"]`即ち、推理ではない。`[@][lv 0*"28"*"52100691"]`デタラメな思いつきと同じ、ということよ……」`[\]
@@ -12528,8 +12465,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d42027
 d [lv 0*"28"*"52100692"]`「あくまでも。`[@][lv 0*"28"*"52100693"]`……金蔵は生きてて、島のどこかに残っていると言い張るのね……？」`[\]
@@ -12584,8 +12520,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42030
 d2 [lv 0*"28"*"52100694"]`「……えぇ、そうよ。`[@][lv 0*"28"*"52100695"]`完璧な勝利を私は求めてるの。`[@][lv 0*"28"*"52100696"]`……だから、赤で金蔵の死が決まってるから、それでチェックメイトなんて面白くないの。`[@][#][*][lv 0*"28"*"52100697"]`……夏妃の口から、リザインと言わせて勝利したいのよ。`[@][lv 0*"28"*"52100698"][#][*]`くすくすくすくすくす！」`[\]
@@ -12627,8 +12562,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d42033
 d [lv 0*"28"*"52100699"]`「無論よ。`[@][lv 0*"28"*"52100700"]`…………夏妃。`[@][lv 0*"28"*"52100701"]`あなたは、金蔵は間違いなく生きているけれど、その所在はわからない、というのね？」`[\]
@@ -12718,8 +12652,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42042
 d2 [lv 0*"28"*"52100711"][#][*]`「{p:1:金蔵は屋敷以外の場所に存在しない。}`[@][#][*][lv 0*"28"*"52100712"]`…………ねぇ、夏妃。`[@][lv 0*"28"*"52100713"]`なら“金蔵が存在するなら”、屋敷内のどこかにいることになるわ。`[@][lv 0*"28"*"52100714"]`どこに金蔵が隠れているのか、心当たりがあったら教えてくれない……？」`[\]
@@ -13036,8 +12969,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42068
 d [lv 0*"28"*"52100727"]`「ヱリカ。`[@][lv 0*"28"*"52100728"]`それでは端から順に、２階の全てを捜索して行きなさい。`[@][lv 0*"28"*"52100729"]`……全ての手掛かりを絶対に見落とさず、如何なる隠し扉も隠し部屋も看破できる探偵権限で…！」`[\]
@@ -13396,8 +13328,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42107
 d [lv 0*"28"*"52100738"]`「赤き真実によるチェックメイトが、とうとう、`[@][lv 0*"28"*"52100739"]`金蔵の幻という駒を、夏妃の部屋にまで追い詰めたということよ」`[\]
@@ -13447,8 +13378,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 seplay 1,59,71
 msgwnd_ber
 *d42110
@@ -13523,8 +13453,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42114
 d2 [lv 0*"28"*"52100748"][#][*]`「{p:1:２４時から朝までの一晩。`[@][lv 0*"28"*"52100749"][#][*]`生きた金蔵の存在する余地は、あなたのベッドの中以外に、存在しない}」`[\]
@@ -13675,8 +13604,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 meplay 2,16,50
 msgwnd_ber
 *d42121
@@ -13879,8 +13807,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42133
 d [lv 0*"28"*"52100757"]`「ねぇ、夏妃。`[@][lv 0*"28"*"52100758"]`もうあんたの名誉なんて、これっぽっちもないわけだけど。`[@][lv 0*"28"*"52100759"]`……最悪のカケラを紡がれる前に、最後にもう一度だけチャンスをあげるわ。`[@][lv 0*"28"*"52100760"]`………金蔵はいませんでしたって、言って御覧なさい？」`[\]
@@ -13942,8 +13869,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d42138
 d2 [lv 0*"28"*"52100761"]`「死者じゃないわ。`[@][lv 0*"28"*"52100762"]`夏妃の頭の中の、都合のいい、妄想の名誉よ。`[@][#][*][lv 0*"28"*"52100763"]`……`[#][*]`{p:1:本当の金蔵は、その名誉を守れなんて、`[@][lv 0*"28"*"52100764"][#][*]`一度たりとも夏妃に命じたことなんてないんだから}」`[\]
@@ -14087,8 +14013,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d42146
 d2 [lv 0*"28"*"52100765"]`「えぇ。`[@][lv 0*"28"*"52100766"]`それでは私が真相を紡ぐわ。`[@][lv 0*"28"*"52100767"]`……これが、この悲しく間抜けな物語の真相よ。`[@][#][*][lv 0*"28"*"52100768"]`……本当は泣き笑いしながら罪を認めた夏妃に、自ら語って欲しかったんだけどね？`[@][lv 0*"28"*"52100769"]`　それが、お約束なんでしょ？　`[|][lv 0*"28"*"52100770"][#][*]`くすくすくすくすくすくすくす！！」`[\]

@@ -21,8 +21,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"bea","a15_1_warai6" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 80
@@ -283,8 +282,7 @@ textoff2
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 csp_slot s0_5
@@ -802,8 +800,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d47107
 d [lv 0*"28"*"62100099"]`「…………したければ、すれば……？」`[\]
@@ -891,8 +888,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 meplay 1,17,70
 msgwnd_ber
 *d47115
@@ -1459,8 +1455,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d47168
 d [lv 0*"28"*"62100152"]`「したければ、どうぞ？`[@][lv 0*"28"*"62100153"]`　私を追放するなら、ヱリカは私の駒だから持って帰るわ。`[@][lv 0*"28"*"62100154"]`今回のゲームはお流れで、あんたは真相に至ったことを証明できなくなる。`[@][lv 0*"28"*"62100155"]`……観劇者は観測者。`[@][lv 0*"28"*"62100156"]`観測者なき真実は幻想と同じ。`[@][lv 0*"28"*"62100157"]`……あんたは、ベアトのゲームを終えるために、観劇者という立会人を欠かせないのよ」`[\]
@@ -1926,8 +1921,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 seplay 2,52,71
 lss s0_10,"cor","a11_defo1" ;1
 spt_mem "a2","xpos",s0_10,550
@@ -1937,8 +1931,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_8,"ger","a11_komaru1" ;1
 spt_mem "a2","xpos",s0_8,-550
 flush 80
@@ -2377,8 +2370,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ber
 *d47274
 d2 [lv 0*"28"*"62100171"]`「………ラムダの時もそうだったわね。`[@][lv 0*"28"*"62100172"]`……歩く死体なんて、馬鹿なミスを放置するから負けるのよ。`[@][lv 0*"28"*"62100173"]`………馬鹿なゲームマスター、馬鹿なミス、馬鹿な驕りに、馬鹿な敗北、馬鹿戦人、馬鹿ばっか。`[@][#][*][lv 0*"28"*"62100174"]`くすくすくすくすくすくすくすくす！！」`[\]
@@ -2568,8 +2560,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 bgmplay 142,71,0
 msgwnd_zep
 *d47300
@@ -2583,8 +2574,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d47301
 d [lv 0*"52"*"65200093"]`「そうね、全ての恋人たちに、強い意思の力があることがわかったのだもの！」`[\]

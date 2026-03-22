@@ -15187,9 +15187,9 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 	btnwait2 %BtnRes
 
 	if %BtnRes = t_btn_start_lsp cell t_btn_start_lsp,1 : print 1 : btndef "" : goto *start_sub_menu
-	if %BtnRes = t_btn_web_lsp seplay 9,1001,100 : menu_window : shell "http://07th-expansion.net"
-	; if %BtnRes = t_btn_web_lsp if %CHIRU_MODE != 2 seplay 9,1001,100 : goto *switch_game_to_extra
-	; if %BtnRes = t_btn_web_lsp if %CHIRU_MODE == 2 seplay 9,1001,100 : goto *switch_game_to_normal
+	;if %BtnRes = t_btn_web_lsp seplay 9,1001,100 : menu_window : shell "http://07th-expansion.net"
+	if %BtnRes = t_btn_web_lsp if %CHIRU_MODE != 2 seplay 9,1001,100 : goto *switch_game_to_extra
+	if %BtnRes = t_btn_web_lsp if %CHIRU_MODE == 2 seplay 9,1001,100 : goto *switch_game_to_normal
 	if %BtnRes = t_btn_tea_lsp cell t_btn_tea_lsp,1 : print 1 : btndef "" : goto *tea_sub_menu
 	if %BtnRes = t_btn_ura_tea_lsp cell t_btn_ura_tea_lsp,1 : print 1 : btndef "" : goto *ura_tea_sub_menu
 	if %BtnRes = t_btn_tips_lsp csp_rst : seplay 9,1001,100 : gosub *movie_mode_ps3 : mov %title_skip,1 : goto *b_title
@@ -24244,39 +24244,39 @@ if $lbg_name == "ex02" mov ?cg_list[0][36],1 : return ;Story
 if $lbg_name == "ep607" mov ?cg_list[0][37],1 : return ;Story
 ;if $lbg_name == "c0201_b" mov ?cg_list[0][38],1 : return ;X ;Story
 
-if $lbg_name == "ep701" mov ?cg_list[0][39],1 : return ;Story
+if $lbg_name == "ep701" mov ?cg_list[0][38],1 : return ;Story
 
 ;Pg3
-if $lbg_name == "ep702" mov ?cg_list[0][40],1 : return ;Story
+if $lbg_name == "ep702" mov ?cg_list[0][39],1 : return ;Story
 if $lbg_name == "ep703_b" mov ?cg_list[1][15],1 : return ;Murder
 
 if $lbg_name == "ep704_b" mov ?cg_list[1][16],1 : return ;Murder
-if $lbg_name == "ep705_4" mov ?cg_list[0][41],1 : return ;Story
-if $lbg_name == "ep801" mov ?cg_list[0][42],1 : return ;Story
-if $lbg_name == "ep802" mov ?cg_list[0][43],1 : return ;Story
+if $lbg_name == "ep705_4" mov ?cg_list[0][40],1 : return ;Story
+if $lbg_name == "ep801" mov ?cg_list[0][41],1 : return ;Story
+if $lbg_name == "ep802" mov ?cg_list[0][42],1 : return ;Story
 
 ;Pg4
-if $lbg_name == "ep803" mov ?cg_list[0][44],1 : return ;Story
-if $lbg_name == "ep805" mov ?cg_list[0][45],1 : return ;Story
-if $lbg_name == "ep806" mov ?cg_list[0][46],1 : return ;Story
-if $lbg_name == "ep807_a" mov ?cg_list[0][47],1 : return ;Story
+if $lbg_name == "ep803" mov ?cg_list[0][43],1 : return ;Story
+if $lbg_name == "ep805" mov ?cg_list[0][44],1 : return ;Story
+if $lbg_name == "ep806" mov ?cg_list[0][45],1 : return ;Story
+if $lbg_name == "ep807_a" mov ?cg_list[0][46],1 : return ;Story
 
-if $lbg_name == "ep808" mov ?cg_list[0][48],1 : return ;Story
-if $lbg_name == "ep809_b" mov ?cg_list[0][49],1 : return ;Story
-if $lbg_name == "ep810_a1" mov ?cg_list[0][50],1 : return ;Story
-if $lbg_name == "ep811" mov ?cg_list[0][51],1 : return ;Story
+if $lbg_name == "ep808" mov ?cg_list[0][47],1 : return ;Story
+if $lbg_name == "ep809_b" mov ?cg_list[0][48],1 : return ;Story
+if $lbg_name == "ep810_a1" mov ?cg_list[0][49],1 : return ;Story
+if $lbg_name == "ep811" mov ?cg_list[0][50],1 : return ;Story
 
-if $lbg_name == "ep812" mov ?cg_list[0][52],1 : return ;Story
-if $lbg_name == "ep814_d2" mov ?cg_list[0][53],1 : return ;Story
-if $lbg_name == "ep815_1_" mov ?cg_list[0][54],1 : return ;Story
+if $lbg_name == "ep812" mov ?cg_list[0][51],1 : return ;Story
+if $lbg_name == "ep814_d2" mov ?cg_list[0][52],1 : return ;Story
+if $lbg_name == "ep815_1_" mov ?cg_list[0][53],1 : return ;Story
 
 ;Pg5
-if $lbg_name == "ep815_2_" mov ?cg_list[0][55],1 : return ;Story
-if $lbg_name == "ep816" mov ?cg_list[0][56],1 : return ;Story
-if $lbg_name == "ep817" mov ?cg_list[0][57],1 : return ;Story
+if $lbg_name == "ep815_2_" mov ?cg_list[0][54],1 : return ;Story
+if $lbg_name == "ep816" mov ?cg_list[0][55],1 : return ;Story
+if $lbg_name == "ep817" mov ?cg_list[0][56],1 : return ;Story
 
-if $lbg_name == "ep818" mov ?cg_list[0][58],1 : return ;Story
-if $lbg_name == "eve_last2" mov ?cg_list[0][59],1 : return ;Story
+if $lbg_name == "ep818" mov ?cg_list[0][57],1 : return ;Story
+if $lbg_name == "eve_last2" mov ?cg_list[0][58],1 : return ;Story
 if $lbg_name == "wic_c" mov ?cg_list[2][14],1 : return ;Char
 if $lbg_name == "evc_c" mov ?cg_list[2][15],1 : return ;Char
 

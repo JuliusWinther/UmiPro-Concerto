@@ -3197,8 +3197,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d46028
 d [lv 0*"39"*"62400024"]`「施錠なんかしても、あいつは扉を一撃で打ち砕けるわ！！`[@][lv 0*"39"*"62400025"]`　霧江は自分で自分の棺桶の蓋を閉じただけよ！！」`[\]
@@ -3809,8 +3808,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ron
 *d46076
 d [lv 0*"31"*"63100003"]`「ベアトリーチェの密室定義、ですな」`[\]
@@ -3886,8 +3884,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d46081
 d [lv 0*"51"*"65100058"]`「おや？！`[@][lv 0*"51"*"65100059"]`　朱志香がいきなり脱落なんてビックリだよ！！」`[\]
@@ -3903,8 +3900,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d46082
 d [lv 0*"52"*"65200052"]`「あぁ、どうか頑張って！`[@][lv 0*"52"*"65200053"]`　愛しの嘉音のためにも！！」`[\]
@@ -4208,8 +4204,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d46101
 d [lv 0*"31"*"63100010"]`「……お見事な、……密室殺人ですな」`[\]
@@ -4236,8 +4231,7 @@ textoff2
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 textoff2

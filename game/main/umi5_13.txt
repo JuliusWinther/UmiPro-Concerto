@@ -264,8 +264,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_wal
 *d40415
 d [lv 0*"30"*"53200177"]`「おや。`[@][lv 0*"30"*"53200178"]`………今回のゲームの第一の晩の犠牲者は５人なのですか？`[@][lv 0*"30"*"53200179"]`　６人ではなく？」`[\]
@@ -3431,8 +3430,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d40921
 d [lv 0*"28"*"52100491"]`「………さぁラムダ、全ての駒を集めなさい。`[@][lv 0*"28"*"52100492"]`ここからが一番面白いんじゃない。`[@][lv 0*"28"*"52100493"]`思い切り楽しみましょ、お互いにね」`[\]

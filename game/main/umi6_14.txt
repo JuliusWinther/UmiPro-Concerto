@@ -553,8 +553,7 @@ textoff2
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 seplay 1,56,71
@@ -1677,8 +1676,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_8,"cor","a11_defo1" ;1
 spt_mem "a2","xpos",s0_8,-370
 seplay 3,52,71
@@ -1688,8 +1686,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 lss s0_10,"ger","a11_komaru1" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 80
@@ -2273,8 +2270,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_dla
 *d47657
 d [lv 0*"47"*"64600174"]`「殺人犯が潜んでいるかも知れない不気味な屋敷に、このような深夜に散歩トハ。`[@][lv 0*"47"*"64600175"]`……酔狂な御仁デス」`[\]
@@ -2623,8 +2619,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_eri
 *d47695
 d [lv 0*"46"*"64500942"]`「申し訳ありません。`[@][lv 0*"46"*"64500943"]`実は、指し手の宣言ではありません」`[\]
@@ -2711,8 +2706,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_dla
 *d47707
 d [lv 0*"47"*"64600183"]`「ご報告申し上げマス。`[@][lv 0*"47"*"64600184"]`……ヱリカ卿による死体検死時に、戦人の客室を封印しておりましたことを、ご報告申し上げマス」`[\]

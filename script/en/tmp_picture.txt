@@ -1403,20 +1403,20 @@ if ?cg_list[0][46] = 0 lsp 622,cgmode_logo,1048,775  ;11
 if ?cg_list[0][47] = 0 lsp 623,cgmode_logo,1458,775 ;12
 
 ;Row1
-if ?cg_list[0][37] = 1 lsp 612,":c/2,0,3;graphics\thumb\ex1.png",118,160:spbtn 612,612     ;14 ;Story
-if ?cg_list[0][38] = 1 lsp 613,":c/2,0,3;graphics\thumb\ep607.png",528,160:spbtn 613,613     ;15 ;Story
-if ?cg_list[0][39] = 1 lsp 614,":c/2,0,3;graphics\thumb\ep701.png",1048,160:spbtn 614,614     ;17 ;Story
-if ?cg_list[0][40] = 1 lsp 615,":c/2,0,3;graphics\thumb\ep702.png",1458,160:spbtn 615,615      ;31 ;Story
+if ?cg_list[0][36] = 1 lsp 612,":c/2,0,3;graphics\thumb\ex1.png",118,160:spbtn 612,612     ;14 ;Story
+if ?cg_list[0][37] = 1 lsp 613,":c/2,0,3;graphics\thumb\ep607.png",528,160:spbtn 613,613     ;15 ;Story
+if ?cg_list[0][38] = 1 lsp 614,":c/2,0,3;graphics\thumb\ep701.png",1048,160:spbtn 614,614     ;17 ;Story
+if ?cg_list[0][39] = 1 lsp 615,":c/2,0,3;graphics\thumb\ep702.png",1458,160:spbtn 615,615      ;31 ;Story
 
-if ?cg_list[0][41] = 1 lsp 616,":c/2,0,3;graphics\thumb\ep705.png",118,467:spbtn 616,616  ;34 ;Story
-if ?cg_list[0][42] = 1 lsp 617,":c/2,0,3;graphics\thumb\ep801.png",528,467:spbtn 617,617  ;35 ;Story
-if ?cg_list[0][43] = 1 lsp 618,":c/2,0,3;graphics\thumb\ep802.png",1048,467:spbtn 618,618 ;36 ;Story
-if ?cg_list[0][44] = 1 lsp 619,":c/2,0,3;graphics\thumb\ep803.png",1458,467:spbtn 619,619   ;37 ;Story
+if ?cg_list[0][40] = 1 lsp 616,":c/2,0,3;graphics\thumb\ep705.png",118,467:spbtn 616,616  ;34 ;Story
+if ?cg_list[0][41] = 1 lsp 617,":c/2,0,3;graphics\thumb\ep801.png",528,467:spbtn 617,617  ;35 ;Story
+if ?cg_list[0][42] = 1 lsp 618,":c/2,0,3;graphics\thumb\ep802.png",1048,467:spbtn 618,618 ;36 ;Story
+if ?cg_list[0][43] = 1 lsp 619,":c/2,0,3;graphics\thumb\ep803.png",1458,467:spbtn 619,619   ;37 ;Story
 
-if ?cg_list[0][45] = 1 lsp 620,":c/2,0,3;graphics\thumb\ep805.png",118,775:spbtn 620,620    ;38 ;Story
-if ?cg_list[0][46] = 1 lsp 621,":c/2,0,3;graphics\thumb\ep806.png",528,775:spbtn 621,621    ;39 ;Story
-if ?cg_list[0][47] = 1 lsp 622,":c/2,0,3;graphics\thumb\ep807.png",1048,775:spbtn 622,622  ;40 ;Story
-if ?cg_list[0][48] = 1 lsp 623,":c/2,0,3;graphics\thumb\ep808.png",1458,775:spbtn 623,623   ;41 ;Story
+if ?cg_list[0][44] = 1 lsp 620,":c/2,0,3;graphics\thumb\ep805.png",118,775:spbtn 620,620    ;38 ;Story
+if ?cg_list[0][45] = 1 lsp 621,":c/2,0,3;graphics\thumb\ep806.png",528,775:spbtn 621,621    ;39 ;Story
+if ?cg_list[0][46] = 1 lsp 622,":c/2,0,3;graphics\thumb\ep807.png",1048,775:spbtn 622,622  ;40 ;Story
+if ?cg_list[0][47] = 1 lsp 623,":c/2,0,3;graphics\thumb\ep808.png",1458,775:spbtn 623,623   ;41 ;Story
 
 return
 
@@ -1436,22 +1436,22 @@ if ?cg_list[0][55] = 0 lsp 619,cgmode_logo,1458,467 ;8
 if ?cg_list[0][56] = 0 lsp 620,cgmode_logo,118,775    ;9
 if ?cg_list[0][57] = 0 lsp 621,cgmode_logo,528,775    ;10
 if ?cg_list[0][58] = 0 lsp 622,cgmode_logo,1048,775  ;11
-if ?cg_list[0][59] = 0 lsp 623,cgmode_logo,1458,775 ;12
+;if ?cg_list[0][59] = 0 lsp 623,cgmode_logo,1458,775 ;12
 
 
-if ?cg_list[0][49] = 1 lsp 612,":c/2,0,3;graphics\thumb\ep809.png",118,160:spbtn 612,612    ;42 ;Story
-if ?cg_list[0][50] = 1 lsp 613,":c/2,0,3;graphics\thumb\ep810.png",528,160:spbtn 613,613    ;43 ;Story
-if ?cg_list[0][51] = 1 lsp 614,":c/2,0,3;graphics\thumb\ep811.png",1048,160:spbtn 614,614   ;44 ;Story
-if ?cg_list[0][52] = 1 lsp 615,":c/2,0,3;graphics\thumb\ep812_c.png",1458,160:spbtn 615,615    ;45 ;Story
+if ?cg_list[0][48] = 1 lsp 612,":c/2,0,3;graphics\thumb\ep809.png",118,160:spbtn 612,612    ;42 ;Story
+if ?cg_list[0][49] = 1 lsp 613,":c/2,0,3;graphics\thumb\ep810.png",528,160:spbtn 613,613    ;43 ;Story
+if ?cg_list[0][50] = 1 lsp 614,":c/2,0,3;graphics\thumb\ep811.png",1048,160:spbtn 614,614   ;44 ;Story
+if ?cg_list[0][51] = 1 lsp 615,":c/2,0,3;graphics\thumb\ep812_c.png",1458,160:spbtn 615,615    ;45 ;Story
 
-if ?cg_list[0][53] = 1 lsp 616,":c/2,0,3;graphics\thumb\ep814.png",118,467:spbtn 616,616  		 ;47 ;Story
-if ?cg_list[0][54] = 1 lsp 617,":c/2,0,3;graphics\thumb\ep815_1.png",528,467:spbtn 617,617		 ;48 ;Story
-if ?cg_list[0][55] = 1 lsp 618,":c/2,0,3;graphics\thumb\ep815_2.png",1048,467:spbtn 618,618    ;49 ;Story
-if ?cg_list[0][56] = 1 lsp 619,":c/2,0,3;graphics\thumb\ep816.png",1458,467:spbtn 619,619    ;50 ;Story
+if ?cg_list[0][52] = 1 lsp 616,":c/2,0,3;graphics\thumb\ep814.png",118,467:spbtn 616,616  		 ;47 ;Story
+if ?cg_list[0][53] = 1 lsp 617,":c/2,0,3;graphics\thumb\ep815_1.png",528,467:spbtn 617,617		 ;48 ;Story
+if ?cg_list[0][54] = 1 lsp 618,":c/2,0,3;graphics\thumb\ep815_2.png",1048,467:spbtn 618,618    ;49 ;Story
+if ?cg_list[0][55] = 1 lsp 619,":c/2,0,3;graphics\thumb\ep816.png",1458,467:spbtn 619,619    ;50 ;Story
 
-if ?cg_list[0][57] = 1 lsp 620,":c/2,0,3;graphics\thumb\ep817.png",118,775:spbtn 620,620    ;51 ;Story
-if ?cg_list[0][58] = 1 lsp 621,":c/2,0,3;graphics\thumb\ep818.png",528,775:spbtn 621,621    ;53 ;Story
-if ?cg_list[0][59] = 1 lsp 622,":c/2,0,3;graphics\thumb\eve_last.png",1048,775:spbtn 622,622    ;54 ;Story
+if ?cg_list[0][56] = 1 lsp 620,":c/2,0,3;graphics\thumb\ep817.png",118,775:spbtn 620,620    ;51 ;Story
+if ?cg_list[0][57] = 1 lsp 621,":c/2,0,3;graphics\thumb\ep818.png",528,775:spbtn 621,621    ;53 ;Story
+if ?cg_list[0][58] = 1 lsp 622,":c/2,0,3;graphics\thumb\eve_last.png",1048,775:spbtn 622,622    ;54 ;Story
 
 return
 

@@ -1900,8 +1900,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ron
 *d20608
 d [lv 0*"31"*"33100571"]`「……朱志香も生き残れはしないでしょう。`[@][lv 0*"31"*"33100572"]`…元より、誰も生き残れはしませんが」`[\]
@@ -2122,8 +2121,7 @@ seplay 1,52,70
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 wait 2000
@@ -2178,8 +2176,7 @@ seplay 1,52,100
 spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,2000
 spt_mem "a2","alpha",s0_12,0,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 seplay 2,22,100
@@ -3227,8 +3224,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ron
 *d20772
 d [lv 0*"31"*"33100600"]`「……先代さま。`[@][lv 0*"31"*"33100601"]`二度もの妨害、もはや許されませんぞ」`[\]
@@ -3296,8 +3292,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 lss s0_8,"ev2","a11_akuwarai3" ;1
 spt_mem "a2","xpos",s0_8,-370
 flush 10,167
@@ -5355,10 +5350,8 @@ spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_9,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_8
 csp_slot s0_9
 flush 1 ;flush2: NO frames
@@ -6903,8 +6896,7 @@ seplay 3,52,71
 spt_mem "a2","breakup",s0_25,0
 spt_mem "a2","breakup",s0_25,1000,3000
 spt_mem "a2","alpha",s0_25,0,3000
-sptwait2 breakup,s0_25
- : sptwait2 butterflybreakup,s0_25
+sptwait2 breakup,s0_25 : sptwait2 butterflybreakup,s0_25
 csp_slot s0_25
 flush 1 ;flush2: NO frames
 csp_slot s0_21
@@ -6919,8 +6911,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,3000
 spt_mem "a2","alpha",s0_8,255,3000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_non
 *d21095
 d `ベアトは再構築されたホールに降り立ち、`[@]`倒れている霧江の遺体に近付き、うろうろと観察する。`[\]
@@ -8181,8 +8172,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_ev2
 *d21195
 d2 [lv 0*"34"*"33301043"]`「`[#][*]`{p:1:朱志香負傷後、`[|][lv 0*"34"*"33301044"]`絵羽は常に戦人の監視下にあった}。`[@][lv 0*"34"*"33301045"][#][*]`{p:1:戦人は犯人でもなく共犯者でもない}。`[@][lv 0*"34"*"33301046"][#][*]`{p:1:よって、絵羽の完全なアリバイを証明できる}」`[\]
@@ -8524,8 +8514,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_17
 csp_slot s0_18
 textoff2
@@ -9853,8 +9842,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_bea
 *d21336
 d [lv 0*"27"*"30702244"]`「…仮にも黄金の魔女が見苦しいぞ。`[@][lv 0*"27"*"30702245"]`………さぁ良いか」`[\]

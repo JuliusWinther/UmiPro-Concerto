@@ -279,8 +279,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_zep
 *d48555
 d [lv 0*"51"*"65100132"]`「第二の試練を前に、`[@][lv 0*"51"*"65100133"]`戦人くんがリタイアしたことをお知らせしたい」`[\]
@@ -296,8 +295,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_fur
 *d48557
 d [lv 0*"52"*"65200123"]`「魔女のゲームは彼を永遠に待ってくれるけど、`[@][lv 0*"52"*"65200124"]`愛し合う二人は永遠には待てないの」`[\]
@@ -475,10 +473,8 @@ spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames
@@ -1477,8 +1473,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_eri
 *d48703
 d [lv 0*"46"*"64501321"]`「ラムダデルタ卿に、我が主の昔話を伺っておりました。`[@][lv 0*"46"*"64501322"]`……奇跡の魔女である、我が主に相応しい、奇跡の物語を…！」`[\]
@@ -2087,8 +2082,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d48771
 d [lv 0*"51"*"65100149"]`「ご存知の通り、ここの領主様は、お心を塞がれてしまって物も言えない」`[\]
@@ -2101,8 +2095,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d48772
 d [lv 0*"52"*"65200140"]`「美しきヱリカ卿が、その妻となられて、執務を支えられることになったんですって！」`[\]
@@ -2123,10 +2116,8 @@ spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames
@@ -2215,8 +2206,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d48781
 d [lv 0*"51"*"65100152"]`「なら、彼を密室から救い出す方法を見つけて！」`[\]
@@ -2228,8 +2218,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_fur
 *d48782
 d [lv 0*"52"*"65200142"]`「花婿を奪いに行くのね？！`[@][lv 0*"52"*"65200143"]`　あぁ！！　それは素敵！！」`[\]
@@ -2374,8 +2363,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d48795
 d [lv 0*"51"*"65100155"]`「でも諦めない君の意志の強さには感服するよ！」`[\]
@@ -2387,8 +2375,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_fur
 *d48796
 d [lv 0*"52"*"65200146"]`「そんなあなただから、きっと奇跡を起こせるわ！」`[\]
@@ -2402,10 +2389,8 @@ spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_9,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_8
 csp_slot s0_9
 flush 1 ;flush2: NO frames
@@ -2653,8 +2638,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_fur
 *d48819
 d [lv 0*"52"*"65200155"]`「もしも足りないのなら？！」`[\]
@@ -2667,8 +2651,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d48820
 d [lv 0*"51"*"65100164"]`「満ち溢れた恋人たちを、観察してはどうだろう？！」`[\]
@@ -2723,10 +2706,8 @@ spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames
@@ -3251,8 +3232,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_zep
 *d48878
 d [lv 0*"51"*"65100180"]`「右代宮譲治、君を紗音、いや、紗代の立会人と認めるよ」`[\]
@@ -3279,8 +3259,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_fur
 *d48880
 d [lv 0*"52"*"65200171"]`「右代宮朱志香、あなたを嘉音、いいえ、嘉哉の立会人と認めるわ」`[\]
@@ -4897,8 +4876,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 bgmplay 72,71,0
 seplay 1,57,71
 textoff2
@@ -5590,8 +5568,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_zep
 *d49090
 d [lv 0*"51"*"65100194"]`「それではッ、新郎新婦の入場を迎えよう…！！」`[\]
@@ -5604,8 +5581,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_fur
 *d49091
 d [lv 0*"52"*"65200182"]`「厳かに迎えて、どうか二人の門出を祝って欲しい！！」`[\]
@@ -5760,8 +5736,7 @@ textoff2
 spt_mem "a2","breakup",s0_23,0
 spt_mem "a2","breakup",s0_23,1000,2000
 spt_mem "a2","alpha",s0_23,0,2000
-sptwait2 breakup,s0_23
- : sptwait2 butterflybreakup,s0_23
+sptwait2 breakup,s0_23 : sptwait2 butterflybreakup,s0_23
 csp_slot s0_23
 flush 1 ;flush2: NO frames
 lss s0_9,"s41","a11_akuwarai1" ;1

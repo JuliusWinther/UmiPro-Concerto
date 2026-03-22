@@ -1443,8 +1443,7 @@ textoff2
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2000
 spt_mem "a2","alpha",s0_9,0,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 *d39181
@@ -2836,8 +2835,7 @@ spt_mem "a2","alpha",s0_23,0
 flush 1
 spt_mem "a2","breakup",s0_23,0,2000
 spt_mem "a2","alpha",s0_23,150,2000
-sptwait2 breakup,s0_23
- : sptwait2 butterflybreakup,s0_23
+sptwait2 breakup,s0_23 : sptwait2 butterflybreakup,s0_23
 msgwnd_bea
 *d39340
 d [lv 0*"27"*"50700503"]`「……焦ることはないぞ、夏妃。`[@][lv 0*"27"*"50700504"]`探偵気取りお得意の言葉遊びよ。`[@][lv 0*"27"*"50700505"]`……だから何だと言うのか？`[@][lv 0*"27"*"50700506"]`　この発言だけでそなたをどう追い詰められると言うのか？`[@][lv 0*"27"*"50700507"]`　地獄の法廷とて、陪審員の悪魔たちは全員、そなたの無罪に投じるわ。`[@][lv 0*"27"*"50700508"]`だからうろたえず落ち着くのだ…」`[\]
@@ -3456,8 +3454,7 @@ textoff2
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 *d39390
@@ -3866,8 +3863,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ger
 *d39433
 d [lv 0*"48"*"54800001"]`「謹啓。謹んで申し上げる。`[@][lv 0*"48"*"54800002"]`この扉より出入ること、叶わぬと知るべしと申し上げ奉る。`[@][lv 0*"48"*"54800003"]`衛士隊、書斎扉の封鎖を命じるものなりや」`[\]
@@ -3884,8 +3880,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_s41
 *d39436
 d [lv 0*"36"*"53500001"]`「シエスタ４１０、ここにぃ！」`[\]
@@ -3898,8 +3893,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_s45
 *d39437
 d [lv 0*"35"*"53400001"]`「シエスタ４５、ここに！`[@][lv 0*"35"*"53400002"]`　大ベアトリーチェ卿、ご無沙汰しております！`[@][lv 0*"35"*"53400003"]`　同盟協定１５１６号及び、天界大法院の要請に基づき出動いたしました。`[@][lv 0*"35"*"53400004"]`以後のご無礼をお詫びします…！」`[\]
@@ -4044,8 +4038,7 @@ spt_mem "a2","alpha",s0_25,0
 flush 1
 spt_mem "a2","breakup",s0_25,0,2000
 spt_mem "a2","alpha",s0_25,255,2000
-sptwait2 breakup,s0_25
- : sptwait2 butterflybreakup,s0_25
+sptwait2 breakup,s0_25 : sptwait2 butterflybreakup,s0_25
 msgwnd_cor
 *d39448
 d2 [lv 0*"49"*"54700001"]`「謹啓。謹んで申し上げる！`[@][lv 0*"49"*"54700002"][#][*]`　{p:1:窓は全て施錠されていた}と知り奉れ！`[@][lv 0*"49"*"54700003"]`　衛士隊よ、全ての窓を封鎖し給えっ」`[\]
@@ -4299,8 +4292,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_bea
 *d39474
 d [lv 0*"27"*"50700555"]`「妾の資料には、こう書かれていたはずだ。`[@][lv 0*"27"*"50700556"]`神出鬼没。`[@][lv 0*"27"*"50700557"]`どこへでも現れ、どこへでも消えるとな…！`[@][lv 0*"27"*"50700558"]`　妾がある限り、金蔵を捕らえることなど不可能よ…！」`[\]
@@ -5334,8 +5326,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg7
 *d39550
 d2 [lv 0*"44"*"52900010"]`「トロいわ、あなた。`[@][#][*][lv 0*"44"*"52900011"]`……うっふふふ、足の甲、いっただきィ〜！」`[\]
@@ -5481,8 +5472,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg6
 *d39560
 d [lv 0*"43"*"52800006"]`「動きを止めたわね。もうあんたの負けよッ！」`[\]
@@ -5493,8 +5483,7 @@ textoff2
 spt_mem "a2","breakup",s0_10,0
 spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_10
 flush 1 ;flush2: NO frames
 wait 333
@@ -5727,12 +5716,9 @@ spt_mem "a2","breakup",s0_10,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
 spt_mem "a2","alpha",s0_9,0,2000
 spt_mem "a2","alpha",s0_10,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_9
 csp_slot s0_10
@@ -5864,8 +5850,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d39574
 d [lv 0*"39"*"52400010"]`「あーん、ベアトリーチェさまぁ！`[@][lv 0*"39"*"52400011"]`　私の出番はー！」`[\]
@@ -6260,8 +6245,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_rg3
 *d39621
 d [lv 0*"40"*"52500016"]`「ぐぐ、………く…ッ！！`[@][lv 0*"40"*"52500017"]`　ベ、ベアトリーチェさま…！`[@][lv 0*"40"*"52500018"]`　早く、今の内にお逃げを…！！`[@][lv 0*"40"*"52500019"]`　ぐ、ぎゃ……、」`[\]
@@ -9238,8 +9222,7 @@ textoff2
 spt_mem "a2","breakup",s0_8,0
 spt_mem "a2","breakup",s0_8,1000,2000
 spt_mem "a2","alpha",s0_8,0,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 csp_slot s0_8
 flush 1 ;flush2: NO frames
 msgwnd_non
@@ -9438,8 +9421,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_gap
 *d39904
 d [lv 0*"32"*"53700133"]`「………ヤッバイ。……惚れたわ。`[@][lv 0*"32"*"53700134"]`…右代宮家の当主って、こういうヤツらばっかなの？」`[\]
@@ -9452,8 +9434,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ron
 *d39905
 d2 [lv 0*"31"*"53100133"]`「右代宮金蔵の破天荒を記せば、`[@][lv 0*"31"*"53100134"]`……書斎の魔導書の数に負けぬ長い波乱の物語が書けるでしょうな。`[@][lv 0*"31"*"53100135"]`その次の当主の物語も、記す価値が大いにありそうだ。`[@][#][*][lv 0*"31"*"53100136"]`いえいえ、もう記しておりますとも。`[@][lv 0*"31"*"53100137"]`それはもう、長い長い物語に。`[@][#][*][lv 0*"31"*"53100138"]`……ぷっくっくっく」`[\]
@@ -9831,8 +9812,7 @@ textoff2
 spt_mem "a2","breakup",s0_9,0
 spt_mem "a2","breakup",s0_9,1000,2667
 spt_mem "a2","alpha",s0_9,0,2667
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 csp_slot s0_9
 flush 1 ;flush2: NO frames
 *d39949
@@ -10187,8 +10167,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_ber
 *d39980
 d2 [lv 0*"28"*"52100440"]`「あんたのその顔。`[@][lv 0*"28"*"52100441"]`……潰して額縁に飾りたいくらいに、最高に笑える顔だわ。`[@][#][*][lv 0*"28"*"52100442"]`くすくすくすくすくすくす、私の分身が、…情けない情けない無様無様、ふっふふふふふふふっひっひひひひひひひひゃっはっはっはははははははははッ！！」`[\]

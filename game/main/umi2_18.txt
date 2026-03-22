@@ -1274,8 +1274,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,3000
 spt_mem "a2","alpha",s0_9,255,3000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 meplay 1,21,70
 *d13918
 d `起き上がろうとする我が娘の後ろ髪を、`[@]`最初のひと齧りにありつこうと疾駆してきた山羊頭が鷲掴みにして引っ張り上げる…！！`[\]

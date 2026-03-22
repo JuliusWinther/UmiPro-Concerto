@@ -471,8 +471,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 seplay 1,52,71
 lss s0_8,"goa","a11_defo1" ;1
 spt_mem "a2","xpos",s0_8,-550
@@ -481,8 +480,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_non
 *d31034
 d `魔女が手をパンパンと叩くと、`[@]`いつの間にか周りには山羊頭の使用人たちがいて、食事の準備を始めていました。`[\]
@@ -767,8 +765,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,3000
 spt_mem "a2","alpha",s0_8,255,3000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_non
 *d31067
 d `再び山羊頭の使用人が真っ赤なグラスを口元に傾けてきます。`[\]
@@ -1022,10 +1019,8 @@ spt_mem "a2","breakup",s0_8,0,2500
 spt_mem "a2","breakup",s0_9,0,2500
 spt_mem "a2","alpha",s0_8,255,2500
 spt_mem "a2","alpha",s0_9,255,2500
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_non
 *d31098
 d `いつの間にか、屈強な山羊頭のコックが、真里亞を小脇に抱えていました。`[\]
@@ -1341,8 +1336,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_bea
 *d31121
 d2 [lv 0*"27"*"90700263"]`「ば………、戦人ッ？！？！`[@][#][*][lv 0*"27"*"90700264"]`　き、……貴様ッ、`[|][lv 0*"27"*"90700265"]`…か、…家具となって魂まで屈服していたはずッ！！」`[\]
@@ -1435,8 +1429,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,1000
 spt_mem "a2","alpha",s0_10,255,1000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 seplay 2,37,100
 msgwnd_bea
 *d31130

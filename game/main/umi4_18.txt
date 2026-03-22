@@ -2206,8 +2206,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,2000
 spt_mem "a2","alpha",s0_12,0,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 lss s0_12,"ev2","a11_akuwarai4" ;1
@@ -2218,8 +2217,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_ev2
 *d29878
 d [lv 0*"34"*"43300028"]`「きゃっははははははは！！`[@][lv 0*"34"*"43300029"]`　そうそう、泣きたいに決まってる！`[@][lv 0*"34"*"43300030"]`　泣かせちゃいなさいって」`[\]
@@ -2248,8 +2246,7 @@ seplay 1,52,71
 spt_mem "a2","breakup",s0_12,0
 spt_mem "a2","breakup",s0_12,1000,2000
 spt_mem "a2","alpha",s0_12,0,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 csp_slot s0_12
 flush 1 ;flush2: NO frames
 lss s0_12,"ev2","a12_akuwarai2" ;1
@@ -2260,8 +2257,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_ev2
 *d29881
 d [lv 0*"34"*"43300036"]`「そう、その言葉を言わせるのよ。`[@][lv 0*"34"*"43300037"]`……あの言葉、辛いでしょ？`[@][lv 0*"34"*"43300038"]`　自分のせいじゃないことを謝らせられるのって、……本当に辛かったでしょう……？」`[\]
@@ -2387,8 +2383,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_ev2
 *d29904
 d2 [lv 0*"34"*"43300059"]`「………あら、この程度じゃ堪えない？`[@][lv 0*"34"*"43300060"]`　ならこっちは堪えるかしら。`[@][#][*][lv 0*"34"*"43300061"]`須磨寺霞！`[@][lv 0*"34"*"43300062"]`　こっちを使いなさい」`[\]
@@ -2440,8 +2435,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_ev2
 *d29909
 d [lv 0*"34"*"43300063"]`「くすくす。`[@][lv 0*"34"*"43300064"]`……読んじゃえばぁ？`[@][lv 0*"34"*"43300065"]`　うっふふ、お腹が捩れちゃうかもねぇ？」`[\]
@@ -2579,8 +2573,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 *d29932
 d `すると、黒き魔女が霞にニヤニヤと何かを耳打ちする。`[\]
 lss s0_9,"kas","a21_akuwarai3" ;1
@@ -2623,8 +2616,7 @@ spt_mem "a2","alpha",s0_4,0
 flush 1
 spt_mem "a2","breakup",s0_4,0,2000
 spt_mem "a2","alpha",s0_4,150,2000
-sptwait2 breakup,s0_4
- : sptwait2 butterflybreakup,s0_4
+sptwait2 breakup,s0_4 : sptwait2 butterflybreakup,s0_4
 msgwnd_sak
 *d29936
 d [lv 0*"33"*"44200525"]`『ひ、……ひどいよ、……それは、真里亞の魔法………』`[\]
@@ -2639,8 +2631,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_ev2
 *d29937
 d [lv 0*"34"*"43300075"]`「あらそうなのぉ？`[@][lv 0*"34"*"43300076"]`　うっふふふ、それはお気の毒」`[\]
@@ -2729,8 +2720,7 @@ spt_mem "a2","alpha",s0_12,0
 flush 1
 spt_mem "a2","breakup",s0_12,0,2000
 spt_mem "a2","alpha",s0_12,150,2000
-sptwait2 breakup,s0_12
- : sptwait2 butterflybreakup,s0_12
+sptwait2 breakup,s0_12 : sptwait2 butterflybreakup,s0_12
 msgwnd_rg5
 *d29950
 d [lv 0*"42"*"42700361"]`「やめろ…、やめろ……！！`[@][lv 0*"42"*"42700362"]`　マリア卿の魔法を、……汚すな…！！`[@][lv 0*"42"*"42700363"]`　汚い毒素で、……汚すんじゃない…！！」`[\]
@@ -4038,8 +4028,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg2
 *d30105
 d2 [lv 0*"39"*"42400036"]`「光栄の至り…！！`[@][#][*][lv 0*"39"*"42400037"]`　我らが主に逆らう愚かなるニンゲンどもよ！`[@][lv 0*"39"*"42400038"]`　今こそ平伏せ、審判の時ッ！！」`[\]
@@ -4497,8 +4486,7 @@ spt_mem "a2","alpha",s0_24,0
 flush 1
 spt_mem "a2","breakup",s0_24,0,2000
 spt_mem "a2","alpha",s0_24,255,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 msgwnd_rg6
 *d30157
 d2 [lv 0*"43"*"42800056"]`「きゃっははははははは！！`[@][lv 0*"43"*"42800057"]`　何言ってんの、こいつぅ！　おいしそうな腸をしてるくせにィ。`[@][#][*][lv 0*"43"*"42800058"]`………縁寿さま、次は私にお任せをッ！」`[\]
@@ -5308,8 +5296,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_rg5
 *d30243
 d [lv 0*"42"*"42700391"]`「……強欲のマモン。`[@][lv 0*"42"*"42700392"]`ここに」`[\]
@@ -5483,8 +5470,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d30266
 d [lv 0*"28"*"42100103"]`「……………おめでとう。`[@][lv 0*"28"*"42100104"]`無限の魔女、エンジェ・ベアトリーチェ。`[@][lv 0*"28"*"42100105"]`あなたは旅路の末に、魔法の全てを理解したわ」`[\]

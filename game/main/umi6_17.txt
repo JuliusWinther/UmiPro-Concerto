@@ -160,8 +160,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_be3
 *d49296
 d [lv 0*"60"*"60700971"]`「………妹よ…。`[@][lv 0*"60"*"60700972"]`我らには見守ることしか、許されぬ…」`[\]
@@ -396,8 +395,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d49321
 d [lv 0*"51"*"65100219"]`「本当に愛し合う二人の身分は関係ないの？！」`[\]
@@ -410,8 +408,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d49322
 d [lv 0*"52"*"65200208"]`「妻を持つ男との恋は許されるの？`[@][lv 0*"52"*"65200209"]`　夫を持つ女との恋は許されるの？」`[\]
@@ -1892,8 +1889,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_zep
 *d49468
 d [lv 0*"51"*"65100244"]`「充分さ。`[@][lv 0*"51"*"65100245"]`……おめでとう。`[@][lv 0*"51"*"65100246"]`残ったのは、君たちだ」`[\]
@@ -1906,8 +1902,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_fur
 *d49469
 d [lv 0*"52"*"65200229"]`「君たちを祝福するわ。`[@][lv 0*"52"*"65200230"]`でも忘れないで。`[@][lv 0*"52"*"65200231"]`愛を育むのが、これからのあなたたちの務め」`[\]
@@ -2020,8 +2015,7 @@ textoff2
 spt_mem "a2","breakup",s0_24,0
 spt_mem "a2","breakup",s0_24,1000,2000
 spt_mem "a2","alpha",s0_24,0,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 csp_slot s0_24
 flush 1 ;flush2: NO frames
 msgwnd_bea
@@ -2090,8 +2084,7 @@ textoff2
 spt_mem "a2","breakup",s0_24,0
 spt_mem "a2","breakup",s0_24,1000,2000
 spt_mem "a2","alpha",s0_24,0,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 csp_slot s0_24
 flush 1 ;flush2: NO frames
 lss s0_9,"bea","a15_hanbeso6" ;1
@@ -2119,8 +2112,7 @@ textoff2
 spt_mem "a2","breakup",s0_24,0
 spt_mem "a2","breakup",s0_24,1000,2000
 spt_mem "a2","alpha",s0_24,0,2000
-sptwait2 breakup,s0_24
- : sptwait2 butterflybreakup,s0_24
+sptwait2 breakup,s0_24 : sptwait2 butterflybreakup,s0_24
 csp_slot s0_24
 flush 1 ;flush2: NO frames
 lss s0_9,"bea","a15_1_naku2_kohen" ;1
@@ -2433,8 +2425,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,150,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_kan
 *d49521
 d [lv 0*"16"*"60600379"]`「………さよなら。`[@][lv 0*"16"*"60600380"]`お嬢様。`[@][lv 0*"16"*"60600381"]`……うぅん、…………朱志香」`[\]
@@ -2447,8 +2438,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,150,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_bea
 *d49522
 d [lv 0*"27"*"60701045"]`「……嘉音さん………」`[\]
@@ -2564,8 +2554,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,150,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_kan
 *d49536
 d [lv 0*"16"*"60600397"]`「だって密室なんて。`[@][lv 0*"16"*"60600398"]`………体のある人間たちの問題じゃないか」`[\]
@@ -2578,8 +2567,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,150,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_bea
 *d49537
 d [lv 0*"27"*"60701056"]`「……え？`[@][lv 0*"27"*"60701057"]`　………………あ…」`[\]

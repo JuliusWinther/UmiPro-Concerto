@@ -634,8 +634,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 bgmplay 44,71,0
 msgwnd_rg6
 *d14106
@@ -650,8 +649,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_rg5
 *d14107
 d [lv 0*"42"*"32700001"]`「まだ私、全然遊び足りないのにぃ。`[@][lv 0*"42"*"32700002"]`情けない男ぉ」`[\]
@@ -664,8 +662,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_rg2
 *d14108
 d [lv 0*"39"*"32400001"]`「私なんか全然遊んでないのにぃー！`[@][lv 0*"39"*"32400002"]`　私にも遊ばせて遊ばせてぇー！」`[\]
@@ -684,8 +681,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg3
 *d14109
 d2 [lv 0*"40"*"32500001"]`「お黙りなさい、屑どもが！`[@][#][*][lv 0*"40"*"32500002"]`　お前たちが飢えた犬みたいにがっつくから、いくらベアトリーチェさまが直しても、すぐ壊しちゃうのよ」`[\]
@@ -705,8 +701,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_rg4
 *d14110
 d [lv 0*"41"*"32600001"]`「サタン姉が一番壊してるよ。`[@][lv 0*"41"*"32600002"]`加減を知らないから」`[\]
@@ -724,8 +719,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_rg1
 *d14111
 d [lv 0*"38"*"32300001"]`「申し訳ございません、ベアトリーチェさま。`[@][lv 0*"38"*"32300002"]`愚妹どもをどうかお許し下さい」`[\]
@@ -739,8 +733,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_rg7
 *d14112
 d [lv 0*"44"*"32900001"]`「早くこいつを直してー！`[@][lv 0*"44"*"32900002"]`　次は私、次は私ぃー！」`[\]
@@ -781,10 +774,8 @@ spt_mem "a2","breakup",s0_8,1000,1333
 spt_mem "a2","breakup",s0_10,1000,1333
 spt_mem "a2","alpha",s0_8,0,1333
 spt_mem "a2","alpha",s0_10,0,1333
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 csp_slot s0_8
 csp_slot s0_10
 flush 1 ;flush2: NO frames
@@ -952,8 +943,7 @@ spt_mem "a2","alpha",s0_9,0
 flush 1
 spt_mem "a2","breakup",s0_9,0,2000
 spt_mem "a2","alpha",s0_9,255,2000
-sptwait2 breakup,s0_9
- : sptwait2 butterflybreakup,s0_9
+sptwait2 breakup,s0_9 : sptwait2 butterflybreakup,s0_9
 msgwnd_rg5
 *d14137
 d [lv 0*"42"*"32700004"]`「ありがとうございますぅ！`[@][lv 0*"42"*"32700005"]`　きゃっはッ、私がいただきぃ！」`[\]
@@ -969,8 +959,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 msgwnd_rg2
 *d14138
 d2 [lv 0*"39"*"32400004"]`「だからあんたは終わりよ終わり、次は私なのぉ！`[@][#][*][lv 0*"39"*"32400005"]`　退きなさいよ、わあん！」`[\]

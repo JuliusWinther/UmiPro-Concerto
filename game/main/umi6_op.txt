@@ -97,8 +97,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 vol_me 1,-1,1000
 *d42265
 d [lv 0*"51"*"65100001"]`「愛は寛容にして慈悲あり！」`[\]
@@ -112,8 +111,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 *d42266
 d [lv 0*"52"*"65200001"]`「愛は妬まず、愛は誇らず！」`[\]
 seplay 1,54,100
@@ -138,8 +136,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 lss s0_10,"ber","a21_warai1" ;1
 spt_mem "a2","xpos",s0_10,370
 flush 80
@@ -235,8 +232,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 msgwnd_ber
 *d42279
 d [lv 0*"28"*"62100007"]`「病める夫に支える妻。`[@][lv 0*"28"*"62100008"]`……素敵じゃない。`[@][lv 0*"28"*"62100009"]`お似合いよ、ヱリカ」`[\]
@@ -384,8 +380,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 seplay 1,54,71
 lss s0_8,"fur","a12_warai2" ;1
 spt_mem "a2","xpos",s0_8,-370
@@ -558,8 +553,7 @@ spt_mem "a2","alpha",s0_8,0
 flush 1
 spt_mem "a2","breakup",s0_8,0,2000
 spt_mem "a2","alpha",s0_8,255,2000
-sptwait2 breakup,s0_8
- : sptwait2 butterflybreakup,s0_8
+sptwait2 breakup,s0_8 : sptwait2 butterflybreakup,s0_8
 lss s0_10,"zep","a11_warai1" ;1
 spt_mem "a2","xpos",s0_10,550
 textoff2
@@ -568,8 +562,7 @@ spt_mem "a2","alpha",s0_10,0
 flush 1
 spt_mem "a2","breakup",s0_10,0,2000
 spt_mem "a2","alpha",s0_10,255,2000
-sptwait2 breakup,s0_10
- : sptwait2 butterflybreakup,s0_10
+sptwait2 breakup,s0_10 : sptwait2 butterflybreakup,s0_10
 seplay 3,54,100
 lss s0_24,"eri","c11_akuwarai1" ;1
 flush 24
