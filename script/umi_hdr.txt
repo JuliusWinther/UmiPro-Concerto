@@ -52,8 +52,9 @@ globalon
 ;12	particleScaleStep		25 (0.25)				Incremento scala per ogni particella successiva
 ;butterflyset 120,45,130,125,180,90,5,55,100,250,150,25 ; default
 ;butterflyset 120,45,150,200,220,120,3,55,95,300,120,20 ;first test
-butterflyset 150,45,250,300,350,250,8,40,100,300,200,30 ;not bad
-;butterflyset 120, 45, 130, 125, 180, 90, 3, 62, 90, 80, 200, 35 ;very good but the diagonal is too visible
+;butterflyset 150,45,250,300,350,250,8,40,100,300,200,30 ;not bad
+;butterflyset 120, 45, 130, 125, 180, 90, 8, 40, 100, 80, 200, 35 ;very good
+butterflyset 120,45,200,200,250,150,8,40,100,200,200,35 ;not bad v2
 
 
 stralias msk_1,":c;graphics\system\fade\1.png"

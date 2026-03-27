@@ -14836,11 +14836,11 @@ if %CHIRU_MODE != 0 jumpf
 	;TODO MOVIE BOX NOTIFICATION FIX TIPS NOTIFICATION
 	;multiple are needed because even if the notification isn't remvoed, the button still moves
 	;End EP1
-	if %UMINEKOEND < 12 if %UMINEKOEND_CG_FLG = 1 lsph t_cg_lsp,title_btn_4_new,1325,616
-	if %UMINEKOEND < 12 if %UMINEKOEND_MUSIC_FLG = 1 lsph t_btn_music_lsp,title_btn_5_new,1325,680
+	if %UMINEKOEND < 12 if %UMINEKOEND_CG_FLG = 1 lsph t_cg_lsp,title_btn_5_new,1325,680
+	if %UMINEKOEND < 12 if %UMINEKOEND_MUSIC_FLG = 1 lsph t_btn_music_lsp,title_btn_6_new,1325,744
 	;Adding Tea Party Button
-	if %UMINEKOEND = 12 && %UMINEKOEND_CG_FLG = 1 lsph t_cg_lsp,title_btn_5_new,1325,680
-	if %UMINEKOEND = 12 && %UMINEKOEND_MUSIC_FLG = 1 lsph t_btn_music_lsp,title_btn_6_new,1325,744
+	if %UMINEKOEND = 12 && %UMINEKOEND_CG_FLG = 1 lsph t_cg_lsp,title_btn_6_new,1325,744
+	if %UMINEKOEND = 12 && %UMINEKOEND_MUSIC_FLG = 1 lsph t_btn_music_lsp,title_btn_7_new,1325,808
 	;Final Position
 	if %UMINEKOEND >= 20 && %UMINEKOEND_CG_FLG = 1 lsph t_cg_lsp,title_btn_8_new,1325,872
 	if %UMINEKOEND >= 20 && %UMINEKOEND_MUSIC_FLG = 1 lsph t_btn_music_lsp,title_btn_9_new,1325,936
@@ -15187,9 +15187,9 @@ if %CHIRU_MODE = 1 gosub *verify_chiru
 	btnwait2 %BtnRes
 
 	if %BtnRes = t_btn_start_lsp cell t_btn_start_lsp,1 : print 1 : btndef "" : goto *start_sub_menu
-	;if %BtnRes = t_btn_web_lsp seplay 9,1001,100 : menu_window : shell "http://07th-expansion.net"
-	if %BtnRes = t_btn_web_lsp if %CHIRU_MODE != 2 seplay 9,1001,100 : goto *switch_game_to_extra
-	if %BtnRes = t_btn_web_lsp if %CHIRU_MODE == 2 seplay 9,1001,100 : goto *switch_game_to_normal
+	if %BtnRes = t_btn_web_lsp seplay 9,1001,100 : menu_window : shell "http://07th-expansion.net"
+	;if %BtnRes = t_btn_web_lsp if %CHIRU_MODE != 2 seplay 9,1001,100 : goto *switch_game_to_extra
+	;if %BtnRes = t_btn_web_lsp if %CHIRU_MODE == 2 seplay 9,1001,100 : goto *switch_game_to_normal
 	if %BtnRes = t_btn_tea_lsp cell t_btn_tea_lsp,1 : print 1 : btndef "" : goto *tea_sub_menu
 	if %BtnRes = t_btn_ura_tea_lsp cell t_btn_ura_tea_lsp,1 : print 1 : btndef "" : goto *ura_tea_sub_menu
 	if %BtnRes = t_btn_tips_lsp csp_rst : seplay 9,1001,100 : gosub *movie_mode_ps3 : mov %title_skip,1 : goto *b_title
@@ -23310,6 +23310,7 @@ return
 		if %ep_id == 7 && %UMINEKOEND_FLG == 70 mov %UMINEKOEND_FLG,0
 		if %ep_id == 8 && %UMINEKOEND_FLG == 80 mov %UMINEKOEND_FLG,0
 	~
+	
 return
 
 ;****************************************************
@@ -24001,7 +24002,7 @@ return
 ;I believe this keeps track of unlcoked cgs for trophies, makes sense theya re skipped if seen via ctrl
 ;wrong, this is what the %% means in *load_saved_cgs
 ;Original Edited - Unified basic and chiru - W_CUSTOM
-if %CHIRU_MODE = 1 jumpf
+;if %CHIRU_MODE = 1 jumpf
 ;Story
 if $lbg_name == "c0101_c" mov %8600,1 : return
 if $lbg_name == "c0201_f" mov %8601,1 : return
@@ -24042,7 +24043,7 @@ if $lbg_name == "ep605_c2" mov %8634,1 : return
 if $lbg_name == "ep606" mov %8635,1 : return
 if $lbg_name == "ex02" mov %8636,1 : return
 if $lbg_name == "ep607" mov %8637,1 : return
-if $lbg_name == "c0201_b" mov %8638,1 : return
+;if $lbg_name == "c0201_b" mov %8638,1 : return duplciated of _f
 if $lbg_name == "ep701" mov %8639,1 : return
 if $lbg_name == "ep702" mov %8640,1 : return
 if $lbg_name == "ep705_4" mov %8641,1 : return
