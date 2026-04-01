@@ -50,11 +50,25 @@ globalon
 ;10	frontierScatter			250 (2.5)				Raggio di dispersione (in unità cellFactor)
 ;11	particleScaleMin		150 (1.5)				Scala minima delle particelle
 ;12	particleScaleStep		25 (0.25)				Incremento scala per ogni particella successiva
+;13 useSecondarySpriteset  	0  						Use spriteset with black outline
+;14	frontierDispFollow		55(0.55)				Quanto le particelle frontier seguono lo spostamento della cella (era hardcoded 0.3)
+;15	frontierOverlap			4						Quante diagonali di celle intatte oltre il bordo ricevono il glow (era hardcoded 3)
+;16	frontierFadeBand		4						Quante diagonali di cross-fade sprite↔farfalle (era 0 = disabilitato, nessun fade)
+;17 goldenDustMethod		0						Instad of butterflies, shows golden dust on the frotier
+
 ;butterflyset 120,45,130,125,180,90,5,55,100,250,150,25 ; default
 ;butterflyset 120,45,150,200,220,120,3,55,95,300,120,20 ;first test
 ;butterflyset 150,45,250,300,350,250,8,40,100,300,200,30 ;not bad
 ;butterflyset 120, 45, 130, 125, 180, 90, 8, 40, 100, 80, 200, 35 ;very good
-butterflyset 120,45,200,200,250,150,8,40,100,200,200,35 ;not bad v2
+
+;butterflyset 120,45,200,200,250,150,8,40,100,200,200,35,1,4 ;winther test
+
+butterflyset 130,25,130,370,200,250,4,60,110,50,200,20,0,55,4,4,0 ;priest test
+
+;butterflyset 130,25,130,150,180,100,4,40,110,180,130,15,0,55,4,4,0; cloude test
+
+;butterflyset 130,25,130,100,160,70,6,40,100,180,130,15,0,55,4,4,1
+; technically best
 
 
 stralias msk_1,":c;graphics\system\fade\1.png"
